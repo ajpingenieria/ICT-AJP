@@ -1,0 +1,661 @@
+{
+  "version_formato": "0.1",
+  "datos_generales": {
+    "titulo": "Proyecto ICT - Edificio de prueba (18 viviendas y 2 locales)",
+    "promotor": "Promotor de prueba",
+    "municipio": "Murcia",
+    "provincia": "Murcia"
+  },
+  "edificio": {
+    "uso": "viviendas",
+    "plantas": [
+      {
+        "nombre": "Planta baja",
+        "nivel": 0,
+        "usuarios": [
+          {
+            "id": "Local 1",
+            "tipo": "local",
+            "distribucion_definida": false,
+            "superficie_util_m2": 95
+          },
+          {
+            "id": "Local 2",
+            "tipo": "local",
+            "distribucion_definida": false,
+            "superficie_util_m2": 130
+          }
+        ]
+      },
+      {
+        "nombre": "Planta 1ª",
+        "nivel": 1,
+        "usuarios": [
+          {
+            "id": "1ºA",
+            "tipo": "vivienda",
+            "tipologia": "A",
+            "estancias": [
+              {
+                "nombre": "Salón-comedor",
+                "tipo": "salon",
+                "principal": true
+              },
+              {
+                "nombre": "Cocina",
+                "tipo": "cocina"
+              },
+              {
+                "nombre": "Dormitorio principal",
+                "tipo": "dormitorio",
+                "principal": true
+              },
+              {
+                "nombre": "Dormitorio 2",
+                "tipo": "dormitorio"
+              },
+              {
+                "nombre": "Dormitorio 3",
+                "tipo": "dormitorio"
+              },
+              {
+                "nombre": "Baño 1",
+                "tipo": "bano"
+              },
+              {
+                "nombre": "Baño 2",
+                "tipo": "bano"
+              }
+            ]
+          },
+          {
+            "id": "1ºB",
+            "tipo": "vivienda",
+            "tipologia": "B",
+            "estancias": [
+              {
+                "nombre": "Salón-comedor",
+                "tipo": "salon",
+                "principal": true
+              },
+              {
+                "nombre": "Cocina",
+                "tipo": "cocina"
+              },
+              {
+                "nombre": "Dormitorio principal",
+                "tipo": "dormitorio",
+                "principal": true
+              },
+              {
+                "nombre": "Dormitorio 2",
+                "tipo": "dormitorio"
+              },
+              {
+                "nombre": "Baño 1",
+                "tipo": "bano"
+              }
+            ]
+          },
+          {
+            "id": "1ºC",
+            "tipo": "vivienda",
+            "tipologia": "C",
+            "estancias": [
+              {
+                "nombre": "Salón-comedor",
+                "tipo": "salon",
+                "principal": true
+              },
+              {
+                "nombre": "Cocina",
+                "tipo": "cocina"
+              },
+              {
+                "nombre": "Dormitorio principal",
+                "tipo": "dormitorio",
+                "principal": true
+              },
+              {
+                "nombre": "Dormitorio 2",
+                "tipo": "dormitorio"
+              },
+              {
+                "nombre": "Baño 1",
+                "tipo": "bano"
+              }
+            ]
+          },
+          {
+            "id": "1ºD",
+            "tipo": "vivienda",
+            "tipologia": "D",
+            "estancias": [
+              {
+                "nombre": "Salón-comedor",
+                "tipo": "salon",
+                "principal": true
+              },
+              {
+                "nombre": "Cocina",
+                "tipo": "cocina"
+              },
+              {
+                "nombre": "Dormitorio principal",
+                "tipo": "dormitorio",
+                "principal": true
+              },
+              {
+                "nombre": "Dormitorio 2",
+                "tipo": "dormitorio"
+              },
+              {
+                "nombre": "Dormitorio 3",
+                "tipo": "dormitorio"
+              },
+              {
+                "nombre": "Baño 1",
+                "tipo": "bano"
+              },
+              {
+                "nombre": "Baño 2",
+                "tipo": "bano"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nombre": "Planta 2ª",
+        "nivel": 2,
+        "usuarios": [
+          {
+            "id": "2ºA",
+            "tipo": "vivienda",
+            "tipologia": "A",
+            "estancias": [
+              {
+                "nombre": "Salón-comedor",
+                "tipo": "salon",
+                "principal": true
+              },
+              {
+                "nombre": "Cocina",
+                "tipo": "cocina"
+              },
+              {
+                "nombre": "Dormitorio principal",
+                "tipo": "dormitorio",
+                "principal": true
+              },
+              {
+                "nombre": "Dormitorio 2",
+                "tipo": "dormitorio"
+              },
+              {
+                "nombre": "Dormitorio 3",
+                "tipo": "dormitorio"
+              },
+              {
+                "nombre": "Baño 1",
+                "tipo": "bano"
+              },
+              {
+                "nombre": "Baño 2",
+                "tipo": "bano"
+              }
+            ]
+          },
+          {
+            "id": "2ºB",
+            "tipo": "vivienda",
+            "tipologia": "B",
+            "estancias": [
+              {
+                "nombre": "Salón-comedor",
+                "tipo": "salon",
+                "principal": true
+              },
+              {
+                "nombre": "Cocina",
+                "tipo": "cocina"
+              },
+              {
+                "nombre": "Dormitorio principal",
+                "tipo": "dormitorio",
+                "principal": true
+              },
+              {
+                "nombre": "Dormitorio 2",
+                "tipo": "dormitorio"
+              },
+              {
+                "nombre": "Baño 1",
+                "tipo": "bano"
+              }
+            ]
+          },
+          {
+            "id": "2ºC",
+            "tipo": "vivienda",
+            "tipologia": "C",
+            "estancias": [
+              {
+                "nombre": "Salón-comedor",
+                "tipo": "salon",
+                "principal": true
+              },
+              {
+                "nombre": "Cocina",
+                "tipo": "cocina"
+              },
+              {
+                "nombre": "Dormitorio principal",
+                "tipo": "dormitorio",
+                "principal": true
+              },
+              {
+                "nombre": "Dormitorio 2",
+                "tipo": "dormitorio"
+              },
+              {
+                "nombre": "Baño 1",
+                "tipo": "bano"
+              }
+            ]
+          },
+          {
+            "id": "2ºD",
+            "tipo": "vivienda",
+            "tipologia": "D",
+            "estancias": [
+              {
+                "nombre": "Salón-comedor",
+                "tipo": "salon",
+                "principal": true
+              },
+              {
+                "nombre": "Cocina",
+                "tipo": "cocina"
+              },
+              {
+                "nombre": "Dormitorio principal",
+                "tipo": "dormitorio",
+                "principal": true
+              },
+              {
+                "nombre": "Dormitorio 2",
+                "tipo": "dormitorio"
+              },
+              {
+                "nombre": "Dormitorio 3",
+                "tipo": "dormitorio"
+              },
+              {
+                "nombre": "Baño 1",
+                "tipo": "bano"
+              },
+              {
+                "nombre": "Baño 2",
+                "tipo": "bano"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nombre": "Planta 3ª",
+        "nivel": 3,
+        "usuarios": [
+          {
+            "id": "3ºA",
+            "tipo": "vivienda",
+            "tipologia": "A",
+            "estancias": [
+              {
+                "nombre": "Salón-comedor",
+                "tipo": "salon",
+                "principal": true
+              },
+              {
+                "nombre": "Cocina",
+                "tipo": "cocina"
+              },
+              {
+                "nombre": "Dormitorio principal",
+                "tipo": "dormitorio",
+                "principal": true
+              },
+              {
+                "nombre": "Dormitorio 2",
+                "tipo": "dormitorio"
+              },
+              {
+                "nombre": "Dormitorio 3",
+                "tipo": "dormitorio"
+              },
+              {
+                "nombre": "Baño 1",
+                "tipo": "bano"
+              },
+              {
+                "nombre": "Baño 2",
+                "tipo": "bano"
+              }
+            ]
+          },
+          {
+            "id": "3ºB",
+            "tipo": "vivienda",
+            "tipologia": "B",
+            "estancias": [
+              {
+                "nombre": "Salón-comedor",
+                "tipo": "salon",
+                "principal": true
+              },
+              {
+                "nombre": "Cocina",
+                "tipo": "cocina"
+              },
+              {
+                "nombre": "Dormitorio principal",
+                "tipo": "dormitorio",
+                "principal": true
+              },
+              {
+                "nombre": "Dormitorio 2",
+                "tipo": "dormitorio"
+              },
+              {
+                "nombre": "Baño 1",
+                "tipo": "bano"
+              }
+            ]
+          },
+          {
+            "id": "3ºC",
+            "tipo": "vivienda",
+            "tipologia": "C",
+            "estancias": [
+              {
+                "nombre": "Salón-comedor",
+                "tipo": "salon",
+                "principal": true
+              },
+              {
+                "nombre": "Cocina",
+                "tipo": "cocina"
+              },
+              {
+                "nombre": "Dormitorio principal",
+                "tipo": "dormitorio",
+                "principal": true
+              },
+              {
+                "nombre": "Dormitorio 2",
+                "tipo": "dormitorio"
+              },
+              {
+                "nombre": "Baño 1",
+                "tipo": "bano"
+              }
+            ]
+          },
+          {
+            "id": "3ºD",
+            "tipo": "vivienda",
+            "tipologia": "D",
+            "estancias": [
+              {
+                "nombre": "Salón-comedor",
+                "tipo": "salon",
+                "principal": true
+              },
+              {
+                "nombre": "Cocina",
+                "tipo": "cocina"
+              },
+              {
+                "nombre": "Dormitorio principal",
+                "tipo": "dormitorio",
+                "principal": true
+              },
+              {
+                "nombre": "Dormitorio 2",
+                "tipo": "dormitorio"
+              },
+              {
+                "nombre": "Dormitorio 3",
+                "tipo": "dormitorio"
+              },
+              {
+                "nombre": "Baño 1",
+                "tipo": "bano"
+              },
+              {
+                "nombre": "Baño 2",
+                "tipo": "bano"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nombre": "Planta 4ª",
+        "nivel": 4,
+        "usuarios": [
+          {
+            "id": "4ºA",
+            "tipo": "vivienda",
+            "tipologia": "A",
+            "estancias": [
+              {
+                "nombre": "Salón-comedor",
+                "tipo": "salon",
+                "principal": true
+              },
+              {
+                "nombre": "Cocina",
+                "tipo": "cocina"
+              },
+              {
+                "nombre": "Dormitorio principal",
+                "tipo": "dormitorio",
+                "principal": true
+              },
+              {
+                "nombre": "Dormitorio 2",
+                "tipo": "dormitorio"
+              },
+              {
+                "nombre": "Dormitorio 3",
+                "tipo": "dormitorio"
+              },
+              {
+                "nombre": "Baño 1",
+                "tipo": "bano"
+              },
+              {
+                "nombre": "Baño 2",
+                "tipo": "bano"
+              }
+            ]
+          },
+          {
+            "id": "4ºB",
+            "tipo": "vivienda",
+            "tipologia": "B",
+            "estancias": [
+              {
+                "nombre": "Salón-comedor",
+                "tipo": "salon",
+                "principal": true
+              },
+              {
+                "nombre": "Cocina",
+                "tipo": "cocina"
+              },
+              {
+                "nombre": "Dormitorio principal",
+                "tipo": "dormitorio",
+                "principal": true
+              },
+              {
+                "nombre": "Dormitorio 2",
+                "tipo": "dormitorio"
+              },
+              {
+                "nombre": "Baño 1",
+                "tipo": "bano"
+              }
+            ]
+          },
+          {
+            "id": "4ºC",
+            "tipo": "vivienda",
+            "tipologia": "C",
+            "estancias": [
+              {
+                "nombre": "Salón-comedor",
+                "tipo": "salon",
+                "principal": true
+              },
+              {
+                "nombre": "Cocina",
+                "tipo": "cocina"
+              },
+              {
+                "nombre": "Dormitorio principal",
+                "tipo": "dormitorio",
+                "principal": true
+              },
+              {
+                "nombre": "Dormitorio 2",
+                "tipo": "dormitorio"
+              },
+              {
+                "nombre": "Baño 1",
+                "tipo": "bano"
+              }
+            ]
+          },
+          {
+            "id": "4ºD",
+            "tipo": "vivienda",
+            "tipologia": "D",
+            "estancias": [
+              {
+                "nombre": "Salón-comedor",
+                "tipo": "salon",
+                "principal": true
+              },
+              {
+                "nombre": "Cocina",
+                "tipo": "cocina"
+              },
+              {
+                "nombre": "Dormitorio principal",
+                "tipo": "dormitorio",
+                "principal": true
+              },
+              {
+                "nombre": "Dormitorio 2",
+                "tipo": "dormitorio"
+              },
+              {
+                "nombre": "Dormitorio 3",
+                "tipo": "dormitorio"
+              },
+              {
+                "nombre": "Baño 1",
+                "tipo": "bano"
+              },
+              {
+                "nombre": "Baño 2",
+                "tipo": "bano"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nombre": "Ático",
+        "nivel": 5,
+        "usuarios": [
+          {
+            "id": "ÁticoA",
+            "tipo": "vivienda",
+            "tipologia": "Ático",
+            "estancias": [
+              {
+                "nombre": "Salón-comedor",
+                "tipo": "salon",
+                "principal": true
+              },
+              {
+                "nombre": "Cocina",
+                "tipo": "cocina"
+              },
+              {
+                "nombre": "Dormitorio principal",
+                "tipo": "dormitorio",
+                "principal": true
+              },
+              {
+                "nombre": "Dormitorio 2",
+                "tipo": "dormitorio"
+              },
+              {
+                "nombre": "Baño 1",
+                "tipo": "bano"
+              }
+            ]
+          },
+          {
+            "id": "ÁticoB",
+            "tipo": "vivienda",
+            "tipologia": "Ático",
+            "estancias": [
+              {
+                "nombre": "Salón-comedor",
+                "tipo": "salon",
+                "principal": true
+              },
+              {
+                "nombre": "Cocina",
+                "tipo": "cocina"
+              },
+              {
+                "nombre": "Dormitorio principal",
+                "tipo": "dormitorio",
+                "principal": true
+              },
+              {
+                "nombre": "Dormitorio 2",
+                "tipo": "dormitorio"
+              },
+              {
+                "nombre": "Baño 1",
+                "tipo": "bano"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "nombre": "Cubierta",
+        "nivel": 6,
+        "usuarios": []
+      }
+    ],
+    "ascensores": 1,
+    "recintos": "RITI_RITS"
+  },
+  "operadores": {
+    "pares_trenzados": true,
+    "coaxial": false,
+    "fibra": true,
+    "consulta_realizada": false
+  }
+}

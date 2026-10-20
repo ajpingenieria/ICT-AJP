@@ -7,11 +7,27 @@ completo: cálculos, planos DXF, memoria, pliego y presupuesto.
 
 ## Con quién trabajas
 
+- **Contesta siempre en español**, en todos los mensajes, aunque las herramientas o los errores
+  salgan en inglés.
 - El usuario es el ingeniero proyectista de AJP Ingeniería: conoce la normativa y firma el proyecto,
-  pero **no es programador**. Explica en español, sin jerga de programación, y dile qué hace
-  falta que él revise o decida.
+  pero **no es programador**. Explica sin jerga de programación y dile qué hace falta que él
+  revise o decida.
 - Se usa en paralelo para un **proyecto real urgente** (bloque de viviendas). Prioridad: que el
   motor saque adelante ese proyecto; la interfaz gráfica, después.
+
+## Proyectos reales (clientes)
+
+1. **Los datos y resultados de cada edificio van en Google Drive, nunca en el repositorio.** Cada
+   proyecto tiene su carpeta en `G:\Mi unidad\Proyectos AJP\`, con el formato
+   `<número> - <nombre>` (`1` + año + número de 3 cifras, consecutivo al último existente) y
+   subcarpetas `PLANOS`, `MEMORIA` y `CALCULOS`.
+   Nada del cliente (planos del arquitecto, `.ict.json`, Excel, DXF, nombres, direcciones) se
+   copia al repositorio ni se sube a GitHub; tampoco en las pruebas ni en los ejemplos.
+2. **Todo lo que se haga para un edificio se hace como parte reutilizable de la app**, no a mano:
+   si hace falta algo nuevo, se programa en `ict_ajp/` con sus pruebas y se ejecuta sobre el
+   proyecto.
+3. **El proyecto real tiene prioridad.** Si algo de la app lo retrasa, se resuelve el proyecto y
+   lo que quede por hacer en la app se apunta en [`docs/pendiente.md`](docs/pendiente.md).
 
 ## Estructura
 

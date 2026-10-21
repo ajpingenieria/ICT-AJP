@@ -17,15 +17,21 @@ from ezdxf.addons.drawing.matplotlib import MatplotlibBackend
 
 def renderizar(ruta_dxf: str | Path, salida_png: str | Path,
                ventana: Optional[tuple[float, float, float, float]] = None,
-               ancho_px: int = 2400) -> Path:
-    """Dibuja el espacio modelo (o la ventana x0, y0, x1, y1) en blanco y negro sobre fondo blanco."""
+               ancho_px: int = 2400, presentacion: Optional[str] = None) -> Path:
+    """Dibuja el espacio modelo (o la ventana x0, y0, x1, y1) en blanco y negro sobre fondo blanco.
+
+    Con `presentacion` dibuja esa presentación (espacio papel, con sus ventanas al modelo) a hoja completa.
+    """
     import matplotlib
     matplotlib.use("Agg")
     import matplotlib.pyplot as plt
 
     doc = ezdxf.readfile(str(ruta_dxf))
-    msp = doc.modelspace()
-    if ventana:
+    msp = doc.layout(presentacion) if presentacion else doc.modelspace()
+    if presentacion and not ventana:
+        x0, y0, x1, y1 = 0.0, 0.0, msp.dxf.paper_width, msp.dxf.paper_height
+        filtro = None
+    elif ventana:
         x0, y0, x1, y1 = ventana
         filtro = _filtro_ventana(x0, y0, x1, y1)
     else:

@@ -88,6 +88,8 @@ class Edificio(BaseModel):
     zonas_comunes: bool = True
     distancia_max_pi_pau_m: Optional[float] = Field(
         None, description="Distancia del punto de interconexión al PAU más alejado (decide pares trenzados o pares).")
+    otras_dependencias: str = Field("", description="Garajes, trasteros, zaguán... para la descripción (1.1.B).")
+    propiedad_horizontal: Optional[bool] = Field(None, description="Régimen de la Ley 49/1960 (memoria, 1.1.C).")
 
     def usuarios(self) -> list[tuple[Planta, Usuario]]:
         return [(p, u) for p in sorted(self.plantas, key=lambda p: p.nivel) for u in p.usuarios]
@@ -114,6 +116,7 @@ class Proyectista(BaseModel):
 
 
 class DatosGenerales(BaseModel):
+    numero: str = Field("", description="Número de expediente de AJP (p. ej. 1AAAANNN).")
     titulo: str = ""
     promotor: str = ""
     direccion: str = ""

@@ -23,7 +23,33 @@ def main(argv=None) -> int:
     b.add_argument("-o", "--salida", type=Path, required=True)
     b.add_argument("--nombres", choices=["planta_letra", "letras_seguidas"], default="planta_letra",
                    help="1ºA, 1ºB... Ático A (por defecto) o A, B, C... de abajo arriba")
+    m = sub.add_parser("memoria", help="Genera la memoria del proyecto en Word (y PDF si hay LibreOffice)")
+    m.add_argument("proyecto", type=Path)
+    m.add_argument("-o", "--salida", type=Path, help="Archivo .docx (por defecto, junto al proyecto)")
+    m.add_argument("--plantilla", type=Path, help="Carpeta con empresa.json y logos de AJP")
     a = ap.parse_args(argv)
+
+    if a.orden == "memoria":
+        from .documento import Plantilla
+        from .memoria import generar_memoria
+        from . import pdf as PDF
+        p = Proyecto.cargar(a.proyecto)
+        res = dimensionar(p)
+        nombre = (p.datos_generales.numero + " - " if p.datos_generales.numero else "") + "Memoria ICT.docx"
+        salida = a.salida or a.proyecto.parent / nombre
+        plantilla = Plantilla.cargar(a.plantilla)
+        docx, titulos = generar_memoria(p, res, salida, plantilla)
+        if PDF.soffice():
+            # Segunda pasada: números de página en el índice a partir del PDF
+            pdf = PDF.a_pdf(docx)
+            paginas = PDF.paginas_de_titulos(pdf, [t for _, t in titulos], desde=3)
+            indice = [(n, t, paginas.get(t)) for n, t in titulos]
+            generar_memoria(p, res, salida, plantilla, indice=indice)
+            pdf = PDF.a_pdf(docx)
+            print(f"Memoria: {docx}\nPDF: {pdf}")
+        else:
+            print(f"Memoria: {docx} (sin PDF: LibreOffice no está instalado)")
+        return 0
 
     if a.orden == "borrador":
         from .leer_dxf import leer_plano, proyecto_desde_lectura

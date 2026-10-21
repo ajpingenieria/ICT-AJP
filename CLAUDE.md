@@ -53,6 +53,14 @@ completo: cálculos, planos DXF, memoria, pliego y presupuesto.
   antenas, amplificadores T12, fuente, derivadores y repartidores/PAU serie F, tomas y cable
   SK2003plus, cada uno con la URL de su ficha. Se genera con `herramientas/generar_catalogo_televes.py`
   desde las fichas PDF descargadas (los PDF no se suben: son del fabricante).
+- `ict_ajp/documento.py` — Word con el estilo de AJP (A4, Arial, cabecera con logo y dirección, pie con
+  «Página x de y», tablas, marcas «[PENDIENTE: …]» resaltadas). Los datos y logos de AJP están en
+  `G:\Mi unidad\Proyectos AJP\_Plantilla ICT-AJP\` (`empresa.json`), **no en el repositorio, que es
+  público**.
+- `ict_ajp/memoria.py` — memoria con la estructura del anexo I de la Orden ITC/1644/2011 (1.1 a 1.2.F)
+  rellenada con el dimensionado. `python -m ict_ajp memoria proyecto.ict.json -o memoria.docx` saca Word
+  y PDF (LibreOffice), con el índice paginado en dos pasadas.
+- `ict_ajp/pdf.py` — conversión a PDF con LibreOffice (instalado en este ordenador).
 - `herramientas/boe_a_markdown.py` — pasa un XML del BOE a Markdown para `docs/normativa`.
 - `ict_ajp/__main__.py` — `python -m ict_ajp calcular proyecto.ict.json -o resultado.xlsx` y
   `python -m ict_ajp leer-dxf plano.dxf -o lectura.txt` y
@@ -86,7 +94,7 @@ completo: cálculos, planos DXF, memoria, pliego y presupuesto.
 | 0.1 | Demanda, redes TBA (pares trenzados/pares, coaxial, fibra), red interior, infraestructura, recintos, Excel | Hecho |
 | 0.2 | RTV (Anexo I, ap. 4): niveles, atenuaciones toma a toma, C/N, cabecera | Hecho salvo lo apuntado en `docs/pendiente.md` |
 | 0.3 | Esquemas de principio en DXF | Pendiente |
-| 0.4 | Memoria, pliego y presupuesto en Word (estructura del Anexo I de la Orden ITC/1644/2011) | Pendiente |
+| 0.4 | Memoria, pliego y presupuesto en Word (estructura del Anexo I de la Orden ITC/1644/2011) | En curso: memoria hecha; pliego y presupuesto pendientes |
 | 0.5 | Plantas sobre la base DXF del arquitecto | Pendiente |
 | 1.0 | Interfaz de escritorio (PySide6) y .exe de Windows compilado con GitHub Actions | Pendiente |
 

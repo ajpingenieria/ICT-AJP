@@ -15,3 +15,6 @@ llevar a la app más adelante. Sin datos del cliente: solo qué falta y por qué
 | 2026-10-21 | RTV: cálculo explícito de intermodulación (≥ 30 dB, Anexo I 4.5) y opción de antena en modo activo | Con monocanal cada amplificador lleva un canal; se justifica en la memoria, pero conviene calcularlo |
 | 2026-10-21 | RTV: cálculo de niveles con central programable | Solo está programado para cabecera monocanal |
 | 2026-10-21 | Catálogo: más fabricantes (Ikusi, Fagor) | Solo Televés por ahora |
+| 2026-10-21 | Memoria 1.2.C: cálculo de atenuación de las redes de pares trenzados, coaxial y fibra (Orden, anexo I) | Necesita las longitudes de los planos; ahora sale como «[PENDIENTE]» |
+| 2026-10-21 | Memoria 1.2.A.d: cálculo del mástil (momento flector con la carga al viento de las fichas) | Falta la ficha del mástil y la altura final de las antenas |
+| 2026-10-21 | Memoria 1.2.E.l: cuadro resumen de materiales (tubos, registros) | Necesita las plantas de la ICT |

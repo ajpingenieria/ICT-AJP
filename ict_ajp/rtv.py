@@ -17,6 +17,7 @@ from .modelo import Proyecto
 if TYPE_CHECKING:
     from .dimensionado import Resultado, Seccion
 
+NOMBRE_FABRICANTE = {"televes": "Televés"}
 RESOLUCION_FASE1 = "Resolución SETID de 23/07/2026 (BOE-A-2026-16750)"
 
 
@@ -73,7 +74,7 @@ def seccion_rtv(p: Proyecto, R: "Resultado", tomas_rtv: int,
               "de la misma naturaleza.")
     s.add("Tomas de RTV servidas desde la cabecera", tomas_rtv, "tomas", N.ref("I", "3.5"))
     if p.opciones.cabecera_rtv == "monocanal":
-        s.add("Tipo de cabecera", "Amplificación monocanal: un amplificador por canal de TDT, más FM y DAB", "",
+        s.add("Tipo de cabecera", "Amplificación monocanal: un amplificador por canal de TDT, más uno de FM y DAB", "",
               ba.referencia, limite)
         R.aviso("decision", "Cabecera con amplificadores monocanal: cumple siempre la diferencia de nivel de menos de "
                 f"{N.DIF_NIVEL_CABECERA_DB} dB entre canales, con cualquier número de tomas.", ba.referencia)
@@ -123,7 +124,7 @@ def _niveles(s: "Seccion", R: "Resultado", p: Proyecto, tomas: dict[str, int], c
     except ValueError as ex:
         R.aviso("revisar", f"No se pueden calcular los niveles de RTV: {ex}", N.ref("I", "4.5"))
         return
-    ref_cat = f"Catálogo {rtv.fabricante} (fichas oficiales)"
+    ref_cat = f"Catálogo {NOMBRE_FABRICANTE.get(rtv.fabricante, rtv.fabricante)} (fichas oficiales)"
     s.tablas.append(Tabla("Red de distribución y dispersión de RTV", [
         "Planta", "Vivienda", "Derivador (cada cable)", "PAU", "Tomas", "Atenuación TDT mejor toma (dB)",
         "Atenuación TDT peor toma (dB)", "Nivel TDT peor toma (dBµV)", "Nivel TDT mejor toma (dBµV)"],
@@ -151,7 +152,7 @@ def _niveles(s: "Seccion", R: "Resultado", p: Proyecto, tomas: dict[str, int], c
           N.ref("I", "4.4.3"), "Límite: 16 dB y 20 dB.")
     s.add("Cabecera", f"{canales_tdt} amplificadores monocanal UHF {RN.Material.amp_uhf}, 1 amplificador FM/DAB "
           f"{RN.Material.amp_fm_dab} y fuente {RN.Material.fuente}", "", ref_cat,
-          f"Consumo {r.consumo_ma:.0f} mA de 2.500 mA de la fuente.")
+          f"Consumo {r.consumo_ma:,.0f} mA de 2.500 mA de la fuente.".replace(",", "."))
     s.add("Captación", f"Antena UHF {RN.Material.antena_uhf} (modo pasivo), FM {RN.Material.antena_fm} y DAB "
           f"{RN.Material.antena_dab}", "", ref_cat)
     s.add("Tomas y cable", f"Toma {RN.Material.toma}; cable {RN.Material.cable}", "", ref_cat)

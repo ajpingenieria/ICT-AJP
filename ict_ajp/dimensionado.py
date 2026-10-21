@@ -437,6 +437,10 @@ def dimensionar(p: Proyecto) -> Resultado:
             R.aviso("revisar", f"{u.id}: {res_int[u.id].nota}", N.ref("III", "5.13"))
     R.secciones.append(s)
 
+    # --- 4 bis. Radio y televisión ---------------------------------------------
+    from .rtv import seccion_rtv
+    R.secciones.append(seccion_rtv(p, R, tot_int["tomas_rtv"]))
+
     # --- 5. Infraestructura -------------------------------------------------
     s = Seccion("infra", "Infraestructura: canalizaciones, recintos y registros")
     a = N.arqueta_entrada(n_pau)

@@ -120,7 +120,17 @@ class DatosGenerales(BaseModel):
     municipio: str = ""
     provincia: str = ""
     referencia_catastral: str = ""
+    codigo_ine: str = Field("", description="Código INE del municipio; hace falta si el nombre se repite en España.")
     proyectista: Proyectista = Proyectista()
+
+
+class DatosRTV(BaseModel):
+    """Datos de radio y televisión del emplazamiento (Anexo I del Reglamento)."""
+
+    campos_medidos_dbuvm: dict[str, float] = Field(
+        default_factory=dict, description="Campo medido por canal de TDT («45»: 62.0). Vacío = mínimo de la norma.")
+    satelite_instalado: bool = Field(
+        False, description="False: solo previsión de espacio en cubierta y red hasta 2.150 MHz (Anexo I, 3.6).")
 
 
 class OpcionesDiseno(BaseModel):
@@ -156,6 +166,7 @@ class Proyecto(BaseModel):
     edificio: Edificio
     operadores: Operadores = Operadores()
     opciones: OpcionesDiseno = OpcionesDiseno()
+    rtv: DatosRTV = DatosRTV()
 
     @classmethod
     def cargar(cls, ruta: str | Path) -> "Proyecto":

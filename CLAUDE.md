@@ -39,11 +39,18 @@ completo: cálculos, planos DXF, memoria, pliego y presupuesto.
 - `ict_ajp/leer_dxf.py` — lectura de la base DXF del arquitecto: plantas, viviendas (contornos de
   superficie construida) y estancias (nombre + superficie rotulados), más RIT y ascensores dibujados.
 - `ict_ajp/vista_previa.py` — imagen PNG de un DXF o de una zona (para revisar y para las entregas).
+- `ict_ajp/rtv.py` — radio y televisión: canales de TDT del emplazamiento, campo de diseño, tipo de
+  cabecera y previsión de satélite.
+- `ict_ajp/plan_tdt.py` + `ict_ajp/datos/plan_tdt.json` — áreas y canales del Plan Técnico Nacional
+  de la TDT. El JSON se genera con `herramientas/generar_plan_tdt.py` desde `docs/normativa` y una
+  prueba comprueba que coinciden.
+- `herramientas/boe_a_markdown.py` — pasa un XML del BOE a Markdown para `docs/normativa`.
 - `ict_ajp/__main__.py` — `python -m ict_ajp calcular proyecto.ict.json -o resultado.xlsx` y
   `python -m ict_ajp leer-dxf plano.dxf -o lectura.txt` y
   `python -m ict_ajp borrador plano.dxf -o proyecto.ict.json` (plantas y viviendas del DXF).
 - `docs/normativa/` — **textos consolidados oficiales del BOE** (RD 346/2011 actualizado hasta el
-  RD 250/2025; Orden ITC/1644/2011). Son la única fuente para programar reglas.
+  RD 250/2025; Orden ITC/1644/2011; RD 250/2025 Plan Técnico Nacional de la TDT y su corrección de
+  errores; Resolución de 23/07/2026 de la fase 1 de DVB-T2). Son la única fuente para programar reglas.
 - `ejemplos/edificio_prueba.ict.json` — edificio de prueba (18 viviendas, 2 locales).
 - `tests/` — `pytest -q`. Las pruebas corren en Windows y Linux con GitHub Actions en cada subida.
 
@@ -67,7 +74,7 @@ completo: cálculos, planos DXF, memoria, pliego y presupuesto.
 | Versión | Contenido | Estado |
 |---|---|---|
 | 0.1 | Demanda, redes TBA (pares trenzados/pares, coaxial, fibra), red interior, infraestructura, recintos, Excel | Hecho |
-| 0.2 | RTV (Anexo I, ap. 4): niveles, atenuaciones toma a toma, C/N, cabecera | Siguiente |
+| 0.2 | RTV (Anexo I, ap. 4): niveles, atenuaciones toma a toma, C/N, cabecera | En curso: canales TDT, campo de diseño y tipo de cabecera hechos |
 | 0.3 | Esquemas de principio en DXF | Pendiente |
 | 0.4 | Memoria, pliego y presupuesto en Word (estructura del Anexo I de la Orden ITC/1644/2011) | Pendiente |
 | 0.5 | Plantas sobre la base DXF del arquitecto | Pendiente |

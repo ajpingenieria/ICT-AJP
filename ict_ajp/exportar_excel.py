@@ -124,7 +124,7 @@ def exportar(proyecto: Proyecto, res: Resultado, ruta: str | Path) -> Path:
 
     # Una hoja por sección
     nombres = {"edificio": "Edificio", "demanda": "Demanda", "redes": "Redes", "interior": "Red interior",
-               "infra": "Infraestructura", "recintos": "Recintos"}
+               "infra": "Infraestructura", "recintos": "Recintos", "rtv": "RTV"}
     for sec in res.secciones:
         ws = wb.create_sheet(nombres.get(sec.clave, sec.clave[:31]))
         fila = _titulo(ws, sec.titulo, dg.titulo)
@@ -157,6 +157,9 @@ def exportar(proyecto: Proyecto, res: Resultado, ruta: str | Path) -> Path:
         ("Orden ITC/1644/2011, de 10 de junio", "Desarrollo del Reglamento: contenido y estructura del proyecto técnico."),
         ("Orden ECE/983/2019, de 26 de septiembre", "Reacción al fuego de los cables (euroclases CPR)."),
         ("Real Decreto-ley 1/1998, de 27 de febrero", "Infraestructuras comunes en los edificios."),
+        ("Real Decreto 250/2025, de 25 de marzo", "Plan Técnico Nacional de la Televisión Digital Terrestre: "
+         "áreas geográficas y canales de cada múltiple (anexos I y II)."),
+        ("Resolución de 23 de julio de 2026 (SETID)", "Fechas de la fase 1: RGE2 en DVB-T2 (UHD) desde el 05/11/2026."),
     ]
     _cabecera(ws, fila, ["Norma", "Objeto"])
     fila += 1

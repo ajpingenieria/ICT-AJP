@@ -333,3 +333,29 @@ def registro_principal_entrada_fo(n_salida: int) -> Regla:
 
 ESTANCIAS_NO_COMPUTABLES = {"bano", "aseo", "trastero"}
 RTV_TOMAS_MIN_VIVIENDA = 2  # Anexo I, ap. 3.5.1
+
+
+# ---------------------------------------------------------------------------
+# Anexo I. Radiodifusión sonora y televisión (RTV)
+# ---------------------------------------------------------------------------
+
+def campo_minimo_tdt(f_mhz: float) -> Regla:
+    """Intensidad de campo por encima de la cual hay que distribuir un canal de TDT (ap. 4.1.6).
+
+    Tabla «Televisión terrestre»: digital, 470,0-862,0 MHz, «3 + 20 log f (MHz)» dBµV/m. Sin medidas en
+    el emplazamiento se usa como campo de diseño (caso más desfavorable).
+    """
+    if not 470.0 <= f_mhz <= 862.0:
+        raise ValueError(f"{f_mhz} MHz fuera de la banda de la tabla (470,0-862,0 MHz).")
+    return Regla(round(3 + 20 * math.log10(f_mhz), 1), ref("I", "4.1.6"), "dBµV/m")
+
+
+TOMAS_MAX_BANDA_ANCHA = 30   # Anexo I, ap. 4.3: central o amplificador de banda ancha si las tomas son < 30
+DIF_NIVEL_CABECERA_DB = 3    # Anexo I, ap. 4.3: diferencia máxima entre canales de la misma naturaleza
+
+
+def admite_banda_ancha(tomas: int) -> Regla:
+    """Ap. 4.3: «queda limitado el uso de cualquier tipo de central amplificadora o amplificador de banda
+    ancha a las edificaciones en las que el número de tomas servidas desde la cabecera sea inferior a 30»,
+    salvo equipos que garanticen menos de 3 dB entre canales de la misma banda."""
+    return Regla(tomas < TOMAS_MAX_BANDA_ANCHA, ref("I", "4.3"))

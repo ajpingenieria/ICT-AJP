@@ -38,6 +38,7 @@ completo: cálculos, planos DXF, memoria, pliego y presupuesto.
 - `ict_ajp/exportar_excel.py` — exportación a Excel con referencias normativas.
 - `ict_ajp/leer_dxf.py` — lectura de la base DXF del arquitecto: plantas, viviendas (contornos de
   superficie construida) y estancias (nombre + superficie rotulados), más RIT y ascensores dibujados.
+- `ict_ajp/vista_previa.py` — imagen PNG de un DXF o de una zona (para revisar y para las entregas).
 - `ict_ajp/__main__.py` — `python -m ict_ajp calcular proyecto.ict.json -o resultado.xlsx` y
   `python -m ict_ajp leer-dxf plano.dxf -o lectura.txt` y
   `python -m ict_ajp borrador plano.dxf -o proyecto.ict.json` (plantas y viviendas del DXF).

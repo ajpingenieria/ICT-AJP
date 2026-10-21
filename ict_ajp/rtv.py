@@ -10,6 +10,7 @@ from __future__ import annotations
 from typing import TYPE_CHECKING
 
 from . import normativa as N
+from . import plan_radio as PR
 from . import plan_tdt as P
 from .modelo import Proyecto
 
@@ -54,19 +55,24 @@ def seccion_rtv(p: Proyecto, R: "Resultado", tomas_rtv: int) -> "Seccion":
         R.aviso("info", "El múltiple RGE2 pasa a DVB-T2 en ultra alta definición el 05/11/2026 (fase 1). La cabecera "
                 "y la red deben ser transparentes a la modulación; la calidad en toma se comprueba con el MER de "
                 "COFDM-256QAM (≥ 22 dB en toma).", f"{RESOLUCION_FASE1}; {N.ref('I', '4.5')}")
-        R.aviso("revisar", "Faltan por incorporar el múltiple de TDT local de la demarcación (Plan técnico nacional "
-                "de la TDT local) y las emisoras de radio FM y DAB con campo suficiente en el emplazamiento.",
-                N.ref("I", "4.1.6"))
+        _tdt_local(s, R, mun.nombre, a.canales)
+    _radio(s, R, dg.provincia, dg.municipio)
 
     ba = N.admite_banda_ancha(tomas_rtv)
+    limite = (f"Menos de {N.TOMAS_MAX_BANDA_ANCHA} tomas: se admite banda ancha." if ba.valor else
+              f"{tomas_rtv} tomas: banda ancha solo si garantiza menos de {N.DIF_NIVEL_CABECERA_DB} dB entre canales "
+              "de la misma naturaleza.")
     s.add("Tomas de RTV servidas desde la cabecera", tomas_rtv, "tomas", N.ref("I", "3.5"))
-    if ba.valor:
-        s.add("Tipo de cabecera", "Se admite central o amplificador de banda ancha", "", ba.referencia,
-              f"Menos de {N.TOMAS_MAX_BANDA_ANCHA} tomas.")
+    if p.opciones.cabecera_rtv == "monocanal":
+        s.add("Tipo de cabecera", "Amplificación monocanal: un amplificador por canal de TDT, más FM y DAB", "",
+              ba.referencia, limite)
+        R.aviso("decision", "Cabecera con amplificadores monocanal: cumple siempre la diferencia de nivel de menos de "
+                f"{N.DIF_NIVEL_CABECERA_DB} dB entre canales, con cualquier número de tomas.", ba.referencia)
     else:
-        s.add("Tipo de cabecera", "Amplificación monocanal, o central programable que garantice menos de "
-              f"{N.DIF_NIVEL_CABECERA_DB} dB entre canales de la misma naturaleza", "", ba.referencia,
-              f"{tomas_rtv} tomas: no se admite banda ancha convencional (límite: menos de {N.TOMAS_MAX_BANDA_ANCHA}).")
+        s.add("Tipo de cabecera", "Central programable", "", ba.referencia, limite)
+        if not ba.valor:
+            R.aviso("revisar", "Central programable con 30 tomas o más: comprobar que su ficha garantiza menos de "
+                    f"{N.DIF_NIVEL_CABECERA_DB} dB entre canales de la misma naturaleza.", ba.referencia)
     if p.rtv.satelite_instalado:
         s.add("Satélite", "Captación instalada", "", N.ref("I", "4.2.2"))
     else:
@@ -74,3 +80,41 @@ def seccion_rtv(p: Proyecto, R: "Resultado", tomas_rtv: int) -> "Seccion":
               "2.150 MHz", "", f"{N.ref('I', '3.6')}; {N.ref('I', '4.1.2')}",
               "La memoria incluye el cálculo de la previsión (Orden ITC/1644/2011, anexo I, 1.2.B).")
     return s
+
+
+def _tdt_local(s: "Seccion", R: "Resultado", municipio: str, canales_area: dict[str, int]) -> None:
+    dem = PR.demarcacion_tdt_local(municipio)
+    if dem is None:
+        R.aviso("info", f"{municipio} no pertenece a ninguna demarcación de TDT local.", PR.REF_TDT_LOCAL)
+        return
+    canal = str(dem.canal) if dem.canal else "pendiente en el plan"
+    s.add("TDT local", f"Demarcación {dem.referencia} {dem.denominacion}: canal {canal}", "", PR.REF_TDT_LOCAL,
+          "Ámbito: " + ", ".join(dem.ambito) + ".")
+    choque = [m for m, c in canales_area.items() if c == dem.canal]
+    R.aviso("revisar", f"TDT local {dem.referencia} ({dem.denominacion}): el plan consolidado indica el canal {canal}, "
+            "pero el anexo III del Plan Técnico de la TDT de 2019 (RD 391/2019) reasignó canales locales"
+            + (f", y el {dem.canal} coincide con el del múltiple {', '.join(choque)} del área" if choque else "")
+            + ". Confirmar el canal vigente y si hay prestador con título habilitante: solo entonces es obligatorio "
+            "distribuirlo.", f"{PR.REF_TDT_LOCAL}; {N.ref('I', '4.1.6 y 4.1.7')}")
+
+
+def _radio(s: "Seccion", R: "Resultado", provincia: str, municipio: str) -> None:
+    from .dimensionado import Tabla
+
+    bloques = PR.bloques_dab(provincia) if provincia else []
+    if bloques:
+        s.tablas.append(Tabla("Radio digital DAB planificada", ["Red", "Bloque", "Desde (MHz)", "Hasta (MHz)",
+                                                                "Referencia"],
+                              [[b.red, b.bloque, b.f_min_mhz, b.f_max_mhz, b.referencia] for b in bloques],
+                              PR.REF_DAB))
+        R.aviso("info", "Radio digital (DAB): se distribuyen los bloques planificados con campo superior a 58 dBµV/m "
+                "en el emplazamiento; la cabecera amplifica la banda III de DAB.", N.ref("I", "4.1.6"))
+    else:
+        R.aviso("revisar", f"No se encuentran bloques DAB para la provincia «{provincia or '(vacía)'}».", PR.REF_DAB)
+    fm = PR.emisoras_fm(municipio)
+    if fm:
+        s.add("Emisoras FM planificadas (gestión indirecta)",
+              ", ".join(f"{f:.1f}".replace(".", ",") + (" [EX]" if ex else "") for f, ex in fm), "MHz", PR.REF_FM,
+              "[EX]: disponible para concesión, puede no estar emitiendo. Las emisoras públicas (RNE, autonómicas y "
+              "municipales) no figuran en este anexo: la cabecera amplifica toda la banda de FM (87,5-108 MHz).")
+

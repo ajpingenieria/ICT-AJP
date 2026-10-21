@@ -1,0 +1,13337 @@
+{
+ "fuente_dab": "RD 1287/1999, Plan técnico nacional de la radiodifusión sonora digital terrestre",
+ "fuente_fm": "RD 964/2006, Plan técnico nacional de radiodifusión sonora en FM, anexo II",
+ "fuente_tdt_local": "RD 439/2004, Plan técnico nacional de la televisión digital local",
+ "dab": {
+  "fu_e": {
+   "general": "11B",
+   "canarias": "11D"
+  },
+  "mf_nacional": {
+   "A CORUNA": {
+    "MF-I": "10A",
+    "MF-II": "10D"
+   },
+   "ALAVA": {
+    "MF-I": "10D",
+    "MF-II": "9D"
+   },
+   "ALBACETE": {
+    "MF-I": "10C",
+    "MF-II": "8B"
+   },
+   "ALICANTE": {
+    "MF-I": "10A",
+    "MF-II": "8A"
+   },
+   "ALMERIA": {
+    "MF-I": "9D",
+    "MF-II": "10A"
+   },
+   "ASTURIAS": {
+    "MF-I": "10C",
+    "MF-II": "8D"
+   },
+   "AVILA": {
+    "MF-I": "10D",
+    "MF-II": "8D"
+   },
+   "BADAJOZ": {
+    "MF-I": "10C",
+    "MF-II": "8D"
+   },
+   "BARCELONA": {
+    "MF-I": "10A",
+    "MF-II": "8A"
+   },
+   "BURGOS": {
+    "MF-I": "9B",
+    "MF-II": "8C"
+   },
+   "CACERES": {
+    "MF-I": "9D",
+    "MF-II": "9C"
+   },
+   "CADIZ": {
+    "MF-I": "10C",
+    "MF-II": "9C"
+   },
+   "CANTABRIA": {
+    "MF-I": "9A",
+    "MF-II": "9D"
+   },
+   "CASTELLON DE LA PLANA": {
+    "MF-I": "10A",
+    "MF-II": "10D"
+   },
+   "CIUDAD REAL": {
+    "MF-I": "9D",
+    "MF-II": "8A"
+   },
+   "CORDOBA": {
+    "MF-I": "9C",
+    "MF-II": "10D"
+   },
+   "CUENCA": {
+    "MF-I": "9C",
+    "MF-II": "10D"
+   },
+   "GIRONA": {
+    "MF-I": "10C",
+    "MF-II": "8C"
+   },
+   "GRANADA": {
+    "MF-I": "10C",
+    "MF-II": "8C"
+   },
+   "GUADALAJARA": {
+    "MF-I": "10C",
+    "MF-II": "10A"
+   },
+   "GUIPUZCOA": {
+    "MF-I": "9B",
+    "MF-II": "8D"
+   },
+   "HUELVA": {
+    "MF-I": "9D",
+    "MF-II": "10D"
+   },
+   "HUESCA": {
+    "MF-I": "9A",
+    "MF-II": "10A"
+   },
+   "JAEN": {
+    "MF-I": "9A",
+    "MF-II": "10A"
+   },
+   "LA RIOJA": {
+    "MF-I": "10A",
+    "MF-II": "8D"
+   },
+   "LEON": {
+    "MF-I": "10A",
+    "MF-II": "10D"
+   },
+   "LLEIDA": {
+    "MF-I": "10D",
+    "MF-II": "8B"
+   },
+   "LUGO": {
+    "MF-I": "8C",
+    "MF-II": "8A"
+   },
+   "MADRID": {
+    "MF-I": "9D",
+    "MF-II": "8A"
+   },
+   "MALAGA": {
+    "MF-I": "9D",
+    "MF-II": "8B"
+   },
+   "MURCIA": {
+    "MF-I": "9C",
+    "MF-II": "10D"
+   },
+   "NAVARRA": {
+    "MF-I": "10C",
+    "MF-II": "8C"
+   },
+   "OURENSE": {
+    "MF-I": "10C",
+    "MF-II": "9D"
+   },
+   "PALENCIA": {
+    "MF-I": "10C",
+    "MF-II": "8D"
+   },
+   "PONTEVEDRA": {
+    "MF-I": "9C",
+    "MF-II": "8D"
+   },
+   "SALAMANCA": {
+    "MF-I": "10C",
+    "MF-II": "8C"
+   },
+   "SEGOVIA": {
+    "MF-I": "10C",
+    "MF-II": "10A"
+   },
+   "SEVILLA": {
+    "MF-I": "9A",
+    "MF-II": "8C"
+   },
+   "SORIA": {
+    "MF-I": "9A",
+    "MF-II": "10D"
+   },
+   "TARRAGONA": {
+    "MF-I": "10C",
+    "MF-II": "8C"
+   },
+   "TERUEL": {
+    "MF-I": "9A",
+    "MF-II": "8B"
+   },
+   "TOLEDO": {
+    "MF-I": "9A",
+    "MF-II": "10A"
+   },
+   "VALENCIA": {
+    "MF-I": "9A",
+    "MF-II": "9D"
+   },
+   "VALLADOLID": {
+    "MF-I": "9A",
+    "MF-II": "9D"
+   },
+   "VIZCAYA": {
+    "MF-I": "10C",
+    "MF-II": "10A"
+   },
+   "ZAMORA": {
+    "MF-I": "9B",
+    "MF-II": "8D"
+   },
+   "ZARAGOZA": {
+    "MF-I": "9D",
+    "MF-II": "8A"
+   },
+   "CEUTA": {
+    "MF-I": "9A",
+    "MF-II": "8C"
+   },
+   "MELILLA": {
+    "MF-I": "9A",
+    "MF-II": "9C"
+   },
+   "FUERTEVENTURA": {
+    "MF-I": "10D",
+    "MF-II": "8B"
+   },
+   "GOMERA": {
+    "MF-I": "9D",
+    "MF-II": "8B"
+   },
+   "GRAN CANARIA": {
+    "MF-I": "9C",
+    "MF-II": "8A"
+   },
+   "HIERRO": {
+    "MF-I": "10D",
+    "MF-II": "9C"
+   },
+   "IBIZA Y FORMENTERA": {
+    "MF-I": "10C",
+    "MF-II": "8C"
+   },
+   "LA PALMA": {
+    "MF-I": "10A",
+    "MF-II": "8A"
+   },
+   "LANZAROTE": {
+    "MF-I": "10C",
+    "MF-II": "10A"
+   },
+   "MALLORCA": {
+    "MF-I": "9D",
+    "MF-II": "8B"
+   },
+   "MENORCA": {
+    "MF-I": "10D",
+    "MF-II": "8C"
+   },
+   "TENERIFE": {
+    "MF-I": "10C",
+    "MF-II": "8C"
+   }
+  },
+  "fu_autonomica": {
+   "FU-AND": {
+    "comunidad": "Andalucía",
+    "bloque": "11C"
+   },
+   "FU-ARA": {
+    "comunidad": "Aragón",
+    "bloque": "11A"
+   },
+   "FU-AST": {
+    "comunidad": "Asturias (Principado de)",
+    "bloque": "11A"
+   },
+   "FU-BAL": {
+    "comunidad": "Balears (Illes)",
+    "bloque": "11D"
+   },
+   "FU-CNR": {
+    "comunidad": "Canarias",
+    "bloque": "11C"
+   },
+   "FU-CAN": {
+    "comunidad": "Cantabria",
+    "bloque": "11C"
+   },
+   "FU-CAM": {
+    "comunidad": "Castilla-La Mancha",
+    "bloque": "11D"
+   },
+   "FU-CAL": {
+    "comunidad": "Castilla y León",
+    "bloque": "11D"
+   },
+   "FU-CAT": {
+    "comunidad": "Cataluña",
+    "bloque": "11D"
+   },
+   "FU-VAL": {
+    "comunidad": "Comunidad Valenciana",
+    "bloque": "11C"
+   },
+   "FU-EXT": {
+    "comunidad": "Extremadura",
+    "bloque": "11A"
+   },
+   "FU-GAL": {
+    "comunidad": "Galicia",
+    "bloque": "11C"
+   },
+   "FU-MAD": {
+    "comunidad": "Madrid (Comunidad de)",
+    "bloque": "11C"
+   },
+   "FU-MUR": {
+    "comunidad": "Murcia (Región de)",
+    "bloque": "11A"
+   },
+   "FU-NAV": {
+    "comunidad": "Navarra (Comunidad Foral de)",
+    "bloque": "11D"
+   },
+   "FU-PVA": {
+    "comunidad": "País Vasco",
+    "bloque": "11A"
+   },
+   "FU-RIO": {
+    "comunidad": "Rioja (La)",
+    "bloque": "11C"
+   },
+   "FU-CEU": {
+    "comunidad": "Ceuta",
+    "bloque": "11D"
+   },
+   "FU-MEL": {
+    "comunidad": "Melilla",
+    "bloque": "11D"
+   }
+  },
+  "mf_autonomica": {
+   "ALMERIA": {
+    "red": "MF-AND",
+    "bloque": "9B"
+   },
+   "CADIZ": {
+    "red": "MF-AND",
+    "bloque": "9B"
+   },
+   "CORDOBA": {
+    "red": "MF-AND",
+    "bloque": "10B"
+   },
+   "GRANADA": {
+    "red": "MF-AND",
+    "bloque": "8A"
+   },
+   "HUELVA": {
+    "red": "MF-AND",
+    "bloque": "10B"
+   },
+   "JAEN": {
+    "red": "MF-AND",
+    "bloque": "8D"
+   },
+   "MALAGA": {
+    "red": "MF-AND",
+    "bloque": "8D"
+   },
+   "SEVILLA": {
+    "red": "MF-AND",
+    "bloque": "8A"
+   },
+   "HUESCA": {
+    "red": "MF-ARA",
+    "bloque": "8D"
+   },
+   "TERUEL": {
+    "red": "MF-ARA",
+    "bloque": "8D"
+   },
+   "ZARAGOZA": {
+    "red": "MF-ARA",
+    "bloque": "9B"
+   },
+   "ASTURIAS": {
+    "red": "MF-AST",
+    "bloque": "9B"
+   },
+   "MALLORCA": {
+    "red": "MF-BAL",
+    "bloque": "9B"
+   },
+   "MENORCA": {
+    "red": "MF-BAL",
+    "bloque": "10B"
+   },
+   "IBIZA Y FORMENTERA": {
+    "red": "MF-BAL",
+    "bloque": "9C"
+   },
+   "GRAN CANARIA": {
+    "red": "MF-CNR",
+    "bloque": "8D"
+   },
+   "FUERTEVENTURA": {
+    "red": "MF-CNR",
+    "bloque": "10B"
+   },
+   "LANZAROTE": {
+    "red": "MF-CNR",
+    "bloque": "9C"
+   },
+   "TENERIFE": {
+    "red": "MF-CNR",
+    "bloque": "9A"
+   },
+   "GOMERA": {
+    "red": "MF-CNR",
+    "bloque": "9B"
+   },
+   "LA PALMA": {
+    "red": "MF-CNR",
+    "bloque": "8D"
+   },
+   "HIERRO": {
+    "red": "MF-CNR",
+    "bloque": "10B"
+   },
+   "CANTABRIA": {
+    "red": "MF-CAN",
+    "bloque": "10B"
+   },
+   "ALBACETE": {
+    "red": "MF-CAM",
+    "bloque": "8C"
+   },
+   "CIUDAD REAL": {
+    "red": "MF-CAM",
+    "bloque": "9B"
+   },
+   "CUENCA": {
+    "red": "MF-CAM",
+    "bloque": "10B"
+   },
+   "GUADALAJARA": {
+    "red": "MF-CAM",
+    "bloque": "8C"
+   },
+   "TOLEDO": {
+    "red": "MF-CAM",
+    "bloque": "8C"
+   },
+   "AVILA": {
+    "red": "MF-CAL",
+    "bloque": "8B"
+   },
+   "BURGOS": {
+    "red": "MF-CAL",
+    "bloque": "8A"
+   },
+   "LEON": {
+    "red": "MF-CAL",
+    "bloque": "9C"
+   },
+   "PALENCIA": {
+    "red": "MF-CAL",
+    "bloque": "8B"
+   },
+   "SALAMANCA": {
+    "red": "MF-CAL",
+    "bloque": "8A"
+   },
+   "SEGOVIA": {
+    "red": "MF-CAL",
+    "bloque": "9C"
+   },
+   "SORIA": {
+    "red": "MF-CAL",
+    "bloque": "10B"
+   },
+   "VALLADOLID": {
+    "red": "MF-CAL",
+    "bloque": "10B"
+   },
+   "ZAMORA": {
+    "red": "MF-CAL",
+    "bloque": "8B"
+   },
+   "BARCELONA": {
+    "red": "MF-CAT",
+    "bloque": "8D"
+   },
+   "GIRONA": {
+    "red": "MF-CAT",
+    "bloque": "9A"
+   },
+   "LLEIDA": {
+    "red": "MF-CAT",
+    "bloque": "10B"
+   },
+   "TARRAGONA": {
+    "red": "MF-CAT",
+    "bloque": "9C"
+   },
+   "ALICANTE": {
+    "red": "MF-VAL",
+    "bloque": "8D"
+   },
+   "CASTELLON": {
+    "red": "MF-VAL",
+    "bloque": "10B"
+   },
+   "VALENCIA": {
+    "red": "MF-VAL",
+    "bloque": "9B"
+   },
+   "BADAJOZ": {
+    "red": "MF-EXT",
+    "bloque": "8B"
+   },
+   "CACERES": {
+    "red": "MF-EXT",
+    "bloque": "10B"
+   },
+   "A CORUNA": {
+    "red": "MF-GAL",
+    "bloque": "9B"
+   },
+   "LUGO": {
+    "red": "MF-GAL",
+    "bloque": "10B"
+   },
+   "OURENSE": {
+    "red": "MF-GAL",
+    "bloque": "9A"
+   },
+   "PONTEVEDRA": {
+    "red": "MF-GAL",
+    "bloque": "8B"
+   },
+   "MADRID": {
+    "red": "MF-MAD",
+    "bloque": "9B"
+   },
+   "MURCIA": {
+    "red": "MF-MUR",
+    "bloque": "10B"
+   },
+   "NAVARRA": {
+    "red": "MF-NAV",
+    "bloque": "9C"
+   },
+   "ALAVA": {
+    "red": "MF-PVA",
+    "bloque": "9A"
+   },
+   "GUIPUZCOA": {
+    "red": "MF-PVA",
+    "bloque": "10B"
+   },
+   "VIZCAYA": {
+    "red": "MF-PVA",
+    "bloque": "9C"
+   },
+   "LA RIOJA": {
+    "red": "MF-RIO",
+    "bloque": "8B"
+   },
+   "CEUTA": {
+    "red": "MF-CEU",
+    "bloque": "8A"
+   },
+   "MELILLA": {
+    "red": "MF-MEL",
+    "bloque": "10B"
+   }
+  },
+  "bloques_mhz": {
+   "8A": [
+    195.168,
+    196.704
+   ],
+   "8B": [
+    196.88,
+    198.416
+   ],
+   "8C": [
+    198.592,
+    200.128
+   ],
+   "8D": [
+    200.304,
+    201.84
+   ],
+   "9A": [
+    202.16,
+    203.696
+   ],
+   "9B": [
+    203.872,
+    205.408
+   ],
+   "9C": [
+    205.584,
+    207.12
+   ],
+   "9D": [
+    207.296,
+    208.832
+   ],
+   "10A": [
+    209.168,
+    210.704
+   ],
+   "10B": [
+    210.88,
+    212.416
+   ],
+   "10C": [
+    212.596,
+    214.128
+   ],
+   "10D": [
+    214.304,
+    215.84
+   ],
+   "11A": [
+    216.16,
+    217.696
+   ],
+   "11B": [
+    217.872,
+    219.408
+   ],
+   "11C": [
+    219.584,
+    221.12
+   ],
+   "11D": [
+    221.296,
+    222.832
+   ]
+  }
+ },
+ "fm": {
+  "AL|ADRA": [
+   [
+    100.4,
+    false
+   ]
+  ],
+  "AL|ALBOX": [
+   [
+    104.3,
+    false
+   ]
+  ],
+  "AL|ALMERIA": [
+   [
+    88.2,
+    true
+   ],
+   [
+    90.8,
+    true
+   ],
+   [
+    93.8,
+    false
+   ],
+   [
+    96.2,
+    false
+   ],
+   [
+    97.1,
+    false
+   ],
+   [
+    98.1,
+    true
+   ],
+   [
+    101.8,
+    false
+   ],
+   [
+    104.1,
+    false
+   ]
+  ],
+  "AL|CUEVAS ALMANZORA": [
+   [
+    95.7,
+    true
+   ],
+   [
+    98.7,
+    true
+   ]
+  ],
+  "AL|DALIAS EJIDO": [
+   [
+    89.2,
+    true
+   ],
+   [
+    91.3,
+    false
+   ]
+  ],
+  "AL|EJIDO": [
+   [
+    87.7,
+    false
+   ]
+  ],
+  "AL|HUERCAL OVERA": [
+   [
+    101.4,
+    false
+   ]
+  ],
+  "AL|MOJACAR": [
+   [
+    91.8,
+    false
+   ]
+  ],
+  "AL|NIJAR": [
+   [
+    88.8,
+    false
+   ]
+  ],
+  "AL|OHANES": [
+   [
+    100.0,
+    false
+   ]
+  ],
+  "AL|ROQUETAS MAR": [
+   [
+    99.0,
+    false
+   ],
+   [
+    106.1,
+    false
+   ]
+  ],
+  "AL|VELEZ RUBIO": [
+   [
+    102.2,
+    false
+   ]
+  ],
+  "CA|ALCALA GAZULES": [
+   [
+    92.7,
+    false
+   ]
+  ],
+  "CA|ALGECIRAS": [
+   [
+    89.1,
+    false
+   ],
+   [
+    93.0,
+    true
+   ],
+   [
+    95.7,
+    false
+   ],
+   [
+    96.6,
+    true
+   ],
+   [
+    104.1,
+    false
+   ]
+  ],
+  "CA|ARCOS FRONTERA": [
+   [
+    88.5,
+    false
+   ]
+  ],
+  "CA|BARBATE": [
+   [
+    100.7,
+    true
+   ]
+  ],
+  "CA|CADIZ": [
+   [
+    89.4,
+    false
+   ],
+   [
+    93.2,
+    false
+   ],
+   [
+    95.4,
+    false
+   ],
+   [
+    99.9,
+    false
+   ],
+   [
+    102.0,
+    false
+   ],
+   [
+    104.1,
+    true
+   ]
+  ],
+  "CA|JEREZ FRONTERA": [
+   [
+    87.7,
+    false
+   ],
+   [
+    90.3,
+    false
+   ],
+   [
+    92.4,
+    false
+   ],
+   [
+    97.8,
+    false
+   ],
+   [
+    106.8,
+    true
+   ]
+  ],
+  "CA|LINEA CONCEPCION": [
+   [
+    90.2,
+    false
+   ],
+   [
+    94.7,
+    false
+   ]
+  ],
+  "CA|MEDINA SIDONIA": [
+   [
+    89.8,
+    true
+   ]
+  ],
+  "CA|PUERTO STA MARIA": [
+   [
+    90.8,
+    false
+   ],
+   [
+    101.4,
+    true
+   ]
+  ],
+  "CA|ROTA": [
+   [
+    91.4,
+    false
+   ]
+  ],
+  "CA|SANLUCAR BARRAMEDA": [
+   [
+    88.1,
+    true
+   ],
+   [
+    88.8,
+    false
+   ],
+   [
+    105.8,
+    false
+   ]
+  ],
+  "CA|TARIFA": [
+   [
+    92.8,
+    false
+   ]
+  ],
+  "CA|UBRIQUE": [
+   [
+    101.0,
+    false
+   ],
+   [
+    106.7,
+    true
+   ]
+  ],
+  "CA|VEJER FRONTERA": [
+   [
+    106.0,
+    false
+   ]
+  ],
+  "CA|VILLAMARTIN": [
+   [
+    95.0,
+    false
+   ]
+  ],
+  "CO|AGUILAR": [
+   [
+    93.1,
+    false
+   ]
+  ],
+  "CO|BAENA": [
+   [
+    104.5,
+    false
+   ]
+  ],
+  "CO|CABRA": [
+   [
+    102.1,
+    false
+   ]
+  ],
+  "CO|CORDOBA": [
+   [
+    87.6,
+    false
+   ],
+   [
+    88.4,
+    false
+   ],
+   [
+    89.7,
+    false
+   ],
+   [
+    91.4,
+    false
+   ],
+   [
+    95.6,
+    false
+   ],
+   [
+    96.6,
+    false
+   ],
+   [
+    102.0,
+    true
+   ],
+   [
+    106.7,
+    true
+   ]
+  ],
+  "CO|FERNAN NUNEZ": [
+   [
+    93.5,
+    false
+   ]
+  ],
+  "CO|HINOJOSA DUQUE": [
+   [
+    106.5,
+    false
+   ]
+  ],
+  "CO|LUCENA": [
+   [
+    95.7,
+    false
+   ],
+   [
+    97.3,
+    true
+   ]
+  ],
+  "CO|MONTILLA": [
+   [
+    92.7,
+    false
+   ]
+  ],
+  "CO|MONTORO": [
+   [
+    104.7,
+    false
+   ]
+  ],
+  "CO|PALMA RIO": [
+   [
+    91.9,
+    false
+   ]
+  ],
+  "CO|PENARROYA": [
+   [
+    90.2,
+    false
+   ]
+  ],
+  "CO|POZOBLANCO": [
+   [
+    91.2,
+    false
+   ],
+   [
+    92.0,
+    true
+   ]
+  ],
+  "CO|PRIEGO CORDOBA": [
+   [
+    87.7,
+    false
+   ]
+  ],
+  "CO|PUENTE GENIL": [
+   [
+    88.7,
+    false
+   ]
+  ],
+  "CO|VILLANUEVA CORDOBA": [
+   [
+    93.5,
+    false
+   ]
+  ],
+  "GR|ALHAMA GRANADA": [
+   [
+    100.4,
+    false
+   ]
+  ],
+  "GR|ALMUNECAR": [
+   [
+    88.5,
+    false
+   ],
+   [
+    97.6,
+    true
+   ]
+  ],
+  "GR|BAZA": [
+   [
+    88.6,
+    false
+   ],
+   [
+    89.2,
+    false
+   ],
+   [
+    94.6,
+    true
+   ]
+  ],
+  "GR|GRANADA": [
+   [
+    88.2,
+    false
+   ],
+   [
+    89.3,
+    false
+   ],
+   [
+    90.7,
+    true
+   ],
+   [
+    92.0,
+    false
+   ],
+   [
+    92.8,
+    false
+   ],
+   [
+    95.4,
+    false
+   ],
+   [
+    99.5,
+    false
+   ],
+   [
+    102.5,
+    false
+   ],
+   [
+    103.4,
+    true
+   ]
+  ],
+  "GR|GUADIX": [
+   [
+    90.8,
+    true
+   ],
+   [
+    99.8,
+    false
+   ],
+   [
+    101.8,
+    false
+   ]
+  ],
+  "GR|HUESCAR": [
+   [
+    93.5,
+    true
+   ],
+   [
+    98.1,
+    false
+   ]
+  ],
+  "GR|LANJARON": [
+   [
+    104.1,
+    false
+   ]
+  ],
+  "GR|LOJA": [
+   [
+    93.2,
+    false
+   ]
+  ],
+  "GR|MOTRIL": [
+   [
+    93.5,
+    false
+   ],
+   [
+    95.2,
+    false
+   ],
+   [
+    96.1,
+    true
+   ],
+   [
+    102.0,
+    false
+   ]
+  ],
+  "GR|STA FE": [
+   [
+    87.6,
+    true
+   ],
+   [
+    95.8,
+    true
+   ]
+  ],
+  "H|ALMONTE": [
+   [
+    95.6,
+    false
+   ]
+  ],
+  "H|ARACENA": [
+   [
+    93.3,
+    false
+   ]
+  ],
+  "H|AYAMONTE": [
+   [
+    93.1,
+    false
+   ]
+  ],
+  "H|BOLLULLOS CONDADO": [
+   [
+    92.1,
+    true
+   ]
+  ],
+  "H|HUELVA": [
+   [
+    89.9,
+    true
+   ],
+   [
+    91.3,
+    true
+   ],
+   [
+    91.9,
+    false
+   ],
+   [
+    98.1,
+    false
+   ],
+   [
+    101.2,
+    false
+   ],
+   [
+    106.6,
+    false
+   ]
+  ],
+  "H|ISLA CRISTINA": [
+   [
+    105.6,
+    false
+   ]
+  ],
+  "H|LEPE": [
+   [
+    89.2,
+    false
+   ]
+  ],
+  "H|NERVA": [
+   [
+    89.1,
+    false
+   ]
+  ],
+  "H|PALMA CONDADO": [
+   [
+    100.9,
+    false
+   ]
+  ],
+  "H|ROSAL FRONTERA": [
+   [
+    97.7,
+    false
+   ]
+  ],
+  "H|VALVERDE CAMINO": [
+   [
+    87.6,
+    true
+   ],
+   [
+    90.2,
+    false
+   ]
+  ],
+  "J|ALCALA REAL": [
+   [
+    99.0,
+    false
+   ]
+  ],
+  "J|ALCAUDETE": [
+   [
+    92.5,
+    false
+   ]
+  ],
+  "J|ANDUJAR": [
+   [
+    92.9,
+    false
+   ],
+   [
+    94.2,
+    true
+   ]
+  ],
+  "J|BAEZA": [
+   [
+    98.9,
+    false
+   ]
+  ],
+  "J|BAILEN": [
+   [
+    103.3,
+    false
+   ]
+  ],
+  "J|BEAS SEGURA": [
+   [
+    90.3,
+    true
+   ]
+  ],
+  "J|CAROLINA": [
+   [
+    93.5,
+    false
+   ]
+  ],
+  "J|CAZORLA": [
+   [
+    88.3,
+    false
+   ]
+  ],
+  "J|HUELMA": [
+   [
+    94.2,
+    false
+   ]
+  ],
+  "J|JAEN": [
+   [
+    88.8,
+    false
+   ],
+   [
+    90.9,
+    true
+   ],
+   [
+    93.3,
+    false
+   ],
+   [
+    95.3,
+    true
+   ],
+   [
+    96.9,
+    false
+   ],
+   [
+    100.0,
+    false
+   ]
+  ],
+  "J|JODAR": [
+   [
+    95.3,
+    false
+   ]
+  ],
+  "J|LINARES": [
+   [
+    89.3,
+    false
+   ],
+   [
+    94.9,
+    false
+   ],
+   [
+    98.4,
+    false
+   ],
+   [
+    102.3,
+    true
+   ]
+  ],
+  "J|MARTOS": [
+   [
+    94.7,
+    false
+   ],
+   [
+    100.2,
+    true
+   ]
+  ],
+  "J|PORCUNA": [
+   [
+    102.6,
+    false
+   ]
+  ],
+  "J|POZO ALCON": [
+   [
+    91.8,
+    false
+   ]
+  ],
+  "J|PUERTA SEGURA": [
+   [
+    96.4,
+    false
+   ]
+  ],
+  "J|SANTISTEBAN PUERTO": [
+   [
+    91.6,
+    false
+   ]
+  ],
+  "J|UBEDA": [
+   [
+    101.5,
+    false
+   ],
+   [
+    104.3,
+    true
+   ],
+   [
+    106.5,
+    true
+   ]
+  ],
+  "J|VILLACARRILLO": [
+   [
+    90.6,
+    false
+   ]
+  ],
+  "MA|ALORA": [
+   [
+    93.9,
+    false
+   ]
+  ],
+  "MA|ANTEQUERA": [
+   [
+    89.8,
+    false
+   ],
+   [
+    96.3,
+    false
+   ],
+   [
+    100.0,
+    true
+   ]
+  ],
+  "MA|ARCHIDONA": [
+   [
+    100.1,
+    false
+   ]
+  ],
+  "MA|BENALMADENA": [
+   [
+    91.0,
+    true
+   ],
+   [
+    101.1,
+    false
+   ]
+  ],
+  "MA|CAMPILLOS": [
+   [
+    93.5,
+    false
+   ]
+  ],
+  "MA|COIN": [
+   [
+    91.4,
+    false
+   ]
+  ],
+  "MA|ESTEPONA": [
+   [
+    93.3,
+    false
+   ]
+  ],
+  "MA|FUENGIROLA": [
+   [
+    101.6,
+    false
+   ]
+  ],
+  "MA|MALAGA": [
+   [
+    89.4,
+    false
+   ],
+   [
+    90.1,
+    false
+   ],
+   [
+    90.8,
+    false
+   ],
+   [
+    93.1,
+    false
+   ],
+   [
+    100.4,
+    false
+   ],
+   [
+    102.4,
+    true
+   ],
+   [
+    102.8,
+    false
+   ]
+  ],
+  "MA|MARBELLA": [
+   [
+    88.7,
+    false
+   ],
+   [
+    95.4,
+    true
+   ],
+   [
+    97.4,
+    false
+   ],
+   [
+    105.3,
+    true
+   ]
+  ],
+  "MA|MIJAS": [
+   [
+    88.5,
+    true
+   ]
+  ],
+  "MA|NERJA": [
+   [
+    93.3,
+    false
+   ]
+  ],
+  "MA|RONDA": [
+   [
+    88.3,
+    false
+   ],
+   [
+    88.9,
+    false
+   ],
+   [
+    95.5,
+    true
+   ]
+  ],
+  "MA|TORREMOLINOS": [
+   [
+    101.7,
+    true
+   ]
+  ],
+  "MA|VELEZ MALAGA": [
+   [
+    91.9,
+    false
+   ],
+   [
+    94.5,
+    false
+   ],
+   [
+    104.2,
+    true
+   ]
+  ],
+  "SE|ALANIS": [
+   [
+    98.0,
+    false
+   ]
+  ],
+  "SE|ALCALA GUADAIRA": [
+   [
+    106.5,
+    true
+   ]
+  ],
+  "SE|ALMADEN PLATA": [
+   [
+    90.9,
+    false
+   ]
+  ],
+  "SE|ARAHAL": [
+   [
+    99.0,
+    false
+   ]
+  ],
+  "SE|CARMONA": [
+   [
+    89.2,
+    false
+   ]
+  ],
+  "SE|CONSTANTINA": [
+   [
+    105.7,
+    false
+   ]
+  ],
+  "SE|DOS HERMANAS": [
+   [
+    96.5,
+    false
+   ]
+  ],
+  "SE|ECIJA": [
+   [
+    95.4,
+    false
+   ],
+   [
+    100.1,
+    true
+   ],
+   [
+    106.5,
+    false
+   ]
+  ],
+  "SE|ESTEPA": [
+   [
+    98.3,
+    false
+   ]
+  ],
+  "SE|LEBRIJA": [
+   [
+    102.9,
+    false
+   ]
+  ],
+  "SE|LORA RIO": [
+   [
+    101.0,
+    false
+   ]
+  ],
+  "SE|MORON": [
+   [
+    96.1,
+    false
+   ],
+   [
+    100.0,
+    false
+   ]
+  ],
+  "SE|OSUNA": [
+   [
+    97.7,
+    false
+   ]
+  ],
+  "SE|PILAS": [
+   [
+    105.5,
+    false
+   ]
+  ],
+  "SE|SANLUCAR MAYOR": [
+   [
+    98.4,
+    true
+   ]
+  ],
+  "SE|SAUCEJO": [
+   [
+    92.5,
+    true
+   ]
+  ],
+  "SE|SEVILLA": [
+   [
+    94.8,
+    false
+   ],
+   [
+    95.9,
+    false
+   ],
+   [
+    97.1,
+    false
+   ],
+   [
+    99.6,
+    false
+   ],
+   [
+    100.3,
+    false
+   ],
+   [
+    101.5,
+    false
+   ],
+   [
+    102.5,
+    false
+   ],
+   [
+    103.2,
+    false
+   ],
+   [
+    106.9,
+    false
+   ]
+  ],
+  "SE|UTRERA": [
+   [
+    93.0,
+    false
+   ],
+   [
+    98.1,
+    true
+   ]
+  ],
+  "HU|AINSA SOBRARBE": [
+   [
+    94.0,
+    true
+   ]
+  ],
+  "HU|BARBASTRO": [
+   [
+    91.2,
+    false
+   ],
+   [
+    106.9,
+    false
+   ]
+  ],
+  "HU|BENABARRE": [
+   [
+    101.1,
+    false
+   ]
+  ],
+  "HU|BENASQUE": [
+   [
+    98.0,
+    true
+   ],
+   [
+    103.1,
+    false
+   ]
+  ],
+  "HU|BINEFAR": [
+   [
+    92.3,
+    false
+   ]
+  ],
+  "HU|BOLTANA": [
+   [
+    100.4,
+    false
+   ]
+  ],
+  "HU|CANFRANC": [
+   [
+    90.3,
+    false
+   ]
+  ],
+  "HU|CASTEJON SOS": [
+   [
+    101.7,
+    false
+   ]
+  ],
+  "HU|FRAGA": [
+   [
+    93.1,
+    false
+   ],
+   [
+    93.8,
+    false
+   ]
+  ],
+  "HU|GRAUS": [
+   [
+    95.1,
+    true
+   ]
+  ],
+  "HU|GRANEN": [
+   [
+    91.9,
+    true
+   ]
+  ],
+  "HU|HUESCA": [
+   [
+    88.9,
+    false
+   ],
+   [
+    91.6,
+    false
+   ],
+   [
+    95.8,
+    false
+   ],
+   [
+    96.9,
+    false
+   ],
+   [
+    97.6,
+    true
+   ],
+   [
+    98.2,
+    false
+   ],
+   [
+    100.8,
+    true
+   ],
+   [
+    102.0,
+    true
+   ],
+   [
+    106.0,
+    false
+   ]
+  ],
+  "HU|JACA": [
+   [
+    92.3,
+    false
+   ],
+   [
+    106.6,
+    false
+   ]
+  ],
+  "HU|MONZON": [
+   [
+    93.8,
+    false
+   ],
+   [
+    103.3,
+    false
+   ]
+  ],
+  "HU|SABINANIGO": [
+   [
+    89.1,
+    false
+   ],
+   [
+    99.5,
+    false
+   ]
+  ],
+  "HU|SARINENA": [
+   [
+    104.6,
+    true
+   ]
+  ],
+  "HU|TAMARITE LITERA": [
+   [
+    105.7,
+    true
+   ]
+  ],
+  "TE|ALCALA SELVA": [
+   [
+    92.3,
+    false
+   ]
+  ],
+  "TE|ALCANIZ": [
+   [
+    95.9,
+    false
+   ],
+   [
+    97.6,
+    true
+   ],
+   [
+    102.9,
+    false
+   ]
+  ],
+  "TE|ANDORRA": [
+   [
+    95.1,
+    false
+   ],
+   [
+    105.3,
+    false
+   ]
+  ],
+  "TE|CALAMOCHA": [
+   [
+    87.6,
+    false
+   ]
+  ],
+  "TE|MONREAL CAMPO": [
+   [
+    92.0,
+    false
+   ],
+   [
+    94.7,
+    true
+   ]
+  ],
+  "TE|MONTALBAN": [
+   [
+    104.1,
+    false
+   ]
+  ],
+  "TE|MORA RUBIELOS": [
+   [
+    95.8,
+    true
+   ],
+   [
+    102.6,
+    false
+   ]
+  ],
+  "TE|TERUEL": [
+   [
+    90.6,
+    true
+   ],
+   [
+    91.6,
+    false
+   ],
+   [
+    93.0,
+    false
+   ],
+   [
+    97.4,
+    false
+   ],
+   [
+    99.6,
+    false
+   ],
+   [
+    101.6,
+    false
+   ],
+   [
+    104.2,
+    true
+   ],
+   [
+    106.7,
+    false
+   ]
+  ],
+  "TE|UTRILLAS": [
+   [
+    103.1,
+    true
+   ]
+  ],
+  "Z|ALAGON": [
+   [
+    87.9,
+    true
+   ]
+  ],
+  "Z|ALMUNIA DONA GODINA": [
+   [
+    98.3,
+    true
+   ]
+  ],
+  "Z|BELCHITE": [
+   [
+    87.9,
+    false
+   ]
+  ],
+  "Z|CALATAYUD": [
+   [
+    91.8,
+    false
+   ],
+   [
+    101.0,
+    false
+   ],
+   [
+    105.4,
+    false
+   ]
+  ],
+  "Z|CARINENA": [
+   [
+    95.7,
+    false
+   ]
+  ],
+  "Z|CASPE": [
+   [
+    105.5,
+    false
+   ]
+  ],
+  "Z|EJEA CABALLEROS": [
+   [
+    94.1,
+    false
+   ],
+   [
+    98.1,
+    false
+   ],
+   [
+    105.7,
+    false
+   ]
+  ],
+  "Z|FUENTES EBRO": [
+   [
+    102.1,
+    true
+   ]
+  ],
+  "Z|MEQUINENZA": [
+   [
+    95.5,
+    false
+   ]
+  ],
+  "Z|TARAZONA": [
+   [
+    91.8,
+    false
+   ],
+   [
+    99.1,
+    false
+   ]
+  ],
+  "Z|TAUSTE": [
+   [
+    101.3,
+    false
+   ]
+  ],
+  "Z|UTEBO": [
+   [
+    87.6,
+    false
+   ]
+  ],
+  "Z|VILLANUEVA GALLEGO": [
+   [
+    90.5,
+    true
+   ]
+  ],
+  "Z|ZARAGOZA": [
+   [
+    89.7,
+    false
+   ],
+   [
+    91.4,
+    true
+   ],
+   [
+    92.0,
+    false
+   ],
+   [
+    93.5,
+    false
+   ],
+   [
+    94.0,
+    true
+   ],
+   [
+    95.3,
+    false
+   ],
+   [
+    97.1,
+    false
+   ],
+   [
+    97.5,
+    true
+   ],
+   [
+    97.9,
+    false
+   ],
+   [
+    98.6,
+    false
+   ],
+   [
+    99.4,
+    false
+   ],
+   [
+    100.5,
+    false
+   ],
+   [
+    105.8,
+    false
+   ]
+  ],
+  "Z|ZUERA": [
+   [
+    103.2,
+    false
+   ]
+  ],
+  "O|AVILES": [
+   [
+    88.5,
+    false
+   ],
+   [
+    89.1,
+    false
+   ],
+   [
+    90.7,
+    false
+   ],
+   [
+    103.9,
+    true
+   ],
+   [
+    104.8,
+    false
+   ]
+  ],
+  "O|BOAL": [
+   [
+    98.3,
+    false
+   ]
+  ],
+  "O|CANGAS NARCEA": [
+   [
+    101.1,
+    false
+   ]
+  ],
+  "O|CANGAS ONIS": [
+   [
+    97.8,
+    false
+   ]
+  ],
+  "O|CASTROPOL": [
+   [
+    97.2,
+    false
+   ]
+  ],
+  "O|GIJON": [
+   [
+    91.8,
+    false
+   ],
+   [
+    93.5,
+    false
+   ],
+   [
+    94.8,
+    true
+   ],
+   [
+    96.5,
+    false
+   ],
+   [
+    103.6,
+    false
+   ],
+   [
+    105.8,
+    true
+   ]
+  ],
+  "O|GRADO": [
+   [
+    94.7,
+    false
+   ]
+  ],
+  "O|INFIESTO": [
+   [
+    94.8,
+    false
+   ]
+  ],
+  "O|LANGREO": [
+   [
+    88.7,
+    false
+   ],
+   [
+    100.9,
+    false
+   ]
+  ],
+  "O|LAVIANA": [
+   [
+    87.6,
+    false
+   ]
+  ],
+  "O|LLANERA": [
+   [
+    97.9,
+    false
+   ]
+  ],
+  "O|LLANES": [
+   [
+    91.5,
+    false
+   ],
+   [
+    102.0,
+    false
+   ]
+  ],
+  "O|LUARCA": [
+   [
+    91.4,
+    false
+   ],
+   [
+    101.0,
+    true
+   ],
+   [
+    106.4,
+    true
+   ]
+  ],
+  "O|MIERES": [
+   [
+    98.1,
+    false
+   ],
+   [
+    103.9,
+    false
+   ]
+  ],
+  "O|NAVIA": [
+   [
+    92.6,
+    false
+   ],
+   [
+    106.2,
+    true
+   ]
+  ],
+  "O|OVIEDO": [
+   [
+    88.9,
+    true
+   ],
+   [
+    91.1,
+    false
+   ],
+   [
+    92.8,
+    false
+   ],
+   [
+    93.2,
+    true
+   ],
+   [
+    95.2,
+    false
+   ],
+   [
+    97.5,
+    false
+   ],
+   [
+    101.1,
+    true
+   ]
+  ],
+  "O|RIBADESELLA": [
+   [
+    98.3,
+    false
+   ]
+  ],
+  "O|SIERO": [
+   [
+    97.0,
+    false
+   ]
+  ],
+  "O|TAPIA CASARIEGO": [
+   [
+    103.1,
+    false
+   ]
+  ],
+  "O|TARAMUNDI": [
+   [
+    106.4,
+    true
+   ]
+  ],
+  "O|TINEO": [
+   [
+    94.9,
+    false
+   ]
+  ],
+  "O|VILLAVICIOSA": [
+   [
+    88.3,
+    false
+   ]
+  ],
+  "IB|ALAIOR": [
+   [
+    102.7,
+    false
+   ]
+  ],
+  "IB|ALCUDIA": [
+   [
+    89.8,
+    true
+   ],
+   [
+    94.3,
+    true
+   ],
+   [
+    96.9,
+    true
+   ],
+   [
+    100.2,
+    true
+   ],
+   [
+    101.9,
+    false
+   ],
+   [
+    103.5,
+    true
+   ],
+   [
+    104.2,
+    true
+   ]
+  ],
+  "IB|CAPDEPERA": [
+   [
+    99.2,
+    false
+   ]
+  ],
+  "IB|CIUTADELLA": [
+   [
+    89.6,
+    false
+   ],
+   [
+    90.8,
+    true
+   ],
+   [
+    93.6,
+    false
+   ],
+   [
+    96.2,
+    false
+   ],
+   [
+    97.7,
+    true
+   ],
+   [
+    102.1,
+    true
+   ],
+   [
+    104.7,
+    true
+   ],
+   [
+    106.4,
+    true
+   ]
+  ],
+  "IB|EIVISSA": [
+   [
+    89.1,
+    false
+   ],
+   [
+    89.7,
+    true
+   ],
+   [
+    90.4,
+    true
+   ],
+   [
+    91.1,
+    true
+   ],
+   [
+    92.4,
+    true
+   ],
+   [
+    93.1,
+    false
+   ],
+   [
+    96.0,
+    false
+   ],
+   [
+    96.6,
+    true
+   ],
+   [
+    97.2,
+    false
+   ],
+   [
+    98.1,
+    false
+   ],
+   [
+    98.7,
+    true
+   ],
+   [
+    100.8,
+    true
+   ],
+   [
+    102.8,
+    false
+   ],
+   [
+    103.4,
+    true
+   ],
+   [
+    104.8,
+    true
+   ],
+   [
+    106.4,
+    true
+   ]
+  ],
+  "IB|INCA": [
+   [
+    89.0,
+    true
+   ],
+   [
+    93.6,
+    true
+   ],
+   [
+    96.1,
+    true
+   ],
+   [
+    100.6,
+    false
+   ],
+   [
+    101.4,
+    false
+   ],
+   [
+    102.8,
+    true
+   ],
+   [
+    103.9,
+    false
+   ]
+  ],
+  "IB|MAHON": [
+   [
+    90.3,
+    true
+   ],
+   [
+    91.4,
+    false
+   ],
+   [
+    92.0,
+    true
+   ],
+   [
+    95.7,
+    false
+   ],
+   [
+    98.2,
+    false
+   ],
+   [
+    99.1,
+    false
+   ],
+   [
+    101.3,
+    false
+   ],
+   [
+    105.3,
+    true
+   ]
+  ],
+  "IB|MANACOR": [
+   [
+    90.9,
+    false
+   ],
+   [
+    92.7,
+    true
+   ],
+   [
+    98.4,
+    true
+   ],
+   [
+    105.0,
+    false
+   ],
+   [
+    105.6,
+    true
+   ]
+  ],
+  "IB|PALMA MALLORCA": [
+   [
+    88.4,
+    true
+   ],
+   [
+    89.5,
+    false
+   ],
+   [
+    91.6,
+    true
+   ],
+   [
+    94.1,
+    false
+   ],
+   [
+    95.1,
+    false
+   ],
+   [
+    95.6,
+    true
+   ],
+   [
+    96.6,
+    false
+   ],
+   [
+    97.1,
+    true
+   ],
+   [
+    97.6,
+    false
+   ],
+   [
+    98.8,
+    false
+   ],
+   [
+    99.4,
+    true
+   ],
+   [
+    99.9,
+    false
+   ],
+   [
+    101.0,
+    false
+   ],
+   [
+    102.3,
+    false
+   ],
+   [
+    103.2,
+    false
+   ],
+   [
+    106.1,
+    false
+   ]
+  ],
+  "IB|POBLA": [
+   [
+    91.2,
+    false
+   ]
+  ],
+  "IB|SANTANYI": [
+   [
+    95.8,
+    false
+   ]
+  ],
+  "IB|STA EULALIA RIO": [
+   [
+    91.7,
+    false
+   ]
+  ],
+  "AV|ARENAS S PEDRO": [
+   [
+    88.4,
+    false
+   ],
+   [
+    89.5,
+    true
+   ],
+   [
+    98.6,
+    true
+   ]
+  ],
+  "AV|AREVALO": [
+   [
+    88.0,
+    true
+   ],
+   [
+    96.7,
+    true
+   ],
+   [
+    101.3,
+    false
+   ]
+  ],
+  "AV|AVILA": [
+   [
+    88.8,
+    true
+   ],
+   [
+    89.6,
+    false
+   ],
+   [
+    90.5,
+    false
+   ],
+   [
+    91.2,
+    true
+   ],
+   [
+    92.9,
+    false
+   ],
+   [
+    94.2,
+    false
+   ],
+   [
+    95.3,
+    true
+   ],
+   [
+    96.4,
+    false
+   ],
+   [
+    99.6,
+    true
+   ],
+   [
+    104.4,
+    true
+   ]
+  ],
+  "AV|CANDELEDA": [
+   [
+    89.0,
+    true
+   ],
+   [
+    93.5,
+    true
+   ],
+   [
+    96.1,
+    false
+   ]
+  ],
+  "AV|TIEMBLO": [
+   [
+    87.9,
+    false
+   ],
+   [
+    100.5,
+    true
+   ],
+   [
+    106.6,
+    true
+   ]
+  ],
+  "BU|ARANDA DUERO": [
+   [
+    87.8,
+    false
+   ],
+   [
+    93.8,
+    false
+   ],
+   [
+    95.3,
+    true
+   ],
+   [
+    96.6,
+    false
+   ],
+   [
+    99.1,
+    true
+   ],
+   [
+    103.1,
+    true
+   ]
+  ],
+  "BU|BRIVIESCA": [
+   [
+    88.1,
+    true
+   ],
+   [
+    96.8,
+    true
+   ],
+   [
+    100.1,
+    false
+   ]
+  ],
+  "BU|BURGOS": [
+   [
+    87.6,
+    true
+   ],
+   [
+    88.3,
+    true
+   ],
+   [
+    89.1,
+    false
+   ],
+   [
+    92.9,
+    false
+   ],
+   [
+    94.3,
+    false
+   ],
+   [
+    95.5,
+    false
+   ],
+   [
+    97.1,
+    false
+   ],
+   [
+    98.6,
+    false
+   ],
+   [
+    100.0,
+    true
+   ],
+   [
+    102.9,
+    true
+   ],
+   [
+    104.1,
+    true
+   ],
+   [
+    105.5,
+    false
+   ]
+  ],
+  "BU|LERMA": [
+   [
+    88.0,
+    true
+   ]
+  ],
+  "BU|MEDINA POMAR": [
+   [
+    87.8,
+    false
+   ],
+   [
+    91.4,
+    true
+   ],
+   [
+    98.4,
+    true
+   ],
+   [
+    106.7,
+    true
+   ]
+  ],
+  "BU|MIRANDA EBRO": [
+   [
+    90.5,
+    false
+   ],
+   [
+    94.2,
+    true
+   ],
+   [
+    97.3,
+    true
+   ],
+   [
+    98.4,
+    true
+   ],
+   [
+    99.0,
+    false
+   ],
+   [
+    103.0,
+    false
+   ],
+   [
+    105.2,
+    false
+   ],
+   [
+    106.2,
+    false
+   ]
+  ],
+  "BU|VILLARCAYO": [
+   [
+    90.0,
+    true
+   ],
+   [
+    94.5,
+    false
+   ],
+   [
+    98.9,
+    true
+   ]
+  ],
+  "LE|ASTORGA": [
+   [
+    87.6,
+    false
+   ],
+   [
+    89.3,
+    true
+   ],
+   [
+    91.5,
+    false
+   ],
+   [
+    93.5,
+    true
+   ],
+   [
+    95.5,
+    true
+   ],
+   [
+    97.7,
+    false
+   ],
+   [
+    104.0,
+    true
+   ]
+  ],
+  "LE|BANEZA": [
+   [
+    88.5,
+    true
+   ],
+   [
+    90.8,
+    true
+   ],
+   [
+    94.1,
+    true
+   ],
+   [
+    95.9,
+    false
+   ],
+   [
+    103.7,
+    true
+   ]
+  ],
+  "LE|BEMBIBRE": [
+   [
+    87.8,
+    true
+   ],
+   [
+    94.9,
+    true
+   ],
+   [
+    98.7,
+    false
+   ],
+   [
+    104.3,
+    true
+   ]
+  ],
+  "LE|LEON": [
+   [
+    88.2,
+    false
+   ],
+   [
+    88.6,
+    true
+   ],
+   [
+    89.8,
+    true
+   ],
+   [
+    92.6,
+    false
+   ],
+   [
+    93.3,
+    false
+   ],
+   [
+    94.3,
+    false
+   ],
+   [
+    95.3,
+    false
+   ],
+   [
+    96.5,
+    false
+   ],
+   [
+    98.3,
+    false
+   ],
+   [
+    100.6,
+    true
+   ],
+   [
+    102.9,
+    true
+   ],
+   [
+    106.1,
+    true
+   ]
+  ],
+  "LE|PONFERRADA": [
+   [
+    87.9,
+    false
+   ],
+   [
+    90.0,
+    true
+   ],
+   [
+    90.4,
+    false
+   ],
+   [
+    93.6,
+    true
+   ],
+   [
+    95.6,
+    false
+   ],
+   [
+    96.9,
+    true
+   ],
+   [
+    98.2,
+    true
+   ],
+   [
+    101.6,
+    false
+   ]
+  ],
+  "LE|S ANDRES RABANEDO": [
+   [
+    90.2,
+    false
+   ]
+  ],
+  "LE|VALENCIA DON JUAN": [
+   [
+    92.1,
+    true
+   ]
+  ],
+  "LE|VILLABLINO": [
+   [
+    87.7,
+    false
+   ],
+   [
+    93.6,
+    true
+   ],
+   [
+    95.8,
+    true
+   ],
+   [
+    101.5,
+    true
+   ],
+   [
+    105.5,
+    true
+   ]
+  ],
+  "LE|VILLAFRANCA BIERZO": [
+   [
+    91.7,
+    false
+   ],
+   [
+    100.2,
+    true
+   ],
+   [
+    104.9,
+    true
+   ]
+  ],
+  "P|AGUILAR CAMPOO": [
+   [
+    92.4,
+    false
+   ],
+   [
+    94.5,
+    true
+   ],
+   [
+    98.9,
+    true
+   ],
+   [
+    101.2,
+    false
+   ],
+   [
+    105.4,
+    true
+   ]
+  ],
+  "P|GUARDO": [
+   [
+    92.0,
+    true
+   ],
+   [
+    96.4,
+    true
+   ],
+   [
+    100.6,
+    true
+   ],
+   [
+    103.1,
+    false
+   ],
+   [
+    106.2,
+    false
+   ]
+  ],
+  "P|HUSILLOS": [
+   [
+    91.6,
+    true
+   ]
+  ],
+  "P|PALENCIA": [
+   [
+    89.6,
+    false
+   ],
+   [
+    90.1,
+    true
+   ],
+   [
+    90.5,
+    false
+   ],
+   [
+    94.7,
+    false
+   ],
+   [
+    96.2,
+    false
+   ],
+   [
+    96.7,
+    true
+   ],
+   [
+    99.8,
+    false
+   ],
+   [
+    102.7,
+    true
+   ],
+   [
+    103.5,
+    false
+   ],
+   [
+    105.1,
+    true
+   ]
+  ],
+  "P|VENTA BANOS": [
+   [
+    98.8,
+    false
+   ]
+  ],
+  "SA|BEJAR": [
+   [
+    88.3,
+    false
+   ],
+   [
+    90.0,
+    true
+   ],
+   [
+    92.1,
+    true
+   ],
+   [
+    94.1,
+    false
+   ],
+   [
+    96.5,
+    false
+   ],
+   [
+    106.2,
+    true
+   ]
+  ],
+  "SA|CIUDAD RODRIGO": [
+   [
+    89.1,
+    false
+   ],
+   [
+    92.1,
+    true
+   ],
+   [
+    97.8,
+    false
+   ],
+   [
+    100.1,
+    true
+   ],
+   [
+    106.2,
+    true
+   ],
+   [
+    106.9,
+    true
+   ]
+  ],
+  "SA|PENARANDA BRACAMONTE": [
+   [
+    89.4,
+    true
+   ],
+   [
+    97.2,
+    true
+   ],
+   [
+    101.0,
+    false
+   ],
+   [
+    105.4,
+    true
+   ]
+  ],
+  "SA|SALAMANCA": [
+   [
+    87.7,
+    true
+   ],
+   [
+    90.0,
+    false
+   ],
+   [
+    93.0,
+    true
+   ],
+   [
+    96.2,
+    false
+   ],
+   [
+    96.9,
+    false
+   ],
+   [
+    97.6,
+    false
+   ],
+   [
+    99.3,
+    false
+   ],
+   [
+    101.3,
+    true
+   ],
+   [
+    103.4,
+    false
+   ],
+   [
+    105.0,
+    true
+   ],
+   [
+    106.4,
+    true
+   ]
+  ],
+  "SA|STA MARTA TORMES": [
+   [
+    100.3,
+    false
+   ]
+  ],
+  "SA|VITIGUDINO": [
+   [
+    98.8,
+    false
+   ]
+  ],
+  "SG|CUELLAR": [
+   [
+    90.6,
+    false
+   ],
+   [
+    91.2,
+    true
+   ],
+   [
+    99.3,
+    true
+   ],
+   [
+    103.1,
+    false
+   ],
+   [
+    105.1,
+    true
+   ]
+  ],
+  "SG|ESPINAR": [
+   [
+    87.6,
+    true
+   ],
+   [
+    97.1,
+    true
+   ],
+   [
+    100.0,
+    true
+   ],
+   [
+    102.1,
+    false
+   ]
+  ],
+  "SG|GRANJA": [
+   [
+    101.0,
+    false
+   ]
+  ],
+  "SG|SEGOVIA": [
+   [
+    88.7,
+    true
+   ],
+   [
+    90.4,
+    true
+   ],
+   [
+    90.8,
+    true
+   ],
+   [
+    93.6,
+    false
+   ],
+   [
+    94.8,
+    false
+   ],
+   [
+    98.3,
+    false
+   ],
+   [
+    99.8,
+    false
+   ],
+   [
+    100.3,
+    true
+   ],
+   [
+    103.3,
+    false
+   ],
+   [
+    104.1,
+    false
+   ]
+  ],
+  "SG|SEPULVEDA": [
+   [
+    94.1,
+    false
+   ]
+  ],
+  "SO|AGREDA": [
+   [
+    91.7,
+    true
+   ],
+   [
+    93.0,
+    false
+   ],
+   [
+    102.6,
+    true
+   ]
+  ],
+  "SO|ALMAZAN": [
+   [
+    87.9,
+    true
+   ],
+   [
+    94.6,
+    true
+   ],
+   [
+    99.1,
+    false
+   ],
+   [
+    102.5,
+    false
+   ],
+   [
+    103.6,
+    true
+   ]
+  ],
+  "SO|BURGO OSMA": [
+   [
+    90.8,
+    true
+   ],
+   [
+    95.2,
+    false
+   ],
+   [
+    99.9,
+    true
+   ],
+   [
+    105.9,
+    true
+   ]
+  ],
+  "SO|SORIA": [
+   [
+    88.1,
+    false
+   ],
+   [
+    88.9,
+    false
+   ],
+   [
+    92.9,
+    true
+   ],
+   [
+    96.1,
+    true
+   ],
+   [
+    97.7,
+    false
+   ],
+   [
+    98.1,
+    true
+   ],
+   [
+    99.9,
+    false
+   ],
+   [
+    100.8,
+    false
+   ],
+   [
+    102.2,
+    true
+   ],
+   [
+    103.4,
+    true
+   ],
+   [
+    105.9,
+    true
+   ]
+  ],
+  "VA|ISCAR": [
+   [
+    87.8,
+    true
+   ],
+   [
+    96.8,
+    true
+   ],
+   [
+    101.2,
+    false
+   ],
+   [
+    104.6,
+    true
+   ]
+  ],
+  "VA|MEDINA CAMPO": [
+   [
+    89.2,
+    false
+   ],
+   [
+    91.4,
+    true
+   ],
+   [
+    93.7,
+    true
+   ],
+   [
+    95.4,
+    true
+   ],
+   [
+    100.1,
+    false
+   ],
+   [
+    103.6,
+    false
+   ],
+   [
+    105.6,
+    true
+   ]
+  ],
+  "VA|MEDINA RIOSECO": [
+   [
+    88.1,
+    true
+   ],
+   [
+    97.4,
+    true
+   ],
+   [
+    102.1,
+    true
+   ],
+   [
+    106.1,
+    false
+   ]
+  ],
+  "VA|PENAFIEL": [
+   [
+    93.0,
+    true
+   ],
+   [
+    98.6,
+    true
+   ],
+   [
+    104.7,
+    true
+   ],
+   [
+    105.8,
+    false
+   ]
+  ],
+  "VA|TORDESILLAS": [
+   [
+    90.2,
+    true
+   ],
+   [
+    94.8,
+    true
+   ],
+   [
+    100.8,
+    true
+   ],
+   [
+    104.5,
+    false
+   ],
+   [
+    106.7,
+    false
+   ]
+  ],
+  "VA|VALLADOLID": [
+   [
+    88.5,
+    false
+   ],
+   [
+    90.9,
+    false
+   ],
+   [
+    94.4,
+    false
+   ],
+   [
+    96.1,
+    true
+   ],
+   [
+    98.1,
+    false
+   ],
+   [
+    99.4,
+    false
+   ],
+   [
+    99.9,
+    true
+   ],
+   [
+    100.4,
+    false
+   ],
+   [
+    101.5,
+    true
+   ],
+   [
+    102.8,
+    false
+   ],
+   [
+    104.0,
+    true
+   ],
+   [
+    105.2,
+    false
+   ]
+  ],
+  "ZA|BENAVENTE": [
+   [
+    90.5,
+    false
+   ],
+   [
+    93.7,
+    false
+   ],
+   [
+    94.6,
+    true
+   ],
+   [
+    95.4,
+    true
+   ],
+   [
+    98.7,
+    true
+   ],
+   [
+    105.1,
+    false
+   ]
+  ],
+  "ZA|TORO": [
+   [
+    88.5,
+    true
+   ],
+   [
+    93.9,
+    false
+   ],
+   [
+    99.2,
+    true
+   ]
+  ],
+  "ZA|ZAMORA": [
+   [
+    89.8,
+    false
+   ],
+   [
+    92.1,
+    true
+   ],
+   [
+    93.4,
+    true
+   ],
+   [
+    94.9,
+    false
+   ],
+   [
+    97.1,
+    true
+   ],
+   [
+    99.7,
+    false
+   ],
+   [
+    100.8,
+    false
+   ],
+   [
+    102.4,
+    true
+   ],
+   [
+    103.1,
+    false
+   ],
+   [
+    105.8,
+    false
+   ]
+  ],
+  "AB|ALBACETE": [
+   [
+    88.1,
+    true
+   ],
+   [
+    89.6,
+    false
+   ],
+   [
+    90.2,
+    true
+   ],
+   [
+    90.8,
+    true
+   ],
+   [
+    92.7,
+    false
+   ],
+   [
+    95.0,
+    true
+   ],
+   [
+    95.4,
+    false
+   ],
+   [
+    95.9,
+    true
+   ],
+   [
+    96.4,
+    false
+   ],
+   [
+    96.9,
+    true
+   ],
+   [
+    98.3,
+    false
+   ],
+   [
+    99.9,
+    true
+   ],
+   [
+    102.7,
+    true
+   ]
+  ],
+  "AB|ALMANSA": [
+   [
+    101.8,
+    false
+   ]
+  ],
+  "AB|CHINCHILLA": [
+   [
+    87.7,
+    true
+   ],
+   [
+    97.4,
+    true
+   ]
+  ],
+  "AB|HELLIN": [
+   [
+    90.6,
+    false
+   ]
+  ],
+  "AB|RODA": [
+   [
+    92.4,
+    true
+   ],
+   [
+    100.3,
+    false
+   ]
+  ],
+  "AB|S PEDRO": [
+   [
+    105.6,
+    true
+   ]
+  ],
+  "AB|VILLARROBLEDO": [
+   [
+    90.1,
+    false
+   ]
+  ],
+  "CR|ALCAZAR S JUAN": [
+   [
+    88.4,
+    false
+   ],
+   [
+    89.1,
+    true
+   ],
+   [
+    90.7,
+    false
+   ],
+   [
+    94.9,
+    false
+   ]
+  ],
+  "CR|ALMADEN": [
+   [
+    103.8,
+    false
+   ],
+   [
+    106.9,
+    true
+   ]
+  ],
+  "CR|CAMPO CRIPTANA": [
+   [
+    97.6,
+    true
+   ]
+  ],
+  "CR|CIUDAD REAL": [
+   [
+    92.1,
+    false
+   ],
+   [
+    93.6,
+    false
+   ],
+   [
+    96.2,
+    false
+   ],
+   [
+    100.1,
+    false
+   ],
+   [
+    105.1,
+    false
+   ]
+  ],
+  "CR|DAIMIEL": [
+   [
+    100.4,
+    false
+   ]
+  ],
+  "CR|HERENCIA": [
+   [
+    103.2,
+    false
+   ]
+  ],
+  "CR|MANZANARES": [
+   [
+    99.2,
+    false
+   ]
+  ],
+  "CR|PUERTOLLANO": [
+   [
+    89.2,
+    false
+   ],
+   [
+    97.5,
+    false
+   ],
+   [
+    101.0,
+    true
+   ],
+   [
+    104.1,
+    false
+   ],
+   [
+    105.8,
+    false
+   ]
+  ],
+  "CR|SOCUELLAMOS": [
+   [
+    90.5,
+    false
+   ]
+  ],
+  "CR|TOMELLOSO": [
+   [
+    91.4,
+    false
+   ]
+  ],
+  "CR|VALDEPENAS": [
+   [
+    93.4,
+    false
+   ],
+   [
+    99.8,
+    false
+   ],
+   [
+    104.5,
+    false
+   ]
+  ],
+  "CU|CUENCA": [
+   [
+    95.3,
+    false
+   ],
+   [
+    97.6,
+    false
+   ],
+   [
+    98.2,
+    false
+   ],
+   [
+    99.4,
+    true
+   ],
+   [
+    102.0,
+    true
+   ],
+   [
+    103.8,
+    false
+   ]
+  ],
+  "CU|MOTILLA PALANCAR": [
+   [
+    90.0,
+    false
+   ]
+  ],
+  "CU|PEDRONERAS": [
+   [
+    92.2,
+    false
+   ]
+  ],
+  "CU|TARANCON": [
+   [
+    88.0,
+    false
+   ],
+   [
+    105.2,
+    false
+   ]
+  ],
+  "GU|AZUQUECA": [
+   [
+    99.8,
+    false
+   ]
+  ],
+  "GU|GUADALAJARA": [
+   [
+    89.3,
+    false
+   ],
+   [
+    92.8,
+    false
+   ],
+   [
+    94.7,
+    false
+   ],
+   [
+    95.5,
+    false
+   ],
+   [
+    96.2,
+    false
+   ],
+   [
+    98.4,
+    true
+   ]
+  ],
+  "GU|MOLINA": [
+   [
+    88.7,
+    false
+   ]
+  ],
+  "GU|SIGUENZA": [
+   [
+    102.5,
+    false
+   ]
+  ],
+  "GU|TRILLO": [
+   [
+    103.1,
+    true
+   ]
+  ],
+  "TO|MADRIDEJOS": [
+   [
+    87.8,
+    false
+   ]
+  ],
+  "TO|PUEBLA ALMORADIEL": [
+   [
+    102.5,
+    true
+   ]
+  ],
+  "TO|SESENA": [
+   [
+    89.6,
+    true
+   ]
+  ],
+  "TO|TALAVERA REINA": [
+   [
+    88.0,
+    false
+   ],
+   [
+    90.0,
+    false
+   ],
+   [
+    96.7,
+    false
+   ],
+   [
+    98.5,
+    false
+   ],
+   [
+    103.3,
+    false
+   ]
+  ],
+  "TO|TOLEDO": [
+   [
+    92.9,
+    false
+   ],
+   [
+    93.6,
+    false
+   ],
+   [
+    94.2,
+    false
+   ],
+   [
+    95.4,
+    false
+   ],
+   [
+    96.3,
+    true
+   ],
+   [
+    97.4,
+    false
+   ],
+   [
+    98.3,
+    false
+   ],
+   [
+    100.8,
+    false
+   ],
+   [
+    104.6,
+    false
+   ]
+  ],
+  "TO|TORRIJOS": [
+   [
+    88.5,
+    false
+   ]
+  ],
+  "S|ASTILLERO": [
+   [
+    97.6,
+    false
+   ]
+  ],
+  "S|CABEZON SAL": [
+   [
+    93.5,
+    true
+   ],
+   [
+    98.9,
+    true
+   ]
+  ],
+  "S|CAMARGO": [
+   [
+    89.8,
+    false
+   ],
+   [
+    95.2,
+    true
+   ],
+   [
+    95.7,
+    false
+   ]
+  ],
+  "S|CASTRO URDIALES": [
+   [
+    90.3,
+    false
+   ],
+   [
+    100.8,
+    false
+   ],
+   [
+    104.1,
+    false
+   ]
+  ],
+  "S|CORRALES BUELNA": [
+   [
+    106.2,
+    true
+   ]
+  ],
+  "S|LAREDO": [
+   [
+    98.9,
+    false
+   ]
+  ],
+  "S|MARINA CUDEYO": [
+   [
+    89.0,
+    true
+   ]
+  ],
+  "S|MEDIO CUDEYO": [
+   [
+    94.8,
+    true
+   ]
+  ],
+  "S|NOJA": [
+   [
+    100.5,
+    true
+   ]
+  ],
+  "S|POTES": [
+   [
+    103.4,
+    true
+   ]
+  ],
+  "S|RAMALES VICTORIA": [
+   [
+    88.2,
+    true
+   ]
+  ],
+  "S|REINOSA": [
+   [
+    90.1,
+    false
+   ],
+   [
+    99.0,
+    false
+   ],
+   [
+    100.0,
+    false
+   ]
+  ],
+  "S|S VICENTE BARQUERA": [
+   [
+    90.1,
+    true
+   ]
+  ],
+  "S|SANTANDER": [
+   [
+    87.7,
+    false
+   ],
+   [
+    88.4,
+    false
+   ],
+   [
+    90.3,
+    true
+   ],
+   [
+    90.9,
+    false
+   ],
+   [
+    91.9,
+    false
+   ],
+   [
+    94.2,
+    false
+   ],
+   [
+    98.5,
+    false
+   ],
+   [
+    99.2,
+    true
+   ],
+   [
+    101.1,
+    false
+   ],
+   [
+    101.6,
+    true
+   ],
+   [
+    102.4,
+    false
+   ],
+   [
+    104.6,
+    true
+   ],
+   [
+    105.6,
+    false
+   ]
+  ],
+  "S|SANTONA": [
+   [
+    99.9,
+    false
+   ]
+  ],
+  "S|SANTONA LAREDO": [
+   [
+    101.7,
+    false
+   ]
+  ],
+  "S|TORRELAVEGA": [
+   [
+    89.9,
+    true
+   ],
+   [
+    93.7,
+    false
+   ],
+   [
+    94.7,
+    false
+   ],
+   [
+    95.2,
+    true
+   ],
+   [
+    96.2,
+    false
+   ],
+   [
+    100.0,
+    true
+   ],
+   [
+    104.2,
+    true
+   ]
+  ],
+  "S|VAL S VICENTE": [
+   [
+    105.7,
+    true
+   ]
+  ],
+  "S|VALDERREDIBLE": [
+   [
+    106.8,
+    true
+   ]
+  ],
+  "B|BARCELONA": [
+   [
+    89.8,
+    false
+   ],
+   [
+    90.5,
+    false
+   ],
+   [
+    93.9,
+    false
+   ],
+   [
+    94.9,
+    false
+   ],
+   [
+    96.9,
+    false
+   ],
+   [
+    99.4,
+    false
+   ],
+   [
+    100.0,
+    false
+   ],
+   [
+    102.0,
+    false
+   ],
+   [
+    103.5,
+    false
+   ],
+   [
+    104.2,
+    false
+   ],
+   [
+    105.0,
+    false
+   ],
+   [
+    106.6,
+    false
+   ]
+  ],
+  "B|BERGA": [
+   [
+    95.7,
+    false
+   ]
+  ],
+  "B|BERGA-FIGUERASSA": [
+   [
+    90.9,
+    true
+   ]
+  ],
+  "B|CABRILS-MONTCABRER": [
+   [
+    90.2,
+    true
+   ]
+  ],
+  "B|CALELLA": [
+   [
+    94.2,
+    true
+   ],
+   [
+    96.2,
+    true
+   ],
+   [
+    102.4,
+    true
+   ]
+  ],
+  "B|GRANOLLERS": [
+   [
+    93.5,
+    false
+   ]
+  ],
+  "B|GUARDIOLA": [
+   [
+    98.0,
+    true
+   ]
+  ],
+  "B|IGUALADA": [
+   [
+    92.2,
+    false
+   ],
+   [
+    97.9,
+    true
+   ],
+   [
+    101.1,
+    false
+   ]
+  ],
+  "B|MANRESA": [
+   [
+    91.8,
+    false
+   ],
+   [
+    92.7,
+    false
+   ],
+   [
+    101.7,
+    false
+   ]
+  ],
+  "B|MANRESA-BUFALVENT": [
+   [
+    95.2,
+    true
+   ],
+   [
+    100.6,
+    true
+   ],
+   [
+    106.8,
+    true
+   ]
+  ],
+  "B|MANRESA-MONTSERRAT": [
+   [
+    88.1,
+    true
+   ],
+   [
+    88.5,
+    true
+   ],
+   [
+    99.8,
+    true
+   ],
+   [
+    104.8,
+    true
+   ]
+  ],
+  "B|MARTORELL": [
+   [
+    96.0,
+    false
+   ]
+  ],
+  "B|MASNOU": [
+   [
+    87.7,
+    false
+   ]
+  ],
+  "B|MATARO": [
+   [
+    88.7,
+    false
+   ]
+  ],
+  "B|RUBI": [
+   [
+    97.7,
+    false
+   ]
+  ],
+  "B|S CELONI": [
+   [
+    102.5,
+    false
+   ]
+  ],
+  "B|S CELONI-MONTSENY": [
+   [
+    91.3,
+    true
+   ]
+  ],
+  "B|S FELIU LLOBREGAT": [
+   [
+    106.1,
+    false
+   ]
+  ],
+  "B|S PERE RIBES-MONGROS": [
+   [
+    89.0,
+    true
+   ],
+   [
+    89.9,
+    true
+   ],
+   [
+    90.6,
+    true
+   ],
+   [
+    91.2,
+    true
+   ],
+   [
+    96.8,
+    true
+   ],
+   [
+    98.8,
+    true
+   ],
+   [
+    100.9,
+    true
+   ],
+   [
+    101.9,
+    true
+   ]
+  ],
+  "B|S SADURNI ANOIA": [
+   [
+    93.7,
+    false
+   ]
+  ],
+  "B|SABADELL": [
+   [
+    89.1,
+    false
+   ]
+  ],
+  "B|SITGES": [
+   [
+    104.5,
+    false
+   ]
+  ],
+  "B|TERRASSA": [
+   [
+    95.5,
+    false
+   ],
+   [
+    105.6,
+    false
+   ]
+  ],
+  "B|TERRASSA-MARTINES": [
+   [
+    89.4,
+    true
+   ]
+  ],
+  "B|VIC": [
+   [
+    90.3,
+    false
+   ],
+   [
+    92.1,
+    false
+   ]
+  ],
+  "B|VIC-COLLSUSPINA": [
+   [
+    89.6,
+    true
+   ],
+   [
+    91.8,
+    true
+   ],
+   [
+    93.2,
+    true
+   ],
+   [
+    95.7,
+    true
+   ],
+   [
+    98.4,
+    true
+   ],
+   [
+    101.2,
+    true
+   ],
+   [
+    105.9,
+    true
+   ]
+  ],
+  "B|VIC-TAVERNOLES": [
+   [
+    92.8,
+    true
+   ],
+   [
+    105.3,
+    true
+   ]
+  ],
+  "B|VILAFRANCA PENEDES": [
+   [
+    103.1,
+    false
+   ]
+  ],
+  "B|VILANOVA I GELTRU": [
+   [
+    96.3,
+    false
+   ]
+  ],
+  "GI|BANYOLES": [
+   [
+    91.9,
+    false
+   ]
+  ],
+  "GI|BISBAL": [
+   [
+    91.8,
+    false
+   ]
+  ],
+  "GI|BLANES": [
+   [
+    100.3,
+    false
+   ]
+  ],
+  "GI|CALONGE-PLATJA ARO": [
+   [
+    90.8,
+    true
+   ]
+  ],
+  "GI|CASTELL ARO": [
+   [
+    89.6,
+    true
+   ],
+   [
+    91.4,
+    false
+   ],
+   [
+    95.6,
+    true
+   ],
+   [
+    99.9,
+    true
+   ],
+   [
+    101.9,
+    true
+   ]
+  ],
+  "GI|FIGUERES": [
+   [
+    89.4,
+    false
+   ],
+   [
+    104.4,
+    false
+   ]
+  ],
+  "GI|GIRONA": [
+   [
+    88.1,
+    false
+   ],
+   [
+    89.9,
+    false
+   ],
+   [
+    95.1,
+    false
+   ],
+   [
+    98.5,
+    false
+   ],
+   [
+    99.6,
+    false
+   ],
+   [
+    100.1,
+    false
+   ],
+   [
+    103.4,
+    false
+   ]
+  ],
+  "GI|GIRONA-ROCACORBA": [
+   [
+    97.4,
+    true
+   ],
+   [
+    98.9,
+    true
+   ],
+   [
+    100.7,
+    true
+   ],
+   [
+    105.1,
+    true
+   ],
+   [
+    106.8,
+    true
+   ]
+  ],
+  "GI|JONQUERA": [
+   [
+    88.0,
+    false
+   ]
+  ],
+  "GI|LLORET MAR": [
+   [
+    87.6,
+    true
+   ],
+   [
+    89.0,
+    false
+   ],
+   [
+    93.7,
+    true
+   ]
+  ],
+  "GI|OLOT": [
+   [
+    92.1,
+    true
+   ],
+   [
+    92.9,
+    true
+   ],
+   [
+    94.2,
+    true
+   ],
+   [
+    95.5,
+    true
+   ],
+   [
+    98.1,
+    false
+   ],
+   [
+    100.3,
+    true
+   ]
+  ],
+  "GI|PALAMOS": [
+   [
+    96.3,
+    false
+   ]
+  ],
+  "GI|PORTBOU-COLERA": [
+   [
+    89.6,
+    true
+   ]
+  ],
+  "GI|PUIGCERDA": [
+   [
+    89.8,
+    false
+   ],
+   [
+    92.0,
+    false
+   ]
+  ],
+  "GI|PUIGCERDA-ALP": [
+   [
+    94.2,
+    true
+   ]
+  ],
+  "GI|PUIGCERDA-GREIXER": [
+   [
+    87.7,
+    true
+   ],
+   [
+    91.4,
+    true
+   ],
+   [
+    106.6,
+    true
+   ]
+  ],
+  "GI|PUIGCERDA-TOSSA ALP": [
+   [
+    89.1,
+    true
+   ],
+   [
+    90.3,
+    true
+   ],
+   [
+    93.3,
+    true
+   ],
+   [
+    96.1,
+    true
+   ],
+   [
+    99.1,
+    true
+   ],
+   [
+    104.4,
+    true
+   ]
+  ],
+  "GI|RIPOLL": [
+   [
+    87.7,
+    true
+   ],
+   [
+    90.5,
+    false
+   ],
+   [
+    91.0,
+    true
+   ],
+   [
+    94.9,
+    true
+   ],
+   [
+    97.6,
+    true
+   ],
+   [
+    105.0,
+    true
+   ]
+  ],
+  "GI|ROSES": [
+   [
+    94.4,
+    false
+   ]
+  ],
+  "GI|S FELIU GUIXOLS": [
+   [
+    90.3,
+    false
+   ]
+  ],
+  "GI|STA COLOMA FARNERS": [
+   [
+    92.3,
+    false
+   ]
+  ],
+  "L|BALAGUER": [
+   [
+    105.8,
+    false
+   ]
+  ],
+  "L|BOSSOST": [
+   [
+    88.2,
+    true
+   ],
+   [
+    106.0,
+    true
+   ]
+  ],
+  "L|CERVERA": [
+   [
+    88.1,
+    true
+   ],
+   [
+    99.2,
+    false
+   ]
+  ],
+  "L|LLEIDA": [
+   [
+    90.3,
+    false
+   ],
+   [
+    92.6,
+    false
+   ],
+   [
+    93.4,
+    false
+   ],
+   [
+    94.1,
+    false
+   ],
+   [
+    96.0,
+    false
+   ],
+   [
+    101.3,
+    false
+   ]
+  ],
+  "L|LLEIDA-ALPICAT": [
+   [
+    91.5,
+    true
+   ],
+   [
+    99.7,
+    true
+   ],
+   [
+    102.2,
+    true
+   ],
+   [
+    102.7,
+    true
+   ],
+   [
+    103.6,
+    true
+   ],
+   [
+    104.1,
+    true
+   ],
+   [
+    104.5,
+    true
+   ],
+   [
+    105.2,
+    true
+   ]
+  ],
+  "L|MIRALCAMP": [
+   [
+    98.4,
+    false
+   ]
+  ],
+  "L|PONT SUERT": [
+   [
+    91.0,
+    true
+   ],
+   [
+    99.3,
+    false
+   ]
+  ],
+  "L|SEU URGELL": [
+   [
+    92.9,
+    true
+   ],
+   [
+    98.1,
+    false
+   ],
+   [
+    105.0,
+    false
+   ]
+  ],
+  "L|SOLSONA": [
+   [
+    104.4,
+    false
+   ]
+  ],
+  "L|SOLSONA-OLIUS": [
+   [
+    88.2,
+    true
+   ]
+  ],
+  "L|SORT-ESCOBEDO": [
+   [
+    94.5,
+    true
+   ]
+  ],
+  "L|SORT-SORIGUERA": [
+   [
+    91.7,
+    true
+   ]
+  ],
+  "L|SORT-TORNAFORT": [
+   [
+    89.6,
+    true
+   ],
+   [
+    90.1,
+    true
+   ]
+  ],
+  "L|TARREGA": [
+   [
+    89.8,
+    false
+   ]
+  ],
+  "L|TREMP": [
+   [
+    88.1,
+    true
+   ],
+   [
+    89.8,
+    true
+   ],
+   [
+    95.8,
+    false
+   ],
+   [
+    98.8,
+    true
+   ]
+  ],
+  "L|VALL BOI": [
+   [
+    93.9,
+    true
+   ]
+  ],
+  "L|VIELHA": [
+   [
+    91.0,
+    false
+   ],
+   [
+    93.9,
+    false
+   ]
+  ],
+  "L|VIELHA-BAQUEIRA": [
+   [
+    99.3,
+    true
+   ]
+  ],
+  "L|VIELHA-ETH ARO": [
+   [
+    91.7,
+    true
+   ],
+   [
+    97.2,
+    true
+   ],
+   [
+    103.0,
+    true
+   ]
+  ],
+  "T|AMPOSTA": [
+   [
+    93.2,
+    false
+   ],
+   [
+    106.0,
+    false
+   ]
+  ],
+  "T|CAMBRILS": [
+   [
+    97.6,
+    false
+   ]
+  ],
+  "T|GANDESA": [
+   [
+    95.7,
+    false
+   ]
+  ],
+  "T|MONTBLANC": [
+   [
+    101.8,
+    false
+   ]
+  ],
+  "T|MONTBLANC-FIGUEROLA": [
+   [
+    87.6,
+    true
+   ]
+  ],
+  "T|MORA EBRE": [
+   [
+    87.6,
+    false
+   ]
+  ],
+  "T|REUS": [
+   [
+    89.6,
+    false
+   ],
+   [
+    95.3,
+    false
+   ],
+   [
+    97.1,
+    false
+   ],
+   [
+    101.4,
+    false
+   ]
+  ],
+  "T|S CARLES RAPITA": [
+   [
+    101.0,
+    false
+   ]
+  ],
+  "T|TARRAGONA": [
+   [
+    91.0,
+    false
+   ],
+   [
+    93.5,
+    false
+   ],
+   [
+    96.2,
+    false
+   ],
+   [
+    99.2,
+    false
+   ]
+  ],
+  "T|TARRAGONA-MUSARA": [
+   [
+    89.3,
+    true
+   ],
+   [
+    90.4,
+    true
+   ],
+   [
+    92.9,
+    true
+   ],
+   [
+    100.6,
+    true
+   ],
+   [
+    102.7,
+    true
+   ]
+  ],
+  "T|TORTOSA": [
+   [
+    98.0,
+    false
+   ],
+   [
+    101.9,
+    false
+   ],
+   [
+    105.6,
+    false
+   ]
+  ],
+  "T|TORTOSA-COLL REDO": [
+   [
+    89.1,
+    true
+   ],
+   [
+    90.1,
+    true
+   ],
+   [
+    94.2,
+    true
+   ],
+   [
+    102.9,
+    true
+   ],
+   [
+    103.9,
+    true
+   ]
+  ],
+  "T|TORTOSA-MONTE CARO": [
+   [
+    99.0,
+    true
+   ]
+  ],
+  "T|VALLS": [
+   [
+    103.2,
+    false
+   ]
+  ],
+  "T|VENDRELL": [
+   [
+    104.0,
+    false
+   ]
+  ],
+  "T|VENDRELL-BAIX PENEDE": [
+   [
+    89.6,
+    true
+   ]
+  ],
+  "T|VILASECA I SALOU": [
+   [
+    92.5,
+    false
+   ]
+  ],
+  "CE|CEUTA": [
+   [
+    89.8,
+    false
+   ],
+   [
+    96.2,
+    false
+   ],
+   [
+    99.0,
+    false
+   ],
+   [
+    101.4,
+    false
+   ]
+  ],
+  "GC|AGAETE": [
+   [
+    99.9,
+    true
+   ],
+   [
+    105.4,
+    true
+   ]
+  ],
+  "GC|ANTIGUA": [
+   [
+    90.5,
+    true
+   ],
+   [
+    91.6,
+    true
+   ],
+   [
+    95.4,
+    true
+   ],
+   [
+    100.0,
+    true
+   ]
+  ],
+  "GC|ARRECIFE": [
+   [
+    88.1,
+    true
+   ],
+   [
+    89.7,
+    false
+   ],
+   [
+    90.2,
+    true
+   ],
+   [
+    90.7,
+    false
+   ],
+   [
+    91.6,
+    true
+   ],
+   [
+    94.1,
+    true
+   ],
+   [
+    96.5,
+    true
+   ],
+   [
+    98.3,
+    true
+   ],
+   [
+    104.0,
+    false
+   ]
+  ],
+  "GC|ARTENARA": [
+   [
+    95.2,
+    true
+   ],
+   [
+    96.6,
+    true
+   ]
+  ],
+  "GC|ARUCAS": [
+   [
+    105.4,
+    false
+   ]
+  ],
+  "GC|GALDAR": [
+   [
+    87.6,
+    true
+   ],
+   [
+    106.5,
+    true
+   ]
+  ],
+  "GC|HARIA": [
+   [
+    89.0,
+    true
+   ],
+   [
+    91.3,
+    true
+   ],
+   [
+    101.7,
+    true
+   ],
+   [
+    105.0,
+    true
+   ]
+  ],
+  "GC|INGENIO": [
+   [
+    103.3,
+    true
+   ]
+  ],
+  "GC|MASPALOMAS": [
+   [
+    95.3,
+    false
+   ],
+   [
+    99.6,
+    false
+   ]
+  ],
+  "GC|MOGAN": [
+   [
+    87.6,
+    false
+   ],
+   [
+    102.8,
+    true
+   ]
+  ],
+  "GC|MOGAN-PUERTO RICO": [
+   [
+    105.3,
+    true
+   ],
+   [
+    106.9,
+    true
+   ]
+  ],
+  "GC|OLIVA-CORRALEJO": [
+   [
+    98.8,
+    true
+   ]
+  ],
+  "GC|PAJARA-LAJITA": [
+   [
+    99.4,
+    true
+   ],
+   [
+    100.4,
+    true
+   ]
+  ],
+  "GC|PAJARA-MORRO JABLE": [
+   [
+    93.3,
+    true
+   ],
+   [
+    97.0,
+    true
+   ],
+   [
+    105.2,
+    true
+   ]
+  ],
+  "GC|PALMAS": [
+   [
+    89.6,
+    true
+   ],
+   [
+    90.4,
+    false
+   ],
+   [
+    90.8,
+    true
+   ],
+   [
+    91.4,
+    true
+   ],
+   [
+    91.8,
+    false
+   ],
+   [
+    94.4,
+    false
+   ],
+   [
+    95.8,
+    false
+   ],
+   [
+    97.3,
+    true
+   ],
+   [
+    99.1,
+    true
+   ],
+   [
+    99.8,
+    false
+   ],
+   [
+    101.9,
+    true
+   ],
+   [
+    102.4,
+    true
+   ],
+   [
+    103.0,
+    false
+   ],
+   [
+    106.0,
+    true
+   ],
+   [
+    106.8,
+    false
+   ]
+  ],
+  "GC|PUERTO ROSARIO": [
+   [
+    91.2,
+    false
+   ],
+   [
+    93.0,
+    false
+   ],
+   [
+    95.7,
+    true
+   ],
+   [
+    98.6,
+    true
+   ],
+   [
+    102.0,
+    true
+   ],
+   [
+    104.3,
+    true
+   ],
+   [
+    105.3,
+    true
+   ],
+   [
+    106.1,
+    true
+   ]
+  ],
+  "GC|S BAR TIR-MASPALOMAS": [
+   [
+    89.6,
+    true
+   ],
+   [
+    94.5,
+    true
+   ],
+   [
+    97.2,
+    true
+   ],
+   [
+    102.9,
+    true
+   ]
+  ],
+  "GC|S BARTOLOME TIRAJANA": [
+   [
+    100.4,
+    true
+   ],
+   [
+    101.8,
+    true
+   ]
+  ],
+  "GC|S NICOLAS TOLENTINO": [
+   [
+    105.9,
+    true
+   ]
+  ],
+  "GC|STA LUCIA": [
+   [
+    98.9,
+    false
+   ],
+   [
+    102.4,
+    false
+   ]
+  ],
+  "GC|STA MARIA GUTA": [
+   [
+    94.5,
+    true
+   ]
+  ],
+  "GC|TEJEDA": [
+   [
+    99.2,
+    true
+   ],
+   [
+    102.8,
+    true
+   ]
+  ],
+  "GC|TELDE": [
+   [
+    87.6,
+    true
+   ],
+   [
+    96.5,
+    false
+   ],
+   [
+    99.4,
+    true
+   ],
+   [
+    100.3,
+    false
+   ],
+   [
+    101.4,
+    false
+   ],
+   [
+    105.0,
+    true
+   ]
+  ],
+  "GC|TEROR": [
+   [
+    96.7,
+    true
+   ]
+  ],
+  "GC|TIAS": [
+   [
+    106.9,
+    true
+   ]
+  ],
+  "GC|TINAJO": [
+   [
+    104.5,
+    true
+   ]
+  ],
+  "GC|TUINEJE-GRAN TARAJAL": [
+   [
+    89.0,
+    true
+   ],
+   [
+    96.7,
+    true
+   ],
+   [
+    98.8,
+    true
+   ],
+   [
+    102.2,
+    true
+   ]
+  ],
+  "GC|VALLES ECO": [
+   [
+    100.4,
+    true
+   ]
+  ],
+  "GC|VEGAS MATEO": [
+   [
+    103.4,
+    true
+   ]
+  ],
+  "GC|YAIZA": [
+   [
+    93.3,
+    true
+   ],
+   [
+    95.3,
+    true
+   ],
+   [
+    97.4,
+    true
+   ],
+   [
+    103.1,
+    true
+   ]
+  ],
+  "TF|ADEJE": [
+   [
+    94.0,
+    true
+   ],
+   [
+    94.7,
+    true
+   ],
+   [
+    97.2,
+    true
+   ],
+   [
+    99.0,
+    true
+   ],
+   [
+    100.0,
+    false
+   ],
+   [
+    101.5,
+    true
+   ]
+  ],
+  "TF|AGULO": [
+   [
+    92.2,
+    true
+   ]
+  ],
+  "TF|ALAJERO": [
+   [
+    104.2,
+    true
+   ]
+  ],
+  "TF|ARICO": [
+   [
+    88.9,
+    true
+   ],
+   [
+    100.3,
+    true
+   ]
+  ],
+  "TF|ARONA": [
+   [
+    91.9,
+    true
+   ],
+   [
+    93.3,
+    false
+   ],
+   [
+    100.7,
+    true
+   ]
+  ],
+  "TF|BARLOVENTO": [
+   [
+    92.9,
+    true
+   ],
+   [
+    98.7,
+    true
+   ]
+  ],
+  "TF|BRENA ALTA": [
+   [
+    88.5,
+    true
+   ],
+   [
+    98.8,
+    true
+   ]
+  ],
+  "TF|BRENA BAJA": [
+   [
+    106.7,
+    true
+   ]
+  ],
+  "TF|BUENAVISTA": [
+   [
+    94.0,
+    true
+   ]
+  ],
+  "TF|FRONTERA": [
+   [
+    87.6,
+    true
+   ],
+   [
+    94.9,
+    true
+   ],
+   [
+    95.7,
+    true
+   ]
+  ],
+  "TF|FUENCALIENTE": [
+   [
+    97.5,
+    true
+   ]
+  ],
+  "TF|GARAFIA": [
+   [
+    88.5,
+    true
+   ],
+   [
+    91.3,
+    true
+   ],
+   [
+    100.2,
+    true
+   ]
+  ],
+  "TF|GUIA ISORA": [
+   [
+    89.3,
+    true
+   ],
+   [
+    91.1,
+    true
+   ],
+   [
+    103.0,
+    true
+   ],
+   [
+    103.6,
+    true
+   ]
+  ],
+  "TF|GUIMAR": [
+   [
+    95.6,
+    true
+   ],
+   [
+    96.8,
+    true
+   ]
+  ],
+  "TF|HERMIGUA": [
+   [
+    95.6,
+    true
+   ],
+   [
+    102.4,
+    true
+   ]
+  ],
+  "TF|ICOD VINOS": [
+   [
+    89.0,
+    true
+   ],
+   [
+    101.4,
+    false
+   ],
+   [
+    102.6,
+    true
+   ]
+  ],
+  "TF|LLANOS ARIDANE": [
+   [
+    91.4,
+    true
+   ],
+   [
+    94.6,
+    true
+   ],
+   [
+    95.3,
+    true
+   ],
+   [
+    101.6,
+    false
+   ],
+   [
+    104.1,
+    false
+   ]
+  ],
+  "TF|OROTAVA": [
+   [
+    88.1,
+    true
+   ],
+   [
+    93.2,
+    true
+   ],
+   [
+    93.7,
+    true
+   ],
+   [
+    94.4,
+    false
+   ],
+   [
+    97.2,
+    true
+   ],
+   [
+    99.8,
+    false
+   ],
+   [
+    100.4,
+    true
+   ],
+   [
+    101.0,
+    true
+   ],
+   [
+    104.1,
+    true
+   ]
+  ],
+  "TF|PUERTO CRUZ": [
+   [
+    99.1,
+    false
+   ]
+  ],
+  "TF|PUNTAGORDA": [
+   [
+    87.8,
+    true
+   ]
+  ],
+  "TF|REALEJOS": [
+   [
+    87.6,
+    true
+   ],
+   [
+    91.6,
+    false
+   ],
+   [
+    95.8,
+    true
+   ],
+   [
+    102.9,
+    true
+   ]
+  ],
+  "TF|S ANDRES SAUCES": [
+   [
+    106.7,
+    true
+   ]
+  ],
+  "TF|S CRISTOBAL LAGUNA": [
+   [
+    87.8,
+    false
+   ],
+   [
+    91.7,
+    true
+   ],
+   [
+    97.1,
+    false
+   ],
+   [
+    99.5,
+    true
+   ],
+   [
+    101.1,
+    false
+   ],
+   [
+    106.3,
+    true
+   ]
+  ],
+  "TF|S MIGUEL ABONA": [
+   [
+    90.6,
+    true
+   ],
+   [
+    94.0,
+    true
+   ],
+   [
+    94.8,
+    true
+   ],
+   [
+    102.2,
+    true
+   ],
+   [
+    103.3,
+    true
+   ],
+   [
+    106.3,
+    true
+   ]
+  ],
+  "TF|S SEBASTIAN GOMERA": [
+   [
+    88.9,
+    false
+   ],
+   [
+    93.7,
+    true
+   ],
+   [
+    95.9,
+    false
+   ],
+   [
+    97.9,
+    true
+   ],
+   [
+    100.3,
+    true
+   ]
+  ],
+  "TF|SANTIAGO TEIDE": [
+   [
+    94.8,
+    true
+   ],
+   [
+    102.2,
+    true
+   ]
+  ],
+  "TF|SILOS": [
+   [
+    105.1,
+    true
+   ]
+  ],
+  "TF|STA CRUZ PALMA": [
+   [
+    87.9,
+    true
+   ],
+   [
+    95.1,
+    false
+   ],
+   [
+    97.4,
+    false
+   ],
+   [
+    99.5,
+    false
+   ]
+  ],
+  "TF|STA CRUZ TENERIFE": [
+   [
+    88.3,
+    true
+   ],
+   [
+    89.4,
+    true
+   ],
+   [
+    91.1,
+    false
+   ],
+   [
+    93.2,
+    false
+   ],
+   [
+    94.0,
+    false
+   ],
+   [
+    98.8,
+    true
+   ],
+   [
+    100.1,
+    false
+   ],
+   [
+    101.6,
+    true
+   ],
+   [
+    102.9,
+    true
+   ],
+   [
+    105.1,
+    true
+   ]
+  ],
+  "TF|TACORONTE": [
+   [
+    100.7,
+    true
+   ]
+  ],
+  "TF|TANQUE": [
+   [
+    95.4,
+    true
+   ]
+  ],
+  "TF|TAZACORTE": [
+   [
+    96.0,
+    true
+   ],
+   [
+    100.1,
+    true
+   ]
+  ],
+  "TF|TEGUESTE": [
+   [
+    92.6,
+    true
+   ]
+  ],
+  "TF|TIJARAFE": [
+   [
+    100.5,
+    true
+   ]
+  ],
+  "TF|VALLE GRAN REY": [
+   [
+    97.8,
+    true
+   ],
+   [
+    99.2,
+    true
+   ],
+   [
+    103.5,
+    true
+   ]
+  ],
+  "TF|VALLEHERMOSO": [
+   [
+    98.0,
+    true
+   ]
+  ],
+  "TF|VALVERDE": [
+   [
+    92.0,
+    false
+   ],
+   [
+    99.7,
+    true
+   ],
+   [
+    100.3,
+    true
+   ],
+   [
+    106.5,
+    false
+   ]
+  ],
+  "TF|VILAFLOR": [
+   [
+    101.4,
+    true
+   ],
+   [
+    104.7,
+    true
+   ]
+  ],
+  "TF|VILLA MAZO": [
+   [
+    93.5,
+    true
+   ]
+  ],
+  "BA|ALMENDRALEJO": [
+   [
+    88.6,
+    false
+   ],
+   [
+    89.8,
+    false
+   ],
+   [
+    101.8,
+    true
+   ],
+   [
+    105.7,
+    false
+   ]
+  ],
+  "BA|AZUAGA": [
+   [
+    103.4,
+    true
+   ]
+  ],
+  "BA|BADAJOZ": [
+   [
+    87.6,
+    true
+   ],
+   [
+    89.1,
+    false
+   ],
+   [
+    91.3,
+    false
+   ],
+   [
+    93.5,
+    false
+   ],
+   [
+    94.2,
+    true
+   ],
+   [
+    96.9,
+    false
+   ],
+   [
+    104.8,
+    false
+   ]
+  ],
+  "BA|CABEZA BUEY": [
+   [
+    94.0,
+    true
+   ]
+  ],
+  "BA|CALAMONTE": [
+   [
+    94.1,
+    true
+   ]
+  ],
+  "BA|CASTUERA": [
+   [
+    95.8,
+    true
+   ]
+  ],
+  "BA|DON BENITO": [
+   [
+    97.3,
+    false
+   ],
+   [
+    100.0,
+    false
+   ],
+   [
+    104.6,
+    true
+   ]
+  ],
+  "BA|FREGENAL SIERRA": [
+   [
+    90.8,
+    true
+   ],
+   [
+    95.5,
+    false
+   ]
+  ],
+  "BA|HERRERA DUQUE": [
+   [
+    104.7,
+    false
+   ]
+  ],
+  "BA|HORNACHOS": [
+   [
+    92.4,
+    false
+   ]
+  ],
+  "BA|JEREZ CABALLEROS": [
+   [
+    95.1,
+    true
+   ]
+  ],
+  "BA|LLERENA": [
+   [
+    100.7,
+    true
+   ],
+   [
+    105.6,
+    false
+   ],
+   [
+    106.7,
+    false
+   ]
+  ],
+  "BA|MERIDA": [
+   [
+    90.4,
+    false
+   ],
+   [
+    95.6,
+    false
+   ],
+   [
+    100.4,
+    true
+   ],
+   [
+    103.6,
+    false
+   ]
+  ],
+  "BA|MONTIJO": [
+   [
+    102.1,
+    false
+   ]
+  ],
+  "BA|OLIVENZA": [
+   [
+    92.7,
+    false
+   ],
+   [
+    105.5,
+    true
+   ]
+  ],
+  "BA|PUEBLA CALZADA": [
+   [
+    91.8,
+    true
+   ]
+  ],
+  "BA|SANTOS MAIMONA": [
+   [
+    97.4,
+    true
+   ]
+  ],
+  "BA|TALARRUBIAS": [
+   [
+    91.5,
+    false
+   ]
+  ],
+  "BA|VILLAFRANCA BARROS": [
+   [
+    89.3,
+    false
+   ],
+   [
+    91.9,
+    true
+   ]
+  ],
+  "BA|VILLANUEVA SERENA": [
+   [
+    91.8,
+    false
+   ],
+   [
+    94.9,
+    true
+   ],
+   [
+    98.4,
+    false
+   ],
+   [
+    101.1,
+    false
+   ]
+  ],
+  "BA|ZAFRA": [
+   [
+    92.7,
+    false
+   ],
+   [
+    104.1,
+    true
+   ]
+  ],
+  "CC|ARROYO LUZ": [
+   [
+    95.7,
+    true
+   ]
+  ],
+  "CC|CACERES": [
+   [
+    88.8,
+    false
+   ],
+   [
+    89.5,
+    false
+   ],
+   [
+    91.6,
+    true
+   ],
+   [
+    92.6,
+    false
+   ],
+   [
+    94.4,
+    false
+   ],
+   [
+    97.0,
+    false
+   ],
+   [
+    106.1,
+    true
+   ]
+  ],
+  "CC|CASAR CACERES": [
+   [
+    90.4,
+    true
+   ]
+  ],
+  "CC|CORIA": [
+   [
+    93.6,
+    true
+   ],
+   [
+    106.3,
+    false
+   ]
+  ],
+  "CC|GUADALUPE": [
+   [
+    100.4,
+    true
+   ]
+  ],
+  "CC|HERVAS": [
+   [
+    104.1,
+    true
+   ]
+  ],
+  "CC|JARAIZ VERA": [
+   [
+    101.2,
+    false
+   ]
+  ],
+  "CC|MALPARTIDA CACERES": [
+   [
+    103.1,
+    true
+   ]
+  ],
+  "CC|MALPARTIDA PLASENCIA": [
+   [
+    103.2,
+    true
+   ]
+  ],
+  "CC|MIAJADAS": [
+   [
+    90.8,
+    false
+   ]
+  ],
+  "CC|MORALEJA": [
+   [
+    91.0,
+    true
+   ],
+   [
+    92.8,
+    false
+   ]
+  ],
+  "CC|NAVALMORAL MATA": [
+   [
+    91.1,
+    true
+   ],
+   [
+    104.7,
+    true
+   ],
+   [
+    105.8,
+    false
+   ]
+  ],
+  "CC|PINOFRANQUEADO": [
+   [
+    100.2,
+    true
+   ]
+  ],
+  "CC|PLASENCIA": [
+   [
+    87.6,
+    false
+   ],
+   [
+    91.4,
+    false
+   ],
+   [
+    96.8,
+    true
+   ],
+   [
+    97.4,
+    true
+   ],
+   [
+    98.0,
+    true
+   ]
+  ],
+  "CC|TALAYUELA": [
+   [
+    91.9,
+    true
+   ]
+  ],
+  "CC|TRUJILLO": [
+   [
+    90.1,
+    true
+   ],
+   [
+    95.5,
+    false
+   ]
+  ],
+  "CC|VALENCIA ALCANTARA": [
+   [
+    99.8,
+    false
+   ]
+  ],
+  "C|ARZUA": [
+   [
+    90.2,
+    false
+   ],
+   [
+    95.4,
+    true
+   ],
+   [
+    97.7,
+    true
+   ]
+  ],
+  "C|BETANZOS": [
+   [
+    89.9,
+    false
+   ]
+  ],
+  "C|CARBALLO": [
+   [
+    88.5,
+    true
+   ],
+   [
+    92.4,
+    true
+   ],
+   [
+    96.4,
+    true
+   ],
+   [
+    97.0,
+    true
+   ],
+   [
+    97.8,
+    true
+   ],
+   [
+    99.8,
+    false
+   ]
+  ],
+  "C|CARINO": [
+   [
+    89.9,
+    true
+   ],
+   [
+    97.9,
+    false
+   ],
+   [
+    101.9,
+    true
+   ],
+   [
+    105.8,
+    true
+   ]
+  ],
+  "C|CEDEIRA": [
+   [
+    101.3,
+    false
+   ]
+  ],
+  "C|CEE": [
+   [
+    94.2,
+    true
+   ],
+   [
+    95.7,
+    true
+   ]
+  ],
+  "C|CORUNA, A": [
+   [
+    87.7,
+    true
+   ],
+   [
+    89.2,
+    false
+   ],
+   [
+    91.0,
+    false
+   ],
+   [
+    92.6,
+    false
+   ],
+   [
+    93.4,
+    false
+   ],
+   [
+    96.9,
+    false
+   ],
+   [
+    97.6,
+    false
+   ],
+   [
+    99.9,
+    true
+   ],
+   [
+    102.7,
+    false
+   ],
+   [
+    106.8,
+    true
+   ]
+  ],
+  "C|FERROL": [
+   [
+    88.7,
+    false
+   ],
+   [
+    90.6,
+    true
+   ],
+   [
+    93.0,
+    true
+   ],
+   [
+    95.0,
+    false
+   ],
+   [
+    98.5,
+    false
+   ],
+   [
+    99.3,
+    false
+   ],
+   [
+    103.2,
+    true
+   ],
+   [
+    105.4,
+    false
+   ]
+  ],
+  "C|MUROS": [
+   [
+    97.3,
+    true
+   ],
+   [
+    101.5,
+    false
+   ],
+   [
+    103.8,
+    true
+   ]
+  ],
+  "C|NOIA": [
+   [
+    95.2,
+    false
+   ],
+   [
+    105.5,
+    false
+   ]
+  ],
+  "C|ORDES": [
+   [
+    97.6,
+    true
+   ]
+  ],
+  "C|PADRON": [
+   [
+    104.6,
+    false
+   ]
+  ],
+  "C|PONTECESO": [
+   [
+    95.4,
+    false
+   ]
+  ],
+  "C|PORTO SON": [
+   [
+    88.8,
+    false
+   ]
+  ],
+  "C|SANTIAGO": [
+   [
+    87.6,
+    true
+   ],
+   [
+    88.9,
+    true
+   ],
+   [
+    90.6,
+    false
+   ],
+   [
+    95.3,
+    true
+   ],
+   [
+    97.1,
+    false
+   ],
+   [
+    102.1,
+    false
+   ],
+   [
+    105.6,
+    true
+   ],
+   [
+    106.1,
+    false
+   ]
+  ],
+  "C|STA COMBA": [
+   [
+    101.9,
+    false
+   ]
+  ],
+  "C|VIMIANZO": [
+   [
+    92.2,
+    false
+   ],
+   [
+    99.5,
+    true
+   ],
+   [
+    100.1,
+    true
+   ]
+  ],
+  "LU|BECERREA": [
+   [
+    88.4,
+    true
+   ],
+   [
+    96.6,
+    false
+   ],
+   [
+    101.9,
+    true
+   ]
+  ],
+  "LU|CHANTADA": [
+   [
+    90.4,
+    false
+   ],
+   [
+    93.5,
+    false
+   ],
+   [
+    100.1,
+    true
+   ],
+   [
+    106.1,
+    true
+   ]
+  ],
+  "LU|FONSAGRADA": [
+   [
+    88.6,
+    false
+   ],
+   [
+    94.8,
+    true
+   ],
+   [
+    101.5,
+    true
+   ]
+  ],
+  "LU|FOZ": [
+   [
+    88.8,
+    true
+   ],
+   [
+    95.0,
+    true
+   ],
+   [
+    106.0,
+    false
+   ]
+  ],
+  "LU|LUGO": [
+   [
+    88.9,
+    false
+   ],
+   [
+    90.0,
+    false
+   ],
+   [
+    90.8,
+    false
+   ],
+   [
+    91.8,
+    false
+   ],
+   [
+    93.3,
+    true
+   ],
+   [
+    93.7,
+    true
+   ],
+   [
+    94.9,
+    false
+   ],
+   [
+    95.6,
+    false
+   ],
+   [
+    98.9,
+    true
+   ],
+   [
+    105.6,
+    false
+   ]
+  ],
+  "LU|MONDONEDO": [
+   [
+    99.3,
+    false
+   ]
+  ],
+  "LU|MONFORTE LEMOS": [
+   [
+    87.8,
+    true
+   ],
+   [
+    91.8,
+    true
+   ],
+   [
+    97.0,
+    false
+   ]
+  ],
+  "LU|NAVIA SUARNA": [
+   [
+    96.9,
+    true
+   ]
+  ],
+  "LU|PALAS REI": [
+   [
+    93.3,
+    true
+   ],
+   [
+    97.5,
+    true
+   ]
+  ],
+  "LU|QUIROGA": [
+   [
+    93.4,
+    false
+   ]
+  ],
+  "LU|RIBADEO": [
+   [
+    91.7,
+    true
+   ],
+   [
+    93.6,
+    false
+   ],
+   [
+    102.3,
+    false
+   ]
+  ],
+  "LU|SARRIA": [
+   [
+    90.6,
+    true
+   ],
+   [
+    97.5,
+    true
+   ],
+   [
+    98.2,
+    false
+   ]
+  ],
+  "LU|VILALBA": [
+   [
+    87.7,
+    false
+   ],
+   [
+    101.2,
+    false
+   ],
+   [
+    103.0,
+    true
+   ]
+  ],
+  "LU|VIVEIRO": [
+   [
+    88.5,
+    true
+   ],
+   [
+    90.2,
+    false
+   ],
+   [
+    94.8,
+    false
+   ],
+   [
+    97.0,
+    true
+   ],
+   [
+    99.7,
+    true
+   ]
+  ],
+  "OU|ALLARIZ": [
+   [
+    97.6,
+    true
+   ],
+   [
+    106.1,
+    true
+   ]
+  ],
+  "OU|AVION": [
+   [
+    106.0,
+    false
+   ]
+  ],
+  "OU|BARCO VALDEORRAS": [
+   [
+    88.4,
+    true
+   ],
+   [
+    89.2,
+    false
+   ],
+   [
+    90.9,
+    true
+   ],
+   [
+    92.0,
+    true
+   ],
+   [
+    97.9,
+    false
+   ]
+  ],
+  "OU|CARBALLINO": [
+   [
+    89.4,
+    true
+   ],
+   [
+    91.9,
+    false
+   ],
+   [
+    93.7,
+    true
+   ],
+   [
+    97.9,
+    false
+   ]
+  ],
+  "OU|CELANOVA": [
+   [
+    89.0,
+    true
+   ],
+   [
+    100.1,
+    true
+   ]
+  ],
+  "OU|LOBIOS": [
+   [
+    89.4,
+    false
+   ]
+  ],
+  "OU|MACEDA": [
+   [
+    89.9,
+    false
+   ]
+  ],
+  "OU|OURENSE": [
+   [
+    87.6,
+    false
+   ],
+   [
+    89.3,
+    false
+   ],
+   [
+    90.2,
+    true
+   ],
+   [
+    92.4,
+    false
+   ],
+   [
+    93.3,
+    false
+   ],
+   [
+    96.1,
+    false
+   ],
+   [
+    98.8,
+    false
+   ],
+   [
+    101.4,
+    false
+   ],
+   [
+    102.4,
+    true
+   ],
+   [
+    103.9,
+    true
+   ]
+  ],
+  "OU|RIBADAVIA": [
+   [
+    88.9,
+    false
+   ],
+   [
+    96.6,
+    false
+   ],
+   [
+    98.5,
+    true
+   ],
+   [
+    101.8,
+    true
+   ]
+  ],
+  "OU|VERIN": [
+   [
+    91.6,
+    false
+   ],
+   [
+    95.8,
+    false
+   ],
+   [
+    97.1,
+    true
+   ],
+   [
+    105.5,
+    true
+   ]
+  ],
+  "OU|VIANA BOLO": [
+   [
+    103.9,
+    false
+   ]
+  ],
+  "OU|XINZO LIMIA": [
+   [
+    89.1,
+    false
+   ],
+   [
+    96.9,
+    true
+   ],
+   [
+    99.3,
+    true
+   ]
+  ],
+  "PO|ARBO": [
+   [
+    97.0,
+    false
+   ]
+  ],
+  "PO|BAIONA": [
+   [
+    96.8,
+    false
+   ],
+   [
+    100.3,
+    false
+   ]
+  ],
+  "PO|CAMBADOS": [
+   [
+    97.8,
+    false
+   ]
+  ],
+  "PO|CANGAS MORRAZO": [
+   [
+    105.4,
+    false
+   ]
+  ],
+  "PO|ESTRADA": [
+   [
+    88.4,
+    false
+   ],
+   [
+    90.9,
+    false
+   ],
+   [
+    92.2,
+    true
+   ],
+   [
+    94.9,
+    true
+   ],
+   [
+    99.9,
+    true
+   ]
+  ],
+  "PO|LALIN": [
+   [
+    94.8,
+    false
+   ],
+   [
+    98.6,
+    false
+   ],
+   [
+    100.2,
+    false
+   ],
+   [
+    101.3,
+    true
+   ]
+  ],
+  "PO|MARIN": [
+   [
+    98.7,
+    false
+   ]
+  ],
+  "PO|PONTEAREAS": [
+   [
+    101.6,
+    false
+   ]
+  ],
+  "PO|PONTEVEDRA": [
+   [
+    89.1,
+    false
+   ],
+   [
+    93.1,
+    false
+   ],
+   [
+    96.5,
+    false
+   ],
+   [
+    97.0,
+    true
+   ],
+   [
+    103.6,
+    true
+   ],
+   [
+    105.1,
+    false
+   ],
+   [
+    106.4,
+    false
+   ],
+   [
+    106.9,
+    false
+   ]
+  ],
+  "PO|PORRINO": [
+   [
+    97.1,
+    false
+   ]
+  ],
+  "PO|REDONDELA": [
+   [
+    88.7,
+    false
+   ]
+  ],
+  "PO|TUI": [
+   [
+    92.6,
+    false
+   ],
+   [
+    105.1,
+    true
+   ]
+  ],
+  "PO|VIGO": [
+   [
+    87.8,
+    false
+   ],
+   [
+    94.0,
+    false
+   ],
+   [
+    99.4,
+    false
+   ],
+   [
+    100.6,
+    false
+   ],
+   [
+    101.2,
+    false
+   ],
+   [
+    103.8,
+    false
+   ],
+   [
+    104.7,
+    false
+   ]
+  ],
+  "PO|VILAGARCIA AROUSA": [
+   [
+    89.6,
+    false
+   ],
+   [
+    91.4,
+    false
+   ],
+   [
+    95.6,
+    false
+   ],
+   [
+    96.7,
+    true
+   ]
+  ],
+  "M|ALCALA HENARES": [
+   [
+    87.7,
+    false
+   ],
+   [
+    90.0,
+    true
+   ],
+   [
+    97.6,
+    false
+   ],
+   [
+    100.9,
+    false
+   ],
+   [
+    103.1,
+    false
+   ]
+  ],
+  "M|ALCOBENDAS": [
+   [
+    94.6,
+    false
+   ]
+  ],
+  "M|ALCORCON": [
+   [
+    94.8,
+    true
+   ],
+   [
+    103.9,
+    false
+   ]
+  ],
+  "M|ALDEA FRESNO": [
+   [
+    91.4,
+    false
+   ]
+  ],
+  "M|ALGETE": [
+   [
+    89.2,
+    true
+   ]
+  ],
+  "M|ARANJUEZ": [
+   [
+    89.3,
+    false
+   ],
+   [
+    90.7,
+    false
+   ],
+   [
+    103.2,
+    true
+   ]
+  ],
+  "M|ARGANDA REY": [
+   [
+    100.0,
+    false
+   ],
+   [
+    105.1,
+    true
+   ]
+  ],
+  "M|CERCEDILLA": [
+   [
+    92.1,
+    false
+   ]
+  ],
+  "M|CHINCHON": [
+   [
+    106.6,
+    false
+   ]
+  ],
+  "M|CIEMPOZUELOS": [
+   [
+    91.4,
+    false
+   ]
+  ],
+  "M|COLMENAR VIEJO": [
+   [
+    97.5,
+    true
+   ],
+   [
+    100.1,
+    false
+   ]
+  ],
+  "M|COSLADA": [
+   [
+    102.0,
+    false
+   ]
+  ],
+  "M|ESCORIAL, EL": [
+   [
+    100.9,
+    false
+   ]
+  ],
+  "M|FUENLABRADA": [
+   [
+    92.1,
+    false
+   ],
+   [
+    92.7,
+    false
+   ],
+   [
+    101.0,
+    true
+   ]
+  ],
+  "M|FUENTE SAZ": [
+   [
+    106.6,
+    false
+   ]
+  ],
+  "M|GALAPAGAR": [
+   [
+    94.2,
+    true
+   ]
+  ],
+  "M|GETAFE": [
+   [
+    101.8,
+    false
+   ],
+   [
+    105.7,
+    true
+   ]
+  ],
+  "M|GUADALIX SIERRA": [
+   [
+    98.5,
+    true
+   ]
+  ],
+  "M|LEGANES": [
+   [
+    89.9,
+    false
+   ],
+   [
+    104.6,
+    true
+   ]
+  ],
+  "M|MADRID": [
+   [
+    89.0,
+    false
+   ],
+   [
+    91.0,
+    false
+   ],
+   [
+    91.7,
+    false
+   ],
+   [
+    92.4,
+    false
+   ],
+   [
+    93.9,
+    false
+   ],
+   [
+    95.1,
+    false
+   ],
+   [
+    97.2,
+    false
+   ],
+   [
+    98.0,
+    false
+   ],
+   [
+    99.1,
+    true
+   ],
+   [
+    99.5,
+    false
+   ],
+   [
+    100.4,
+    false
+   ],
+   [
+    102.7,
+    false
+   ],
+   [
+    103.5,
+    false
+   ],
+   [
+    104.3,
+    false
+   ],
+   [
+    105.4,
+    false
+   ],
+   [
+    106.3,
+    false
+   ]
+  ],
+  "M|MAJADAHONDA": [
+   [
+    98.4,
+    false
+   ]
+  ],
+  "M|MEJORADA CAMPO": [
+   [
+    106.8,
+    false
+   ]
+  ],
+  "M|MIRAFLORES SIERRA": [
+   [
+    103.4,
+    true
+   ]
+  ],
+  "M|MOSTOLES": [
+   [
+    93.5,
+    true
+   ],
+   [
+    102.3,
+    false
+   ]
+  ],
+  "M|NAVALCARNERO": [
+   [
+    87.8,
+    false
+   ],
+   [
+    96.9,
+    true
+   ]
+  ],
+  "M|PARLA": [
+   [
+    94.4,
+    false
+   ]
+  ],
+  "M|PERALES TAJUNA": [
+   [
+    102.2,
+    true
+   ]
+  ],
+  "M|PINTO": [
+   [
+    97.7,
+    false
+   ]
+  ],
+  "M|POZUELO ALARCON": [
+   [
+    100.7,
+    false
+   ]
+  ],
+  "M|RASCAFRIA": [
+   [
+    100.5,
+    false
+   ]
+  ],
+  "M|S FERNANDO HENARES": [
+   [
+    94.3,
+    false
+   ]
+  ],
+  "M|S LORENZO ESCORIAL": [
+   [
+    100.3,
+    false
+   ],
+   [
+    106.6,
+    false
+   ]
+  ],
+  "M|S MARTIN VALDEIGLES": [
+   [
+    92.2,
+    false
+   ]
+  ],
+  "M|S SEBASTIAN REYES": [
+   [
+    89.6,
+    false
+   ],
+   [
+    101.6,
+    true
+   ]
+  ],
+  "M|SEVILLA NUEVA": [
+   [
+    104.1,
+    true
+   ]
+  ],
+  "M|SOTO REAL": [
+   [
+    102.4,
+    true
+   ]
+  ],
+  "M|TORREJON ARDOZ": [
+   [
+    92.0,
+    true
+   ],
+   [
+    100.2,
+    false
+   ]
+  ],
+  "M|TORRELAGUNA": [
+   [
+    87.9,
+    false
+   ]
+  ],
+  "M|TORRES ALAMEDA": [
+   [
+    92.9,
+    true
+   ]
+  ],
+  "M|TRES CANTOS": [
+   [
+    92.8,
+    false
+   ]
+  ],
+  "M|VALDEMORO": [
+   [
+    89.7,
+    false
+   ]
+  ],
+  "M|VILLALBA": [
+   [
+    88.7,
+    false
+   ],
+   [
+    91.3,
+    false
+   ]
+  ],
+  "M|VILLALBILLA": [
+   [
+    90.7,
+    false
+   ]
+  ],
+  "M|VILLAREJO SALVANES": [
+   [
+    100.3,
+    false
+   ]
+  ],
+  "ML|MELILLA": [
+   [
+    89.6,
+    true
+   ],
+   [
+    92.2,
+    false
+   ],
+   [
+    96.3,
+    false
+   ],
+   [
+    98.4,
+    false
+   ],
+   [
+    101.1,
+    false
+   ],
+   [
+    102.2,
+    true
+   ]
+  ],
+  "MU|ABANILLA": [
+   [
+    96.9,
+    true
+   ]
+  ],
+  "MU|ABARAN": [
+   [
+    89.5,
+    true
+   ]
+  ],
+  "MU|AGUILAS": [
+   [
+    88.4,
+    false
+   ],
+   [
+    89.2,
+    false
+   ],
+   [
+    91.4,
+    true
+   ],
+   [
+    102.2,
+    true
+   ],
+   [
+    104.4,
+    true
+   ]
+  ],
+  "MU|ALCANTARILLA": [
+   [
+    89.3,
+    true
+   ],
+   [
+    91.7,
+    true
+   ],
+   [
+    93.3,
+    true
+   ],
+   [
+    93.7,
+    true
+   ],
+   [
+    106.5,
+    true
+   ]
+  ],
+  "MU|ALHAMA MURCIA": [
+   [
+    88.7,
+    false
+   ],
+   [
+    95.6,
+    true
+   ],
+   [
+    97.2,
+    true
+   ]
+  ],
+  "MU|ARCHENA": [
+   [
+    92.6,
+    true
+   ],
+   [
+    97.0,
+    true
+   ],
+   [
+    97.7,
+    false
+   ]
+  ],
+  "MU|BENIEL": [
+   [
+    97.4,
+    true
+   ]
+  ],
+  "MU|BLANCA": [
+   [
+    104.5,
+    true
+   ]
+  ],
+  "MU|BULLAS": [
+   [
+    95.2,
+    false
+   ]
+  ],
+  "MU|CAMPOS RIO": [
+   [
+    95.0,
+    true
+   ],
+   [
+    102.2,
+    true
+   ]
+  ],
+  "MU|CARAVACA": [
+   [
+    97.2,
+    false
+   ],
+   [
+    98.5,
+    true
+   ]
+  ],
+  "MU|CARTAGENA": [
+   [
+    88.3,
+    true
+   ],
+   [
+    89.4,
+    false
+   ],
+   [
+    96.7,
+    false
+   ],
+   [
+    98.8,
+    false
+   ],
+   [
+    102.3,
+    false
+   ]
+  ],
+  "MU|CEHEGIN": [
+   [
+    87.6,
+    false
+   ],
+   [
+    102.8,
+    true
+   ]
+  ],
+  "MU|CIEZA": [
+   [
+    88.0,
+    false
+   ],
+   [
+    94.9,
+    true
+   ],
+   [
+    101.3,
+    false
+   ],
+   [
+    101.9,
+    true
+   ]
+  ],
+  "MU|FORTUNA": [
+   [
+    90.7,
+    true
+   ]
+  ],
+  "MU|FUENTE ALAMO": [
+   [
+    104.4,
+    true
+   ],
+   [
+    106.7,
+    true
+   ]
+  ],
+  "MU|JUMILLA": [
+   [
+    96.6,
+    true
+   ],
+   [
+    102.7,
+    true
+   ],
+   [
+    104.2,
+    false
+   ],
+   [
+    105.7,
+    false
+   ]
+  ],
+  "MU|LORCA": [
+   [
+    88.4,
+    true
+   ],
+   [
+    93.5,
+    false
+   ],
+   [
+    94.0,
+    true
+   ],
+   [
+    95.3,
+    false
+   ],
+   [
+    97.4,
+    true
+   ]
+  ],
+  "MU|MAZARRON": [
+   [
+    90.7,
+    false
+   ],
+   [
+    93.2,
+    true
+   ],
+   [
+    95.1,
+    false
+   ]
+  ],
+  "MU|MOLINA SEGURA": [
+   [
+    90.2,
+    true
+   ],
+   [
+    99.9,
+    true
+   ],
+   [
+    101.0,
+    false
+   ]
+  ],
+  "MU|MORATALLA": [
+   [
+    89.5,
+    true
+   ],
+   [
+    91.5,
+    false
+   ]
+  ],
+  "MU|MULA": [
+   [
+    90.8,
+    true
+   ],
+   [
+    102.6,
+    true
+   ],
+   [
+    104.5,
+    false
+   ]
+  ],
+  "MU|MURCIA": [
+   [
+    89.7,
+    false
+   ],
+   [
+    91.3,
+    false
+   ],
+   [
+    92.9,
+    false
+   ],
+   [
+    99.3,
+    false
+   ],
+   [
+    100.3,
+    false
+   ],
+   [
+    103.9,
+    false
+   ],
+   [
+    106.9,
+    false
+   ]
+  ],
+  "MU|PLIEGO": [
+   [
+    99.5,
+    true
+   ],
+   [
+    101.3,
+    true
+   ]
+  ],
+  "MU|PUERTO LUMBRERAS": [
+   [
+    90.9,
+    true
+   ],
+   [
+    96.6,
+    false
+   ],
+   [
+    98.9,
+    true
+   ],
+   [
+    106.8,
+    true
+   ]
+  ],
+  "MU|RICOTE": [
+   [
+    105.6,
+    true
+   ]
+  ],
+  "MU|S JAVIER": [
+   [
+    100.6,
+    false
+   ]
+  ],
+  "MU|S PEDRO PINATAR": [
+   [
+    89.9,
+    true
+   ]
+  ],
+  "MU|SANTOMERA": [
+   [
+    88.3,
+    false
+   ],
+   [
+    94.7,
+    true
+   ],
+   [
+    104.9,
+    true
+   ]
+  ],
+  "MU|TORRE PACHECO": [
+   [
+    89.0,
+    false
+   ]
+  ],
+  "MU|TORRES COTILLAS": [
+   [
+    88.9,
+    false
+   ]
+  ],
+  "MU|TOTANA": [
+   [
+    90.4,
+    true
+   ],
+   [
+    94.3,
+    true
+   ],
+   [
+    98.9,
+    false
+   ]
+  ],
+  "MU|UNION": [
+   [
+    95.4,
+    false
+   ]
+  ],
+  "MU|VILLANUEVA RIO SEGUR": [
+   [
+    88.5,
+    true
+   ]
+  ],
+  "MU|YECLA": [
+   [
+    89.4,
+    false
+   ],
+   [
+    90.4,
+    false
+   ],
+   [
+    94.7,
+    true
+   ],
+   [
+    105.1,
+    true
+   ]
+  ],
+  "NA|ALSASUA": [
+   [
+    87.8,
+    false
+   ],
+   [
+    93.2,
+    true
+   ],
+   [
+    97.3,
+    true
+   ],
+   [
+    98.6,
+    true
+   ]
+  ],
+  "NA|AMESCOA BAJA": [
+   [
+    92.3,
+    true
+   ],
+   [
+    94.1,
+    true
+   ],
+   [
+    103.0,
+    true
+   ],
+   [
+    105.8,
+    true
+   ]
+  ],
+  "NA|BAZTAN": [
+   [
+    88.6,
+    true
+   ],
+   [
+    95.1,
+    true
+   ],
+   [
+    98.6,
+    true
+   ]
+  ],
+  "NA|BURGUETE": [
+   [
+    89.9,
+    true
+   ],
+   [
+    93.2,
+    true
+   ],
+   [
+    97.9,
+    true
+   ],
+   [
+    98.9,
+    true
+   ]
+  ],
+  "NA|ELIZONDO": [
+   [
+    91.3,
+    false
+   ]
+  ],
+  "NA|ESTELLA": [
+   [
+    89.5,
+    false
+   ],
+   [
+    93.4,
+    false
+   ],
+   [
+    97.9,
+    true
+   ],
+   [
+    99.6,
+    true
+   ]
+  ],
+  "NA|ISABA": [
+   [
+    93.1,
+    true
+   ],
+   [
+    95.9,
+    true
+   ],
+   [
+    97.1,
+    false
+   ],
+   [
+    102.2,
+    true
+   ]
+  ],
+  "NA|LARRAUN BARAIBAR": [
+   [
+    101.3,
+    false
+   ]
+  ],
+  "NA|LEITZA": [
+   [
+    90.6,
+    true
+   ],
+   [
+    95.1,
+    true
+   ],
+   [
+    100.8,
+    true
+   ]
+  ],
+  "NA|LESAKA": [
+   [
+    88.0,
+    false
+   ]
+  ],
+  "NA|OCHAGAVIA": [
+   [
+    89.8,
+    true
+   ],
+   [
+    96.8,
+    true
+   ],
+   [
+    97.3,
+    true
+   ],
+   [
+    99.3,
+    true
+   ]
+  ],
+  "NA|PAMPLONA": [
+   [
+    87.9,
+    false
+   ],
+   [
+    89.3,
+    false
+   ],
+   [
+    92.2,
+    false
+   ],
+   [
+    94.2,
+    false
+   ],
+   [
+    94.9,
+    false
+   ],
+   [
+    98.3,
+    false
+   ],
+   [
+    99.2,
+    false
+   ],
+   [
+    100.4,
+    true
+   ],
+   [
+    101.2,
+    true
+   ],
+   [
+    105.6,
+    false
+   ]
+  ],
+  "NA|PERALTA": [
+   [
+    92.3,
+    true
+   ],
+   [
+    98.0,
+    true
+   ],
+   [
+    101.1,
+    true
+   ],
+   [
+    104.7,
+    false
+   ]
+  ],
+  "NA|SANGUESA": [
+   [
+    92.6,
+    false
+   ],
+   [
+    98.0,
+    true
+   ],
+   [
+    100.6,
+    true
+   ],
+   [
+    105.0,
+    true
+   ]
+  ],
+  "NA|TAFALLA": [
+   [
+    90.3,
+    true
+   ],
+   [
+    93.9,
+    false
+   ],
+   [
+    94.4,
+    true
+   ],
+   [
+    96.3,
+    false
+   ],
+   [
+    104.4,
+    true
+   ]
+  ],
+  "NA|TUDELA": [
+   [
+    90.4,
+    false
+   ],
+   [
+    99.4,
+    false
+   ],
+   [
+    103.1,
+    false
+   ],
+   [
+    106.2,
+    true
+   ]
+  ],
+  "NA|VERA BIDASOA": [
+   [
+    91.7,
+    true
+   ],
+   [
+    93.5,
+    true
+   ],
+   [
+    94.0,
+    true
+   ],
+   [
+    103.1,
+    true
+   ]
+  ],
+  "BI|BARAKALDO": [
+   [
+    98.4,
+    false
+   ],
+   [
+    99.7,
+    false
+   ]
+  ],
+  "BI|BILBAO": [
+   [
+    88.0,
+    false
+   ],
+   [
+    89.5,
+    false
+   ],
+   [
+    97.8,
+    false
+   ],
+   [
+    101.5,
+    false
+   ],
+   [
+    102.6,
+    false
+   ],
+   [
+    103.7,
+    false
+   ]
+  ],
+  "BI|BILBAO 1": [
+   [
+    88.5,
+    true
+   ],
+   [
+    90.1,
+    true
+   ],
+   [
+    92.7,
+    true
+   ],
+   [
+    95.1,
+    true
+   ]
+  ],
+  "BI|BILBAO 2": [
+   [
+    92.2,
+    true
+   ],
+   [
+    94.3,
+    true
+   ]
+  ],
+  "BI|DURANGO": [
+   [
+    96.7,
+    true
+   ]
+  ],
+  "BI|DURANGUESADO": [
+   [
+    97.4,
+    true
+   ]
+  ],
+  "BI|GERNIKA": [
+   [
+    88.3,
+    false
+   ],
+   [
+    96.7,
+    true
+   ]
+  ],
+  "BI|GETXO": [
+   [
+    93.2,
+    false
+   ],
+   [
+    95.8,
+    true
+   ],
+   [
+    101.1,
+    true
+   ],
+   [
+    104.8,
+    true
+   ],
+   [
+    105.6,
+    true
+   ]
+  ],
+  "BI|LEKEITIO": [
+   [
+    98.1,
+    false
+   ]
+  ],
+  "BI|MARKINA": [
+   [
+    96.7,
+    false
+   ]
+  ],
+  "BI|ONDARROA": [
+   [
+    92.5,
+    false
+   ]
+  ],
+  "SS|AZKOITIA": [
+   [
+    91.8,
+    true
+   ]
+  ],
+  "SS|BEASAIN": [
+   [
+    102.2,
+    true
+   ],
+   [
+    105.4,
+    true
+   ],
+   [
+    106.5,
+    true
+   ]
+  ],
+  "SS|EIBAR": [
+   [
+    93.6,
+    false
+   ],
+   [
+    101.1,
+    false
+   ],
+   [
+    104.0,
+    false
+   ]
+  ],
+  "SS|IRUN": [
+   [
+    88.1,
+    false
+   ]
+  ],
+  "SS|LEGAZPIA": [
+   [
+    94.6,
+    true
+   ],
+   [
+    100.5,
+    true
+   ]
+  ],
+  "SS|LOYOLA BERGARA": [
+   [
+    99.8,
+    false
+   ]
+  ],
+  "SS|S SEBASTIAN": [
+   [
+    88.5,
+    false
+   ],
+   [
+    91.5,
+    false
+   ],
+   [
+    93.8,
+    true
+   ],
+   [
+    94.8,
+    true
+   ],
+   [
+    95.6,
+    true
+   ],
+   [
+    97.2,
+    false
+   ],
+   [
+    102.5,
+    false
+   ],
+   [
+    103.0,
+    false
+   ],
+   [
+    105.8,
+    true
+   ],
+   [
+    106.2,
+    false
+   ],
+   [
+    106.9,
+    false
+   ]
+  ],
+  "SS|SEGURA": [
+   [
+    89.2,
+    false
+   ]
+  ],
+  "VI|ARAMAIONA": [
+   [
+    96.7,
+    false
+   ]
+  ],
+  "VI|LAGUARDIA": [
+   [
+    105.8,
+    false
+   ]
+  ],
+  "VI|LLODIO": [
+   [
+    98.8,
+    false
+   ]
+  ],
+  "VI|VITORIA": [
+   [
+    88.2,
+    false
+   ],
+   [
+    93.1,
+    false
+   ],
+   [
+    98.0,
+    false
+   ],
+   [
+    100.4,
+    false
+   ],
+   [
+    101.0,
+    false
+   ],
+   [
+    102.4,
+    false
+   ],
+   [
+    105.6,
+    false
+   ],
+   [
+    106.7,
+    false
+   ]
+  ],
+  "VI|VITORIA 1": [
+   [
+    87.7,
+    true
+   ],
+   [
+    92.0,
+    true
+   ]
+  ],
+  "VI|VITORIA 2": [
+   [
+    89.9,
+    true
+   ],
+   [
+    101.6,
+    true
+   ],
+   [
+    104.6,
+    true
+   ]
+  ],
+  "VI|VITORIA 3": [
+   [
+    90.4,
+    true
+   ],
+   [
+    95.6,
+    true
+   ]
+  ],
+  "VI|VITORIA 4": [
+   [
+    91.5,
+    true
+   ],
+   [
+    94.5,
+    true
+   ],
+   [
+    106.1,
+    true
+   ]
+  ],
+  "LO|ALFARO": [
+   [
+    100.2,
+    false
+   ],
+   [
+    101.8,
+    false
+   ],
+   [
+    106.3,
+    true
+   ]
+  ],
+  "LO|ARNEDO": [
+   [
+    92.7,
+    false
+   ],
+   [
+    95.2,
+    false
+   ],
+   [
+    100.8,
+    true
+   ]
+  ],
+  "LO|CALAHORRA": [
+   [
+    88.8,
+    false
+   ],
+   [
+    90.7,
+    false
+   ],
+   [
+    93.7,
+    false
+   ],
+   [
+    94.3,
+    true
+   ],
+   [
+    95.8,
+    true
+   ]
+  ],
+  "LO|HARO": [
+   [
+    91.4,
+    false
+   ],
+   [
+    95.6,
+    true
+   ],
+   [
+    97.3,
+    true
+   ],
+   [
+    100.7,
+    false
+   ],
+   [
+    106.6,
+    false
+   ]
+  ],
+  "LO|LOGRONO": [
+   [
+    91.1,
+    false
+   ],
+   [
+    91.7,
+    false
+   ],
+   [
+    92.9,
+    true
+   ],
+   [
+    96.0,
+    false
+   ],
+   [
+    96.8,
+    true
+   ],
+   [
+    98.2,
+    false
+   ],
+   [
+    99.8,
+    false
+   ],
+   [
+    100.4,
+    true
+   ],
+   [
+    100.9,
+    true
+   ],
+   [
+    101.4,
+    false
+   ]
+  ],
+  "LO|NAJERA": [
+   [
+    89.1,
+    false
+   ],
+   [
+    90.6,
+    true
+   ]
+  ],
+  "LO|STO DOMINGO CALZADA": [
+   [
+    100.1,
+    false
+   ]
+  ],
+  "A|ALCOY": [
+   [
+    90.1,
+    true
+   ],
+   [
+    96.3,
+    false
+   ],
+   [
+    98.1,
+    false
+   ],
+   [
+    100.8,
+    false
+   ],
+   [
+    101.8,
+    true
+   ],
+   [
+    102.6,
+    true
+   ]
+  ],
+  "A|ALICANTE": [
+   [
+    89.2,
+    false
+   ],
+   [
+    90.0,
+    false
+   ],
+   [
+    91.0,
+    false
+   ],
+   [
+    91.7,
+    false
+   ],
+   [
+    93.2,
+    false
+   ],
+   [
+    95.6,
+    false
+   ],
+   [
+    102.7,
+    true
+   ],
+   [
+    106.5,
+    false
+   ]
+  ],
+  "A|ALTEA": [
+   [
+    94.6,
+    false
+   ]
+  ],
+  "A|ASPE": [
+   [
+    103.4,
+    false
+   ]
+  ],
+  "A|BENIDORM": [
+   [
+    93.9,
+    false
+   ],
+   [
+    98.9,
+    false
+   ],
+   [
+    103.8,
+    false
+   ]
+  ],
+  "A|BENISSA": [
+   [
+    102.5,
+    false
+   ]
+  ],
+  "A|CREVILLENTE": [
+   [
+    101.4,
+    false
+   ]
+  ],
+  "A|DENIA": [
+   [
+    89.6,
+    false
+   ],
+   [
+    92.5,
+    false
+   ],
+   [
+    104.0,
+    true
+   ]
+  ],
+  "A|ELCHE": [
+   [
+    92.8,
+    false
+   ],
+   [
+    94.8,
+    false
+   ],
+   [
+    99.1,
+    false
+   ],
+   [
+    100.8,
+    false
+   ]
+  ],
+  "A|ELDA": [
+   [
+    90.2,
+    false
+   ],
+   [
+    100.5,
+    false
+   ]
+  ],
+  "A|IBI": [
+   [
+    93.7,
+    false
+   ]
+  ],
+  "A|JAVEA": [
+   [
+    91.3,
+    false
+   ],
+   [
+    101.8,
+    true
+   ]
+  ],
+  "A|MONFORTE CID": [
+   [
+    102.5,
+    true
+   ]
+  ],
+  "A|NOVELDA": [
+   [
+    89.6,
+    false
+   ],
+   [
+    91.4,
+    true
+   ],
+   [
+    103.9,
+    true
+   ]
+  ],
+  "A|ORIHUELA": [
+   [
+    90.5,
+    false
+   ],
+   [
+    102.6,
+    false
+   ]
+  ],
+  "A|PETRER": [
+   [
+    102.0,
+    false
+   ]
+  ],
+  "A|TORREVIEJA": [
+   [
+    93.6,
+    false
+   ]
+  ],
+  "A|VILLAJOYOSA": [
+   [
+    93.0,
+    false
+   ],
+   [
+    95.0,
+    false
+   ]
+  ],
+  "A|VILLENA": [
+   [
+    87.8,
+    false
+   ],
+   [
+    104.4,
+    true
+   ]
+  ],
+  "A|XIXONA": [
+   [
+    100.5,
+    true
+   ],
+   [
+    101.5,
+    true
+   ]
+  ],
+  "CS|BENICARLO": [
+   [
+    99.9,
+    true
+   ],
+   [
+    106.2,
+    false
+   ]
+  ],
+  "CS|BENICASIM": [
+   [
+    97.1,
+    false
+   ],
+   [
+    106.3,
+    true
+   ]
+  ],
+  "CS|BURRIANA": [
+   [
+    105.8,
+    false
+   ]
+  ],
+  "CS|CASTELLON": [
+   [
+    87.6,
+    false
+   ],
+   [
+    88.0,
+    true
+   ],
+   [
+    88.7,
+    false
+   ],
+   [
+    91.2,
+    false
+   ],
+   [
+    91.7,
+    false
+   ],
+   [
+    94.1,
+    true
+   ],
+   [
+    94.8,
+    false
+   ],
+   [
+    95.9,
+    true
+   ],
+   [
+    98.8,
+    true
+   ],
+   [
+    99.2,
+    false
+   ],
+   [
+    100.8,
+    false
+   ],
+   [
+    101.4,
+    true
+   ],
+   [
+    104.6,
+    false
+   ]
+  ],
+  "CS|MORELLA": [
+   [
+    89.0,
+    false
+   ]
+  ],
+  "CS|ONDA": [
+   [
+    105.1,
+    false
+   ]
+  ],
+  "CS|SEGORBE": [
+   [
+    87.7,
+    false
+   ],
+   [
+    105.0,
+    true
+   ]
+  ],
+  "CS|VALL UXO": [
+   [
+    90.8,
+    true
+   ],
+   [
+    93.6,
+    false
+   ]
+  ],
+  "CS|VILLAFRANCA CID": [
+   [
+    93.1,
+    true
+   ]
+  ],
+  "CS|VILLARREAL": [
+   [
+    92.2,
+    false
+   ]
+  ],
+  "CS|VINAROS": [
+   [
+    98.2,
+    false
+   ],
+   [
+    101.6,
+    false
+   ],
+   [
+    106.9,
+    true
+   ]
+  ],
+  "V|ALGEMESI": [
+   [
+    89.0,
+    false
+   ]
+  ],
+  "V|ALZIRA": [
+   [
+    95.7,
+    false
+   ],
+   [
+    106.0,
+    false
+   ]
+  ],
+  "V|BURJASSOT": [
+   [
+    90.9,
+    false
+   ]
+  ],
+  "V|CATARROJA": [
+   [
+    93.1,
+    false
+   ]
+  ],
+  "V|CULLERA": [
+   [
+    91.6,
+    false
+   ]
+  ],
+  "V|GANDIA": [
+   [
+    89.0,
+    true
+   ],
+   [
+    94.4,
+    false
+   ],
+   [
+    96.5,
+    false
+   ],
+   [
+    100.6,
+    true
+   ],
+   [
+    104.3,
+    false
+   ]
+  ],
+  "V|MISLATA": [
+   [
+    104.4,
+    false
+   ]
+  ],
+  "V|OLIVA": [
+   [
+    90.6,
+    false
+   ]
+  ],
+  "V|OLLERIA": [
+   [
+    101.9,
+    true
+   ]
+  ],
+  "V|ONTINYENT": [
+   [
+    89.5,
+    false
+   ],
+   [
+    95.3,
+    false
+   ]
+  ],
+  "V|REQUENA": [
+   [
+    93.2,
+    false
+   ],
+   [
+    104.1,
+    true
+   ]
+  ],
+  "V|SAGUNTO": [
+   [
+    101.7,
+    false
+   ],
+   [
+    104.1,
+    false
+   ]
+  ],
+  "V|SUECA": [
+   [
+    105.5,
+    false
+   ]
+  ],
+  "V|UTIEL": [
+   [
+    105.1,
+    false
+   ],
+   [
+    105.8,
+    true
+   ]
+  ],
+  "V|VALENCIA": [
+   [
+    92.0,
+    false
+   ],
+   [
+    94.2,
+    false
+   ],
+   [
+    96.1,
+    false
+   ],
+   [
+    96.9,
+    false
+   ],
+   [
+    97.7,
+    false
+   ],
+   [
+    98.4,
+    false
+   ],
+   [
+    99.0,
+    false
+   ],
+   [
+    99.5,
+    true
+   ],
+   [
+    99.9,
+    true
+   ],
+   [
+    100.4,
+    false
+   ],
+   [
+    101.2,
+    false
+   ],
+   [
+    103.2,
+    false
+   ]
+  ],
+  "V|XATIVA": [
+   [
+    94.6,
+    false
+   ]
+  ],
+  "V|XIRIVELLA": [
+   [
+    93.4,
+    false
+   ]
+  ]
+ },
+ "tdt_local": {
+  "TL01AL": {
+   "denominacion": "Albox",
+   "canal": 28,
+   "ambito": [
+    "Albox",
+    "Olula del Río",
+    "Macael",
+    "Tíjola",
+    "Cantoria",
+    "Fines",
+    "Purchena",
+    "Lúcar",
+    "Somontín",
+    "Partaloa",
+    "Urrácal",
+    "Armuña de Almanzora",
+    "Suflí"
+   ]
+  },
+  "TL02AL": {
+   "denominacion": "Almería",
+   "canal": 34,
+   "ambito": [
+    "Almería",
+    "Huércal de Almería",
+    "Viator",
+    "Pechina",
+    "Benahadux",
+    "Gádor",
+    "Rioja"
+   ]
+  },
+  "TL03AL": {
+   "denominacion": "Ejido",
+   "canal": 60,
+   "ambito": [
+    "Ejido (El)",
+    "Roquetas de Mar",
+    "Adra",
+    "Vícar",
+    "Berja",
+    "Mojonera (La)",
+    "Dalías"
+   ]
+  },
+  "TL04AL": {
+   "denominacion": "Huércal-Overa",
+   "canal": 24,
+   "ambito": [
+    "Huércal-Overa",
+    "Cuevas del Almanzora",
+    "Vera",
+    "Pulpí",
+    "Garrucha",
+    "Mojácar",
+    "Antas",
+    "Turre",
+    "Gallardos (Los)",
+    "Zurgena",
+    "Arboleas"
+   ]
+  },
+  "TL05AL": {
+   "denominacion": "Níjar",
+   "canal": 28,
+   "ambito": [
+    "Níjar",
+    "Carboneras"
+   ]
+  },
+  "TL01CA": {
+   "denominacion": "Algeciras",
+   "canal": 28,
+   "ambito": [
+    "Algeciras",
+    "Línea de la Concepción (La)",
+    "San Roque",
+    "Barrios (Los)",
+    "Tarifa",
+    "Jimena de la Frontera",
+    "Castellar de la Frontera"
+   ]
+  },
+  "TL02CA": {
+   "denominacion": "Arcos Frontera",
+   "canal": 24,
+   "ambito": [
+    "Arcos de la Frontera",
+    "Villamartín",
+    "Bornos",
+    "San José del Valle",
+    "Espera",
+    "Algar"
+   ]
+  },
+  "TL03CA": {
+   "denominacion": "Cádiz",
+   "canal": 54,
+   "ambito": [
+    "Cádiz",
+    "San Fernando",
+    "Puerto de Santa María (El)",
+    "Puerto Real"
+   ]
+  },
+  "TL04CA": {
+   "denominacion": "Chiclana Frontera",
+   "canal": 52,
+   "ambito": [
+    "Chiclana de la Frontera",
+    "Barbate",
+    "Conil de la Frontera",
+    "Vejer de la Frontera"
+   ]
+  },
+  "TL05CA": {
+   "denominacion": "Jerez Frontera",
+   "canal": 30,
+   "ambito": [
+    "Jerez de la Frontera",
+    "Sanlúcar de Barrameda",
+    "Rota",
+    "Chipiona",
+    "Trebujena"
+   ]
+  },
+  "TL06CA": {
+   "denominacion": "Olvera",
+   "canal": 27,
+   "ambito": [
+    "Olvera",
+    "Algodonales",
+    "Alcalá del Valle",
+    "Setenil de las Bodegas",
+    "Gastor (El)",
+    "Zahara",
+    "Torre Alháquime"
+   ]
+  },
+  "TL07CA": {
+   "denominacion": "Ubrique",
+   "canal": 33,
+   "ambito": [
+    "Ubrique",
+    "Prado del Rey",
+    "Grazalema",
+    "Bosque (El)",
+    "Benaocaz"
+   ]
+  },
+  "TL08CA": {
+   "denominacion": "Medina Sidonia",
+   "canal": 43,
+   "ambito": [
+    "Medina-Sidonia",
+    "Benalup-Casa Viejas",
+    "Alcalá de los Gazules",
+    "Paterna de Rivera"
+   ]
+  },
+  "TL01CO": {
+   "denominacion": "Baena",
+   "canal": null,
+   "ambito": [
+    "Baena",
+    "Nueva Carteya",
+    "Doña Mencía",
+    "Luque"
+   ]
+  },
+  "TL02CO": {
+   "denominacion": "Córdoba",
+   "canal": 30,
+   "ambito": [
+    "Córdoba"
+   ]
+  },
+  "TL03CO": {
+   "denominacion": "Hinojosa Duque",
+   "canal": 36,
+   "ambito": [
+    "Hinojosa del Duque",
+    "Belalcázar",
+    "Viso (El)",
+    "Villanueva del Duque",
+    "Villaralto",
+    "Santa Eufemia",
+    "Fuente la Lancha"
+   ]
+  },
+  "TL04CO": {
+   "denominacion": "Lucena",
+   "canal": 29,
+   "ambito": [
+    "Lucena",
+    "Cabra",
+    "Benamejí",
+    "Encinas Reales",
+    "Palenciana"
+   ]
+  },
+  "TL05CO": {
+   "denominacion": "Montilla",
+   "canal": 26,
+   "ambito": [
+    "Montilla",
+    "Fernán-Núñez",
+    "Castro del Río",
+    "Rambla (La)",
+    "Santaella",
+    "Montalbán de Córdoba",
+    "Espejo",
+    "Montemayor",
+    "San Sebastián de los Ballesteros"
+   ]
+  },
+  "TL06CO": {
+   "denominacion": "Palma Río",
+   "canal": 35,
+   "ambito": [
+    "Palma del Río",
+    "Carlota (La)",
+    "Fuente Palmera",
+    "Almodóvar del Río",
+    "Posadas",
+    "Hornachuelos",
+    "Guadalcázar"
+   ]
+  },
+  "TL07CO": {
+   "denominacion": "Peñarroya-Pueblonuevo",
+   "canal": 38,
+   "ambito": [
+    "Peñarroya-Pueblonuevo",
+    "Fuente Obejuna",
+    "Belmez",
+    "Espiel",
+    "Villanueva del Rey"
+   ]
+  },
+  "TL08CO": {
+   "denominacion": "Pozoblanco",
+   "canal": 47,
+   "ambito": [
+    "Pozoblanco",
+    "Villanueva de Córdoba",
+    "Dos Torres",
+    "Pedroche",
+    "Añora",
+    "Alcaracejos",
+    "Torrecampo"
+   ]
+  },
+  "TL09CO": {
+   "denominacion": "Priego Córdoba",
+   "canal": 49,
+   "ambito": [
+    "Priego de Córdoba",
+    "Rute",
+    "Iznájar",
+    "Carcabuey",
+    "Almedinilla"
+   ]
+  },
+  "TL10CO": {
+   "denominacion": "Puente Genil",
+   "canal": 32,
+   "ambito": [
+    "Puente Genil",
+    "Aguilar de la Frontera",
+    "Moriles",
+    "Monturque"
+   ]
+  },
+  "TL11CO": {
+   "denominacion": "Montoro",
+   "canal": 59,
+   "ambito": [
+    "Montoro",
+    "Bujalance",
+    "Villa del Río",
+    "Carpio (El)",
+    "Adamuz",
+    "Villafranca de Córdoba",
+    "Cañete de las Torres",
+    "Pedro Abad. Superficie total: 1299,97 km²"
+   ]
+  },
+  "TL01GR": {
+   "denominacion": "Almuñécar",
+   "canal": 37,
+   "ambito": [
+    "Almuñécar",
+    "Salobreña",
+    "Molvízar",
+    "Otívar",
+    "Itrabo",
+    "Jete"
+   ]
+  },
+  "TL02GR": {
+   "denominacion": "Baza",
+   "canal": 27,
+   "ambito": [
+    "Baza",
+    "Cúllar",
+    "Caniles",
+    "Zújar",
+    "Cortes de Baza",
+    "Benamaurel",
+    "Cuevas del Campo"
+   ]
+  },
+  "TL03GR": {
+   "denominacion": "Granada",
+   "canal": 43,
+   "ambito": [
+    "Granada",
+    "Maracena",
+    "Armilla",
+    "Zubia (La)",
+    "Albolote",
+    "Santa Fe",
+    "Pinos Puente",
+    "Atarfe",
+    "Ogíjares",
+    "Huétor Vega",
+    "Gabias (Las)",
+    "Peligros",
+    "Churriana de la Vega",
+    "Cenes de la Vega",
+    "Cúllar Vega",
+    "Chauchina",
+    "Vegas del Genil",
+    "Fuente Vaqueros",
+    "Gójar",
+    "Láchar",
+    "Cijuela"
+   ]
+  },
+  "TL04GR": {
+   "denominacion": "Guadix",
+   "canal": null,
+   "ambito": [
+    "Guadix",
+    "Benalúa",
+    "Purullena",
+    "Darro",
+    "Peza (La)",
+    "Fonelas",
+    "Cortes",
+    "Graena"
+   ]
+  },
+  "TL05GR": {
+   "denominacion": "Huéscar",
+   "canal": 30,
+   "ambito": [
+    "Huéscar",
+    "Castril",
+    "Puebla de Don Fadrique",
+    "Castilléjar",
+    "Orce",
+    "Galera"
+   ]
+  },
+  "TL06GR": {
+   "denominacion": "Iznalloz",
+   "canal": null,
+   "ambito": [
+    "Iznalloz",
+    "Montejícar",
+    "Guadahortuna",
+    "Píñar",
+    "Torre-Cardela"
+   ]
+  },
+  "TL07GR": {
+   "denominacion": "Loja",
+   "canal": null,
+   "ambito": [
+    "Loja",
+    "Huétor Tájar",
+    "Salar",
+    "Villanueva Mesía",
+    "Zagra"
+   ]
+  },
+  "TL08GR": {
+   "denominacion": "Motril",
+   "canal": 61,
+   "ambito": [
+    "Motril",
+    "Albuñol",
+    "Órgiva",
+    "Lanjarón",
+    "Gualchos",
+    "Vélez de Benaudalla",
+    "Polopos",
+    "Sorvilán",
+    "Lújar",
+    "Rubite"
+   ]
+  },
+  "TL01H": {
+   "denominacion": "Almonte",
+   "canal": 46,
+   "ambito": [
+    "Almonte",
+    "Bollullos Par del Condado",
+    "Palma del Condado (La)",
+    "Rociana del Condado",
+    "Bonares",
+    "Niebla",
+    "Hinojos",
+    "Villalba del Alcor",
+    "Manzanilla",
+    "Villarrasa",
+    "Lucena del Puerto",
+    "Chucena"
+   ]
+  },
+  "TL02H": {
+   "denominacion": "Aracena",
+   "canal": 49,
+   "ambito": [
+    "Aracena",
+    "Cortegana",
+    "Jabugo",
+    "Almonaster la Real"
+   ]
+  },
+  "TL03H": {
+   "denominacion": "Huelva",
+   "canal": 33,
+   "ambito": [
+    "Huelva",
+    "Moguer",
+    "Palos de la Frontera",
+    "Trigueros",
+    "San Juan del Puerto",
+    "Beas"
+   ]
+  },
+  "TL04H": {
+   "denominacion": "Lepe",
+   "canal": 43,
+   "ambito": [
+    "Lepe",
+    "Isla Cristina",
+    "Ayamonte",
+    "Cartaya",
+    "Aljaraque",
+    "Punta Umbría",
+    "Gibraleón",
+    "Villablanca"
+   ]
+  },
+  "TL01J": {
+   "denominacion": "Alcalá Real",
+   "canal": 25,
+   "ambito": [
+    "Alcalá la Real",
+    "Alcaudete",
+    "Castillo de Locubín",
+    "Frailes"
+   ]
+  },
+  "TL02J": {
+   "denominacion": "Andújar",
+   "canal": 40,
+   "ambito": [
+    "Andújar",
+    "Marmolejo",
+    "Porcuna",
+    "Arjona",
+    "Lopera",
+    "Arjonilla",
+    "Villanueva de la Reina",
+    "Lahiguera",
+    "Villardompardo",
+    "Escañuela",
+    "Santiago de Calatrava",
+    "Cazalilla",
+    "Espeluy e Higuera de Calatrava"
+   ]
+  },
+  "TL03J": {
+   "denominacion": "Cazorla",
+   "canal": 24,
+   "ambito": [
+    "Cazorla",
+    "Quesada",
+    "Peal de Becerro",
+    "Santo Tomé",
+    "Iruela (La)",
+    "Chilluévar"
+   ]
+  },
+  "TL04J": {
+   "denominacion": "Jaén",
+   "canal": 31,
+   "ambito": [
+    "Jaén",
+    "Martos",
+    "Torredonjimeno",
+    "Torre del Campo",
+    "Mancha Real",
+    "Villares (Los)",
+    "Jamilena",
+    "Fuensanta de Martos",
+    "Pegalajar",
+    "Guardia de Jaén (La)",
+    "Fuerte del Rey"
+   ]
+  },
+  "TL05J": {
+   "denominacion": "Linares",
+   "canal": 41,
+   "ambito": [
+    "Linares",
+    "Bailén",
+    "Carolina (La)",
+    "Mengíbar",
+    "Vilches",
+    "Villatorres",
+    "Torreblascopedro",
+    "Guarromán",
+    "Baños de la Encina",
+    "Jabalquinto",
+    "Arquillos",
+    "Carboneros"
+   ]
+  },
+  "TL06J": {
+   "denominacion": "Úbeda",
+   "canal": 38,
+   "ambito": [
+    "Úbeda",
+    "Baeza",
+    "Torreperogil",
+    "Sabiote",
+    "Rus",
+    "Begíjar",
+    "Ibros",
+    "Canena",
+    "Lupión"
+   ]
+  },
+  "TL07J": {
+   "denominacion": "Villacarrillo",
+   "canal": 36,
+   "ambito": [
+    "Villacarrillo",
+    "Villanueva del Arzobispo",
+    "Beas de Segura",
+    "Santisteban del Puerto",
+    "Castellar",
+    "Chiclana de Segura",
+    "Sorihuela del Guadalimar e Iznatoraf"
+   ]
+  },
+  "TL01MA": {
+   "denominacion": "Álora",
+   "canal": 38,
+   "ambito": [
+    "Álora",
+    "Pizarra",
+    "Casarabonela"
+   ]
+  },
+  "TL02MA": {
+   "denominacion": "Antequera",
+   "canal": 31,
+   "ambito": [
+    "Antequera",
+    "Archidona",
+    "Campillos",
+    "Alameda",
+    "Villanueva del Trabuco",
+    "Villanueva de Algaidas",
+    "Mollina",
+    "Villanueva del Rosario",
+    "Valle de Abdalajís",
+    "Humilladero",
+    "Fuente de Piedra"
+   ]
+  },
+  "TL03MA": {
+   "denominacion": "Estepona",
+   "canal": 43,
+   "ambito": [
+    "Estepona",
+    "Manilva",
+    "Casares",
+    "Benahavís"
+   ]
+  },
+  "TL04MA": {
+   "denominacion": "Fuengirola",
+   "canal": 22,
+   "ambito": [
+    "Fuengirola",
+    "Mijas",
+    "Benalmádena",
+    "Coín",
+    "Alhaurín el Grande"
+   ]
+  },
+  "TL05MA": {
+   "denominacion": "Málaga",
+   "canal": 58,
+   "ambito": [
+    "Málaga",
+    "Torremolinos",
+    "Rincón de la Victoria",
+    "Alhaurín de la Torre",
+    "Cártama"
+   ]
+  },
+  "TL06MA": {
+   "denominacion": "Marbella",
+   "canal": 64,
+   "ambito": [
+    "Marbella",
+    "Ojén"
+   ]
+  },
+  "TL07MA": {
+   "denominacion": "Nerja",
+   "canal": 46,
+   "ambito": [
+    "Nerja",
+    "Torrox",
+    "Frigiliana"
+   ]
+  },
+  "TL08MA": {
+   "denominacion": "Ronda",
+   "canal": 64,
+   "ambito": [
+    "Ronda",
+    "Arriate"
+   ]
+  },
+  "TL09MA": {
+   "denominacion": "Vélez-Málaga",
+   "canal": 40,
+   "ambito": [
+    "Vélez-Málaga",
+    "Algarrobo",
+    "Benamocarra",
+    "Almáchar",
+    "Benamargosa",
+    "Moclinejo",
+    "Iznate",
+    "Macharaviaya"
+   ]
+  },
+  "TL10MA": {
+   "denominacion": "Málaga",
+   "canal": 51,
+   "ambito": [
+    "Málaga",
+    "Torremolinos",
+    "Rincón de la Victoria",
+    "Alhaurín de la Torre",
+    "Cártama"
+   ]
+  },
+  "TL01SE": {
+   "denominacion": "Dos Hermanas",
+   "canal": 34,
+   "ambito": [
+    "Dos Hermanas",
+    "Alcalá de Guadaira",
+    "Carmona",
+    "Coria del Río",
+    "Mairena del Alcor",
+    "Viso del Alcor (El)",
+    "Puebla del Río (La)",
+    "Gelves",
+    "Palomares del Río",
+    "Almensilla"
+   ]
+  },
+  "TL02SE": {
+   "denominacion": "Écija",
+   "canal": 28,
+   "ambito": [
+    "Écija",
+    "Fuentes de Andalucía",
+    "Luisiana (La)",
+    "Cañada Rosal"
+   ]
+  },
+  "TL03SE": {
+   "denominacion": "Estepa",
+   "canal": 47,
+   "ambito": [
+    "Estepa",
+    "Herrera",
+    "Casariche",
+    "Pedrera",
+    "Roda de Andalucía (La)",
+    "Gilena",
+    "Rubio (El)",
+    "Badolatosa",
+    "Marinaleda",
+    "Aguadulce",
+    "Lora de Estepa"
+   ]
+  },
+  "TL04SE": {
+   "denominacion": "Lebrija",
+   "canal": 21,
+   "ambito": [
+    "Lebrija",
+    "Cabezas de San Juan (Las)",
+    "Cuervo de Sevilla (El)"
+   ]
+  },
+  "TL05SE": {
+   "denominacion": "Lora Río",
+   "canal": 32,
+   "ambito": [
+    "Lora del Río",
+    "Campana (La)",
+    "Peñaflor",
+    "Alcolea del Río",
+    "Puebla de los Infantes (La)"
+   ]
+  },
+  "TL06SE": {
+   "denominacion": "Morón Frontera",
+   "canal": 39,
+   "ambito": [
+    "Morón de la Frontera",
+    "Arahal",
+    "Marchena",
+    "Osuna",
+    "Puebla de Cazalla (La)",
+    "Paradas",
+    "Montellano",
+    "Lantejuela (La)",
+    "Coripe"
+   ]
+  },
+  "TL07SE": {
+   "denominacion": "Sevilla",
+   "canal": 54,
+   "ambito": [
+    "Sevilla",
+    "Mairena del Aljarafe",
+    "Rinconada (La)",
+    "Camas",
+    "San Juan de Aznalfarache",
+    "Tomares",
+    "Castilleja de la Cuesta",
+    "Algaba (La)",
+    "Bormujos",
+    "Pilas",
+    "Gines",
+    "Sanlúcar la Mayor",
+    "Brenes",
+    "Alcalá del Río",
+    "Olivares",
+    "Santiponce",
+    "Valencina de la Concepción",
+    "Espartinas",
+    "Bollullos de la Mitación",
+    "Benacazón",
+    "Umbrete",
+    "Villanueva del Ariscal",
+    "Salteras",
+    "Aznalcázar",
+    "Huévar del Aljarafe",
+    "Carrión de los Céspedes",
+    "Castilleja de Guzmán",
+    "Albaida del Aljarafe",
+    "Castilleja del Campo"
+   ]
+  },
+  "TL08SE": {
+   "denominacion": "Utrera",
+   "canal": 65,
+   "ambito": [
+    "Utrera",
+    "Palacios",
+    "Villafranca (Los)",
+    "Coronil (El)",
+    "Molares (Los)"
+   ]
+  },
+  "TL09SE": {
+   "denominacion": "Sevilla",
+   "canal": 56,
+   "ambito": [
+    "Sevilla",
+    "Mairena del Aljarafe",
+    "Rinconada (La)",
+    "Camas",
+    "San Juan de Aznalfarache",
+    "Tomares",
+    "Castilleja de la Cuesta",
+    "Algaba (La)",
+    "Bormujos",
+    "Pilas",
+    "Gines",
+    "Sanlúcar la Mayor",
+    "Brenes",
+    "Alcalá del Río",
+    "Olivares",
+    "Santiponce",
+    "Valencina de la Concepción",
+    "Espartinas",
+    "Bollullos de la Mitación",
+    "Benacazón",
+    "Umbrete",
+    "Villanueva del Ariscal",
+    "Salteras",
+    "Aznalcázar",
+    "Huévar del Aljarafe",
+    "Carrión de los Céspedes",
+    "Castilleja de Guzmán",
+    "Albaida del Aljarafe",
+    "Castilleja del Campo"
+   ]
+  },
+  "TL01HU": {
+   "denominacion": "Barbastro",
+   "canal": 31,
+   "ambito": [
+    "Barbastro",
+    "Fonz",
+    "Estadilla"
+   ]
+  },
+  "TL02HU": {
+   "denominacion": "Fraga",
+   "canal": 35,
+   "ambito": [
+    "Fraga",
+    "Mequinenza",
+    "Zaidín",
+    "Belver de Cinca",
+    "Torrente de Cinca",
+    "Ballobar"
+   ]
+  },
+  "TL03HU": {
+   "denominacion": "Huesca",
+   "canal": 43,
+   "ambito": [
+    "Huesca",
+    "Almudévar"
+   ]
+  },
+  "TL04HU": {
+   "denominacion": "Jaca",
+   "canal": 51,
+   "ambito": [
+    "Jaca",
+    "Sabiñánigo"
+   ]
+  },
+  "TL05HU": {
+   "denominacion": "Monzón",
+   "canal": 33,
+   "ambito": [
+    "Monzón",
+    "Binéfar",
+    "Tamarite de Litera",
+    "Binaced",
+    "Altorricón"
+   ]
+  },
+  "TL01TE": {
+   "denominacion": "Alcañiz",
+   "canal": 50,
+   "ambito": [
+    "Alcañiz",
+    "Calanda",
+    "Alcorisa",
+    "Castelserás"
+   ]
+  },
+  "TL02TE": {
+   "denominacion": "Andorra",
+   "canal": 38,
+   "ambito": [
+    "Andorra",
+    "Ariño",
+    "Alloza",
+    "Oliete",
+    "Alacón"
+   ]
+  },
+  "TL03TE": {
+   "denominacion": "Calamocha",
+   "canal": 48,
+   "ambito": [
+    "Calamocha",
+    "Monreal del Campo",
+    "Caminreal",
+    "Fuentes Claras",
+    "Torrijo del Campo"
+   ]
+  },
+  "TL04TE": {
+   "denominacion": "Teruel",
+   "canal": 42,
+   "ambito": [
+    "Teruel",
+    "Cella",
+    "Santa Eulalia",
+    "Villarquemado"
+   ]
+  },
+  "TL01Z": {
+   "denominacion": "Almunia Doña Godina",
+   "canal": 32,
+   "ambito": [
+    "Almunia de Doña Godina (La)",
+    "Épila",
+    "Calatorao",
+    "Ricla",
+    "Morata de Jalón"
+   ]
+  },
+  "TL02Z": {
+   "denominacion": "Calatayud",
+   "canal": 56,
+   "ambito": [
+    "Calatayud",
+    "Ateca",
+    "Ariza",
+    "Alhama de Aragón",
+    "Maluenda",
+    "Aniñón",
+    "Sabiñán"
+   ]
+  },
+  "TL03Z": {
+   "denominacion": "Caspe",
+   "canal": 31,
+   "ambito": [
+    "Caspe",
+    "Maella",
+    "Fabara",
+    "Nonaspe"
+   ]
+  },
+  "TL04Z": {
+   "denominacion": "Ejea Caballeros",
+   "canal": 34,
+   "ambito": [
+    "Ejea de los Caballeros",
+    "Tauste",
+    "Sádaba",
+    "Biota"
+   ]
+  },
+  "TL05Z": {
+   "denominacion": "Zaragoza",
+   "canal": 31,
+   "ambito": [
+    "Zaragoza",
+    "Utebo",
+    "Zuera",
+    "Fuentes de Ebro",
+    "Villanueva de Gállego",
+    "Puebla de Alfindén (La)",
+    "San Mateo de Gállego",
+    "Cuarte de Huerva"
+   ]
+  },
+  "TL06Z": {
+   "denominacion": "Alagón",
+   "canal": 52,
+   "ambito": [
+    "Alagón",
+    "Gallur",
+    "Pedrola",
+    "Pinseque",
+    "Torres de Berrellén",
+    "Remolinos",
+    "Figueruelas",
+    "Luceni",
+    "Boquiñeni"
+   ]
+  },
+  "TL07Z": {
+   "denominacion": "Tarazona",
+   "canal": 48,
+   "ambito": [
+    "Tarazona",
+    "Novallas",
+    "Malón",
+    "Torrellas",
+    "Vierlas"
+   ]
+  },
+  "TL01AS": {
+   "denominacion": "Avilés",
+   "canal": 47,
+   "ambito": [
+    "Avilés",
+    "Castrillón",
+    "Corvera de Asturias",
+    "Pravia",
+    "Cudillero",
+    "Soto del Barco",
+    "Muros de Nalón e Illas"
+   ]
+  },
+  "TL02AS": {
+   "denominacion": "Cangas Narcea",
+   "canal": 25,
+   "ambito": [
+    "Cangas de Narcea",
+    "Tineo",
+    "Allande"
+   ]
+  },
+  "TL03AS": {
+   "denominacion": "Gijón",
+   "canal": 38,
+   "ambito": [
+    "Gijón",
+    "Villaviciosa",
+    "Gozón",
+    "Carreño",
+    "Colunga"
+   ]
+  },
+  "TL04AS": {
+   "denominacion": "Infiesto-Piloña",
+   "canal": 44,
+   "ambito": [
+    "Piloña",
+    "Cangas de Onís",
+    "Parres",
+    "Nava",
+    "Bimenes",
+    "Sariego",
+    "Cabranes",
+    "Onís"
+   ]
+  },
+  "TL05AS": {
+   "denominacion": "Llanes",
+   "canal": 61,
+   "ambito": [
+    "Llanes",
+    "Ribadesella",
+    "Cabrales",
+    "Ribadedeva",
+    "Peñamellera Baja",
+    "Peñamellera Alta",
+    "Caravia"
+   ]
+  },
+  "TL06AS": {
+   "denominacion": "Luarca-Valdés",
+   "canal": 56,
+   "ambito": [
+    "Valdés",
+    "Navia",
+    "Vegadeo",
+    "Tapia de Casariego",
+    "Franco (El)",
+    "Castropol",
+    "Coaña",
+    "Boal",
+    "Villayón"
+   ]
+  },
+  "TL07AS": {
+   "denominacion": "Mieres",
+   "canal": 46,
+   "ambito": [
+    "Mieres",
+    "Langreo",
+    "San Martín del Rey Aurelio",
+    "Laviana",
+    "Aller",
+    "Lena"
+   ]
+  },
+  "TL08AS": {
+   "denominacion": "Oviedo",
+   "canal": 43,
+   "ambito": [
+    "Oviedo",
+    "Siero",
+    "Llanera",
+    "Grado",
+    "Noreña",
+    "Morcín",
+    "Ribera de Arriba"
+   ]
+  },
+  "TL01IB": {
+   "denominacion": "Ibiza-Formentera",
+   "canal": 38,
+   "ambito": [
+    "Eivissa",
+    "Santa Eulalia del Río",
+    "Sant Antoni de Portmany",
+    "Sant Josep de sa Talaia",
+    "Formentera",
+    "Sant Joan de Labritja"
+   ]
+  },
+  "TL02IB": {
+   "denominacion": "Inca",
+   "canal": 42,
+   "ambito": [
+    "Inca",
+    "Binissalem",
+    "Lloseta",
+    "Santa María del Camí",
+    "Alaró",
+    "Algaida",
+    "Selva",
+    "Sineu",
+    "Consell",
+    "Montuïri",
+    "Sencelles",
+    "Campanet",
+    "Maria de la Salut",
+    "Llubí",
+    "Sant Joan",
+    "Santa Eugènia",
+    "Lloret de Vistalegre",
+    "Búger",
+    "Costitx",
+    "Mancor de la Vall"
+   ]
+  },
+  "TL03IB": {
+   "denominacion": "Manacor",
+   "canal": 29,
+   "ambito": [
+    "Manacor",
+    "Felanitx",
+    "Son Servera",
+    "Santanyí",
+    "Capdepera",
+    "Campos",
+    "Sant Llorenç des Cardassar",
+    "Artà",
+    "Porreres",
+    "Salines (Ses)",
+    "Petra",
+    "Vilafranca de Bonany",
+    "Ariany"
+   ]
+  },
+  "TL04IB": {
+   "denominacion": "Menorca",
+   "canal": 38,
+   "ambito": [
+    "Mahón",
+    "Ciutadella de Menorca",
+    "Alaior",
+    "Castell (Es)",
+    "Sant Lluís",
+    "Ferreries",
+    "Mercadal (Es)",
+    "Migjorn Gran (Es)"
+   ]
+  },
+  "TL05IB": {
+   "denominacion": "Palma Mallorca",
+   "canal": 41,
+   "ambito": [
+    "Palma de Mallorca",
+    "Calvià",
+    "Llucmajor",
+    "Marratxí",
+    "Andratx",
+    "Bunyola"
+   ]
+  },
+  "TL06IB": {
+   "denominacion": "Pollença",
+   "canal": 46,
+   "ambito": [
+    "Pollença",
+    "Alcúdia",
+    "Pobla (Sa)",
+    "Santa Margalida",
+    "Muro",
+    "Escorca"
+   ]
+  },
+  "TL07IB": {
+   "denominacion": "Sóller",
+   "canal": 45,
+   "ambito": [
+    "Sóller",
+    "Esporles",
+    "Valldemossa",
+    "Puigpunyent",
+    "Deyá",
+    "Fornalutx",
+    "Banyalbufar",
+    "Estellencs"
+   ]
+  },
+  "TL01AV": {
+   "denominacion": "Ávila",
+   "canal": 32,
+   "ambito": [
+    "Ávila",
+    "Solosancho"
+   ]
+  },
+  "TL01BU": {
+   "denominacion": "Aranda Duero",
+   "canal": 41,
+   "ambito": [
+    "Aranda de Duero",
+    "Lerma",
+    "Roa",
+    "Huerta de Rey"
+   ]
+  },
+  "TL02BU": {
+   "denominacion": "Briviesca",
+   "canal": 25,
+   "ambito": [
+    "Briviesca",
+    "Belorado"
+   ]
+  },
+  "TL03BU": {
+   "denominacion": "Burgos",
+   "canal": 61,
+   "ambito": [
+    "Burgos",
+    "Melgar de Fernamental",
+    "Villadiego",
+    "Sasamón e Ibeas de Juarros"
+   ]
+  },
+  "TL04BU": {
+   "denominacion": "Medina Pomar",
+   "canal": 48,
+   "ambito": [
+    "Medina de Pomar",
+    "Villarcayo de Merindad de Castilla la Vieja",
+    "Oña",
+    "Valle de Tobalina",
+    "Trespaderne"
+   ]
+  },
+  "TL05BU": {
+   "denominacion": "Miranda Ebro",
+   "canal": 31,
+   "ambito": [
+    "Miranda de Ebro",
+    "Condado de Treviño"
+   ]
+  },
+  "TL01LE": {
+   "denominacion": "Astorga",
+   "canal": 41,
+   "ambito": [
+    "Astorga",
+    "Bañeza (La)",
+    "Villarejo de Órbigo",
+    "Santa María del Páramo",
+    "Benavides",
+    "San Justo de la Vega",
+    "Soto de la Vega",
+    "Bustillo del Páramo"
+   ]
+  },
+  "TL02LE": {
+   "denominacion": "León",
+   "canal": 22,
+   "ambito": [
+    "León",
+    "San Andrés del Rabanedo",
+    "Villaquilambre",
+    "Valverde de la Virgen",
+    "Sariegos",
+    "Carrizo",
+    "Chozas de Abajo"
+   ]
+  },
+  "TL03LE": {
+   "denominacion": "Ponferrada",
+   "canal": 25,
+   "ambito": [
+    "Ponferrada",
+    "Bembibre",
+    "Fabero",
+    "Cacabelos",
+    "Toreno",
+    "Villafranca del Bierzo",
+    "Carracedelo",
+    "Camponaraya",
+    "Torre del Bierzo",
+    "Vega de Espinareda",
+    "Villadecanes",
+    "Corullón"
+   ]
+  },
+  "TL01P": {
+   "denominacion": "Aguilar Campoo",
+   "canal": 24,
+   "ambito": [
+    "Aguilar de Campoo",
+    "Cervera de Pisuerga",
+    "Barruelo de Santullán"
+   ]
+  },
+  "TL02P": {
+   "denominacion": "Palencia",
+   "canal": 22,
+   "ambito": [
+    "Palencia",
+    "Venta de Baños",
+    "Villamuriel de Cerrato",
+    "Dueñas"
+   ]
+  },
+  "TL01SA": {
+   "denominacion": "Béjar",
+   "canal": 40,
+   "ambito": [
+    "Béjar",
+    "Guijuelo",
+    "Candelario"
+   ]
+  },
+  "TL02SA": {
+   "denominacion": "Ciudad Rodrigo",
+   "canal": 40,
+   "ambito": [
+    "Ciudad Rodrigo",
+    "Sancti-Spíritus"
+   ]
+  },
+  "TL03SA": {
+   "denominacion": "Salamanca",
+   "canal": 44,
+   "ambito": [
+    "Salamanca",
+    "Santa Marta de Tormes",
+    "Alba de Tormes",
+    "Villamayor",
+    "Villares de la Reina",
+    "Terradillos",
+    "Carbajosa de la Sagrada",
+    "Cabrerizos"
+   ]
+  },
+  "TL01SG": {
+   "denominacion": "Segovia",
+   "canal": 23,
+   "ambito": [
+    "Segovia",
+    "San Ildefonso",
+    "Lastrilla (La)",
+    "Palazuelos de Eresma"
+   ]
+  },
+  "TL01SO": {
+   "denominacion": "Burgo Osma",
+   "canal": 43,
+   "ambito": [
+    "Burgo de Osma-Ciudad de Osma",
+    "San Esteban de Gormaz"
+   ]
+  },
+  "TL02SO": {
+   "denominacion": "Soria",
+   "canal": 50,
+   "ambito": [
+    "Soria"
+   ]
+  },
+  "TL01VA": {
+   "denominacion": "Medina Campo",
+   "canal": 29,
+   "ambito": [
+    "Medina del Campo",
+    "Íscar",
+    "Olmedo",
+    "Pedrajas de San Esteban",
+    "Nava del Rey"
+   ]
+  },
+  "TL02VA": {
+   "denominacion": "Valladolid",
+   "canal": 28,
+   "ambito": [
+    "Valladolid",
+    "Laguna de Duero",
+    "Tordesillas",
+    "Tudela de Duero",
+    "Arroyo de la Encomienda",
+    "Cistérniga",
+    "Simancas",
+    "Cigales",
+    "Santovenia de Pisuerga",
+    "Portillo",
+    "Cabezón de Pisuerga",
+    "Boecillo",
+    "Zaratán"
+   ]
+  },
+  "TL01ZA": {
+   "denominacion": "Benavente",
+   "canal": 29,
+   "ambito": [
+    "Benavente",
+    "San Cristóbal de Entreviñas",
+    "Villalpando",
+    "Santa Cristina de la Polvorosa",
+    "Villanueva del Campo"
+   ]
+  },
+  "TL02ZA": {
+   "denominacion": "Zamora",
+   "canal": 41,
+   "ambito": [
+    "Zamora",
+    "Toro",
+    "Morales del Vino",
+    "Villaralbo",
+    "Coreses"
+   ]
+  },
+  "TL01AB": {
+   "denominacion": "Albacete",
+   "canal": 47,
+   "ambito": [
+    "Albacete"
+   ]
+  },
+  "TL02AB": {
+   "denominacion": "Alcaraz",
+   "canal": 41,
+   "ambito": [
+    "Alcaraz",
+    "Bienservida",
+    "Villapalacios",
+    "Povedilla",
+    "Salobre",
+    "Viveros",
+    "Vianos",
+    "Robledo",
+    "Peñascosa"
+   ]
+  },
+  "TL03AB": {
+   "denominacion": "Almansa",
+   "canal": 54,
+   "ambito": [
+    "Almansa",
+    "Caudete",
+    "Alpera"
+   ]
+  },
+  "TL04AB": {
+   "denominacion": "Elche Sierra",
+   "canal": 55,
+   "ambito": [
+    "Elche de la Sierra",
+    "Yeste",
+    "Socovos",
+    "Letur",
+    "Molinicos",
+    "Férez"
+   ]
+  },
+  "TL05AB": {
+   "denominacion": "Hellín",
+   "canal": 49,
+   "ambito": [
+    "Hellín",
+    "Tobarra",
+    "Ontur",
+    "Albatana"
+   ]
+  },
+  "TL06AB": {
+   "denominacion": "Roda",
+   "canal": 42,
+   "ambito": [
+    "Roda (La)",
+    "Tarazona de la Mancha",
+    "Villalgordo del Júcar"
+   ]
+  },
+  "TL07AB": {
+   "denominacion": "Villarrobledo",
+   "canal": 49,
+   "ambito": [
+    "Villarrobledo",
+    "Minaya"
+   ]
+  },
+  "TL01CR": {
+   "denominacion": "Alcázar S. Juan",
+   "canal": 49,
+   "ambito": [
+    "Alcázar de San Juan",
+    "Campo de Criptana",
+    "Herencia"
+   ]
+  },
+  "TL02CR": {
+   "denominacion": "Almadén",
+   "canal": 50,
+   "ambito": [
+    "Almadén",
+    "Chillón",
+    "Guadalmez",
+    "Alamillo",
+    "Almadenejos"
+   ]
+  },
+  "TL03CR": {
+   "denominacion": "Ciudad Real",
+   "canal": 34,
+   "ambito": [
+    "Ciudad Real",
+    "Daimiel",
+    "Bolaños de Calatrava",
+    "Miguelturra",
+    "Villarrubia de los Ojos",
+    "Almagro",
+    "Torralba de Calatrava",
+    "Carrión de Calatrava",
+    "Pozuelo de Calatrava"
+   ]
+  },
+  "TL04CR": {
+   "denominacion": "Manzanares",
+   "canal": 38,
+   "ambito": [
+    "Manzanares",
+    "Solana (La)",
+    "Membrilla"
+   ]
+  },
+  "TL05CR": {
+   "denominacion": "Puertollano",
+   "canal": 31,
+   "ambito": [
+    "Puertollano",
+    "Almodóvar del Campo",
+    "Argamasilla de Calatrava",
+    "Brazatortas"
+   ]
+  },
+  "TL06CR": {
+   "denominacion": "Tomelloso",
+   "canal": 52,
+   "ambito": [
+    "Tomelloso",
+    "Argamasilla de Alba"
+   ]
+  },
+  "TL07CR": {
+   "denominacion": "Valdepeñas",
+   "canal": 26,
+   "ambito": [
+    "Valdepeñas",
+    "Santa Cruz de Mudela",
+    "Torrenueva"
+   ]
+  },
+  "TL01CU": {
+   "denominacion": "Cuenca",
+   "canal": 38,
+   "ambito": [
+    "Cuenca"
+   ]
+  },
+  "TL02CU": {
+   "denominacion": "Quintanar Rey",
+   "canal": 52,
+   "ambito": [
+    "Quintanar del Rey",
+    "Motilla del Palancar",
+    "Iniesta",
+    "Casasimarro",
+    "Villanueva de la Jara"
+   ]
+  },
+  "TL03CU": {
+   "denominacion": "Tarancón",
+   "canal": 29,
+   "ambito": [
+    "Tarancón",
+    "Horcajo de Santiago",
+    "Villamayor de Santiago",
+    "Fuente de Pedro Naharro"
+   ]
+  },
+  "TL04CU": {
+   "denominacion": "Pedroñeras",
+   "canal": 45,
+   "ambito": [
+    "Pedroñeras (Las)",
+    "San Clemente",
+    "Mota del Cuervo",
+    "Provencio (El)",
+    "Mesas (Las)",
+    "Belmonte",
+    "Alberca de Záncara (La)",
+    "Pedernoso (El)"
+   ]
+  },
+  "TL01GU": {
+   "denominacion": "Azuqueca Henares",
+   "canal": 30,
+   "ambito": [
+    "Azuqueca de Henares",
+    "Alovera",
+    "Villanueva de la Torre"
+   ]
+  },
+  "TL02GU": {
+   "denominacion": "Guadalajara",
+   "canal": 25,
+   "ambito": [
+    "Guadalajara",
+    "Cabanillas del Campo",
+    "Marchamalo",
+    "Horche",
+    "Chiloeches"
+   ]
+  },
+  "TL01TO": {
+   "denominacion": "Illescas",
+   "canal": 33,
+   "ambito": [
+    "Illescas",
+    "Yuncos",
+    "Esquivias",
+    "Numancia de la Sagra",
+    "Villaluenga de la Sagra",
+    "Pantoja",
+    "Ugena",
+    "Yuncler",
+    "Yeles",
+    "Cobeja",
+    "Cabañas de la Sagra"
+   ]
+  },
+  "TL02TO": {
+   "denominacion": "Madridejos",
+   "canal": 57,
+   "ambito": [
+    "Madridejos",
+    "Consuegra",
+    "Villafranca de los Caballeros",
+    "Urda",
+    "Camuñas"
+   ]
+  },
+  "TL03TO": {
+   "denominacion": "Quintanar Orden",
+   "canal": 23,
+   "ambito": [
+    "Quintanar de la Orden",
+    "Villacañas",
+    "Corral de Almaguer",
+    "Puebla de Almoradiel (La)",
+    "Miguel Esteban",
+    "Villa de Don Fadrique (La)",
+    "Villanueva de Alcardete",
+    "Toboso (El)"
+   ]
+  },
+  "TL04TO": {
+   "denominacion": "Talavera Reina",
+   "canal": 46,
+   "ambito": [
+    "Talavera de la Reina",
+    "Calera",
+    "Chozas",
+    "Oropesa",
+    "Velada",
+    "Lagartera",
+    "Pepino",
+    "Mejorada",
+    "Cazalegas",
+    "Segurilla"
+   ]
+  },
+  "TL05TO": {
+   "denominacion": "Toledo",
+   "canal": 27,
+   "ambito": [
+    "Toledo",
+    "Sonseca",
+    "Mora",
+    "Bargas",
+    "Olías del Rey",
+    "Mocejón",
+    "Polán",
+    "Argés",
+    "Nambroca",
+    "Orgaz",
+    "Cobisa",
+    "Ajofrín",
+    "Guadamur",
+    "Burguillos de Toledo"
+   ]
+  },
+  "TL06TO": {
+   "denominacion": "Torrijos",
+   "canal": 48,
+   "ambito": [
+    "Torrijos",
+    "Fuensalida",
+    "Puebla de Montalbán (La)",
+    "Santa Olalla",
+    "Carpio de Tajo (El)",
+    "Portillo de Toledo",
+    "Gerindote",
+    "Novés",
+    "Escalonilla",
+    "Burujón",
+    "Mata (La)",
+    "Carmena",
+    "Santo Domingo-Caudilla",
+    "Alcabón"
+   ]
+  },
+  "TL01S": {
+   "denominacion": "Castro-Urdiales",
+   "canal": 26,
+   "ambito": [
+    "Castro-Urdiales",
+    "Laredo",
+    "Santoña",
+    "Colindres",
+    "Ampuero",
+    "Bárcena de Cicero",
+    "Voto",
+    "Noja",
+    "Arnuero",
+    "Guriezo",
+    "Bareyo",
+    "Limpias",
+    "Meruelo",
+    "Argoños",
+    "Liendo",
+    "Escalante"
+   ]
+  },
+  "TL02S": {
+   "denominacion": "Potes",
+   "canal": 50,
+   "ambito": [
+    "Potes",
+    "Cillorigo de Liébana",
+    "Camaleño",
+    "Vega de Liébana",
+    "Cabezón de Liébana"
+   ]
+  },
+  "TL03S": {
+   "denominacion": "Reinosa",
+   "canal": 23,
+   "ambito": [
+    "Reinosa",
+    "Campoo de Enmedio",
+    "Arenas de Iguña",
+    "Hermandad de Campoo de Suso",
+    "Molledo",
+    "Valdeolea",
+    "Bárcena de Pie de Concha",
+    "Campoo de Yuso",
+    "Cieza",
+    "Anievas",
+    "Santiurde de Reinosa",
+    "Pesquera"
+   ]
+  },
+  "TL04S": {
+   "denominacion": "Santander",
+   "canal": 57,
+   "ambito": [
+    "Santander",
+    "Camargo",
+    "Astillero (El)",
+    "Piélagos",
+    "Santa Cruz de Bezana",
+    "Suances",
+    "Santa María de Cayón",
+    "Medio Cudeyo",
+    "Marina de Cudeyo",
+    "Ribamontán al Mar",
+    "Miengo",
+    "Villaescusa",
+    "Liérganes",
+    "Penagos"
+   ]
+  },
+  "TL05S": {
+   "denominacion": "Selaya",
+   "canal": 45,
+   "ambito": [
+    "Selaya",
+    "Villacarriedo",
+    "Villafufre",
+    "Vega de Pas",
+    "San Pedro del Romeral",
+    "Saro"
+   ]
+  },
+  "TL06S": {
+   "denominacion": "Torrelavega",
+   "canal": 41,
+   "ambito": [
+    "Torrelavega",
+    "Corrales de Buelna (Los)",
+    "Cabezón de la Sal",
+    "Reocín",
+    "San Vicente de la Barquera",
+    "Santillana del Mar",
+    "Polanco",
+    "Cartes",
+    "Val de San Vicente",
+    "Alfoz de Lloredo",
+    "Valdáliga",
+    "Puente Viesgo",
+    "Comillas",
+    "San Felices de Buelna",
+    "Mazcuerras",
+    "Udías",
+    "Ruiloba"
+   ]
+  },
+  "TL01B": {
+   "denominacion": "Barcelona",
+   "canal": 26,
+   "ambito": [
+    "Barcelona",
+    "Hospitalet de Llobregat (L')",
+    "Badalona",
+    "Santa Coloma de Gramenet",
+    "Sant Adrià de Besòs"
+   ]
+  },
+  "TL02B": {
+   "denominacion": "Granollers",
+   "canal": 40,
+   "ambito": [
+    "Granollers",
+    "Mollet del Vallès",
+    "Parets del Vallès",
+    "Franqueses del Vallès (Les)",
+    "Cardedeu",
+    "Caldes de Montbui",
+    "Sant Celoni",
+    "Canovelles",
+    "Montornès del Vallès",
+    "Garriga (La)",
+    "Llagosta (La)",
+    "Lliçà d'Amunt",
+    "Montmeló",
+    "Roca del Vallès (La)",
+    "Llinars del Vallès",
+    "Santa Maria de Palautordera",
+    "Sant Fost de Campsentelles",
+    "Ametlla del Vallès (L')",
+    "Bigues i Riells",
+    "Lliçà de Vall",
+    "Santa Eulàlia de Ronçana",
+    "Martorelles",
+    "Sant Feliu de Codines",
+    "Sant Antoni de Vilamajor",
+    "Sant Pere de Vilamajor"
+   ]
+  },
+  "TL03B": {
+   "denominacion": "Cornellà Llobregat",
+   "canal": 36,
+   "ambito": [
+    "Cornellà de Llobregat",
+    "Sant Boi de Llobregat",
+    "Prat de Llobregat (El)",
+    "Viladecans",
+    "Castelldefels",
+    "Esplugues de Llobregat",
+    "Gavà",
+    "Sant Feliu de Llobregat",
+    "Sant Joan Despí",
+    "Sant Vicenç dels Horts",
+    "Martorell",
+    "Sant Andreu de la Barca",
+    "Molins de Rei",
+    "Olesa de Montserrat",
+    "Esparraguera",
+    "Sant Just Desvern",
+    "Vallirana",
+    "Corbera de Llobregat",
+    "Abrera",
+    "Pallejà",
+    "Cervelló",
+    "Santa Coloma de Cervelló",
+    "Sant Esteve Sesrovires",
+    "Begues",
+    "Papiol (El)",
+    "Palma de Cervelló (La)",
+    "Collbató",
+    "Castellví de Rosanes"
+   ]
+  },
+  "TL04B": {
+   "denominacion": "Igualada",
+   "canal": 37,
+   "ambito": [
+    "Igualada",
+    "Piera",
+    "Vilanova del Camí",
+    "Santa Margarida de Montbui",
+    "Masquefa",
+    "Capellades"
+   ]
+  },
+  "TL05B": {
+   "denominacion": "Manresa",
+   "canal": 49,
+   "ambito": [
+    "Manresa",
+    "Berga",
+    "Sant Joan de Vilatorrada",
+    "Solsona",
+    "Sant Vicenç de Castellet",
+    "Sallent",
+    "Sant Fruitós de Bages",
+    "Súria",
+    "Navàs",
+    "Santpedor",
+    "Navarcles",
+    "Cardona",
+    "Gironella",
+    "Artés",
+    "Puig-reig",
+    "Balsareny"
+   ]
+  },
+  "TL06B": {
+   "denominacion": "Mataró",
+   "canal": 24,
+   "ambito": [
+    "Mataró",
+    "Premià de Mar",
+    "Pineda de Mar",
+    "Masnou (El)",
+    "Vilassar de Mar",
+    "Malgrat de Mar",
+    "Calella",
+    "Arenys de Mar",
+    "Canet de Mar",
+    "Tordera",
+    "Argentona",
+    "Premià de Dalt",
+    "Alella",
+    "Montgat",
+    "Sant Andreu de Llavaneres",
+    "Vilassar de Dalt",
+    "Arenys de Munt",
+    "Tiana",
+    "Palafolls",
+    "Teià",
+    "Cabrils",
+    "Sant Vicenç de Montalt",
+    "Sant Pol de Mar",
+    "Cabrera de Mar"
+   ]
+  },
+  "TL07B": {
+   "denominacion": "Sabadell",
+   "canal": 39,
+   "ambito": [
+    "Sabadell",
+    "Terrassa",
+    "Rubí",
+    "Sant Cugat del Vallès",
+    "Cerdanyola del Vallès",
+    "Ripollet",
+    "Montcada i Reixac",
+    "Barberà del Vallès",
+    "Santa Perpètua de Mogoda",
+    "Castellar del Vallès",
+    "Sant Quirze del Vallès",
+    "Badia del Vallès",
+    "Palau-solità i Plegamans",
+    "Castellbisbal",
+    "Matadepera",
+    "Viladecavalls",
+    "Sentmenat",
+    "Polinyà"
+   ]
+  },
+  "TL08B": {
+   "denominacion": "Vic",
+   "canal": 42,
+   "ambito": [
+    "Vic",
+    "Manlleu",
+    "Torelló",
+    "Tona",
+    "Taradell",
+    "Roda de Ter",
+    "Sant Hipòlit de Voltregà",
+    "Masies de Voltregà (Les)"
+   ]
+  },
+  "TL09B": {
+   "denominacion": "Vilanova Geltrú",
+   "canal": 30,
+   "ambito": [
+    "Vilanova i la Geltrú",
+    "Vilafranca del Penedès",
+    "Vendrell (El)",
+    "Sant Pere de Ribes",
+    "Sitges",
+    "Calafell",
+    "Sant Sadurní d'Anoia",
+    "Cubelles",
+    "Cunit",
+    "Santa Margarida i els Monjos",
+    "Canyelles",
+    "Olivella"
+   ]
+  },
+  "TL10B": {
+   "denominacion": "Barcelona",
+   "canal": null,
+   "ambito": [
+    "Barcelona",
+    "Hospitalet de Llobregat (L')",
+    "Badalona",
+    "Santa Coloma de Gramenet",
+    "Sant Adrià de Besòs"
+   ]
+  },
+  "TL11B": {
+   "denominacion": "Cornellà Llobregat",
+   "canal": 46,
+   "ambito": [
+    "Cornellà de Llobregat",
+    "Sant Boi de Llobregat",
+    "Prat de Llobregat (El)",
+    "Viladecans",
+    "Castelldefels",
+    "Esplugues de Llobregat",
+    "Gavà",
+    "Sant Feliu de Llobregat",
+    "Sant Joan Despí",
+    "Sant Vicenç dels Horts",
+    "Martorell",
+    "Sant Andreu de la Barca",
+    "Molins de Rei",
+    "Olesa de Montserrat",
+    "Esparraguera",
+    "Sant Just Desvern",
+    "Vallirana",
+    "Corbera de Llobregat",
+    "Abrera",
+    "Pallejà",
+    "Cervelló",
+    "Santa Coloma de Cervelló",
+    "Sant Esteve Sesrovires",
+    "Begues",
+    "Papiol (El)",
+    "Palma de Cervelló (La)",
+    "Collbató",
+    "Castellví de Rosanes"
+   ]
+  },
+  "TL12B": {
+   "denominacion": "Sabadell",
+   "canal": 45,
+   "ambito": [
+    "Sabadell",
+    "Terrassa",
+    "Rubí",
+    "Sant Cugat del Vallès",
+    "Cerdanyola del Vallès",
+    "Ripollet",
+    "Montcada i Reixac",
+    "Barberà del Vallès",
+    "Santa Perpètua de Mogoda",
+    "Castellar del Vallès",
+    "Sant Quirze del Vallès",
+    "Badia del Vallès",
+    "Palau-solità i Plegamans",
+    "Castellbisbal",
+    "Matadepera",
+    "Viladecavalls",
+    "Sentmenat",
+    "Polinyà"
+   ]
+  },
+  "TL01GI": {
+   "denominacion": "Blanes",
+   "canal": 42,
+   "ambito": [
+    "Blanes",
+    "Lloret de Mar",
+    "Tossa de Mar"
+   ]
+  },
+  "TL02GI": {
+   "denominacion": "Figueres",
+   "canal": 26,
+   "ambito": [
+    "Figueres",
+    "Roses",
+    "Castelló d'Empúries",
+    "Escala (L')",
+    "Vilafant"
+   ]
+  },
+  "TL03GI": {
+   "denominacion": "Girona",
+   "canal": 39,
+   "ambito": [
+    "Girona",
+    "Salt",
+    "Banyoles",
+    "Cassà de la Selva",
+    "Llagostera",
+    "Sarrià de Ter",
+    "Porqueres",
+    "Bescanó",
+    "Canet d'Adri"
+   ]
+  },
+  "TL04GI": {
+   "denominacion": "Olot",
+   "canal": 51,
+   "ambito": [
+    "Olot",
+    "Ripoll",
+    "Sant Joan de les Abadesses",
+    "Campdevànol",
+    "Sant Joan les Fonts"
+   ]
+  },
+  "TL05GI": {
+   "denominacion": "Palafrugell",
+   "canal": 25,
+   "ambito": [
+    "Palafrugell",
+    "Sant Feliu de Guíxols",
+    "Palamós",
+    "Torroella de Montgrí",
+    "Bisbal d'Empordà (La)",
+    "Calonge",
+    "Castell-Platja d'Aro",
+    "Begur",
+    "Santa Cristina d'Aro"
+   ]
+  },
+  "TL01L": {
+   "denominacion": "Balaguer",
+   "canal": 48,
+   "ambito": [
+    "Balaguer",
+    "Tàrrega",
+    "Mollerussa",
+    "Cervera",
+    "Borges Blanques (Les)",
+    "Agramunt",
+    "Bellpuig"
+   ]
+  },
+  "TL02L": {
+   "denominacion": "Lleida",
+   "canal": 50,
+   "ambito": [
+    "Lleida",
+    "Almacelles",
+    "Alcarràs",
+    "Alpicat",
+    "Almenar",
+    "Alfarràs"
+   ]
+  },
+  "TL03L": {
+   "denominacion": "Seu Urgell",
+   "canal": 55,
+   "ambito": [
+    "Seu d'Urgell (La)",
+    "Puigcerdà",
+    "Tremp",
+    "Pobla de Segur (La)",
+    "Pont de Suert (El)",
+    "Sort"
+   ]
+  },
+  "TL04L": {
+   "denominacion": "Vielha Mijaran",
+   "canal": 51,
+   "ambito": [
+    "Vielha e Mijaran",
+    "Naut Aran",
+    "Bossòst"
+   ]
+  },
+  "TL01T": {
+   "denominacion": "Reus",
+   "canal": 56,
+   "ambito": [
+    "Reus",
+    "Cambrils",
+    "Mont-roig del Camp",
+    "Riudoms"
+   ]
+  },
+  "TL02T": {
+   "denominacion": "Tarragona",
+   "canal": 54,
+   "ambito": [
+    "Tarragona",
+    "Valls",
+    "Salou",
+    "Vila-seca",
+    "Torredembarra",
+    "Montblanc"
+   ]
+  },
+  "TL03T": {
+   "denominacion": "Tortosa",
+   "canal": 34,
+   "ambito": [
+    "Tortosa",
+    "Amposta",
+    "Sant Carles de la Ràpita",
+    "Deltebre",
+    "Roquetes"
+   ]
+  },
+  "TL01GC": {
+   "denominacion": "Fuerteventura",
+   "canal": 62,
+   "ambito": [
+    "Puerto del Rosario",
+    "Pájara",
+    "Oliva (La)",
+    "Tuineje",
+    "Antigua",
+    "Betancuria"
+   ]
+  },
+  "TL02GC": {
+   "denominacion": "Lanzarote",
+   "canal": 21,
+   "ambito": [
+    "Arrecife",
+    "San Bartolomé",
+    "Tías",
+    "Teguise",
+    "Yaiza",
+    "Tinajo",
+    "Haría"
+   ]
+  },
+  "TL03GC": {
+   "denominacion": "Mogán",
+   "canal": 58,
+   "ambito": [
+    "Mogán",
+    "San Nicolás de Tolentino",
+    "Tejeda",
+    "Artenara"
+   ]
+  },
+  "TL04GC": {
+   "denominacion": "Palmas, Las",
+   "canal": 44,
+   "ambito": [
+    "Palmas de Gran Canaria (Las)",
+    "Arucas",
+    "Gáldar",
+    "Santa Brígida",
+    "Santa María de Guía de Gran Canaria",
+    "Teror",
+    "Moya",
+    "Vega de San Mateo",
+    "Firgas",
+    "Agaete",
+    "Valleseco"
+   ]
+  },
+  "TL05GC": {
+   "denominacion": "Telde",
+   "canal": 63,
+   "ambito": [
+    "Telde",
+    "Santa Lucía de Tirajana",
+    "San Bartolomé de Tirajana",
+    "Ingenio",
+    "Agüimes",
+    "Valsequillo de Gran Canaria"
+   ]
+  },
+  "TL01TF": {
+   "denominacion": "Arona",
+   "canal": 38,
+   "ambito": [
+    "Arona",
+    "Granadilla de Abona",
+    "Adeje",
+    "Guía de Isora",
+    "Santiago del Teide",
+    "San Miguel de Abona",
+    "Arico",
+    "Fasnia",
+    "Vilaflor"
+   ]
+  },
+  "TL02TF": {
+   "denominacion": "Gomera",
+   "canal": 21,
+   "ambito": [
+    "San Sebastián de la Gomera",
+    "Valle Gran Rey",
+    "Vallehermoso",
+    "Hermigua",
+    "Alajeró",
+    "Agulo"
+   ]
+  },
+  "TL03TF": {
+   "denominacion": "Hierro",
+   "canal": 34,
+   "ambito": [
+    "Frontera",
+    "Valverde"
+   ]
+  },
+  "TL04TF": {
+   "denominacion": "Orotava",
+   "canal": 30,
+   "ambito": [
+    "Orotava (La)",
+    "Realejos (Los)",
+    "Puerto de la Cruz",
+    "Icod de los Vinos",
+    "Tacoronte",
+    "Santa Úrsula",
+    "Sauzal (El)",
+    "Victoria de Acentejo (La)",
+    "Matanza de Acentejo (La)",
+    "Garachico",
+    "Silos (Los)",
+    "Buenavista del Norte",
+    "Guancha (La)",
+    "San Juan de la Rambla",
+    "Tanque (El)"
+   ]
+  },
+  "TL05TF": {
+   "denominacion": "Palma, La",
+   "canal": 63,
+   "ambito": [
+    "Llanos de Aridane (Los)",
+    "Santa Cruz de la Palma",
+    "Paso (El)",
+    "Breña Alta",
+    "Tazacorte",
+    "San Andrés",
+    "Sauces",
+    "Villa de Mazo",
+    "Breña Baja",
+    "Tijarafe",
+    "Barlovento",
+    "Puntallana",
+    "Garafía",
+    "Fuencaliente de la Palma",
+    "Puntagorda"
+   ]
+  },
+  "TL06TF": {
+   "denominacion": "Sta. Cruz Tenerife",
+   "canal": 24,
+   "ambito": [
+    "Santa Cruz de Tenerife",
+    "San Cristóbal de La Laguna",
+    "Güímar",
+    "Candelaria",
+    "Rosario (El)",
+    "Tegueste",
+    "Arafo"
+   ]
+  },
+  "TL01BA": {
+   "denominacion": "Almendralejo",
+   "canal": 54,
+   "ambito": [
+    "Almendralejo",
+    "Villafranca de los Barros",
+    "Aceuchal",
+    "Santa Marta",
+    "Solana de los Barros"
+   ]
+  },
+  "TL02BA": {
+   "denominacion": "Azuaga",
+   "canal": 51,
+   "ambito": [
+    "Azuaga",
+    "Llerena",
+    "Berlanga",
+    "Granja de Torrehermosa",
+    "Ahillones",
+    "Maguilla"
+   ]
+  },
+  "TL03BA": {
+   "denominacion": "Badajoz",
+   "canal": 46,
+   "ambito": [
+    "Badajoz",
+    "Montijo",
+    "Olivenza",
+    "Puebla de la Calzada",
+    "Talavera la Real"
+   ]
+  },
+  "TL04BA": {
+   "denominacion": "Castuera",
+   "canal": 53,
+   "ambito": [
+    "Castuera",
+    "Quintana de la Serena",
+    "Zalamea de la Serena",
+    "Monterrubio de la Serena",
+    "Valle de la Serena",
+    "Higuera de la Serena",
+    "Esparragosa de la Serena"
+   ]
+  },
+  "TL05BA": {
+   "denominacion": "Don Benito",
+   "canal": 22,
+   "ambito": [
+    "Don Benito",
+    "Villanueva de la Serena",
+    "Guareña",
+    "Campanario",
+    "Santa Amalia",
+    "Orellana la Vieja",
+    "Coronada (La)"
+   ]
+  },
+  "TL06BA": {
+   "denominacion": "Herrera Duque",
+   "canal": 42,
+   "ambito": [
+    "Herrera del Duque",
+    "Fuenlabrada de los Montes",
+    "Valdecaballeros",
+    "Castilblanco"
+   ]
+  },
+  "TL07BA": {
+   "denominacion": "Mérida",
+   "canal": 30,
+   "ambito": [
+    "Mérida",
+    "Calamonte",
+    "Arroyo de San Serván"
+   ]
+  },
+  "TL08BA": {
+   "denominacion": "Navalvillar Pela",
+   "canal": 40,
+   "ambito": [
+    "Navalvillar de Pela",
+    "Talarrubias",
+    "Casas de Don Pedro",
+    "Puebla de Alcocer"
+   ]
+  },
+  "TL09BA": {
+   "denominacion": "Zafra",
+   "canal": 37,
+   "ambito": [
+    "Zafra",
+    "Jerez de los Caballeros",
+    "Santos de Maimona (Los)",
+    "Fuente del Maestre",
+    "Fregenal de la Sierra",
+    "Fuente de Cantos"
+   ]
+  },
+  "TL01CC": {
+   "denominacion": "Cáceres",
+   "canal": 40,
+   "ambito": [
+    "Cáceres",
+    "Arroyo de la Luz",
+    "Casar de Cáceres",
+    "Malpartida de Cáceres"
+   ]
+  },
+  "TL02CC": {
+   "denominacion": "Coria",
+   "canal": 38,
+   "ambito": [
+    "Coria",
+    "Moraleja",
+    "Montehermoso",
+    "Torrejoncillo"
+   ]
+  },
+  "TL03CC": {
+   "denominacion": "Jaraiz Vera",
+   "canal": 22,
+   "ambito": [
+    "Jaraiz de la Vera",
+    "Jarandilla de la Vera",
+    "Losar de la Vera",
+    "Aldeanueva de la Vera",
+    "Garganta la Olla",
+    "Cuacos de Yuste"
+   ]
+  },
+  "TL04CC": {
+   "denominacion": "Miajadas",
+   "canal": 58,
+   "ambito": [
+    "Miajadas",
+    "Madrigalejo",
+    "Almoharín",
+    "Campo Lugar",
+    "Escurial"
+   ]
+  },
+  "TL05CC": {
+   "denominacion": "Navalmoral Mata",
+   "canal": 32,
+   "ambito": [
+    "Navalmoral de la Mata",
+    "Talayuela",
+    "Peraleda de la Mata",
+    "Almaraz",
+    "Casatejada",
+    "Majadas"
+   ]
+  },
+  "TL06CC": {
+   "denominacion": "Plasencia",
+   "canal": 35,
+   "ambito": [
+    "Plasencia",
+    "Malpartida de Plasencia"
+   ]
+  },
+  "TL07CC": {
+   "denominacion": "Trujillo",
+   "canal": 30,
+   "ambito": [
+    "Trujillo",
+    "Madroñera",
+    "Torrecillas de la Tiesa",
+    "Cumbre (La)"
+   ]
+  },
+  "TL08CC": {
+   "denominacion": "Valencia Alcántara",
+   "canal": 42,
+   "ambito": [
+    "Valencia de Alcántara",
+    "San Vicente de Alcántara"
+   ]
+  },
+  "TL01C": {
+   "denominacion": "Carballo",
+   "canal": 52,
+   "ambito": [
+    "Carballo",
+    "Laracha (A)",
+    "Coristanco",
+    "Malpica de Bergantiños",
+    "Ponteceso",
+    "Cabana de Bergantiños",
+    "Laxe"
+   ]
+  },
+  "TL02C": {
+   "denominacion": "Coruña",
+   "canal": 31,
+   "ambito": [
+    "Coruña (A)",
+    "Oleiros",
+    "Arteixo",
+    "Culleredo",
+    "Cambre",
+    "Betanzos",
+    "Sada",
+    "Bergondo",
+    "Abegondo",
+    "Carral"
+   ]
+  },
+  "TL03C": {
+   "denominacion": "Ferrol",
+   "canal": 34,
+   "ambito": [
+    "Ferrol",
+    "Narón",
+    "Fene",
+    "Valdoviño",
+    "Neda",
+    "Mugardos",
+    "Ares",
+    "San Sadurniño"
+   ]
+  },
+  "TL04C": {
+   "denominacion": "Ribeira",
+   "canal": 27,
+   "ambito": [
+    "Ribeira",
+    "Boiro",
+    "Noia",
+    "Rianxo",
+    "Porto do Son",
+    "Muros",
+    "Pobra do Caramiñal (A)",
+    "Outes",
+    "Carnota",
+    "Lousame"
+   ]
+  },
+  "TL05C": {
+   "denominacion": "Santiago Compostela",
+   "canal": 23,
+   "ambito": [
+    "Santiago de Compostela",
+    "Ames",
+    "Teo",
+    "Padrón",
+    "Brión",
+    "Negreira",
+    "Rois",
+    "Vedra"
+   ]
+  },
+  "TL06C": {
+   "denominacion": "Vimianzo",
+   "canal": 51,
+   "ambito": [
+    "Vimianzo",
+    "Cee",
+    "Camariñas",
+    "Muxía",
+    "Zas",
+    "Fisterra",
+    "Dumbría",
+    "Corcubión"
+   ]
+  },
+  "TL07C": {
+   "denominacion": "Pontes García Rdguez",
+   "canal": 24,
+   "ambito": [
+    "Pontes de García Rodríguez (As)",
+    "Pontedeume",
+    "Cabanas",
+    "Monfero",
+    "Capela (A)",
+    "Muras"
+   ]
+  },
+  "TL01LU": {
+   "denominacion": "Chantada",
+   "canal": 52,
+   "ambito": [
+    "Chantada",
+    "Taboada",
+    "Carballedo"
+   ]
+  },
+  "TL02LU": {
+   "denominacion": "Lugo",
+   "canal": 46,
+   "ambito": [
+    "Lugo",
+    "Friol",
+    "Outeiro de Rei",
+    "Corgo (O)",
+    "Castroverde"
+   ]
+  },
+  "TL03LU": {
+   "denominacion": "Monforte Lemos",
+   "canal": 49,
+   "ambito": [
+    "Monforte de Lemos",
+    "Saviñao (O)",
+    "Pantón",
+    "Sober",
+    "Pobra do Brollón (A)",
+    "Bóveda"
+   ]
+  },
+  "TL04LU": {
+   "denominacion": "Vilalba",
+   "canal": 64,
+   "ambito": [
+    "Vilalba",
+    "Guitiriz",
+    "Castro de Rei",
+    "Cospeito",
+    "Pastoriza (A)",
+    "Begonte",
+    "Abadín",
+    "Xermade"
+   ]
+  },
+  "TL05LU": {
+   "denominacion": "Viveiro",
+   "canal": 40,
+   "ambito": [
+    "Viveiro",
+    "Foz",
+    "Ribadeo",
+    "Burela",
+    "Cervo",
+    "Xove",
+    "Barreiros"
+   ]
+  },
+  "TL01OU": {
+   "denominacion": "Barco Valdeorras",
+   "canal": 56,
+   "ambito": [
+    "Barco de Valdeorras (O)",
+    "Rúa (A)",
+    "Vilamartín de Valdeorras",
+    "Carballeda de Valdeorras",
+    "Rubiá",
+    "Veiga (A)",
+    "Bolo (O)",
+    "Petín"
+   ]
+  },
+  "TL02OU": {
+   "denominacion": "Carballiño",
+   "canal": 42,
+   "ambito": [
+    "Carballiño (O)",
+    "Boborás",
+    "Maside",
+    "San Cristovo de Cea",
+    "Irixo (O)",
+    "Piñor",
+    "Beariz",
+    "San Amaro"
+   ]
+  },
+  "TL03OU": {
+   "denominacion": "Ourense",
+   "canal": 51,
+   "ambito": [
+    "Ourense",
+    "Barbadás",
+    "Pereiro de Aguiar (O)",
+    "San Cibrao das Viñas",
+    "Coles"
+   ]
+  },
+  "TL04OU": {
+   "denominacion": "Verín",
+   "canal": 49,
+   "ambito": [
+    "Verín",
+    "Monterrei",
+    "Vilardevós",
+    "Cualedro",
+    "Riós",
+    "Oímbra",
+    "Laza",
+    "Castrelo do Val"
+   ]
+  },
+  "TL01PO": {
+   "denominacion": "Lalín",
+   "canal": 55,
+   "ambito": [
+    "Lalín",
+    "Silleda"
+   ]
+  },
+  "TL02PO": {
+   "denominacion": "Ponteareas",
+   "canal": 35,
+   "ambito": [
+    "Ponteareas",
+    "Tui",
+    "Salvaterra de Miño",
+    "Mondariz",
+    "Neves (As)"
+   ]
+  },
+  "TL03PO": {
+   "denominacion": "Pontevedra",
+   "canal": 29,
+   "ambito": [
+    "Pontevedra",
+    "Marín",
+    "Poio",
+    "Ponte Caldelas",
+    "Vilaboa",
+    "Cotobade"
+   ]
+  },
+  "TL04PO": {
+   "denominacion": "Vigo",
+   "canal": 34,
+   "ambito": [
+    "Vigo",
+    "Redondela",
+    "Cangas",
+    "Moaña",
+    "Nigrán",
+    "Porriño (O)",
+    "Mos",
+    "Bueu",
+    "Gondomar",
+    "Baiona",
+    "Salceda de Caselas",
+    "Soutomaior"
+   ]
+  },
+  "TL05PO": {
+   "denominacion": "Vilagarcía Arousa",
+   "canal": 47,
+   "ambito": [
+    "Vilagarcía de Arousa",
+    "Estrada (A)",
+    "Sanxenxo",
+    "Cambados",
+    "Grove (O)",
+    "Vilanova de Arousa",
+    "Caldas de Reis"
+   ]
+  },
+  "TL01LO": {
+   "denominacion": "Calahorra",
+   "canal": 35,
+   "ambito": [
+    "Calahorra",
+    "Arnedo",
+    "Alfaro",
+    "Autol",
+    "Pradejón",
+    "Rincón de Soto",
+    "Aldeanueva de Ebro",
+    "Quel"
+   ]
+  },
+  "TL02LO": {
+   "denominacion": "Haro",
+   "canal": 53,
+   "ambito": [
+    "Haro",
+    "Nájera",
+    "Santo Domingo de la Calzada",
+    "Ezcaray",
+    "San Asensio",
+    "San Vicente de la Sonsierra"
+   ]
+  },
+  "TL03LO": {
+   "denominacion": "Logroño",
+   "canal": 42,
+   "ambito": [
+    "Logroño",
+    "Lardero",
+    "Villamediana de Iregua",
+    "Albelda de Iregua",
+    "Alberite"
+   ]
+  },
+  "TL01M": {
+   "denominacion": "Alcalá Henares",
+   "canal": 46,
+   "ambito": [
+    "Alcalá de Henares",
+    "Torrejón de Ardoz",
+    "Coslada",
+    "San Fernando de Henares",
+    "Mejorada del Campo",
+    "Meco",
+    "Velilla de San Antonio",
+    "Villalbilla",
+    "Torres de la Alameda",
+    "Loeches",
+    "Campo Real"
+   ]
+  },
+  "TL02M": {
+   "denominacion": "Alcobendas",
+   "canal": 51,
+   "ambito": [
+    "Alcobendas",
+    "San Sebastián de los Reyes",
+    "Tres Cantos",
+    "Colmenar Viejo",
+    "Algete",
+    "San Agustín del Guadalix",
+    "Paracuellos de Jarama",
+    "Daganzo de Arriba",
+    "Fuente el Saz de Jarama",
+    "Molar (El)",
+    "Cobeña",
+    "Ajalvir"
+   ]
+  },
+  "TL03M": {
+   "denominacion": "Aranjuez",
+   "canal": 21,
+   "ambito": [
+    "Aranjuez",
+    "Rivas-Vaciamadrid",
+    "Arganda del Rey",
+    "Colmenar de Oreja",
+    "Morata de Tajuña",
+    "Chinchón",
+    "Villaconejos",
+    "Perales de Tajuña",
+    "Titulcia"
+   ]
+  },
+  "TL04M": {
+   "denominacion": "Collado Villalba",
+   "canal": 29,
+   "ambito": [
+    "Collado Villalba",
+    "Galapagar",
+    "Torrelodones",
+    "San Lorenzo de El Escorial",
+    "Escorial (El)",
+    "Guadarrama",
+    "Alpedrete",
+    "Moralzarzal",
+    "Hoyo de Manzanares",
+    "Cercedilla",
+    "Colmenarejo",
+    "Collado Mediano",
+    "Becerril de la Sierra",
+    "Molinos (Los)",
+    "Navacerrada"
+   ]
+  },
+  "TL05M": {
+   "denominacion": "Fuenlabrada",
+   "canal": 42,
+   "ambito": [
+    "Fuenlabrada",
+    "Getafe",
+    "Parla",
+    "Valdemoro",
+    "Pinto",
+    "Ciempozuelos",
+    "San Martín de la Vega"
+   ]
+  },
+  "TL06M": {
+   "denominacion": "Madrid",
+   "canal": 39,
+   "ambito": [
+    "Madrid"
+   ]
+  },
+  "TL07M": {
+   "denominacion": "Madrid",
+   "canal": 50,
+   "ambito": [
+    "Madrid"
+   ]
+  },
+  "TL08M": {
+   "denominacion": "Móstoles",
+   "canal": 30,
+   "ambito": [
+    "Móstoles",
+    "Leganés",
+    "Alcorcón",
+    "Navalcarnero",
+    "Humanes de Madrid",
+    "Arroyomolinos",
+    "Moraleja de Enmedio"
+   ]
+  },
+  "TL09M": {
+   "denominacion": "Pozuelo Alarcón",
+   "canal": 23,
+   "ambito": [
+    "Pozuelo de Alarcón",
+    "Rozas de Madrid (Las)",
+    "Majadahonda",
+    "Boadilla del Monte",
+    "Villaviciosa de Odón",
+    "Villanueva de la Cañada",
+    "Villanueva del Pardillo",
+    "Brunete",
+    "Sevilla la Nueva"
+   ]
+  },
+  "TL10M": {
+   "denominacion": "S. Martín Valdeiglesias",
+   "canal": 51,
+   "ambito": [
+    "San Martín de Valdeiglesias",
+    "Villa del Prado",
+    "Cadalso de los Vidrios",
+    "Navas del Rey",
+    "Cenicientos",
+    "Pelayos de la Presa",
+    "Aldea del Fresno",
+    "Chapinería",
+    "Rozas de Puerto Real"
+   ]
+  },
+  "TL11M": {
+   "denominacion": "Soto Real",
+   "canal": 35,
+   "ambito": [
+    "Soto del Real",
+    "Manzanares el Real",
+    "Miraflores de la Sierra",
+    "Boalo (El)",
+    "Guadalix de la Sierra",
+    "Torrelaguna",
+    "Cabrera (La)",
+    "Bustarviejo",
+    "Venturada",
+    "Navalafuente",
+    "Valdemanco",
+    "Cabanillas de la Sierra"
+   ]
+  },
+  "TL01MU": {
+   "denominacion": "Caravaca Cruz",
+   "canal": 47,
+   "ambito": [
+    "Caravaca de la Cruz",
+    "Cehegín",
+    "Bullas",
+    "Calasparra",
+    "Moratalla"
+   ]
+  },
+  "TL02MU": {
+   "denominacion": "Cartagena",
+   "canal": 56,
+   "ambito": [
+    "Cartagena",
+    "Unión (La)",
+    "Fuente Álamo de Murcia"
+   ]
+  },
+  "TL03MU": {
+   "denominacion": "Cieza",
+   "canal": 29,
+   "ambito": [
+    "Cieza",
+    "Mula",
+    "Abarán",
+    "Blanca",
+    "Pliego"
+   ]
+  },
+  "TL04MU": {
+   "denominacion": "Lorca",
+   "canal": 39,
+   "ambito": [
+    "Lorca",
+    "Águilas",
+    "Totana",
+    "Mazarrón",
+    "Alhama de Murcia",
+    "Puerto Lumbreras",
+    "Aledo"
+   ]
+  },
+  "TL05MU": {
+   "denominacion": "Molina Segura",
+   "canal": 56,
+   "ambito": [
+    "Molina de Segura",
+    "Torres de Cotillas (Las)",
+    "Archena",
+    "Ceutí",
+    "Alguazas",
+    "Lorquí",
+    "Campos del Río",
+    "Villanueva del Río Segura",
+    "Ricote",
+    "Albudeite",
+    "Ulea",
+    "Ojós"
+   ]
+  },
+  "TL06MU": {
+   "denominacion": "Murcia",
+   "canal": 26,
+   "ambito": [
+    "Murcia",
+    "Alcantarilla",
+    "Santomera",
+    "Beniel",
+    "Fortuna",
+    "Abanilla",
+    "Librilla"
+   ]
+  },
+  "TL07MU": {
+   "denominacion": "Torre-Pacheco",
+   "canal": 51,
+   "ambito": [
+    "Torre-Pacheco",
+    "San Javier",
+    "San Pedro del Pinatar",
+    "Alcázares (Los)"
+   ]
+  },
+  "TL08MU": {
+   "denominacion": "Yecla",
+   "canal": 28,
+   "ambito": [
+    "Yecla",
+    "Jumilla"
+   ]
+  },
+  "TL01NA": {
+   "denominacion": "Estella",
+   "canal": 25,
+   "ambito": [
+    "Estella/Lizarra",
+    "Ayegui",
+    "Villatuerta",
+    "Allín",
+    "Abárzuza",
+    "Cirauqui",
+    "Igúzquiza",
+    "Metauten"
+   ]
+  },
+  "TL02NA": {
+   "denominacion": "Pamplona",
+   "canal": 38,
+   "ambito": [
+    "Pamplona/Iruña",
+    "Barañain",
+    "Burlada/Burlata",
+    "Zizur Mayor/Zizur Nagusia",
+    "Villava/Atarrabia",
+    "Ansoáin",
+    "Berriozar",
+    "Aranguren",
+    "Noáin (Valle de Elorz)/Noain (Elortzibar)",
+    "Egüés",
+    "Huarte/Uharte",
+    "Beriáin"
+   ]
+  },
+  "TL03NA": {
+   "denominacion": "Sangüesa",
+   "canal": 45,
+   "ambito": [
+    "Sangüesa/Zangoza",
+    "Lumbier",
+    "Cáseda",
+    "Aibar/Oibar",
+    "Liédena",
+    "Yesa e Ibargoiti"
+   ]
+  },
+  "TL04NA": {
+   "denominacion": "Tafalla",
+   "canal": 31,
+   "ambito": [
+    "Tafalla",
+    "Olite",
+    "Larraga",
+    "Artajona",
+    "Miranda de Arga",
+    "Berbinzana",
+    "Pitillas",
+    "San Martín de Unx",
+    "Garínoain",
+    "Pueyo",
+    "Beire",
+    "Olóriz",
+    "Orísoain"
+   ]
+  },
+  "TL05NA": {
+   "denominacion": "Tudela",
+   "canal": 42,
+   "ambito": [
+    "Tudela",
+    "Corella",
+    "Cintruénigo",
+    "Cascante",
+    "Ribaforada",
+    "Castejón",
+    "Cortes",
+    "Murchante"
+   ]
+  },
+  "TL01VI": {
+   "denominacion": "Llodio",
+   "canal": 41,
+   "ambito": [
+    "Llodio",
+    "Amurrio"
+   ]
+  },
+  "TL02VI": {
+   "denominacion": "Vitoria",
+   "canal": 56,
+   "ambito": [
+    "Vitoria-Gasteiz"
+   ]
+  },
+  "TL01SS": {
+   "denominacion": "Beasain",
+   "canal": 33,
+   "ambito": [
+    "Beasain",
+    "Zumarraga",
+    "Ordizia",
+    "Legazpi",
+    "Urretxu",
+    "Ataun",
+    "Ormaiztegi"
+   ]
+  },
+  "TL02SS": {
+   "denominacion": "Eibar",
+   "canal": 34,
+   "ambito": [
+    "Eibar",
+    "Ermua",
+    "Elgoibar",
+    "Soraluze/Placencia de las Armas"
+   ]
+  },
+  "TL03SS": {
+   "denominacion": "Mondragón",
+   "canal": 52,
+   "ambito": [
+    "Arrasate/Mondragón",
+    "Bergara",
+    "Oñati",
+    "Aretxabaleta",
+    "Eskoriatza"
+   ]
+  },
+  "TL04SS": {
+   "denominacion": "San Sebastián",
+   "canal": 23,
+   "ambito": [
+    "Donostia-San Sebastián",
+    "Hernani",
+    "Lasarte-Oria",
+    "Andoain",
+    "Urnieta",
+    "Usurbil",
+    "Astigarraga"
+   ]
+  },
+  "TL05SS": {
+   "denominacion": "Tolosa",
+   "canal": 24,
+   "ambito": [
+    "Tolosa",
+    "Villabona",
+    "Anoeta e Itsasondo"
+   ]
+  },
+  "TL06SS": {
+   "denominacion": "Zarautz",
+   "canal": 35,
+   "ambito": [
+    "Zarautz",
+    "Azpeitia",
+    "Azkoitia",
+    "Zumaia",
+    "Orio"
+   ]
+  },
+  "TL07SS": {
+   "denominacion": "Irún",
+   "canal": 29,
+   "ambito": [
+    "Irun",
+    "Errenteria",
+    "Pasaia",
+    "Hondarribia",
+    "Oiartzun",
+    "Lezo"
+   ]
+  },
+  "TL01BI": {
+   "denominacion": "Barakaldo",
+   "canal": 31,
+   "ambito": [
+    "Barakaldo",
+    "Portugalete",
+    "Santurtzi",
+    "Sestao",
+    "Valle de Trápaga-Trapagaran",
+    "Abanto",
+    "Ciérvana-Abanto Zierbena",
+    "Ortuella",
+    "Muskiz"
+   ]
+  },
+  "TL02BI": {
+   "denominacion": "Bermeo",
+   "canal": 37,
+   "ambito": [
+    "Bermeo",
+    "Gernika-Lumo",
+    "Ondarroa",
+    "Lekeitio",
+    "Markina-Xemein"
+   ]
+  },
+  "TL03BI": {
+   "denominacion": "Bilbao",
+   "canal": 23,
+   "ambito": [
+    "Bilbao"
+   ]
+  },
+  "TL04BI": {
+   "denominacion": "Durango",
+   "canal": 46,
+   "ambito": [
+    "Durango",
+    "Amorebieta-Etxano",
+    "Elorrio",
+    "Abadiño",
+    "Berriz"
+   ]
+  },
+  "TL05BI": {
+   "denominacion": "Mungia",
+   "canal": 50,
+   "ambito": [
+    "Mungia",
+    "Sopelana",
+    "Berango",
+    "Derio",
+    "Zamudio"
+   ]
+  },
+  "TL06BI": {
+   "denominacion": "Getxo",
+   "canal": 48,
+   "ambito": [
+    "Getxo",
+    "Basauri",
+    "Galdakao",
+    "Leioa",
+    "Erandio",
+    "Arrigorriaga",
+    "Etxebarri",
+    "Anteiglesia de San Esteban-Etxebarri Doneztebeko Elizatea"
+   ]
+  },
+  "TL01A": {
+   "denominacion": "Alcoy",
+   "canal": 56,
+   "ambito": [
+    "Alcoy/Alcoi",
+    "Ibi",
+    "Cocentaina",
+    "Castalla",
+    "Muro de Alcoy",
+    "Onil"
+   ]
+  },
+  "TL02A": {
+   "denominacion": "Alicante",
+   "canal": 21,
+   "ambito": [
+    "Alicante/Alacant",
+    "San Vicente del Raspeig/Sant Vicent del Raspeig",
+    "Campello (El)",
+    "Sant Joan d'Alacant",
+    "Mutxamel",
+    "Jijona/Xixona"
+   ]
+  },
+  "TL03A": {
+   "denominacion": "Benidorm",
+   "canal": 27,
+   "ambito": [
+    "Benidorm",
+    "Villajoyosa/Vila Joiosa (La)",
+    "Calpe/Calp",
+    "Altea",
+    "Alfàs del Pi (L')",
+    "Nucia (La)",
+    "Callosa d'En Sarriá"
+   ]
+  },
+  "TL04A": {
+   "denominacion": "Dénia",
+   "canal": null,
+   "ambito": [
+    "Dénia",
+    "Jávea/Xàbia",
+    "Teulada",
+    "Benissa",
+    "Pego",
+    "Pedreguer",
+    "Ondara",
+    "Gata de Gorgos",
+    "Benitachell/Poble Nou de Benitatxell (El)"
+   ]
+  },
+  "TL05A": {
+   "denominacion": "Elche",
+   "canal": 45,
+   "ambito": [
+    "Elche/Elx",
+    "Crevillent",
+    "Santa Pola"
+   ]
+  },
+  "TL06A": {
+   "denominacion": "Elda",
+   "canal": 25,
+   "ambito": [
+    "Elda",
+    "Villena",
+    "Petrer",
+    "Novelda",
+    "Aspe",
+    "Monóvar/Monòver",
+    "Sax",
+    "Pinoso",
+    "Monforte del Cid"
+   ]
+  },
+  "TL07A": {
+   "denominacion": "Orihuela-Torrevieja",
+   "canal": 54,
+   "ambito": [
+    "Torrevieja",
+    "Orihuela",
+    "Callosa de Segura",
+    "Pilar de la Horadada",
+    "Almoradí",
+    "Guardamar del Segura",
+    "Albatera"
+   ]
+  },
+  "TL07V": {
+   "denominacion": "Torrent",
+   "canal": 35,
+   "ambito": [
+    "Torrent",
+    "Paterna",
+    "Mislata",
+    "Alaquàs",
+    "Xirivella",
+    "Manises",
+    "Quart de Poblet",
+    "Aldaia",
+    "Catarroja",
+    "Paiporta",
+    "Alfafar",
+    "Picassent",
+    "Silla",
+    "Benetússer",
+    "Albal",
+    "Chiva",
+    "Picanya",
+    "Buñol",
+    "Sedaví",
+    "Cheste"
+   ]
+  },
+  "TL01CS": {
+   "denominacion": "Castellón",
+   "canal": 50,
+   "ambito": [
+    "Castellón de la Plana/Castelló de la Plana",
+    "Villarreal/Vila-real",
+    "Burriana",
+    "Onda",
+    "Almazora/Almassora",
+    "Benicasim/Benicàssim",
+    "Nules",
+    "Alcora (L')",
+    "Betxí",
+    "Torreblanca",
+    "Oropesa del Mar/Orpesa",
+    "Borriol",
+    "Cabanes"
+   ]
+  },
+  "TL02CS": {
+   "denominacion": "Morella",
+   "canal": 22,
+   "ambito": [
+    "Morella",
+    "Villafranca del Cid",
+    "Benasal"
+   ]
+  },
+  "TL03CS": {
+   "denominacion": "Vall Uixó-Segorbe",
+   "canal": null,
+   "ambito": [
+    "Vall d'Uixó (La)",
+    "Segorbe",
+    "Almenara",
+    "Altura",
+    "Jérica"
+   ]
+  },
+  "TL04CS": {
+   "denominacion": "Vinaròs",
+   "canal": 46,
+   "ambito": [
+    "Vinaròs",
+    "Benicarló",
+    "Alcalà de Xivert",
+    "Peñíscola"
+   ]
+  },
+  "TL01V": {
+   "denominacion": "Alzira",
+   "canal": 44,
+   "ambito": [
+    "Alzira",
+    "Sueca",
+    "Algemesí",
+    "Cullera",
+    "Carcaixent",
+    "Carlet",
+    "Benifaió",
+    "Alginet",
+    "Alcúdia (L')",
+    "Almussafes",
+    "Sollana"
+   ]
+  },
+  "TL02V": {
+   "denominacion": "Gandia",
+   "canal": null,
+   "ambito": [
+    "Gandia",
+    "Oliva",
+    "Tavernes de la Valldigna"
+   ]
+  },
+  "TL03V": {
+   "denominacion": "Ontinyent-Xàtiva",
+   "canal": 45,
+   "ambito": [
+    "Ontinyent",
+    "Xàtiva",
+    "Canals",
+    "Olleria (L')",
+    "Albaida",
+    "Enguera",
+    "Navarrés"
+   ]
+  },
+  "TL04V": {
+   "denominacion": "Sagunto",
+   "canal": 36,
+   "ambito": [
+    "Sagunto/Sagunt",
+    "Burjassot",
+    "Moncada",
+    "Alboraya",
+    "Llíria",
+    "Bétera",
+    "Puçol",
+    "Riba-roja de Túria",
+    "Eliana (L')",
+    "Pobla de Vallbona (La)",
+    "Puig"
+   ]
+  },
+  "TL05V": {
+   "denominacion": "Utiel-Requena",
+   "canal": null,
+   "ambito": [
+    "Requena",
+    "Utiel"
+   ]
+  },
+  "TL06V": {
+   "denominacion": "Valencia",
+   "canal": 23,
+   "ambito": [
+    "Valencia"
+   ]
+  },
+  "TL01CE": {
+   "denominacion": "Ceuta",
+   "canal": null,
+   "ambito": [
+    "Ceuta"
+   ]
+  },
+  "TL01ML": {
+   "denominacion": "Melilla",
+   "canal": null,
+   "ambito": [
+    "Melilla"
+   ]
+  }
+ }
+}

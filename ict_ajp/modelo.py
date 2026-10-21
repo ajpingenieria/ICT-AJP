@@ -152,6 +152,9 @@ class OpcionesDiseno(BaseModel):
     regleta_pares: Literal[5, 10] = 10
     prevision_ascensor_por_tecnologia: int = Field(
         1, description="Salidas previstas en el registro principal para cada ascensor (Anexo II, 3.1.5).")
+    cabecera_rtv: Literal["monocanal", "programable"] = Field(
+        "monocanal", description="Monocanal: cumple siempre el 4.3 del Anexo I. Programable: solo si su ficha "
+        "garantiza menos de 3 dB entre canales.")
     altura_libre_riti_mm: Optional[int] = Field(
         None, description="Altura libre donde va el RITI (o RITU). Si se indica, se estrecha el recinto (5.5.1).")
     altura_libre_rits_mm: Optional[int] = Field(

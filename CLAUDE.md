@@ -44,13 +44,16 @@ completo: cálculos, planos DXF, memoria, pliego y presupuesto.
 - `ict_ajp/plan_tdt.py` + `ict_ajp/datos/plan_tdt.json` — áreas y canales del Plan Técnico Nacional
   de la TDT. El JSON se genera con `herramientas/generar_plan_tdt.py` desde `docs/normativa` y una
   prueba comprueba que coinciden.
+- `ict_ajp/plan_radio.py` + `ict_ajp/datos/plan_radio.json` — bloques DAB por provincia, emisoras FM
+  por localidad y demarcaciones de TDT local (generado con `herramientas/generar_plan_radio.py`).
 - `herramientas/boe_a_markdown.py` — pasa un XML del BOE a Markdown para `docs/normativa`.
 - `ict_ajp/__main__.py` — `python -m ict_ajp calcular proyecto.ict.json -o resultado.xlsx` y
   `python -m ict_ajp leer-dxf plano.dxf -o lectura.txt` y
   `python -m ict_ajp borrador plano.dxf -o proyecto.ict.json` (plantas y viviendas del DXF).
 - `docs/normativa/` — **textos consolidados oficiales del BOE** (RD 346/2011 actualizado hasta el
   RD 250/2025; Orden ITC/1644/2011; RD 250/2025 Plan Técnico Nacional de la TDT y su corrección de
-  errores; Resolución de 23/07/2026 de la fase 1 de DVB-T2). Son la única fuente para programar reglas.
+  errores; Resolución de 23/07/2026 de la fase 1 de DVB-T2; planes técnicos de TDT local RD 439/2004,
+  DAB RD 1287/1999 y FM RD 964/2006). Son la única fuente para programar reglas.
 - `ejemplos/edificio_prueba.ict.json` — edificio de prueba (18 viviendas, 2 locales).
 - `tests/` — `pytest -q`. Las pruebas corren en Windows y Linux con GitHub Actions en cada subida.
 
@@ -95,6 +98,9 @@ completo: cálculos, planos DXF, memoria, pliego y presupuesto.
   propone el más estrecho que mantiene superficie frontal y fondo (5.5.1), sin bajar de la puerta
   de 180 x 80 cm (5.5).
 - Recintos de obra por defecto. Los modulares (RITM) tienen las mismas medidas mínimas de 5.5.1.
+- RTV: sin medidas, campo de diseño = mínimo de la norma (3 + 20 log f). Cabecera monocanal por
+  defecto (`cabecera_rtv`); una programable solo si su ficha garantiza < 3 dB entre canales (Anexo I
+  4.3; la de la Avant 12 no lo dice). Satélite: solo previsión.
 - Estancias que cuentan para tomas: salón, comedor, cocina, dormitorios y estudio. No cuentan
   vestíbulos, pasos, lavaderos, vestidores ni espacios exteriores. La otra estancia con BAT doble
   es el dormitorio mayor.

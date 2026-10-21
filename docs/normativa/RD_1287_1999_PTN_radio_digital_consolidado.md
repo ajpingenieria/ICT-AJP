@@ -1,0 +1,479 @@
+---
+title: "Real Decreto 1287/1999, de 23 de julio, por el que se aprueba el Plan técnico nacional de la radiodifusión sonora digital terrestre (texto consolidado)"
+identifier: "BOE-A-1999-16218"
+source: "https://www.boe.es/buscar/act.php?id=BOE-A-1999-16218"
+publication_date: "1999-07-26"
+downloaded: "2026-10-21"
+---
+
+# Real Decreto 1287/1999, de 23 de julio, por el que se aprueba el Plan técnico nacional de la radiodifusión sonora digital terrestre (texto consolidado)
+
+Téngase en cuenta que se modifica el título del Plan Técnico Nacional que pasa a denominarse «Plan Técnico Nacional de la Radiodifusión Sonora Digital Terrestre», según establece la disposición adicional única del Real Decreto 802/2011, de 10 de junio. Ref. BOE-A-2011-11109
+
+Característica fundamental en el desarrollo y la evolución de los sistemas electrónicos en la última década ha sido, en el tratamiento de las señales, la sustitución de las tecnologías analógicas por las tecnologías digitales. Esta sustitución, especialmente rápida en algunos sectores de las telecomunicaciones, se limitaba hasta fechas recientes, en lo que respecta a la radiodifusión sonora, a la mera producción de programas.
+
+Los recientes avances tecnológicos en este campo, especialmente impulsados por la Unión Europea de Radiodifusión (UER), han permitido la aparición y el desarrollo de la radiodifusión sonora digital (DAB), cuya introducción supondrá un cambio trascendental en la radiodifusión sonora, tanto por la calidad del sonido, equivalente a la de un disco compacto, como por las posibilidades de oferta de un gran número de servicios adicionales, permitiendo configurar fácilmente coberturas de programas en los diferentes ámbitos, nacional, autonómico y local. Desde un punto de vista estrictamente técnico, es de destacar que este nuevo sistema simplifica la gestión de las frecuencias, permite una mayor eficacia en su utilización y ofrece una recepción de la señal prácticamente inmune a las interferencias.
+
+La gestión directa de la radiodifusión sonora digital terrenal corresponde al Ente Público Radio Televisión Española, de acuerdo con el artículo 5.1 del Estatuto de la Radio y la Televisión, aprobado por la Ley 4/1980, de 10 de enero, y a los entes públicos de las Comunidades Autónomas, conforme se dispone en el artículo 26 de la Ley 31/1987, de 18 de diciembre, de Ordenación de las Telecomunicaciones. La gestión indirecta se llevará a cabo, con arreglo a las previsiones contenidas en el anteriormente citado artículo 26 y la disposición adicional sexta de la Ley 31/1987. A ambas formas de gestión les será de aplicación, además, lo previsto en la disposición adicional cuadragésima cuarta de la Ley 66/1997, de 30 de diciembre, de Medidas Fiscales Administrativas y del Orden Social.
+
+Para facilitar el desarrollo de la radiodifusión sonora digital terrenal en España es preciso partir, desde el primer momento, de un escenario cierto que permita a todos los sectores involucrados conocer los plazos y el marco normativo con arreglo a los cuales se producirá la implantación de esta nueva tecnología, aun cuando no sea previsible la completa sustitución de la tecnología analógica por la digital en la radiodifusión.
+
+Por otra parte, en la elaboración del Plan técnico nacional de la radiodifusión sonora digital terrestre se ha procurado que exista una oferta de frecuencias equivalente para la cobertura estatal y para la autonómica y local, y se ha tenido especialmente en cuenta la especificidad del hecho insular, conforme establece el artículo 62 de la Ley 11/1998, de 24 de abril, General de Telecomunicaciones.
+
+La Ley 66/1997, de Medidas Fiscales, Administrativas y del Orden Social, en su disposición adicional cuadragésima cuarta, regula el régimen jurídico de la radiodifusión sonora digital terrenal, fijando, en su apartado 3, la necesidad de la aprobación, por el Ministerio de Fomento, del Reglamento técnico y de prestación de los servicios, con carácter previo al comienzo de la actuación de los operadores que empleen esta tecnología. Su apartado 4 exige también, como requisito previo, la aprobación, por el Gobierno, del Plan técnico nacional de la radiodifusión sonora digital terrestre. Este mismo apartado determina que las concesiones para la gestión indirecta del servicio se otorgarán por el Estado, si su ámbito es estatal, y por las Comunidades Autónomas, si es autonómico o local.
+
+En cumplimiento de la previsión contenida en la referida disposición adicional, se aprueba el presente Real Decreto.
+
+En su virtud, a propuesta del Ministro de Fomento, de acuerdo con el Consejo de Estado y previa deliberación del Consejo de Ministros en su reunión del día 23 de julio de 1999,
+
+#### DISPONGO:
+
+> > Se modifica el título del Plan técnico nacional por la disposición adicional única del Real Decreto 802/2011, de 10 de junio. Ref. BOE-A-2011-11109
+
+###### Artículo único. Aprobación del Plan técnico nacional de la radiodifusión sonora digital terrestre.
+
+Se aprueba el Plan técnico nacional de la radiodifusión sonora digital terrestre que figura como anexo a este Real Decreto.
+
+> > Se modifica el título del Plan técnico nacional por la disposición adicional única del Real Decreto 802/2011, de 10 de junio. Ref. BOE-A-2011-11109
+
+###### Disposición adicional primera. Introducción de la tecnología digital en los ámbitos nacional, autonómico y local.
+
+1. Se reservan cuatro programas, para su explotación en régimen de gestión directa, al Ente Público Radiotelevisión Española, en la red de frecuencia única de ámbito nacional, para programas nacionales sin desconexiones territoriales, denominada Red FU-E en el Plan técnico nacional de la radiodifusión sonora digital terrestre. Las frecuencias correspondientes a esta red estarán disponibles antes del día 1 de enero de 2000, conforme se establece en el referido plan técnico.
+
+Asimismo, se reservan dos programas al Ente Público Radiotelevisión Española en la red de cobertura nacional, con capacidad para efectuar desconexiones territoriales, denominada Red MF-I en el Plan técnico nacional de la radiodifusión sonora digital terrestre. Las frecuencias correspondientes a esta red estarán disponibles a partir del día 1 de enero de 2000.
+
+El Ente Público Radiotelevisión Española podrá solicitar que se le permita explotar los programas que se indican en este apartado, en el plazo que se establezca por Orden del Ministro de Fomento.
+
+2. Las concesiones para la explotación del servicio mediante el empleo de los restantes bloques y programas en las Redes FU-E, MF-I y MF-II de cobertura nacional, se adjudicarán por el Consejo de Ministros mediante concurso público. Los concursos para la adjudicación de estas concesiones se convocarán por el Consejo de Ministros, que también aprobará el correspondiente pliego de bases, respetándose íntegramente, en cuanto resulte aplicable, el contenido del artículo 26 y de la disposición adicional sexta de la Ley de Ordenación de las Telecomunicaciones en su vigente redacción y los principios contenidos en el artículo 20 de la Constitución que garantizan el pluralismo informativo.
+
+Las frecuencias correspondientes a estas redes estarán disponibles a partir del día 1 de enero de 2000, conforme se establece en el referido plan técnico.
+
+3. Hasta tres programas en la Red FU correspondiente a cada Comunidad Autónoma especificada en el anexo II al Plan técnico nacional de la radiodifusión sonora digital terrestre, para el establecimiento de una red de frecuencia única en cada Comunidad Autónoma sin desconexiones territoriales, se destinan para su explotación, en régimen de gestión directa, al ente público correspondiente de cada Comunidad Autónoma. Los restantes programas de cada Red FU de ámbito autonómico se explotarán, en régimen de gestión indirecta, por las personas físicas o jurídicas a las que aquélla otorgue la oportuna concesión.
+
+Las frecuencias correspondientes a estas redes estarán disponibles, conforme al Plan técnico nacional de la radiodifusión sonora digital terrestre, antes del día 1 de enero de 2000.
+
+Los entes públicos de las Comunidades Autónomas podrán solicitar que se les permita explotar los programas que se indican en este apartado, en el plazo que se establezca por Orden del Ministro de Fomento.
+
+4. Hasta tres programas en la Red MF correspondiente a cada Comunidad Autónoma especificada en el anexo III al Plan técnico nacional de la radiodifusión sonora digital terrestre, para el establecimiento de una red en cada Comunidad Autónoma, con capacidad para efectuar desconexiones territoriales, se destinan para su explotación, en régimen de gestión directa, al ente público correspondiente de cada Comunidad Autónoma. Los restantes programas de cada Red MF de ámbito autonómico se explotarán, en régimen de gestión indirecta, por las personas físicas o jurídicas a las que aquélla otorgue la oportuna concesión.
+
+Las frecuencias correspondientes a estas redes estarán disponibles, conforme al Plan técnico nacional de la radiodifusión sonora digital terrestre, a partir del día 1 de enero de 2000.
+
+Los entes públicos de las Comunidades Autónomas podrán solicitar que se les permita explotar los programas que se indican en este apartado, en el plazo que se establezca por Orden del Ministro de Fomento.
+
+5. Las concesiones para la explotación del servicio en régimen de gestión indirecta, mediante el empleo de los programas de cobertura autonómica indicados en los dos apartados anteriores, se adjudicarán por los órganos correspondientes de las Comunidades Autónomas en el ámbito de sus respectivas competencias, con arreglo al pliego de bases que aprueben y resultando de aplicación, en lo que proceda, el artículo 26 y la disposición adicional sexta de la Ley de Ordenación de las Telecomunicaciones, en su vigente redacción, y los principios contenidos en el artículo 20 de la Constitución, que garantizan el pluralismo informativo.
+
+6. Antes del día 31 de diciembre de 1999, los órganos competentes de las Comunidades Autónomas presentarán a la Secretaría General de Comunicaciones una relación priorizada de las localidades para las que se desea cobertura local y el ámbito de las mismas. Recibida dicha relación, el Ministerio de Fomento dispondrá hasta el día 30 de junio de 2000, para realizar la planificación de bloques de frecuencias, teniendo en cuenta las limitaciones derivadas de la coordinación internacional y la compatibilidad radioeléctrica entre Comunidades Autónomas adyacentes, preservando el derecho al acceso equitativo a los recursos espectrales de todas ellas.
+
+El servicio de cobertura local se explotará, en régimen de gestión indirecta, por las personas, físicas o jurídicas, a las que la Comunidad Autónoma otorgue la oportuna concesión.
+
+7. A efectos de esta norma, cada bloque de frecuencias de cobertura nacional, autonómica o, en su caso, local integrará, inicialmente, seis programas diferentes, susceptibles de ser explotados las veinticuatro horas del día. La capacidad a utilizar por los servicios adicionales de transmisión de datos no sobrepasará el 20 por 100 de la capacidad total de cada bloque de frecuencias del servicio de radiodifusión sonora digital terrenal. La prestación de estos últimos servicios habrá de estar amparada por el título habilitante que, con arreglo a la normativa vigente sobre telecomunicaciones, la permita.
+
+En función del desarrollo tecnológico futuro, el Ministerio de Fomento podrá, mediante Orden, establecer un mayor número de programas por bloque de frecuencias, siempre que ello no vaya en detrimento de la calidad de los servicios que se vienen prestando.
+
+8. Las entidades que accedan al aprovechamiento de programas dentro de un mismo bloque de frecuencias podrán asociarse entre sí para la mejor gestión de todo lo que afecte al bloque de frecuencias en su conjunto o establecer conjuntamente las reglas para esta finalidad.
+
+> > Se modifica el título del Plan técnico nacional por la disposición adicional única del Real Decreto 802/2011, de 10 de junio. Ref. BOE-A-2011-11109
+
+###### Disposición adicional segunda. Empleo de infraestructura de red soporte del servicio.
+
+Las entidades habilitadas, con arreglo a este Real Decreto, para emitir programas de radiodifusión sonora empleando tecnología digital, podrán hacerlo con sus propias infraestructuras de red soporte del servicio de radiodifusión sonora o contratando su uso con terceros. A estos efectos se entenderá como infraestructura de red soporte del servicio de radiodifusión sonora la definida en la Orden de 22 de septiembre de 1998, sobre licencias individuales.
+
+En todo caso, habrá de prestarse por una entidad que haya obtenido la oportuna licencia individual, de conformidad con lo dispuesto en la Le 11/1998, de 24 de abril, General de Telecomunicaciones, y sus disposiciones de desarrollo.
+
+###### Disposición adicional tercera. Utilización de infraestructuras.
+
+Con el fin de favorecer la rápida introducción del servicio de radiodifusión sonora digital terrenal, en los concursos que se convoquen para la adjudicación de concesiones para la explotación del servicio, mediante el empleo de bloques de frecuencias o programas, se valorará la utilización de infraestructuras ya existentes y, particularmente, el uso compartido de los emplazamientos y de los sistemas de antenas de emisión.
+
+###### Disposición adicional cuarta. Costes de personal.
+
+La aplicación de lo dispuesto en este Real Decreto y en sus normas de desarrollo no conllevará incremento alguno en materia de costes de personal.
+
+###### Disposición final única. Entrada en vigor.
+
+El presente Real Decreto entrará en vigor el día siguiente al de su publicación en el «Boletín Oficial del Estado».
+
+###### Disposición final primera. Habilitación para modificar bloques de frecuencia.
+
+Se habilita al Secretario de Estado de Telecomunicaciones y para la Sociedad de la Información para, previa solicitud de las entidades habilitadas para prestar el servicio de radiodifusión sonora digital terrenal a que se refiere este Real Decreto, modificar los bloques de frecuencias establecidos en el Plan técnico nacional de la radiodifusión sonora digital terrestre, teniendo en cuenta las limitaciones derivadas de la disponibilidad del dominio público radioeléctrico y de la coordinación internacional de frecuencias.
+
+Si como consecuencia de las actuaciones previstas en el párrafo anterior, se acuerda una modificación de los bloques de frecuencias, quedarán sin efecto las distribuciones de programas que para los entes públicos y las personas privadas se establecen en los apartados 1, 2, 3, 4 y 5 de la disposición adicional primera, respetando, en todo caso, el número de programas que corresponde a cada una de ellas.
+
+En estos supuestos, las entidades habilitadas que resulten afectadas podrán solicitar al órgano competente el cambio del programa o de la red inicialmente asignada en su título habilitante.
+
+En el caso de los programas y de las redes de radiodifusión sonora digital terrenal de ámbito nacional, el órgano competente es el Consejo de Ministros.
+
+> > Se modifica el título del Plan técnico nacional por la disposición adicional única del Real Decreto 802/2011, de 10 de junio. Ref. BOE-A-2011-11109
+> > Se añade por el art. 1.1 del Real Decreto 776/2006, de 23 de junio. Ref. BOE-A-2006-11288.
+
+###### Disposición final segunda. Entrada en vigor.
+
+El presente Real Decreto entrará en vigor el día siguiente al de su publicación en el «Boletín Oficial del Estado».
+
+> > Se renumera por el art. 1.2 del Real Decreto 776/2006, de 23 de junio. Ref. BOE-A-2006-11288.
+> Su anterior numeración era disposición final única.
+
+Dado en Madrid a 23 de julio de 1999.
+
+JUAN CARLOS R.
+
+El Ministro de Fomento,
+
+RAFAEL ARIAS-SALGADO MONTALVO
+
+## ANEXO
+
+## Plan Técnico Nacional de la Radiodifusión Sonora Digital Terrestre.
+
+> > Se modifica el título del Plan por la disposición adicional única del Real Decreto 802/2011, de 10 de junio. Ref. BOE-A-2011-11109
+
+###### Artículo 1. Bandas de frecuencias.
+
+1. El servicio de radiodifusión sonora digital terrenal se explotará en las siguientes bandas de frecuencias:
+
+a) 195 a 216 MHz (bloques 8A a 10D).
+
+b) 216 a 223 MHz (bloques 11A a 11D).
+
+Los límites espectrales de cada bloque de frecuencias se expresan en el anexo IV.
+
+2. Los bloques de frecuencias en la banda 195 a 216 MHz se destinan, principalmente, al establecimiento de redes de frecuencia única de ámbito territorial provincial o, en su caso, insular, que se integrarán para constituir redes multifrecuencias de ámbito nacional y autonómico. La capacidad espectral excedentaria se destina a la cobertura local.
+
+3. Los bloques de frecuencias de la banda 216 a 223 MHz se destinan, principalmente, al establecimiento de redes de frecuencia única de ámbito nacional y autonómico. La capacidad espectral excedentaria se destina a la cobertura local.
+
+> > Se modifica por la disposición final 2.1 del Real Decreto 391/2019, de 21 de junio. Ref. BOE-A-2019-9513#df-2
+> > Se modifica el apartado 1 por el art. 1.3 del Real Decreto 776/2006, de 23 de junio. Ref. BOE-A-2006-11288.
+
+###### Artículo 2. Disponibilidad de espectro radioeléctrico.
+
+1. De conformidad con el cuadro nacional de atribución de frecuencias, las estaciones de televisión que pudieran encontrarse prestando servicio en los canales 10 y 11, deberán cesar en sus emisiones, antes del 1 de enero del año 2000, para permitir la puesta en servicio de las estaciones de radiodifusión sonora digital terrenal que funcionen en la banda de frecuencias 209 a 223 MHz pudiendo solicitar autorización para continuar sus emisiones en un canal radioeléctrico alternativo en la banda 470 a 830 MHz que será determinado por el Ministerio de Fomento.
+
+2. La banda de frecuencias 195 a 209 MHz deberá estar disponible para el servicio de radiodifusión sonora digital terrenal, a partir del 1 de enero del año 2000. Las estaciones de televisión que se encuentren en servicio en los canales 8 y 9,cesarán en sus emisiones antes de dicha fecha, para permitir la puesta en servicio de las estaciones de radiodifusión sonora digital terrenal, pudiendo solicitar autorización para continuar sus emisiones en un canal radioeléctrico alternativo en la banda 470 a 830 MHz que será determinado por el Ministerio de Fomento.
+
+3. La banda de frecuencias 1452 a 1492 MHz deberá estar disponible para el servicio de radiodifusión sonora digital terrenal antes del 31 de diciembre del año 2003; no se realizarán nuevas asignaciones de frecuencia en esta banda a estaciones de otros servicios de radiocomunicaciones, pudiendo solicitar los actuales usuarios nueva concesión o afectación de dominio público radioeléctrico en otra banda que sea utilizable, de acuerdo con el cuadro nacional de atribución de frecuencias.
+
+###### Artículo 3. Objetivos de cobertura.
+
+1. Con el objetivo de alcanzar la mayor cobertura nacional mediante estaciones de radiodifusión sonora digital terrenal, se explotarán:
+
+a) El bloque de frecuencias 11B en red de frecuencia única de ámbito nacional, excepto en las Islas Canarias, donde se utilizará el bloque de frecuencias 11D, para programas nacionales sin desconexiones territoriales. Esta red, a efectos de identificación, se denomina Red FU-E.
+
+b) Los bloques de frecuencias especificados en el anexo I de este plan técnico, en redes de frecuencia única de ámbito territorial provincial o, en su caso, insular, que se integran en dos redes globales de ámbito nacional, para programas nacionales con capacidad para efectuar desconexiones territoriales. Estas redes, a efectos de identificación, se denominan Red MF-I y Red MF-II.
+
+2. Con el objetivo de alcanzar las mayores coberturas territoriales autonómicas mediante estaciones de radiodifusión sonora digital terrenal, se explotarán:
+
+a) En cada una de las Comunidades Autónomas, el bloque de frecuencias especificado en el anexo II de este plan técnico, en red de frecuencia única de ámbito territorial autonómico, para programas autonómicos sin desconexiones territoriales. Estas redes se identifican con el nombre especificado en el anexo II.
+
+b) En cada una de las Comunidades Autónomas, los bloques de frecuencias especificados en el anexo III de este plan técnico, en redes de frecuencia única de ámbito territorial provincial o, en su caso, insular que se integran en redes multifrecuencias de ámbitos autonómicos, para programas regionales con capacidad para efectuar desconexiones territoriales. Estas redes se identifican con el nombre especificado en el anexo III.
+
+3. Con el objetivo de satisfacer las necesidades de coberturas de ámbito local presentadas por las Comunidades Autónomas, se determinarán por Orden del Ministerio de Fomento los bloques de frecuencias destinados a esta modalidad de cobertura.
+
+###### Artículo 4. Especificaciones técnicas de los transmisores.
+
+1. Las especificaciones técnicas de los transmisores de las estaciones de radiodifusión sonora digital terrestre serán objeto de acuerdo entre todas las entidades habilitadas de este servicio, y deberán ser conformes a normas europeas aprobadas por el Instituto Europeo de Normas de Telecomunicación (ETSI).
+
+Dicho acuerdo deberá ser comunicado a la Secretaría de Estado de Telecomunicaciones y para la Sociedad de la Información para su aprobación.
+
+2. En caso de falta de acuerdo, las especificaciones técnicas de los transmisores de las estaciones de radiodifusión sonora digital terrestre serán conformes a la norma de telecomunicaciones EN 300 401 del Instituto Europeo de Normas de Telecomunicación (ETSI).
+
+> > Se modifica por el art. único.1 del Real Decreto 802/2011, de 10 de junio. Ref. BOE-A-2011-11109
+
+###### Artículo 5. Características técnicas de las estaciones.
+
+1. Las características técnicas de las estaciones de radiodifusión sonora digital terrenal en cada emplazamiento serán las que se establezcan por el Ministerio de Fomento.
+
+2. Algunas estaciones pertenecientes a una red de frecuencia única podrán utilizar un bloque de frecuencias distinto al previsto en este plan técnico, como consecuencia de acuerdos de coordinación internacional o para garantizar la compatibilidad radioeléctrica con zonas limítrofes, previa autorización del Ministerio de Fomento.
+
+###### Artículo 6. Coordinación internacional.
+
+Las características técnicas de las estaciones de radiodifusión sonora digital terrenal estarán sujetas a las modificaciones que pudieran derivarse de la aplicación de los procedimientos de coordinación internacional, previstas en el Acuerdo de Estocolmo de 23 de junio de 1961, en el Acuerdo de Ginebra de 8 de diciembre de 1989 y en el Acuerdo de Wiesbaden de 21 de julio de 1995, así como en cualesquiera otros Acuerdos internacionales que pudieran vincular al Estado español en el marco de la Unión Internacional de Telecomunicaciones (UIT) o de la Conferencia Europea de Administraciones de Correos y Telecomunicaciones (CEPT).
+
+###### Artículo 7. Fases de cobertura.
+
+Tanto los Entes Públicos que exploten, en régimen de gestión directa, programas de radiodifusión sonora digital terrestre, como los concesionarios para la explotación del servicio en régimen de gestión indirecta deben garantizar una cobertura mínima del 20 por ciento de la población de sus respectivos ámbitos territoriales.
+
+Cuando la cuota de audiencia de la radiodifusión sonora digital terrestre supere el 10 por ciento de la audiencia radiofónica global en sus respectivos ámbitos territoriales, los Entes Públicos y los concesionarios deberán alcanzar en el plazo de doce meses una cobertura mínima del 50 por ciento de la población de sus respectivos ámbitos territoriales. Si en el plazo de tres años a partir de la fecha de publicación de este real decreto no se alcanzase la audiencia antes citada, la Secretaría de Estado de telecomunicaciones y para la Sociedad de la Información elaborará un informe que establezca la situación de la audiencia. A la vista de este informe, el Ministro de Industria, Turismo y Comercio podrá, mediante Orden Ministerial, establecer otros niveles de cobertura mínima por debajo del 50 por 100.
+
+> > Se modifica por el art. único.2 del Real Decreto 802/2011, de 10 de junio. Ref. BOE-A-2011-11109
+> > Se modifican los apartados 3 y 4 por el art. 1.4 del Real Decreto 776/2006, de 23 de junio. Ref. BOE-A-2006-11288.
+
+## ANEXO I
+
+## Bloques de frecuencias que se destinan al establecimiento de dos redes globales de cobertura nacional con capacidad para efectuar desconexiones territoriales
+
+|  | Red MF-I | Red MF-II |
+| --- | --- | --- |
+| Provincias |  |  |
+| A Coruña | Bloque 10A | Bloque 10D. |
+| Álava | Bloque 10D | Bloque 9D. |
+| Albacete | Bloque 10C | Bloque 8B. |
+| Alicante | Bloque 10A | Bloque 8A. |
+| Almería | Bloque 9D | Bloque 10A. |
+| Asturias | Bloque 10C | Bloque 8D. |
+| Ávila | Bloque 10D | Bloque 8D. |
+| Badajoz | Bloque 10C | Bloque 8D. |
+| Barcelona | Bloque 10A | Bloque 8A. |
+| Burgos | Bloque 9B | Bloque 8C. |
+| Cáceres | Bloque 9D | Bloque 9C. |
+| Cádiz | Bloque 10C | Bloque 9C. |
+| Cantabria | Bloque 9A | Bloque 9D. |
+| Castellón de la Plana | Bloque 10A | Bloque 10D. |
+| Ciudad Real | Bloque 9D | Bloque 8A. |
+| Córdoba | Bloque 9C | Bloque 10D. |
+| Cuenca | Bloque 9C | Bloque 10D. |
+| Girona | Bloque 10C | Bloque 8C. |
+| Granada | Bloque 10C | Bloque 8C. |
+| Guadalajara | Bloque 10C | Bloque 10A. |
+| Guipúzcoa | Bloque 9B | Bloque 8D. |
+| Huelva | Bloque 9D | Bloque 10D. |
+| Huesca | Bloque 9A | Bloque 10A. |
+| Jaén | Bloque 9A | Bloque 10A. |
+| La Rioja | Bloque 10A | Bloque 8D. |
+| León | Bloque 10A | Bloque 10D. |
+| Lleida | Bloque 10D | Bloque 8B. |
+| Lugo | Bloque 8C | Bloque 8A. |
+| Madrid | Bloque 9D | Bloque 8A. |
+| Málaga | Bloque 9D | Bloque 8B. |
+| Murcia | Bloque 9C | Bloque 10D. |
+| Navarra | Bloque 10C | Bloque 8C. |
+| Ourense | Bloque 10C | Bloque 9D. |
+| Palencia | Bloque 10C | Bloque 8D. |
+| Pontevedra | Bloque 9C | Bloque 8D. |
+| Salamanca | Bloque 10C | Bloque 8C. |
+| Segovia | Bloque 10C | Bloque 10A. |
+| Sevilla | Bloque 9A | Bloque 8C. |
+| Soria | Bloque 9A | Bloque 10D. |
+| Tarragona | Bloque 10C | Bloque 8C. |
+| Teruel | Bloque 9A | Bloque 8B. |
+| Toledo | Bloque 9A | Bloque 10A. |
+| Valencia | Bloque 9A | Bloque 9D. |
+| Valladolid | Bloque 9A | Bloque 9D. |
+| Vizcaya | Bloque 10C | Bloque 10A. |
+| Zamora | Bloque 9B | Bloque 8D. |
+| Zaragoza | Bloque 9D | Bloque 8A. |
+| Ciudades |  |  |
+| Ceuta | Bloque 9A | Bloque 8C. |
+| Melilla | Bloque 9A | Bloque 9C. |
+| Islas |  |  |
+| Fuerteventura | Bloque 10D | Bloque 8B. |
+| Gomera | Bloque 9D | Bloque 8B. |
+| Gran Canaria | Bloque 9C | Bloque 8A. |
+| Hierro | Bloque 10D | Bloque 9C. |
+| Ibiza y Formentera | Bloque 10C | Bloque 8C. |
+| La Palma | Bloque 10A | Bloque 8A. |
+| Lanzarote | Bloque 10C | Bloque 10A. |
+| Mallorca | Bloque 9D | Bloque 8B. |
+| Menorca | Bloque 10D | Bloque 8C. |
+| Tenerife | Bloque 10C | Bloque 8C. |
+
+## ANEXO II
+
+## Bloques de frecuencias que se destinan a la cobertura territorial autonómica en redes de frecuencia única
+
+|  | Bloque | Denominación |
+| --- | --- | --- |
+| Comunidades Autónomas |  |  |
+| Andalucía | Bloque 11C | Red FU-AND. |
+| Aragón | Bloque 11A | Red FU-ARA. |
+| Asturias (Principado de) | Bloque 11A | Red FU-AST. |
+| Balears (Illes) | Bloque 11D | Red FU-BAL. |
+| Canarias | Bloque 11C | Red FU-CNR. |
+| Cantabria | Bloque 11C | Red FU-CAN. |
+| Castilla-La Mancha | Bloque 11D | Red FU-CAM. |
+| Castilla y León | Bloque 11D | Red FU-CAL. |
+| Cataluña | Bloque 11D | Red FU-CAT. |
+| Comunidad Valenciana | Bloque 11C | Red FU-VAL. |
+| Extremadura | Bloque 11A | Red FU-EXT. |
+| Galicia | Bloque 11C | Red FU-GAL. |
+| Madrid (Comunidad de) | Bloque 11C | Red FU-MAD. |
+| Murcia (Región de) | Bloque 11A | Red FU-MUR. |
+| Navarra (Comunidad Foral de) | Bloque 11D | Red FU-NAV. |
+| País Vasco | Bloque 11A | Red FU-PVA. |
+| Rioja (La) | Bloque 11C | Red FU-RIO. |
+| Ciudades |  |  |
+| Ceuta | Bloque 11D | Red FU-CEU. |
+| Melilla | Bloque 11D | Red FU-MEL. |
+
+## ANEXO III
+
+## Bloques de frecuencias que se destinan al establecimiento de una red global en cada Comunidad Autónoma con capacidad para efectuar desconexiones territoriales
+
+Comunidad Autónoma de Andalucía (red MF-AND):
+
+Almería: Bloque 9B.
+
+Cádiz: Bloque 9B.
+
+Córdoba: Bloque 10B.
+
+Granada: Bloque 8A.
+
+Huelva: Bloque 10B.
+
+Jaén: Bloque 8D.
+
+Málaga: Bloque 8D.
+
+Sevilla: Bloque 8A.
+
+Comunidad Autónoma de Aragón (red MF-ARA):
+
+Huesca: Bloque 8D.
+
+Teruel: Bloque 8D.
+
+Zaragoza: Bloque 9B.
+
+Comunidad Autónoma del Principado de Asturias (red MF-AST):
+
+Asturias: Bloque 9B.
+
+Comunidad Autónoma de las Illes Balears (red MF-BAL):
+
+Mallorca: Bloque 9B.
+
+Menorca: Bloque 10B.
+
+Ibiza y Formentera: Bloque 9C.
+
+Comunidad Autónoma de Canarias (red MF-CNR):
+
+Gran Canaria: Bloque 8D.
+
+Fuerteventura: Bloque 10B.
+
+Lanzarote: Bloque 9C.
+
+Tenerife: Bloque 9A.
+
+Gomera: Bloque 9B.
+
+La Palma: Bloque 8D.
+
+Hierro: Bloque 10B.
+
+Comunidad Autónoma de Cantabria (red MF-CAN):
+
+Cantabria: Bloque 10B.
+
+Comunidad Autónoma de Castilla-La Mancha (red MF-CAM):
+
+Albacete: Bloque 8C.
+
+Ciudad Real: Bloque 9B.
+
+Cuenca: Bloque 10B.
+
+Guadalajara: Bloque 8C.
+
+Toledo: Bloque 8C.
+
+Comunidad Autónoma de Castilla y León (red MF-CAL):
+
+Ávila: Bloque 8B.
+
+Burgos: Bloque 8A.
+
+León: Bloque 9C.
+
+Palencia: Bloque 8B.
+
+Salamanca: Bloque 8A.
+
+Segovia: Bloque 9C.
+
+Soria: Bloque 10B.
+
+Valladolid: Bloque 10B.
+
+Zamora: Bloque 8B.
+
+Comunidad Autónoma de Cataluña (red MF-CAT):
+
+Barcelona: Bloque 8D.
+
+Girona: Bloque 9A.
+
+Lleida: Bloque 10B.
+
+Tarragona: Bloque 9C.
+
+Comunidad Valenciana (red MF-VAL):
+
+Alicante: Bloque 8D.
+
+Castellón: Bloque 10B.
+
+Valencia: Bloque 9B.
+
+Comunidad Autónoma de Extremadura (red MF-EXT):
+
+Badajoz: Bloque 8B.
+
+Cáceres: Bloque 10B.
+
+Comunidad Autónoma de Galicia (red MF-GAL):
+
+A Coruña: Bloque 9B.
+
+Lugo: Bloque 10B.
+
+Ourense: Bloque 9A.
+
+Pontevedra: Bloque 8B.
+
+Comunidad de Madrid (red MF-MAD):
+
+Madrid: Bloque 9B.
+
+Comunidad Autónoma de la Región de Murcia (red MF-MUR):
+
+Murcia: Bloque 10B.
+
+Comunidad Foral de Navarra (red MF-NAV):
+
+Navarra: Bloque 9C.
+
+Comunidad Autónoma del País Vasco (red MF-PVA):
+
+Álava: Bloque 9A.
+
+Guipúzcoa: Bloque 10B.
+
+Vizcaya: Bloque 9C.
+
+Comunidad Autónoma de La Rioja (red MF-RIO):
+
+La Rioja: Bloque 8B.
+
+Ciudad de Ceuta (red MF-CEU):
+
+Ceuta: Bloque 8A.
+
+Ciudad de Melilla (red MF-MEL):
+
+Melilla: Bloque 10B.
+
+## ANEXO IV
+
+## Canalización de los bloques de frencuencias
+
+| Bloque | Límites del bloque MHz |
+| --- | --- |
+| 8A | 195,168-196,704 |
+| 8B | 196,880-198,416 |
+| 8C | 198,592-200,128 |
+| 8D | 200,304-201,840 |
+| 9A | 202,160-203,696 |
+| 9B | 203,872-205,408 |
+| 9C | 205,584-207,120 |
+| 9D | 207,296-208,832 |
+| 10A | 209,168-210,704 |
+| 10B | 210,880-212,416 |
+| 10C | 212,596-214,128 |
+| 10D | 214,304-215,840 |
+| 11A | 216,160-217,696 |
+| 11B | 217,872-219,408 |
+| 11C | 219,584-221,120 |
+| 11D | 221,296-222,832 |
+
+> > Se modifica por la disposición final 2.2 del Real Decreto 391/2019, de 21 de junio. Ref. BOE-A-2019-9513#df-2

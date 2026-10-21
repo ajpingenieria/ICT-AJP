@@ -9,7 +9,17 @@ from .exportar_excel import exportar
 from .modelo import Proyecto
 
 
+def _salida_utf8() -> None:
+    """En Windows, la salida redirigida usa cp1252 y no admite «≥», «µ»...: se pasa a UTF-8."""
+    for flujo in (sys.stdout, sys.stderr):
+        try:
+            flujo.reconfigure(encoding="utf-8", errors="replace")
+        except (AttributeError, ValueError):
+            pass
+
+
 def main(argv=None) -> int:
+    _salida_utf8()
     ap = argparse.ArgumentParser(prog="ict_ajp", description="Motor de cálculo de proyectos ICT")
     sub = ap.add_subparsers(dest="orden", required=True)
     c = sub.add_parser("calcular", help="Dimensiona el proyecto y exporta los resultados a Excel")

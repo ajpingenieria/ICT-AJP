@@ -142,6 +142,10 @@ class OpcionesDiseno(BaseModel):
     regleta_pares: Literal[5, 10] = 10
     prevision_ascensor_por_tecnologia: int = Field(
         1, description="Salidas previstas en el registro principal para cada ascensor (Anexo II, 3.1.5).")
+    altura_libre_riti_mm: Optional[int] = Field(
+        None, description="Altura libre donde va el RITI (o RITU). Si se indica, se estrecha el recinto (5.5.1).")
+    altura_libre_rits_mm: Optional[int] = Field(
+        None, description="Altura libre donde va el RITS. Si se indica, se estrecha el recinto (5.5.1).")
     atico_cuenta_como_altura: bool = Field(
         True, description="La norma no define «altura» (Anexo III, 4.5.3): contar el ático es lo conservador.")
 

@@ -461,14 +461,28 @@ def dimensionar(p: Proyecto) -> Resultado:
         R.aviso("decision", f"El ático {'se cuenta' if op.atico_cuenta_como_altura else 'no se cuenta'} como altura "
                 f"para elegir el recinto único: planta baja + {n_alturas} alturas. La norma no define «altura».",
                 N.ref("III", "4.5.3"))
+    def recinto_adoptado(nombre: str, minimo: N.Regla, alto_libre: Optional[int]) -> None:
+        """Con altura libre conocida, se propone el recinto más estrecho que cumple (5.5.1)."""
+        if not alto_libre:
+            return
+        c = N.rit_compacto(minimo.valor, alto_libre)
+        if c.valor == minimo.valor:
+            return
+        s.add(f"{nombre} (dimensiones adoptadas)", str(c.valor), "", c.referencia, c.nota)
+        R.aviso("decision", f"{nombre}: se aprovecha la altura libre para estrecharlo a {c.valor.b} mm de ancho "
+                f"y {c.valor.a} mm de alto, en lugar de {minimo.valor.b} x {minimo.valor.a} mm. La norma lo permite "
+                "manteniendo la superficie accesible y la profundidad.", c.referencia)
+
     if ed.recintos == "RITU":
         if n_pau <= N.RITU_MAX_PAU and n_alturas <= N.RITU_MAX_ALTURAS:
             r = N.ritu(n_pau, ed.zonas_comunes)
             s.add("RITU (dimensiones mínimas)", str(r.valor), "", r.referencia)
+            recinto_adoptado("RITU", r, op.altura_libre_riti_mm)
         elif n_pau <= N.RITU_A_MAX_PAU:
             r = N.ritu_a(n_pau)
             s.add("RITU-A (dimensiones mínimas)", str(r.valor), "", r.referencia,
                   "Recinto único ampliado (Anexo III 4.5.3.ii).")
+            recinto_adoptado("RITU-A", r, op.altura_libre_riti_mm)
         else:
             r = N.rit(n_pau)
             R.aviso("revisar", f"Con {n_pau} PAU no se admite recinto único; se dimensionan RITI y RITS.",
@@ -480,12 +494,14 @@ def dimensionar(p: Proyecto) -> Resultado:
         if op.usar_ritm and n_pau <= N.RITM_MAX_PAU_PISOS:
             s.add("RITI y RITS", "Recintos modulares (RITM)", "", N.ref("III", "4.5.4"),
                   "Armarios modulares no propagadores de la llama (hasta 45 PAU).")
-        else:
-            if op.usar_ritm:
-                R.aviso("revisar", "Se pidió RITM pero hay más de 45 PAU: no se admite.", N.ref("III", "4.5.4"))
-            s.add("RITI (dimensiones mínimas)", str(r.valor), "", r.referencia, r.nota)
-            s.add("RITS (dimensiones mínimas)", str(r.valor), "", r.referencia,
-                  "Preferentemente en cubierta y nunca por debajo de la última planta (5.5.3).")
+        elif op.usar_ritm:
+            R.aviso("revisar", "Se pidió RITM pero hay más de 45 PAU: no se admite.", N.ref("III", "4.5.4"))
+        # Las dimensiones de 5.5.1 son para todos los recintos, también los modulares
+        s.add("RITI (dimensiones mínimas)", str(r.valor), "", r.referencia, r.nota)
+        recinto_adoptado("RITI", r, op.altura_libre_riti_mm)
+        s.add("RITS (dimensiones mínimas)", str(r.valor), "", r.referencia,
+              "Preferentemente en cubierta y nunca por debajo de la última planta (5.5.3).")
+        recinto_adoptado("RITS", r, op.altura_libre_rits_mm)
 
     for v in verticales:
         pau_v = datos_v[v]["pau"]

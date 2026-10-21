@@ -112,6 +112,29 @@ def ritu_a(n_pau: int) -> Regla:
     return Regla(d, ref("III", "5.5.1"))
 
 
+PUERTA_RIT_LATERAL_MM = (1800, 800)   # alto x ancho mínimos, acceso lateral (Anexo III, ap. 5.5)
+
+
+def rit_compacto(minimo: Dim, alto_libre_mm: int) -> Regla:
+    """Recinto que ocupa menos planta cumpliendo 5.5.1 con la altura libre disponible.
+
+    Ap. 5.5.1: «las dimensiones de anchura y altura de los recintos podrán ser modificadas a criterio
+    del proyectista, siempre que la superficie accesible y la profundidad mínima se mantengan». Se
+    aprovecha la altura libre para estrechar el recinto, sin bajar del ancho de la puerta de acceso
+    lateral (80 cm, ap. 5.5), que tampoco permite alturas por debajo de 1,80 m.
+    """
+    alto_puerta, ancho_puerta = PUERTA_RIT_LATERAL_MM
+    if alto_libre_mm < alto_puerta:
+        return Regla(minimo, ref("III", "5.5.1"),
+                     f"Altura libre {alto_libre_mm} mm menor que la puerta mínima de {alto_puerta} mm (ap. 5.5).")
+    superficie = minimo.a * minimo.b
+    ancho = max(ancho_puerta, math.ceil(superficie / alto_libre_mm / 10) * 10)
+    alto = max(alto_puerta, math.ceil(superficie / ancho / 10) * 10)
+    return Regla(Dim(alto, ancho, minimo.c), ref("III", "5.5.1"),
+                 f"Superficie frontal {superficie / 1e6:.2f}".replace(".", ",")
+                 + f" m² y fondo {minimo.c} mm mantenidos; altura libre disponible {alto_libre_mm} mm.")
+
+
 RITU_MAX_PAU = 16          # Anexo III, ap. 4.5.3.i (y hasta PB + 3 alturas)
 RITU_MAX_ALTURAS = 3
 RITU_A_MAX_PAU = 30        # Anexo III, ap. 4.5.3.ii

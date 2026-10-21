@@ -83,6 +83,10 @@ completo: cálculos, planos DXF, memoria, pliego y presupuesto.
 - Sin consulta a operadores (se hace en el replanteo, art. 8.4) se proyectan las tres redes.
 - El ático cuenta como altura para elegir RITU / RITU-A (`atico_cuenta_como_altura`).
 - Con RITU, los 3 tubos de Ø32 mm desde la centralización de contadores van al RITU.
+- Si se indica la altura libre del recinto (`altura_libre_riti_mm` / `altura_libre_rits_mm`), se
+  propone el más estrecho que mantiene superficie frontal y fondo (5.5.1), sin bajar de la puerta
+  de 180 x 80 cm (5.5).
+- Recintos de obra por defecto. Los modulares (RITM) tienen las mismas medidas mínimas de 5.5.1.
 - Estancias que cuentan para tomas: salón, comedor, cocina, dormitorios y estudio. No cuentan
   vestíbulos, pasos, lavaderos, vestidores ni espacios exteriores. La otra estancia con BAT doble
   es el dormitorio mayor.

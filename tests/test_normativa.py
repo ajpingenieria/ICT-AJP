@@ -29,6 +29,20 @@ def test_rit():  # Anexo III 5.5.1
     assert dims(N.rit(75)) == (2300, 2000, 2000)
 
 
+def test_rit_compacto():  # Anexo III 5.5.1 (ancho y alto modificables) y 5.5 (puerta 180 x 80 cm)
+    minimo = N.rit(20).valor                                   # 2000 x 1000 x 500
+    c = lambda h: dims(N.rit_compacto(minimo, h))              # noqa: E731
+    assert c(2000) == (2000, 1000, 500)                        # sin altura extra no cambia
+    assert c(2350) == (2330, 860, 500)                         # 2,00 m² frontales: 0,86 x 2,33
+    assert c(2500) == (2500, 800, 500)                         # justo en el ancho de la puerta
+    assert c(3000) == (2500, 800, 500)                         # no baja de 80 cm de ancho
+    assert c(1800) == (1800, 1120, 500)                        # menos altura: más ancho, nunca < puerta
+    assert c(1799) == (2000, 1000, 500)                        # por debajo de la puerta: no se aplica
+    for h in (1800, 2350, 2500, 3000):                         # siempre >= 2,00 m² y mismo fondo
+        a, b, f = c(h)
+        assert a * b >= 2000 * 1000 and f == 500
+
+
 def test_ritu():
     assert dims(N.ritu(5, zonas_comunes=False)) == (1000, 500, 300)
     assert dims(N.ritu(5, zonas_comunes=True)) == (1000, 1000, 500)

@@ -80,6 +80,18 @@ def test_atico_y_recinto_unico():
     assert not any("ático" in a.texto for a in r.avisos)
 
 
+def test_riti_rits_con_rits_compacto():
+    p = Proyecto.cargar(EJEMPLO)
+    p.edificio.recintos = "RITI_RITS"
+    p.opciones.altura_libre_rits_mm = 2350
+    r = dimensionar(p)
+    assert partida(r, "infra", "RITI (dimensiones mínimas)").valor.startswith("2000 x 1000 x 500")
+    assert partida(r, "infra", "RITS (dimensiones adoptadas)").valor.startswith("2330 x 860 x 500")
+    assert not any(x.concepto.startswith("RITI (dimensiones adoptadas)") for x in r.seccion("infra").partidas)
+    assert any(a.nivel == "decision" and a.texto.startswith("RITS:") for a in r.avisos)
+    assert partida(r, "recintos", "Canalizaciones desde centralización").valor.endswith("1 tubo Ø32 mm al RITS")
+
+
 def test_distancia_mayor_100_usa_pares():
     p = Proyecto.cargar(EJEMPLO)
     p.edificio.distancia_max_pi_pau_m = 120

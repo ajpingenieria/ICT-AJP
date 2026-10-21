@@ -29,6 +29,10 @@ URL_TEC = {
     "5228": "https://www.televes.com/downloadfile/TEC12210013_188_Espanol_1671922.pdf/technical_specifications_es_ES_TEC12210013.pdf",
     "5229": "https://www.televes.com/downloadfile/TEC12210016_181_Espanol_1671955.pdf/technical_specifications_es_ES_TEC12210016.pdf",
 }
+URL_TEC_AMP = {
+    "509812": "https://www.televes.com/downloadfile/TEC05240008_4_Espanol_1717264.pdf/technical_specifications_es_ES_TEC05240008_509812.pdf",
+    "509012": "https://www.televes.com/downloadfile/TEC05240007_4_Espanol_1717250.pdf/technical_specifications_es_ES_TEC05240007_509012.pdf",
+}
 NOMBRES_TEC = {"414002": "Cable coaxial SK2003plus (T100A+), Euroclase Dca, blindaje clase A+",
                "527601": "Toma terminal separadora ICT 2 conectores 5...694 MHz (FM/TV) - 950...2400 MHz (SAT)",
                "5230": "Toma terminal 2 conectores FM-TV",
@@ -81,11 +85,16 @@ def generar(carpeta: Path, fecha: str) -> dict:
                                    "fuente": fuente(ref)})
         elif nombre.startswith("Amplificador"):
             bandas = (_fila(e, "Bandas") or [])
+            # La figura de ruido solo está en las «Especificaciones técnicas» (tec_<ref>.pdf)
+            tec = carpeta / f"tec_{ref}.pdf"
+            fr = _fila(_leer_tec(tec), "Figura de ruido") if tec.exists() else None
             cat["amplificadores"].append({
                 "ref": ref, "nombre": nombre, "bandas": next(x for x in e if x.startswith("Bandas"))[7:].split(),
                 "ganancia_db": [_num(x) for x in _fila(e, "Ganancia")],
                 "nivel_salida_en50083_dbuv": [_num(x) for x in _fila(e, "Nivel de salida EN50083")],
-                "corriente_ma": _num(_fila(e, "Corriente máx.")[0]), "fuente": fuente(ref)})
+                "figura_ruido_max_db": _num(fr[0]) if fr else None,
+                "corriente_ma": _num(_fila(e, "Corriente máx.")[0]),
+                "fuente": fuente(ref) + (f" ; {URL_TEC_AMP[ref]}" if ref in URL_TEC_AMP else "")})
             del bandas
         elif nombre.startswith("Fuente"):
             cat["fuentes"].append({"ref": ref, "nombre": nombre, "tension_v": _num(_fila(e, "Voltaje de salida")[0]),

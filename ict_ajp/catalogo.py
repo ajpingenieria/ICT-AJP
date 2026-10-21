@@ -18,6 +18,7 @@ def cargar(fabricante: str = "televes") -> dict:
     return json.loads((Path(__file__).parent / "catalogos" / f"{fabricante}.json").read_text(encoding="utf-8"))
 
 
+@lru_cache(maxsize=None)
 def elemento(ref: str, fabricante: str = "televes") -> Optional[dict]:
     for grupo, lista in cargar(fabricante).items():
         if isinstance(lista, list):
@@ -27,6 +28,7 @@ def elemento(ref: str, fabricante: str = "televes") -> Optional[dict]:
     return None
 
 
+@lru_cache(maxsize=None)
 def atenuacion_cable_db_m(ref: str, f_mhz: float, fabricante: str = "televes") -> float:
     """Atenuación del cable a una frecuencia: interpolación lineal en log(f) entre los puntos de la ficha.
 

@@ -46,6 +46,9 @@ completo: cálculos, planos DXF, memoria, pliego y presupuesto.
   prueba comprueba que coinciden.
 - `ict_ajp/plan_radio.py` + `ict_ajp/datos/plan_radio.json` — bloques DAB por provincia, emisoras FM
   por localidad y demarcaciones de TDT local (generado con `herramientas/generar_plan_radio.py`).
+- `ict_ajp/rtv_niveles.py` — niveles toma a toma: elige derivadores por planta, PAU por número de tomas,
+  salida de cabecera, niveles, C/N, respuesta en banda, consumo y previsión de satélite (Anexo I 4.4 y 4.5).
+  Las fórmulas físicas (tensión en antena, kTB) están comentadas como tales, no son norma.
 - `ict_ajp/catalogo.py` + `ict_ajp/catalogos/televes.json` — catálogo de RTV del fabricante:
   antenas, amplificadores T12, fuente, derivadores y repartidores/PAU serie F, tomas y cable
   SK2003plus, cada uno con la URL de su ficha. Se genera con `herramientas/generar_catalogo_televes.py`
@@ -81,7 +84,7 @@ completo: cálculos, planos DXF, memoria, pliego y presupuesto.
 | Versión | Contenido | Estado |
 |---|---|---|
 | 0.1 | Demanda, redes TBA (pares trenzados/pares, coaxial, fibra), red interior, infraestructura, recintos, Excel | Hecho |
-| 0.2 | RTV (Anexo I, ap. 4): niveles, atenuaciones toma a toma, C/N, cabecera | En curso: canales TDT, campo de diseño y tipo de cabecera hechos |
+| 0.2 | RTV (Anexo I, ap. 4): niveles, atenuaciones toma a toma, C/N, cabecera | Hecho salvo lo apuntado en `docs/pendiente.md` |
 | 0.3 | Esquemas de principio en DXF | Pendiente |
 | 0.4 | Memoria, pliego y presupuesto en Word (estructura del Anexo I de la Orden ITC/1644/2011) | Pendiente |
 | 0.5 | Plantas sobre la base DXF del arquitecto | Pendiente |

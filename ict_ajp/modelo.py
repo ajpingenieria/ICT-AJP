@@ -131,6 +131,18 @@ class DatosRTV(BaseModel):
         default_factory=dict, description="Campo medido por canal de TDT («45»: 62.0). Vacío = mínimo de la norma.")
     satelite_instalado: bool = Field(
         False, description="False: solo previsión de espacio en cubierta y red hasta 2.150 MHz (Anexo I, 3.6).")
+    entorno_fm: Literal["rural", "urbano", "gran_ciudad"] = Field(
+        "urbano", description="Entorno de la tabla de radio FM del Anexo I, 4.1.6 (campo de diseño).")
+    fabricante: str = "televes"
+    # Longitudes de cable (m) para el cálculo de niveles: estimaciones hasta tener las plantas de la ICT
+    long_antena_cabecera_m: float = 10.0
+    long_cabecera_primer_derivador_m: float = 5.0
+    altura_entre_plantas_m: float = 3.0
+    long_acometida_min_m: float = 3.0
+    long_acometida_max_m: float = 8.0
+    long_interior_min_m: float = 3.0
+    long_interior_max_m: float = 15.0
+    longitudes_medidas: bool = Field(False, description="True cuando las longitudes salen de los planos.")
 
 
 class OpcionesDiseno(BaseModel):

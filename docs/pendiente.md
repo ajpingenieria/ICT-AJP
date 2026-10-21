@@ -10,3 +10,8 @@ llevar a la app más adelante. Sin datos del cliente: solo qué falta y por qué
 | 2026-10-20 | Lectura DXF: leer las unidades del dibujo; ahora se supone que está en metros | El `$INSUNITS` de la base del arquitecto no era fiable (decía pies) |
 | 2026-10-21 | Lectura DXF: detectar ascensores dibujados sin rótulo (hueco con puertas de cabina) y accesos a cubierta (escotillas) | En el proyecto real el ascensor no tenía texto y se encontró mirando la vista previa |
 | 2026-10-21 | Vista previa: algunos textos del arquitecto salen como cuadrados (fuente TrueType que no se encuentra) | Para revisar no molesta; para las entregas de planos hay que resolverlo |
+| 2026-10-21 | RTV: medir en las plantas las longitudes de cable (antena-cabecera, acometidas, interiores) y recalcular | Ahora son estimaciones conservadoras con aviso de decisión |
+| 2026-10-21 | RTV: añadir al catálogo el mezclador TV/SAT de cabecera (Anexo I 3.2) y la mezcla de los T12 | No estaban entre las fichas descargadas; sus pérdidas no entran aún en el cálculo |
+| 2026-10-21 | RTV: cálculo explícito de intermodulación (≥ 30 dB, Anexo I 4.5) y opción de antena en modo activo | Con monocanal cada amplificador lleva un canal; se justifica en la memoria, pero conviene calcularlo |
+| 2026-10-21 | RTV: cálculo de niveles con central programable | Solo está programado para cabecera monocanal |
+| 2026-10-21 | Catálogo: más fabricantes (Ikusi, Fagor) | Solo Televés por ahora |

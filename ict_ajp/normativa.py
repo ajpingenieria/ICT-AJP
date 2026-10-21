@@ -359,3 +359,7 @@ def admite_banda_ancha(tomas: int) -> Regla:
     ancha a las edificaciones en las que el número de tomas servidas desde la cabecera sea inferior a 30»,
     salvo equipos que garanticen menos de 3 dB entre canales de la misma banda."""
     return Regla(tomas < TOMAS_MAX_BANDA_ANCHA, ref("I", "4.3"))
+
+# Anexo I, 4.1.6, tabla «Radiodifusión sonora terrestre»: campo por encima del cual hay que distribuir
+CAMPO_MINIMO_FM_ESTEREO = {"rural": 54, "urbano": 66, "gran_ciudad": 74}   # dBµV/m, 87,5-108,0 MHz
+CAMPO_MINIMO_DAB = 58                                                       # dBµV/m, 195,0-223,0 MHz

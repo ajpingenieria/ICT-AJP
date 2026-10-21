@@ -61,7 +61,7 @@ def test_seccion_rtv_en_el_ejemplo():
     assert canales == [29, 35, 36, 38, 39, 42, 44, 45]
     assert "monocanal" in next(x for x in s.partidas if x.concepto == "Tipo de cabecera").valor
     assert next(x for x in s.partidas if x.concepto == "TDT local").valor.startswith("Demarcación TL06MU Murcia")
-    assert [t.titulo for t in s.tablas] == ["Canales de TDT a distribuir", "Radio digital DAB planificada"]
+    assert [t.titulo for t in s.tablas][:2] == ["Canales de TDT a distribuir", "Radio digital DAB planificada"]
     p.opciones.cabecera_rtv = "programable"
     assert any(a.nivel == "revisar" and "Central programable" in a.texto for a in dimensionar(p).avisos)
     p.opciones.cabecera_rtv = "monocanal"

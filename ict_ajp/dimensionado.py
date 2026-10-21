@@ -439,7 +439,7 @@ def dimensionar(p: Proyecto) -> Resultado:
 
     # --- 4 bis. Radio y televisión ---------------------------------------------
     from .rtv import seccion_rtv
-    R.secciones.append(seccion_rtv(p, R, tot_int["tomas_rtv"]))
+    R.secciones.append(seccion_rtv(p, R, tot_int["tomas_rtv"], {k: v.tomas_rtv for k, v in res_int.items()}))
 
     # --- 5. Infraestructura -------------------------------------------------
     s = Seccion("infra", "Infraestructura: canalizaciones, recintos y registros")

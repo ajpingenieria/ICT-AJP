@@ -1,0 +1,174 @@
+{
+ "consulta": "2026-10-21",
+ "fuente": "https://www.boe.es/datosabiertos/api/legislacion-consolidada",
+ "normas": {
+  "rdl_1_1998": {
+   "identificador": "BOE-A-1998-4769",
+   "titulo": "Real Decreto-ley 1/1998, de 27 de febrero, sobre infraestructuras comunes en los edificios para el acceso a los servicios de telecomunicación",
+   "vigente": true,
+   "materia": "Reglamento de ICT y normas anexas",
+   "apartado_pliego": "3.2.A",
+   "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1998-4769"
+  },
+  "rd_346_2011": {
+   "identificador": "BOE-A-2011-5834",
+   "titulo": "Real Decreto 346/2011, de 11 de marzo, por el que se aprueba el Reglamento regulador de las infraestructuras comunes de telecomunicaciones para el acceso a los servicios de telecomunicación en el interior de las edificaciones",
+   "vigente": true,
+   "materia": "Reglamento de ICT y normas anexas",
+   "apartado_pliego": "3.2.A",
+   "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2011-5834"
+  },
+  "orden_itc_1644_2011": {
+   "identificador": "BOE-A-2011-10457",
+   "titulo": "Orden ITC/1644/2011, de 10 de junio, por la que se desarrolla el Reglamento regulador de las infraestructuras comunes de telecomunicaciones para el acceso a los servicios de telecomunicación en el interior de las edificaciones, aprobado por el Real Decreto 346/2011, de 11 de marzo",
+   "vigente": true,
+   "materia": "Reglamento de ICT y normas anexas",
+   "apartado_pliego": "3.2.A",
+   "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2011-10457"
+  },
+  "orden_ece_983_2019": {
+   "identificador": "BOE-A-2019-14070",
+   "titulo": "Orden ECE/983/2019, de 26 de septiembre, por la que se regulan las características de reacción al fuego de los cables de telecomunicaciones en el interior de las edificaciones, se modifican determinados anexos del Reglamento regulador de las infraestructuras comunes de telecomunicaciones para el acceso a los servicios de telecomunicación en el interior de las edificaciones, aprobado por Real Decreto 346/2011, de 11 de marzo y se modifica la Orden ITC/1644/2011, de 10 de junio, por la que se desarrolla dicho reglamento",
+   "vigente": true,
+   "materia": "Reglamento de ICT y normas anexas",
+   "apartado_pliego": "3.2.A",
+   "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2019-14070"
+  },
+  "ley_11_2022": {
+   "identificador": "BOE-A-2022-10757",
+   "titulo": "Ley 11/2022, de 28 de junio, General de Telecomunicaciones",
+   "vigente": true,
+   "materia": "Secreto de las comunicaciones",
+   "apartado_pliego": "3.2.D",
+   "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-10757"
+  },
+  "ley_31_1995": {
+   "identificador": "BOE-A-1995-24292",
+   "titulo": "Ley 31/1995, de 8 de noviembre, de Prevención de Riesgos Laborales",
+   "vigente": true,
+   "materia": "Prevención de riesgos laborales",
+   "apartado_pliego": "3.2.B",
+   "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1995-24292"
+  },
+  "rd_39_1997": {
+   "identificador": "BOE-A-1997-1853",
+   "titulo": "Real Decreto 39/1997, de 17 de enero, por el que se aprueba el Reglamento de los Servicios de Prevención",
+   "vigente": true,
+   "materia": "Prevención de riesgos laborales",
+   "apartado_pliego": "3.2.B",
+   "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1997-1853"
+  },
+  "rd_1627_1997": {
+   "identificador": "BOE-A-1997-22614",
+   "titulo": "Real Decreto 1627/1997, de 24 de octubre, por el que se establecen disposiciones mínimas de seguridad y de salud en las obras de construcción",
+   "vigente": true,
+   "materia": "Prevención de riesgos laborales",
+   "apartado_pliego": "3.2.B",
+   "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1997-22614"
+  },
+  "rd_485_1997": {
+   "identificador": "BOE-A-1997-8668",
+   "titulo": "Real Decreto 485/1997, de 14 de abril, sobre disposiciones mínimas en materia de señalización de seguridad y salud en el trabajo",
+   "vigente": true,
+   "materia": "Prevención de riesgos laborales",
+   "apartado_pliego": "3.2.B",
+   "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1997-8668"
+  },
+  "rd_486_1997": {
+   "identificador": "BOE-A-1997-8669",
+   "titulo": "Real Decreto 486/1997, de 14 de abril, por el que se establecen las disposiciones mínimas de seguridad y salud en los lugares de trabajo",
+   "vigente": true,
+   "materia": "Prevención de riesgos laborales",
+   "apartado_pliego": "3.2.B",
+   "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1997-8669"
+  },
+  "rd_487_1997": {
+   "identificador": "BOE-A-1997-8670",
+   "titulo": "Real Decreto 487/1997, de 14 de abril, sobre disposiciones mínimas de seguridad y salud relativas a la manipulación manual de cargas que entrañe riesgos, en particular dorso lumbares, para los trabajadores",
+   "vigente": true,
+   "materia": "Prevención de riesgos laborales",
+   "apartado_pliego": "3.2.B",
+   "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1997-8670"
+  },
+  "rd_773_1997": {
+   "identificador": "BOE-A-1997-12735",
+   "titulo": "Real Decreto 773/1997, de 30 de mayo, sobre disposiciones mínimas de seguridad y salud relativas a la utilización por los trabajadores de equipos de protección individual",
+   "vigente": true,
+   "materia": "Prevención de riesgos laborales",
+   "apartado_pliego": "3.2.B",
+   "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1997-12735"
+  },
+  "rd_1215_1997": {
+   "identificador": "BOE-A-1997-17824",
+   "titulo": "Real Decreto 1215/1997, de 18 de julio, por el que se establecen las disposiciones mínimas de seguridad y salud para la utilización por los trabajadores de los equipos de trabajo",
+   "vigente": true,
+   "materia": "Prevención de riesgos laborales",
+   "apartado_pliego": "3.2.B",
+   "url": "https://www.boe.es/buscar/act.php?id=BOE-A-1997-17824"
+  },
+  "rd_614_2001": {
+   "identificador": "BOE-A-2001-11881",
+   "titulo": "Real Decreto 614/2001, de 8 de junio, sobre disposiciones mínimas para la protección de la salud y seguridad de los trabajadores frente al riesgo eléctrico",
+   "vigente": true,
+   "materia": "Prevención de riesgos laborales",
+   "apartado_pliego": "3.2.B",
+   "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2001-11881"
+  },
+  "rd_1066_2001": {
+   "identificador": "BOE-A-2001-18256",
+   "titulo": "Real Decreto 1066/2001, de 28 de septiembre, por el que se aprueba el Reglamento que establece condiciones de protección del dominio público radioeléctrico, restricciones a las emisiones radioeléctricas y medidas de protección sanitaria frente a emisiones radioeléctricas",
+   "vigente": true,
+   "materia": "Protección contra campos electromagnéticos",
+   "apartado_pliego": "3.2.C",
+   "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2001-18256"
+  },
+  "rd_186_2016": {
+   "identificador": "BOE-A-2016-4442",
+   "titulo": "Real Decreto 186/2016, de 6 de mayo, por el que se regula la compatibilidad electromagnética de los equipos eléctricos y electrónicos",
+   "vigente": true,
+   "materia": "Compatibilidad electromagnética",
+   "apartado_pliego": "3.2.C",
+   "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2016-4442"
+  },
+  "rd_1580_2006": {
+   "identificador": "BOE-A-2007-973",
+   "titulo": "Real Decreto 1580/2006, de 22 de diciembre, por el que se regula la compatibilidad electromagnética de los equipos eléctricos y electrónicos",
+   "vigente": false,
+   "materia": "Compatibilidad electromagnética",
+   "apartado_pliego": "3.2.C",
+   "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2007-973"
+  },
+  "rd_105_2008": {
+   "identificador": "BOE-A-2008-2486",
+   "titulo": "Real Decreto 105/2008, de 1 de febrero, por el que se regula la producción y gestión de los residuos de construcción y demolición",
+   "vigente": true,
+   "materia": "Gestión de residuos",
+   "apartado_pliego": "3.2.E",
+   "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2008-2486"
+  },
+  "ley_7_2022": {
+   "identificador": "BOE-A-2022-5809",
+   "titulo": "Ley 7/2022, de 8 de abril, de residuos y suelos contaminados para una economía circular",
+   "vigente": true,
+   "materia": "Gestión de residuos",
+   "apartado_pliego": "3.2.E",
+   "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2022-5809"
+  },
+  "rd_314_2006": {
+   "identificador": "BOE-A-2006-5515",
+   "titulo": "Real Decreto 314/2006, de 17 de marzo, por el que se aprueba el Código Técnico de la Edificación",
+   "vigente": true,
+   "materia": "Protección contra incendios (CTE)",
+   "apartado_pliego": "3.2.F",
+   "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2006-5515"
+  },
+  "rd_842_2002": {
+   "identificador": "BOE-A-2002-18099",
+   "titulo": "Real Decreto 842/2002, de 2 de agosto, por el que se aprueba el Reglamento electrotécnico para baja tensión",
+   "vigente": true,
+   "materia": "Seguridad eléctrica (REBT)",
+   "apartado_pliego": "3.2.A",
+   "url": "https://www.boe.es/buscar/act.php?id=BOE-A-2002-18099"
+  }
+ }
+}

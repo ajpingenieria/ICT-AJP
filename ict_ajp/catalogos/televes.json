@@ -20,7 +20,7 @@
   },
   {
    "ref": "149922",
-   "nombre": "Antena DAT BOSS UHF, 2º",
+   "nombre": "Antena DAT BOSS UHF, 2º Dividendo Digital (LTE700)",
    "margen_mhz": "470 ... 698",
    "ganancia_dbi": 17.0,
    "ganancia_activa_dbi": 42.0,
@@ -30,7 +30,7 @@
  "amplificadores": [
   {
    "ref": "509012",
-   "nombre": "Amplificador monocanal T12",
+   "nombre": "Amplificador monocanal T12 FM/DAB: 88...108/174..230MHz",
    "bandas": [
     "FM",
     "DAB"
@@ -49,7 +49,7 @@
   },
   {
    "ref": "509812",
-   "nombre": "Amplificador monocanal selectivo T12 UHF (TDT)",
+   "nombre": "Amplificador monocanal selectivo T12 UHF (TDT): 470...862MHz",
    "bandas": [
     "UHF"
    ],
@@ -67,7 +67,7 @@
  "fuentes": [
   {
    "ref": "549812",
-   "nombre": "Fuente de alimentación",
+   "nombre": "Fuente de alimentación T12 24V - 2,5A (60W)",
    "tension_v": 24.0,
    "corriente_a": 2.5,
    "fuente": "https://global.televes.com/pdf/index.php?store=es&sku=549812"

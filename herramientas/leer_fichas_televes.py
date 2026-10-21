@@ -32,8 +32,13 @@ def leer_ficha(ruta: Path) -> dict:
     ref = portada[i_ref][5:].strip()
     # el nombre son las líneas tras la cabecera («https://www.televes.com», «1») hasta la descripción
     cuerpo = [l for l in portada[:i_ref] if not l.startswith("http") and l != "1"]
-    nombre = " ".join(cuerpo[:2]) if len(cuerpo) > 1 and not cuerpo[1][0].isupper() or (
-        len(cuerpo) > 1 and re.match(r"^[\d.,/ ]+[A-Za-z]{2,3}", cuerpo[1])) else cuerpo[0]
+    # El nombre ocupa las primeras líneas cortas (hasta 3); la descripción empieza con una línea larga
+    partes = []
+    for l in cuerpo[:3]:
+        if len(l) > 32 or l.endswith("."):
+            break
+        partes.append(l)
+    nombre = " ".join(partes) if partes else cuerpo[0]
     tabla: list[list[str]] = []
     especificaciones = False
     for p in paginas:

@@ -60,6 +60,12 @@ completo: cálculos, planos DXF, memoria, pliego y presupuesto.
 - `ict_ajp/memoria.py` — memoria con la estructura del anexo I de la Orden ITC/1644/2011 (1.1 a 1.2.F)
   rellenada con el dimensionado. `python -m ict_ajp memoria proyecto.ict.json -o memoria.docx` saca Word
   y PDF (LibreOffice), con el índice paginado en dos pasadas.
+- `ict_ajp/pliego.py` — pliego de condiciones (anexo I, apartado 3 de la Orden): productos del catálogo con
+  sus cifras, apartados de las Normas que se cumplen, cuadros de medidas y normas generales.
+  `python -m ict_ajp pliego proyecto.ict.json -o pliego.docx`.
+- `docs/normativa/normas_generales.json` — título oficial y vigencia de las normas generales que cita el
+  pliego (PRL, residuos, campos electromagnéticos, incendios...), comprobados en el BOE con
+  `herramientas/normas_generales.py`. Nunca citar una norma general de memoria: añadirla ahí.
 - `ict_ajp/pdf.py` — conversión a PDF con LibreOffice (instalado en este ordenador).
 - `herramientas/boe_a_markdown.py` — pasa un XML del BOE a Markdown para `docs/normativa`.
 - `ict_ajp/__main__.py` — `python -m ict_ajp calcular proyecto.ict.json -o resultado.xlsx` y
@@ -94,7 +100,7 @@ completo: cálculos, planos DXF, memoria, pliego y presupuesto.
 | 0.1 | Demanda, redes TBA (pares trenzados/pares, coaxial, fibra), red interior, infraestructura, recintos, Excel | Hecho |
 | 0.2 | RTV (Anexo I, ap. 4): niveles, atenuaciones toma a toma, C/N, cabecera | Hecho salvo lo apuntado en `docs/pendiente.md` |
 | 0.3 | Esquemas de principio en DXF | Pendiente |
-| 0.4 | Memoria, pliego y presupuesto en Word (estructura del Anexo I de la Orden ITC/1644/2011) | En curso: memoria hecha; pliego y presupuesto pendientes |
+| 0.4 | Memoria, pliego y presupuesto en Word (estructura del Anexo I de la Orden ITC/1644/2011) | En curso: memoria y pliego hechos; presupuesto pendiente (falta la base de precios) |
 | 0.5 | Plantas sobre la base DXF del arquitecto | Pendiente |
 | 1.0 | Interfaz de escritorio (PySide6) y .exe de Windows compilado con GitHub Actions | Pendiente |
 

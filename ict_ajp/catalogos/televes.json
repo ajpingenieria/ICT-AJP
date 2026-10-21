@@ -1,0 +1,528 @@
+{
+ "fabricante": "Televés",
+ "fecha_consulta": "2026-10-21",
+ "antenas": [
+  {
+   "ref": "105001",
+   "nombre": "Antena de DAB (BIII)",
+   "margen_mhz": "174 ... 230",
+   "ganancia_dbi": 8.0,
+   "ganancia_activa_dbi": null,
+   "fuente": "https://global.televes.com/pdf/index.php?store=es&sku=105001"
+  },
+  {
+   "ref": "1201",
+   "nombre": "Antena de FM Recepción de radio",
+   "margen_mhz": "88 ... 108",
+   "ganancia_dbi": 1.0,
+   "ganancia_activa_dbi": null,
+   "fuente": "https://global.televes.com/pdf/index.php?store=es&sku=1201"
+  },
+  {
+   "ref": "149922",
+   "nombre": "Antena DAT BOSS UHF, 2º",
+   "margen_mhz": "470 ... 698",
+   "ganancia_dbi": 17.0,
+   "ganancia_activa_dbi": 42.0,
+   "fuente": "https://global.televes.com/pdf/index.php?store=es&sku=149922"
+  }
+ ],
+ "amplificadores": [
+  {
+   "ref": "509012",
+   "nombre": "Amplificador monocanal T12",
+   "bandas": [
+    "FM",
+    "DAB"
+   ],
+   "ganancia_db": [
+    40.0,
+    48.0
+   ],
+   "nivel_salida_en50083_dbuv": [
+    120.0,
+    113.0
+   ],
+   "corriente_ma": 220.0,
+   "fuente": "https://global.televes.com/pdf/index.php?store=es&sku=509012"
+  },
+  {
+   "ref": "509812",
+   "nombre": "Amplificador monocanal selectivo T12 UHF (TDT)",
+   "bandas": [
+    "UHF"
+   ],
+   "ganancia_db": [
+    50.0
+   ],
+   "nivel_salida_en50083_dbuv": [
+    118.0
+   ],
+   "corriente_ma": 195.0,
+   "fuente": "https://global.televes.com/pdf/index.php?store=es&sku=509812"
+  }
+ ],
+ "fuentes": [
+  {
+   "ref": "549812",
+   "nombre": "Fuente de alimentación",
+   "tension_v": 24.0,
+   "corriente_a": 2.5,
+   "fuente": "https://global.televes.com/pdf/index.php?store=es&sku=549812"
+  }
+ ],
+ "derivadores": [
+  {
+   "ref": "519322",
+   "nombre": "Derivador F 2D 5...2400MHz 12dB",
+   "salidas": 2,
+   "terminal": false,
+   "derivacion_db": {
+    "terr": 12.0,
+    "sat": 11.0
+   },
+   "paso_db": {
+    "terr": 2.3,
+    "sat": 3.4
+   },
+   "fuente": "https://global.televes.com/pdf/index.php?store=es&sku=519322"
+  },
+  {
+   "ref": "519323",
+   "nombre": "Derivador F 2D 5...2400MHz 16dB",
+   "salidas": 2,
+   "terminal": false,
+   "derivacion_db": {
+    "terr": 16.0,
+    "sat": 15.0
+   },
+   "paso_db": {
+    "terr": 2.0,
+    "sat": 2.5
+   },
+   "fuente": "https://global.televes.com/pdf/index.php?store=es&sku=519323"
+  },
+  {
+   "ref": "519324",
+   "nombre": "Derivador F 2D 5...2400MHz 20dB",
+   "salidas": 2,
+   "terminal": false,
+   "derivacion_db": {
+    "terr": 20.0,
+    "sat": 19.0
+   },
+   "paso_db": {
+    "terr": 1.5,
+    "sat": 2.0
+   },
+   "fuente": "https://global.televes.com/pdf/index.php?store=es&sku=519324"
+  },
+  {
+   "ref": "519325",
+   "nombre": "Derivador F 2D 5...2400MHz 24dB",
+   "salidas": 2,
+   "terminal": false,
+   "derivacion_db": {
+    "terr": 24.0,
+    "sat": 23.0
+   },
+   "paso_db": {
+    "terr": 1.5,
+    "sat": 2.0
+   },
+   "fuente": "https://global.televes.com/pdf/index.php?store=es&sku=519325"
+  },
+  {
+   "ref": "519341",
+   "nombre": "Derivador terminal F 4D 5...2400MHz 8dB",
+   "salidas": 4,
+   "terminal": true,
+   "derivacion_db": {
+    "terr": 8.5,
+    "sat": 9.0
+   },
+   "paso_db": null,
+   "fuente": "https://global.televes.com/pdf/index.php?store=es&sku=519341"
+  },
+  {
+   "ref": "519342",
+   "nombre": "Derivador F 4D 5...2400MHz 12dB",
+   "salidas": 4,
+   "terminal": false,
+   "derivacion_db": {
+    "terr": 13.0,
+    "sat": 12.5
+   },
+   "paso_db": {
+    "terr": 2.5,
+    "sat": 3.6
+   },
+   "fuente": "https://global.televes.com/pdf/index.php?store=es&sku=519342"
+  },
+  {
+   "ref": "519343",
+   "nombre": "Derivador F 4D 5...2400MHz 16dB",
+   "salidas": 4,
+   "terminal": false,
+   "derivacion_db": {
+    "terr": 17.0,
+    "sat": 17.5
+   },
+   "paso_db": {
+    "terr": 2.5,
+    "sat": 3.0
+   },
+   "fuente": "https://global.televes.com/pdf/index.php?store=es&sku=519343"
+  },
+  {
+   "ref": "519344",
+   "nombre": "Derivador F 4D 5...2400MHz 20dB",
+   "salidas": 4,
+   "terminal": false,
+   "derivacion_db": {
+    "terr": 20.5,
+    "sat": 20.0
+   },
+   "paso_db": {
+    "terr": 2.2,
+    "sat": 2.2
+   },
+   "fuente": "https://global.televes.com/pdf/index.php?store=es&sku=519344"
+  },
+  {
+   "ref": "519345",
+   "nombre": "Derivador F 4D 5...2400MHz 24dB",
+   "salidas": 4,
+   "terminal": false,
+   "derivacion_db": {
+    "terr": 23.2,
+    "sat": 23.5
+   },
+   "paso_db": {
+    "terr": 2.3,
+    "sat": 2.5
+   },
+   "fuente": "https://global.televes.com/pdf/index.php?store=es&sku=519345"
+  },
+  {
+   "ref": "519362",
+   "nombre": "Derivador terminal F 6D 5...2400MHz 12dB",
+   "salidas": 6,
+   "terminal": true,
+   "derivacion_db": {
+    "terr": 12.0,
+    "sat": 11.5
+   },
+   "paso_db": null,
+   "fuente": "https://global.televes.com/pdf/index.php?store=es&sku=519362"
+  },
+  {
+   "ref": "519363",
+   "nombre": "Derivador F 6D 5...2400MHz 16dB",
+   "salidas": 6,
+   "terminal": false,
+   "derivacion_db": {
+    "terr": 17.0,
+    "sat": 18.0
+   },
+   "paso_db": {
+    "terr": 5.0,
+    "sat": 5.0
+   },
+   "fuente": "https://global.televes.com/pdf/index.php?store=es&sku=519363"
+  },
+  {
+   "ref": "519364",
+   "nombre": "Derivador F 6D 5...2400MHz 20dB",
+   "salidas": 6,
+   "terminal": false,
+   "derivacion_db": {
+    "terr": 20.0,
+    "sat": 21.5
+   },
+   "paso_db": {
+    "terr": 3.0,
+    "sat": 4.0
+   },
+   "fuente": "https://global.televes.com/pdf/index.php?store=es&sku=519364"
+  },
+  {
+   "ref": "519365",
+   "nombre": "Derivador F 6D 5...2400MHz 24dB",
+   "salidas": 6,
+   "terminal": false,
+   "derivacion_db": {
+    "terr": 24.0,
+    "sat": 25.0
+   },
+   "paso_db": {
+    "terr": 2.0,
+    "sat": 3.0
+   },
+   "fuente": "https://global.televes.com/pdf/index.php?store=es&sku=519365"
+  },
+  {
+   "ref": "519382",
+   "nombre": "Derivador terminal F 8D 5...2400MHz 14dB",
+   "salidas": 8,
+   "terminal": true,
+   "derivacion_db": {
+    "terr": 15.0,
+    "sat": 14.0
+   },
+   "paso_db": null,
+   "fuente": "https://global.televes.com/pdf/index.php?store=es&sku=519382"
+  },
+  {
+   "ref": "519383",
+   "nombre": "Derivador F 8D 5...2400MHz 16dB",
+   "salidas": 8,
+   "terminal": false,
+   "derivacion_db": {
+    "terr": 17.5,
+    "sat": 16.5
+   },
+   "paso_db": {
+    "terr": 5.5,
+    "sat": 6.7
+   },
+   "fuente": "https://global.televes.com/pdf/index.php?store=es&sku=519383"
+  },
+  {
+   "ref": "519384",
+   "nombre": "Derivador F 8D 5...2400MHz 20dB",
+   "salidas": 8,
+   "terminal": false,
+   "derivacion_db": {
+    "terr": 20.0,
+    "sat": 20.0
+   },
+   "paso_db": {
+    "terr": 4.5,
+    "sat": 5.0
+   },
+   "fuente": "https://global.televes.com/pdf/index.php?store=es&sku=519384"
+  },
+  {
+   "ref": "519385",
+   "nombre": "Derivador F 8D 5...2400MHz 24dB",
+   "salidas": 8,
+   "terminal": false,
+   "derivacion_db": {
+    "terr": 24.5,
+    "sat": 23.5
+   },
+   "paso_db": {
+    "terr": 2.2,
+    "sat": 2.7
+   },
+   "fuente": "https://global.televes.com/pdf/index.php?store=es&sku=519385"
+  }
+ ],
+ "repartidores": [
+  {
+   "ref": "519502",
+   "nombre": "Repartidor F 2D 5...2400MHz 5/4dB",
+   "salidas": 2,
+   "pau": false,
+   "perdida_db": {
+    "terr": 5.0,
+    "sat": 4.0
+   },
+   "fuente": "https://global.televes.com/pdf/index.php?store=es&sku=519502"
+  },
+  {
+   "ref": "519532",
+   "nombre": "Repartidor con PAU F 2D 5...2400MHz 5/4dB",
+   "salidas": 2,
+   "pau": true,
+   "perdida_db": {
+    "terr": 5.0,
+    "sat": 4.0
+   },
+   "fuente": "https://global.televes.com/pdf/index.php?store=es&sku=519532"
+  },
+  {
+   "ref": "519503",
+   "nombre": "Repartidor F 3D 5...2400MHz 8/7dB",
+   "salidas": 3,
+   "pau": false,
+   "perdida_db": {
+    "terr": 8.0,
+    "sat": 7.0
+   },
+   "fuente": "https://global.televes.com/pdf/index.php?store=es&sku=519503"
+  },
+  {
+   "ref": "519533",
+   "nombre": "Repartidor con PAU F 3D 5...2400MHz 8/7dB",
+   "salidas": 3,
+   "pau": true,
+   "perdida_db": {
+    "terr": 8.0,
+    "sat": 7.0
+   },
+   "fuente": "https://global.televes.com/pdf/index.php?store=es&sku=519533"
+  },
+  {
+   "ref": "519504",
+   "nombre": "Repartidor F 4D 5...2400MHz 9/8dB",
+   "salidas": 4,
+   "pau": false,
+   "perdida_db": {
+    "terr": 9.0,
+    "sat": 8.0
+   },
+   "fuente": "https://global.televes.com/pdf/index.php?store=es&sku=519504"
+  },
+  {
+   "ref": "519534",
+   "nombre": "Repartidor con PAU F 4D 5...2400MHz 9/8dB",
+   "salidas": 4,
+   "pau": true,
+   "perdida_db": {
+    "terr": 9.0,
+    "sat": 8.0
+   },
+   "fuente": "https://global.televes.com/pdf/index.php?store=es&sku=519534"
+  },
+  {
+   "ref": "519505",
+   "nombre": "Repartidor F 5D 5...2400MHz 11/10dB",
+   "salidas": 5,
+   "pau": false,
+   "perdida_db": {
+    "terr": 11.0,
+    "sat": 10.0
+   },
+   "fuente": "https://global.televes.com/pdf/index.php?store=es&sku=519505"
+  },
+  {
+   "ref": "519535",
+   "nombre": "Repartidor con PAU F 5D 5...2400MHz 11/10dB",
+   "salidas": 5,
+   "pau": true,
+   "perdida_db": {
+    "terr": 11.0,
+    "sat": 10.0
+   },
+   "fuente": "https://global.televes.com/pdf/index.php?store=es&sku=519535"
+  },
+  {
+   "ref": "519506",
+   "nombre": "Repartidor F 6D 5...2400MHz 12/11dB",
+   "salidas": 6,
+   "pau": false,
+   "perdida_db": {
+    "terr": 12.0,
+    "sat": 11.0
+   },
+   "fuente": "https://global.televes.com/pdf/index.php?store=es&sku=519506"
+  },
+  {
+   "ref": "519536",
+   "nombre": "Repartidor con PAU F 6D 5...2400MHz 12/11dB",
+   "salidas": 6,
+   "pau": true,
+   "perdida_db": {
+    "terr": 12.0,
+    "sat": 11.0
+   },
+   "fuente": "https://global.televes.com/pdf/index.php?store=es&sku=519536"
+  }
+ ],
+ "tomas": [
+  {
+   "ref": "5228",
+   "nombre": "Toma de paso 2 conectores FM/TV-SAT (planta 2)",
+   "bandas": [
+    "TV",
+    "SAT"
+   ],
+   "paso": true,
+   "atenuacion_db": {
+    "TV": 8.5,
+    "SAT": 10.0
+   },
+   "paso_db": {
+    "TV": 3.5,
+    "SAT": 5.0
+   },
+   "fuente": "https://www.televes.com/downloadfile/TEC12210013_188_Espanol_1671922.pdf/technical_specifications_es_ES_TEC12210013.pdf"
+  },
+  {
+   "ref": "5229",
+   "nombre": "Toma terminal 2 conectores FM/TV-SAT (planta 1)",
+   "bandas": [
+    "TV",
+    "SAT"
+   ],
+   "paso": false,
+   "atenuacion_db": {
+    "TV": 4.0,
+    "SAT": 5.0
+   },
+   "paso_db": null,
+   "fuente": "https://www.televes.com/downloadfile/TEC12210016_181_Espanol_1671955.pdf/technical_specifications_es_ES_TEC12210016.pdf"
+  },
+  {
+   "ref": "5230",
+   "nombre": "Toma terminal 2 conectores FM-TV",
+   "bandas": [
+    "FM",
+    "TV"
+   ],
+   "paso": false,
+   "atenuacion_db": {
+    "FM": 18.0,
+    "TV": 4.5
+   },
+   "paso_db": null,
+   "fuente": "https://www.televes.com/downloadfile/TEC12210017_186_Espanol_1671966.pdf/technical_specifications_es_ES_TEC12210017.pdf"
+  },
+  {
+   "ref": "527601",
+   "nombre": "Toma terminal separadora ICT 2 conectores 5...694 MHz (FM/TV) - 950...2400 MHz (SAT)",
+   "bandas": [
+    "TV",
+    "SAT"
+   ],
+   "paso": false,
+   "atenuacion_db": {
+    "TV": 1.0,
+    "SAT": 1.5
+   },
+   "paso_db": null,
+   "fuente": "https://www.televes.com/downloadfile/TEC08260000_2_Espanol_1673006.pdf/technical_specifications_es_ES_TEC08260000_527601.pdf"
+  }
+ ],
+ "cables": [
+  {
+   "ref": "414002",
+   "nombre": "Cable coaxial SK2003plus (T100A+), Euroclase Dca, blindaje clase A+",
+   "atenuacion_db_m": {
+    "5": 0.02,
+    "47": 0.05,
+    "54": 0.05,
+    "90": 0.06,
+    "200": 0.09,
+    "500": 0.14,
+    "698": 0.17,
+    "800": 0.18,
+    "862": 0.19,
+    "950": 0.2,
+    "1000": 0.21,
+    "1220": 0.23,
+    "1350": 0.25,
+    "1750": 0.28,
+    "2050": 0.3,
+    "2150": 0.31,
+    "2200": 0.32,
+    "2300": 0.32,
+    "2400": 0.33,
+    "3000": 0.36
+   },
+   "fuente": "https://www.televes.com/downloadfile/TEC05210233_20_Espanol_1444153.pdf/technical_specifications_es_ES_TEC05210233_414002.pdf"
+  }
+ ]
+}

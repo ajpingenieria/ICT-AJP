@@ -1,7 +1,7 @@
 {
  "fuente_dab": "RD 1287/1999, Plan técnico nacional de la radiodifusión sonora digital terrestre",
  "fuente_fm": "RD 964/2006, Plan técnico nacional de radiodifusión sonora en FM, anexo II",
- "fuente_tdt_local": "RD 439/2004, Plan técnico nacional de la televisión digital local",
+ "fuente_tdt_local": "RD 439/2004, Plan técnico nacional de la televisión digital local, con los canales modificados por el RD 391/2019 (disposición final tercera y anexo III)",
  "dab": {
   "fu_e": {
    "general": "11B",
@@ -9729,7 +9729,7 @@
   },
   "TL03AL": {
    "denominacion": "Ejido",
-   "canal": 60,
+   "canal": 45,
    "ambito": [
     "Ejido (El)",
     "Roquetas de Mar",
@@ -9738,7 +9738,8 @@
     "Berja",
     "Mojonera (La)",
     "Dalías"
-   ]
+   ],
+   "canal_anterior": 27
   },
   "TL04AL": {
    "denominacion": "Huércal-Overa",
@@ -9780,7 +9781,7 @@
   },
   "TL02CA": {
    "denominacion": "Arcos Frontera",
-   "canal": 24,
+   "canal": 47,
    "ambito": [
     "Arcos de la Frontera",
     "Villamartín",
@@ -9788,27 +9789,30 @@
     "San José del Valle",
     "Espera",
     "Algar"
-   ]
+   ],
+   "canal_anterior": 24
   },
   "TL03CA": {
    "denominacion": "Cádiz",
-   "canal": 54,
+   "canal": 38,
    "ambito": [
     "Cádiz",
     "San Fernando",
     "Puerto de Santa María (El)",
     "Puerto Real"
-   ]
+   ],
+   "canal_anterior": 54
   },
   "TL04CA": {
    "denominacion": "Chiclana Frontera",
-   "canal": 52,
+   "canal": 43,
    "ambito": [
     "Chiclana de la Frontera",
     "Barbate",
     "Conil de la Frontera",
     "Vejer de la Frontera"
-   ]
+   ],
+   "canal_anterior": 52
   },
   "TL05CA": {
    "denominacion": "Jerez Frontera",
@@ -9836,24 +9840,26 @@
   },
   "TL07CA": {
    "denominacion": "Ubrique",
-   "canal": 33,
+   "canal": 26,
    "ambito": [
     "Ubrique",
     "Prado del Rey",
     "Grazalema",
     "Bosque (El)",
     "Benaocaz"
-   ]
+   ],
+   "canal_anterior": 50
   },
   "TL08CA": {
    "denominacion": "Medina Sidonia",
-   "canal": 43,
+   "canal": 36,
    "ambito": [
     "Medina-Sidonia",
     "Benalup-Casa Viejas",
     "Alcalá de los Gazules",
     "Paterna de Rivera"
-   ]
+   ],
+   "canal_anterior": 43
   },
   "TL01CO": {
    "denominacion": "Baena",
@@ -9867,10 +9873,11 @@
   },
   "TL02CO": {
    "denominacion": "Córdoba",
-   "canal": 30,
+   "canal": 34,
    "ambito": [
     "Córdoba"
-   ]
+   ],
+   "canal_anterior": 30
   },
   "TL03CO": {
    "denominacion": "Hinojosa Duque",
@@ -9913,7 +9920,7 @@
   },
   "TL06CO": {
    "denominacion": "Palma Río",
-   "canal": 35,
+   "canal": 31,
    "ambito": [
     "Palma del Río",
     "Carlota (La)",
@@ -9922,7 +9929,8 @@
     "Posadas",
     "Hornachuelos",
     "Guadalcázar"
-   ]
+   ],
+   "canal_anterior": 35
   },
   "TL07CO": {
    "denominacion": "Peñarroya-Pueblonuevo",
@@ -9937,7 +9945,7 @@
   },
   "TL08CO": {
    "denominacion": "Pozoblanco",
-   "canal": 47,
+   "canal": 33,
    "ambito": [
     "Pozoblanco",
     "Villanueva de Córdoba",
@@ -9946,18 +9954,20 @@
     "Añora",
     "Alcaracejos",
     "Torrecampo"
-   ]
+   ],
+   "canal_anterior": 47
   },
   "TL09CO": {
    "denominacion": "Priego Córdoba",
-   "canal": 49,
+   "canal": 44,
    "ambito": [
     "Priego de Córdoba",
     "Rute",
     "Iznájar",
     "Carcabuey",
     "Almedinilla"
-   ]
+   ],
+   "canal_anterior": 47
   },
   "TL10CO": {
    "denominacion": "Puente Genil",
@@ -9971,7 +9981,7 @@
   },
   "TL11CO": {
    "denominacion": "Montoro",
-   "canal": 59,
+   "canal": 48,
    "ambito": [
     "Montoro",
     "Bujalance",
@@ -9981,7 +9991,8 @@
     "Villafranca de Córdoba",
     "Cañete de las Torres",
     "Pedro Abad. Superficie total: 1299,97 km²"
-   ]
+   ],
+   "canal_anterior": 59
   },
   "TL01GR": {
    "denominacion": "Almuñécar",
@@ -10101,7 +10112,7 @@
   },
   "TL01H": {
    "denominacion": "Almonte",
-   "canal": 46,
+   "canal": 28,
    "ambito": [
     "Almonte",
     "Bollullos Par del Condado",
@@ -10115,7 +10126,8 @@
     "Villarrasa",
     "Lucena del Puerto",
     "Chucena"
-   ]
+   ],
+   "canal_anterior": 46
   },
   "TL02H": {
    "denominacion": "Aracena",
@@ -10129,7 +10141,7 @@
   },
   "TL03H": {
    "denominacion": "Huelva",
-   "canal": 33,
+   "canal": 23,
    "ambito": [
     "Huelva",
     "Moguer",
@@ -10137,7 +10149,8 @@
     "Trigueros",
     "San Juan del Puerto",
     "Beas"
-   ]
+   ],
+   "canal_anterior": 50
   },
   "TL04H": {
    "denominacion": "Lepe",
@@ -10155,13 +10168,14 @@
   },
   "TL01J": {
    "denominacion": "Alcalá Real",
-   "canal": 25,
+   "canal": 37,
    "ambito": [
     "Alcalá la Real",
     "Alcaudete",
     "Castillo de Locubín",
     "Frailes"
-   ]
+   ],
+   "canal_anterior": 25
   },
   "TL02J": {
    "denominacion": "Andújar",
@@ -10259,12 +10273,13 @@
   },
   "TL01MA": {
    "denominacion": "Álora",
-   "canal": 38,
+   "canal": 32,
    "ambito": [
     "Álora",
     "Pizarra",
     "Casarabonela"
-   ]
+   ],
+   "canal_anterior": 38
   },
   "TL02MA": {
    "denominacion": "Antequera",
@@ -10295,33 +10310,36 @@
   },
   "TL04MA": {
    "denominacion": "Fuengirola",
-   "canal": 22,
+   "canal": 38,
    "ambito": [
     "Fuengirola",
     "Mijas",
     "Benalmádena",
     "Coín",
     "Alhaurín el Grande"
-   ]
+   ],
+   "canal_anterior": 22
   },
   "TL05MA": {
    "denominacion": "Málaga",
-   "canal": 58,
+   "canal": 23,
    "ambito": [
     "Málaga",
     "Torremolinos",
     "Rincón de la Victoria",
     "Alhaurín de la Torre",
     "Cártama"
-   ]
+   ],
+   "canal_anterior": 58
   },
   "TL06MA": {
    "denominacion": "Marbella",
-   "canal": 64,
+   "canal": 37,
    "ambito": [
     "Marbella",
     "Ojén"
-   ]
+   ],
+   "canal_anterior": 44
   },
   "TL07MA": {
    "denominacion": "Nerja",
@@ -10356,14 +10374,15 @@
   },
   "TL10MA": {
    "denominacion": "Málaga",
-   "canal": 51,
+   "canal": 36,
    "ambito": [
     "Málaga",
     "Torremolinos",
     "Rincón de la Victoria",
     "Alhaurín de la Torre",
     "Cártama"
-   ]
+   ],
+   "canal_anterior": 51
   },
   "TL01SE": {
    "denominacion": "Dos Hermanas",
@@ -10393,7 +10412,7 @@
   },
   "TL03SE": {
    "denominacion": "Estepa",
-   "canal": 47,
+   "canal": 42,
    "ambito": [
     "Estepa",
     "Herrera",
@@ -10406,16 +10425,18 @@
     "Marinaleda",
     "Aguadulce",
     "Lora de Estepa"
-   ]
+   ],
+   "canal_anterior": 47
   },
   "TL04SE": {
    "denominacion": "Lebrija",
-   "canal": 21,
+   "canal": 23,
    "ambito": [
     "Lebrija",
     "Cabezas de San Juan (Las)",
     "Cuervo de Sevilla (El)"
-   ]
+   ],
+   "canal_anterior": 21
   },
   "TL05SE": {
    "denominacion": "Lora Río",
@@ -10445,7 +10466,7 @@
   },
   "TL07SE": {
    "denominacion": "Sevilla",
-   "canal": 54,
+   "canal": 24,
    "ambito": [
     "Sevilla",
     "Mairena del Aljarafe",
@@ -10476,7 +10497,8 @@
     "Castilleja de Guzmán",
     "Albaida del Aljarafe",
     "Castilleja del Campo"
-   ]
+   ],
+   "canal_anterior": 54
   },
   "TL08SE": {
    "denominacion": "Utrera",
@@ -10491,7 +10513,7 @@
   },
   "TL09SE": {
    "denominacion": "Sevilla",
-   "canal": 56,
+   "canal": 43,
    "ambito": [
     "Sevilla",
     "Mairena del Aljarafe",
@@ -10522,7 +10544,8 @@
     "Castilleja de Guzmán",
     "Albaida del Aljarafe",
     "Castilleja del Campo"
-   ]
+   ],
+   "canal_anterior": 56
   },
   "TL01HU": {
    "denominacion": "Barbastro",
@@ -10555,11 +10578,12 @@
   },
   "TL04HU": {
    "denominacion": "Jaca",
-   "canal": 51,
+   "canal": 24,
    "ambito": [
     "Jaca",
     "Sabiñánigo"
-   ]
+   ],
+   "canal_anterior": 51
   },
   "TL05HU": {
    "denominacion": "Monzón",
@@ -10574,13 +10598,14 @@
   },
   "TL01TE": {
    "denominacion": "Alcañiz",
-   "canal": 50,
+   "canal": 21,
    "ambito": [
     "Alcañiz",
     "Calanda",
     "Alcorisa",
     "Castelserás"
-   ]
+   ],
+   "canal_anterior": 50
   },
   "TL02TE": {
    "denominacion": "Andorra",
@@ -10616,18 +10641,19 @@
   },
   "TL01Z": {
    "denominacion": "Almunia Doña Godina",
-   "canal": 32,
+   "canal": 36,
    "ambito": [
     "Almunia de Doña Godina (La)",
     "Épila",
     "Calatorao",
     "Ricla",
     "Morata de Jalón"
-   ]
+   ],
+   "canal_anterior": 35
   },
   "TL02Z": {
    "denominacion": "Calatayud",
-   "canal": 56,
+   "canal": 29,
    "ambito": [
     "Calatayud",
     "Ateca",
@@ -10636,7 +10662,8 @@
     "Maluenda",
     "Aniñón",
     "Sabiñán"
-   ]
+   ],
+   "canal_anterior": 56
   },
   "TL03Z": {
    "denominacion": "Caspe",
@@ -10650,13 +10677,14 @@
   },
   "TL04Z": {
    "denominacion": "Ejea Caballeros",
-   "canal": 34,
+   "canal": 39,
    "ambito": [
     "Ejea de los Caballeros",
     "Tauste",
     "Sádaba",
     "Biota"
-   ]
+   ],
+   "canal_anterior": 34
   },
   "TL05Z": {
    "denominacion": "Zaragoza",
@@ -10674,7 +10702,7 @@
   },
   "TL06Z": {
    "denominacion": "Alagón",
-   "canal": 52,
+   "canal": 35,
    "ambito": [
     "Alagón",
     "Gallur",
@@ -10685,18 +10713,20 @@
     "Figueruelas",
     "Luceni",
     "Boquiñeni"
-   ]
+   ],
+   "canal_anterior": 52
   },
   "TL07Z": {
    "denominacion": "Tarazona",
-   "canal": 48,
+   "canal": 35,
    "ambito": [
     "Tarazona",
     "Novallas",
     "Malón",
     "Torrellas",
     "Vierlas"
-   ]
+   ],
+   "canal_anterior": 49
   },
   "TL01AS": {
    "denominacion": "Avilés",
@@ -10747,7 +10777,7 @@
   },
   "TL05AS": {
    "denominacion": "Llanes",
-   "canal": 61,
+   "canal": 37,
    "ambito": [
     "Llanes",
     "Ribadesella",
@@ -10756,11 +10786,12 @@
     "Peñamellera Baja",
     "Peñamellera Alta",
     "Caravia"
-   ]
+   ],
+   "canal_anterior": 25
   },
   "TL06AS": {
    "denominacion": "Luarca-Valdés",
-   "canal": 56,
+   "canal": 23,
    "ambito": [
     "Valdés",
     "Navia",
@@ -10771,7 +10802,8 @@
     "Coaña",
     "Boal",
     "Villayón"
-   ]
+   ],
+   "canal_anterior": 56
   },
   "TL07AS": {
    "denominacion": "Mieres",
@@ -10895,7 +10927,7 @@
   },
   "TL07IB": {
    "denominacion": "Sóller",
-   "canal": 45,
+   "canal": 43,
    "ambito": [
     "Sóller",
     "Esporles",
@@ -10905,7 +10937,8 @@
     "Fornalutx",
     "Banyalbufar",
     "Estellencs"
-   ]
+   ],
+   "canal_anterior": 45
   },
   "TL01AV": {
    "denominacion": "Ávila",
@@ -10917,13 +10950,14 @@
   },
   "TL01BU": {
    "denominacion": "Aranda Duero",
-   "canal": 41,
+   "canal": 23,
    "ambito": [
     "Aranda de Duero",
     "Lerma",
     "Roa",
     "Huerta de Rey"
-   ]
+   ],
+   "canal_anterior": 41
   },
   "TL02BU": {
    "denominacion": "Briviesca",
@@ -10945,22 +10979,24 @@
   },
   "TL04BU": {
    "denominacion": "Medina Pomar",
-   "canal": 48,
+   "canal": 38,
    "ambito": [
     "Medina de Pomar",
     "Villarcayo de Merindad de Castilla la Vieja",
     "Oña",
     "Valle de Tobalina",
     "Trespaderne"
-   ]
+   ],
+   "canal_anterior": 37
   },
   "TL05BU": {
    "denominacion": "Miranda Ebro",
-   "canal": 31,
+   "canal": 38,
    "ambito": [
     "Miranda de Ebro",
     "Condado de Treviño"
-   ]
+   ],
+   "canal_anterior": 41
   },
   "TL01LE": {
    "denominacion": "Astorga",
@@ -10991,7 +11027,7 @@
   },
   "TL03LE": {
    "denominacion": "Ponferrada",
-   "canal": 25,
+   "canal": 33,
    "ambito": [
     "Ponferrada",
     "Bembibre",
@@ -11005,7 +11041,8 @@
     "Vega de Espinareda",
     "Villadecanes",
     "Corullón"
-   ]
+   ],
+   "canal_anterior": 25
   },
   "TL01P": {
    "denominacion": "Aguilar Campoo",
@@ -11018,13 +11055,14 @@
   },
   "TL02P": {
    "denominacion": "Palencia",
-   "canal": 22,
+   "canal": 27,
    "ambito": [
     "Palencia",
     "Venta de Baños",
     "Villamuriel de Cerrato",
     "Dueñas"
-   ]
+   ],
+   "canal_anterior": 22
   },
   "TL01SA": {
    "denominacion": "Béjar",
@@ -11077,25 +11115,27 @@
   },
   "TL02SO": {
    "denominacion": "Soria",
-   "canal": 50,
+   "canal": 26,
    "ambito": [
     "Soria"
-   ]
+   ],
+   "canal_anterior": 50
   },
   "TL01VA": {
    "denominacion": "Medina Campo",
-   "canal": 29,
+   "canal": 23,
    "ambito": [
     "Medina del Campo",
     "Íscar",
     "Olmedo",
     "Pedrajas de San Esteban",
     "Nava del Rey"
-   ]
+   ],
+   "canal_anterior": 29
   },
   "TL02VA": {
    "denominacion": "Valladolid",
-   "canal": 28,
+   "canal": 41,
    "ambito": [
     "Valladolid",
     "Laguna de Duero",
@@ -11110,18 +11150,20 @@
     "Cabezón de Pisuerga",
     "Boecillo",
     "Zaratán"
-   ]
+   ],
+   "canal_anterior": 28
   },
   "TL01ZA": {
    "denominacion": "Benavente",
-   "canal": 29,
+   "canal": 32,
    "ambito": [
     "Benavente",
     "San Cristóbal de Entreviñas",
     "Villalpando",
     "Santa Cristina de la Polvorosa",
     "Villanueva del Campo"
-   ]
+   ],
+   "canal_anterior": 29
   },
   "TL02ZA": {
    "denominacion": "Zamora",
@@ -11158,16 +11200,17 @@
   },
   "TL03AB": {
    "denominacion": "Almansa",
-   "canal": 54,
+   "canal": 39,
    "ambito": [
     "Almansa",
     "Caudete",
     "Alpera"
-   ]
+   ],
+   "canal_anterior": 54
   },
   "TL04AB": {
    "denominacion": "Elche Sierra",
-   "canal": 55,
+   "canal": 31,
    "ambito": [
     "Elche de la Sierra",
     "Yeste",
@@ -11175,17 +11218,19 @@
     "Letur",
     "Molinicos",
     "Férez"
-   ]
+   ],
+   "canal_anterior": 55
   },
   "TL05AB": {
    "denominacion": "Hellín",
-   "canal": 49,
+   "canal": 22,
    "ambito": [
     "Hellín",
     "Tobarra",
     "Ontur",
     "Albatana"
-   ]
+   ],
+   "canal_anterior": 49
   },
   "TL06AB": {
    "denominacion": "Roda",
@@ -11198,11 +11243,12 @@
   },
   "TL07AB": {
    "denominacion": "Villarrobledo",
-   "canal": 49,
+   "canal": 22,
    "ambito": [
     "Villarrobledo",
     "Minaya"
-   ]
+   ],
+   "canal_anterior": 49
   },
   "TL01CR": {
    "denominacion": "Alcázar S. Juan",
@@ -11215,14 +11261,15 @@
   },
   "TL02CR": {
    "denominacion": "Almadén",
-   "canal": 50,
+   "canal": 24,
    "ambito": [
     "Almadén",
     "Chillón",
     "Guadalmez",
     "Alamillo",
     "Almadenejos"
-   ]
+   ],
+   "canal_anterior": 50
   },
   "TL03CR": {
    "denominacion": "Ciudad Real",
@@ -11260,11 +11307,12 @@
   },
   "TL06CR": {
    "denominacion": "Tomelloso",
-   "canal": 52,
+   "canal": 29,
    "ambito": [
     "Tomelloso",
     "Argamasilla de Alba"
-   ]
+   ],
+   "canal_anterior": 52
   },
   "TL07CR": {
    "denominacion": "Valdepeñas",
@@ -11284,14 +11332,15 @@
   },
   "TL02CU": {
    "denominacion": "Quintanar Rey",
-   "canal": 52,
+   "canal": 35,
    "ambito": [
     "Quintanar del Rey",
     "Motilla del Palancar",
     "Iniesta",
     "Casasimarro",
     "Villanueva de la Jara"
-   ]
+   ],
+   "canal_anterior": 52
   },
   "TL03CU": {
    "denominacion": "Tarancón",
@@ -11305,7 +11354,7 @@
   },
   "TL04CU": {
    "denominacion": "Pedroñeras",
-   "canal": 45,
+   "canal": 33,
    "ambito": [
     "Pedroñeras (Las)",
     "San Clemente",
@@ -11315,7 +11364,8 @@
     "Belmonte",
     "Alberca de Záncara (La)",
     "Pedernoso (El)"
-   ]
+   ],
+   "canal_anterior": 45
   },
   "TL01GU": {
    "denominacion": "Azuqueca Henares",
@@ -11328,18 +11378,19 @@
   },
   "TL02GU": {
    "denominacion": "Guadalajara",
-   "canal": 25,
+   "canal": 23,
    "ambito": [
     "Guadalajara",
     "Cabanillas del Campo",
     "Marchamalo",
     "Horche",
     "Chiloeches"
-   ]
+   ],
+   "canal_anterior": 25
   },
   "TL01TO": {
    "denominacion": "Illescas",
-   "canal": 33,
+   "canal": 44,
    "ambito": [
     "Illescas",
     "Yuncos",
@@ -11352,18 +11403,20 @@
     "Yeles",
     "Cobeja",
     "Cabañas de la Sagra"
-   ]
+   ],
+   "canal_anterior": 34
   },
   "TL02TO": {
    "denominacion": "Madridejos",
-   "canal": 57,
+   "canal": 39,
    "ambito": [
     "Madridejos",
     "Consuegra",
     "Villafranca de los Caballeros",
     "Urda",
     "Camuñas"
-   ]
+   ],
+   "canal_anterior": 57
   },
   "TL03TO": {
    "denominacion": "Quintanar Orden",
@@ -11417,7 +11470,7 @@
   },
   "TL06TO": {
    "denominacion": "Torrijos",
-   "canal": 48,
+   "canal": 28,
    "ambito": [
     "Torrijos",
     "Fuensalida",
@@ -11433,7 +11486,8 @@
     "Carmena",
     "Santo Domingo-Caudilla",
     "Alcabón"
-   ]
+   ],
+   "canal_anterior": 48
   },
   "TL01S": {
    "denominacion": "Castro-Urdiales",
@@ -11459,14 +11513,15 @@
   },
   "TL02S": {
    "denominacion": "Potes",
-   "canal": 50,
+   "canal": 33,
    "ambito": [
     "Potes",
     "Cillorigo de Liébana",
     "Camaleño",
     "Vega de Liébana",
     "Cabezón de Liébana"
-   ]
+   ],
+   "canal_anterior": 50
   },
   "TL03S": {
    "denominacion": "Reinosa",
@@ -11488,7 +11543,7 @@
   },
   "TL04S": {
    "denominacion": "Santander",
-   "canal": 57,
+   "canal": 30,
    "ambito": [
     "Santander",
     "Camargo",
@@ -11504,7 +11559,8 @@
     "Villaescusa",
     "Liérganes",
     "Penagos"
-   ]
+   ],
+   "canal_anterior": 57
   },
   "TL05S": {
    "denominacion": "Selaya",
@@ -11615,7 +11671,8 @@
     "Palma de Cervelló (La)",
     "Collbató",
     "Castellví de Rosanes"
-   ]
+   ],
+   "canal_anterior": 53
   },
   "TL04B": {
    "denominacion": "Igualada",
@@ -11631,7 +11688,7 @@
   },
   "TL05B": {
    "denominacion": "Manresa",
-   "canal": 49,
+   "canal": 48,
    "ambito": [
     "Manresa",
     "Berga",
@@ -11649,7 +11706,8 @@
     "Artés",
     "Puig-reig",
     "Balsareny"
-   ]
+   ],
+   "canal_anterior": 49
   },
   "TL06B": {
    "denominacion": "Mataró",
@@ -11707,7 +11765,7 @@
   },
   "TL08B": {
    "denominacion": "Vic",
-   "canal": 42,
+   "canal": 25,
    "ambito": [
     "Vic",
     "Manlleu",
@@ -11717,7 +11775,8 @@
     "Roda de Ter",
     "Sant Hipòlit de Voltregà",
     "Masies de Voltregà (Les)"
-   ]
+   ],
+   "canal_anterior": 50
   },
   "TL09B": {
    "denominacion": "Vilanova Geltrú",
@@ -11808,23 +11867,25 @@
   },
   "TL01GI": {
    "denominacion": "Blanes",
-   "canal": 42,
+   "canal": 46,
    "ambito": [
     "Blanes",
     "Lloret de Mar",
     "Tossa de Mar"
-   ]
+   ],
+   "canal_anterior": 42
   },
   "TL02GI": {
    "denominacion": "Figueres",
-   "canal": 26,
+   "canal": 48,
    "ambito": [
     "Figueres",
     "Roses",
     "Castelló d'Empúries",
     "Escala (L')",
     "Vilafant"
-   ]
+   ],
+   "canal_anterior": 26
   },
   "TL03GI": {
    "denominacion": "Girona",
@@ -11843,14 +11904,15 @@
   },
   "TL04GI": {
    "denominacion": "Olot",
-   "canal": 51,
+   "canal": 21,
    "ambito": [
     "Olot",
     "Ripoll",
     "Sant Joan de les Abadesses",
     "Campdevànol",
     "Sant Joan les Fonts"
-   ]
+   ],
+   "canal_anterior": 51
   },
   "TL05GI": {
    "denominacion": "Palafrugell",
@@ -11882,7 +11944,7 @@
   },
   "TL02L": {
    "denominacion": "Lleida",
-   "canal": 50,
+   "canal": 27,
    "ambito": [
     "Lleida",
     "Almacelles",
@@ -11890,11 +11952,12 @@
     "Alpicat",
     "Almenar",
     "Alfarràs"
-   ]
+   ],
+   "canal_anterior": 50
   },
   "TL03L": {
    "denominacion": "Seu Urgell",
-   "canal": 55,
+   "canal": 33,
    "ambito": [
     "Seu d'Urgell (La)",
     "Puigcerdà",
@@ -11902,30 +11965,33 @@
     "Pobla de Segur (La)",
     "Pont de Suert (El)",
     "Sort"
-   ]
+   ],
+   "canal_anterior": 55
   },
   "TL04L": {
    "denominacion": "Vielha Mijaran",
-   "canal": 51,
+   "canal": 41,
    "ambito": [
     "Vielha e Mijaran",
     "Naut Aran",
     "Bossòst"
-   ]
+   ],
+   "canal_anterior": 51
   },
   "TL01T": {
    "denominacion": "Reus",
-   "canal": 56,
+   "canal": 32,
    "ambito": [
     "Reus",
     "Cambrils",
     "Mont-roig del Camp",
     "Riudoms"
-   ]
+   ],
+   "canal_anterior": 56
   },
   "TL02T": {
    "denominacion": "Tarragona",
-   "canal": 54,
+   "canal": 39,
    "ambito": [
     "Tarragona",
     "Valls",
@@ -11933,7 +11999,8 @@
     "Vila-seca",
     "Torredembarra",
     "Montblanc"
-   ]
+   ],
+   "canal_anterior": 54
   },
   "TL03T": {
    "denominacion": "Tortosa",
@@ -11973,13 +12040,14 @@
   },
   "TL03GC": {
    "denominacion": "Mogán",
-   "canal": 58,
+   "canal": 46,
    "ambito": [
     "Mogán",
     "San Nicolás de Tolentino",
     "Tejeda",
     "Artenara"
-   ]
+   ],
+   "canal_anterior": 58
   },
   "TL04GC": {
    "denominacion": "Palmas, Las",
@@ -12000,7 +12068,7 @@
   },
   "TL05GC": {
    "denominacion": "Telde",
-   "canal": 63,
+   "canal": 41,
    "ambito": [
     "Telde",
     "Santa Lucía de Tirajana",
@@ -12008,7 +12076,8 @@
     "Ingenio",
     "Agüimes",
     "Valsequillo de Gran Canaria"
-   ]
+   ],
+   "canal_anterior": 40
   },
   "TL01TF": {
    "denominacion": "Arona",
@@ -12039,11 +12108,12 @@
   },
   "TL03TF": {
    "denominacion": "Hierro",
-   "canal": 34,
+   "canal": 31,
    "ambito": [
     "Frontera",
     "Valverde"
-   ]
+   ],
+   "canal_anterior": 34
   },
   "TL04TF": {
    "denominacion": "Orotava",
@@ -12102,18 +12172,19 @@
   },
   "TL01BA": {
    "denominacion": "Almendralejo",
-   "canal": 54,
+   "canal": 44,
    "ambito": [
     "Almendralejo",
     "Villafranca de los Barros",
     "Aceuchal",
     "Santa Marta",
     "Solana de los Barros"
-   ]
+   ],
+   "canal_anterior": 54
   },
   "TL02BA": {
    "denominacion": "Azuaga",
-   "canal": 51,
+   "canal": 43,
    "ambito": [
     "Azuaga",
     "Llerena",
@@ -12121,18 +12192,20 @@
     "Granja de Torrehermosa",
     "Ahillones",
     "Maguilla"
-   ]
+   ],
+   "canal_anterior": 51
   },
   "TL03BA": {
    "denominacion": "Badajoz",
-   "canal": 46,
+   "canal": 37,
    "ambito": [
     "Badajoz",
     "Montijo",
     "Olivenza",
     "Puebla de la Calzada",
     "Talavera la Real"
-   ]
+   ],
+   "canal_anterior": 41
   },
   "TL04BA": {
    "denominacion": "Castuera",
@@ -12172,12 +12245,13 @@
   },
   "TL07BA": {
    "denominacion": "Mérida",
-   "canal": 30,
+   "canal": 48,
    "ambito": [
     "Mérida",
     "Calamonte",
     "Arroyo de San Serván"
-   ]
+   ],
+   "canal_anterior": 30
   },
   "TL08BA": {
    "denominacion": "Navalvillar Pela",
@@ -12235,14 +12309,15 @@
   },
   "TL04CC": {
    "denominacion": "Miajadas",
-   "canal": 58,
+   "canal": 43,
    "ambito": [
     "Miajadas",
     "Madrigalejo",
     "Almoharín",
     "Campo Lugar",
     "Escurial"
-   ]
+   ],
+   "canal_anterior": 58
   },
   "TL05CC": {
    "denominacion": "Navalmoral Mata",
@@ -12258,11 +12333,12 @@
   },
   "TL06CC": {
    "denominacion": "Plasencia",
-   "canal": 35,
+   "canal": 28,
    "ambito": [
     "Plasencia",
     "Malpartida de Plasencia"
-   ]
+   ],
+   "canal_anterior": 35
   },
   "TL07CC": {
    "denominacion": "Trujillo",
@@ -12284,7 +12360,7 @@
   },
   "TL01C": {
    "denominacion": "Carballo",
-   "canal": 52,
+   "canal": 37,
    "ambito": [
     "Carballo",
     "Laracha (A)",
@@ -12293,7 +12369,8 @@
     "Ponteceso",
     "Cabana de Bergantiños",
     "Laxe"
-   ]
+   ],
+   "canal_anterior": 52
   },
   "TL02C": {
    "denominacion": "Coruña",
@@ -12357,7 +12434,7 @@
   },
   "TL06C": {
    "denominacion": "Vimianzo",
-   "canal": 51,
+   "canal": 43,
    "ambito": [
     "Vimianzo",
     "Cee",
@@ -12367,7 +12444,8 @@
     "Fisterra",
     "Dumbría",
     "Corcubión"
-   ]
+   ],
+   "canal_anterior": 51
   },
   "TL07C": {
    "denominacion": "Pontes García Rdguez",
@@ -12383,12 +12461,13 @@
   },
   "TL01LU": {
    "denominacion": "Chantada",
-   "canal": 52,
+   "canal": 29,
    "ambito": [
     "Chantada",
     "Taboada",
     "Carballedo"
-   ]
+   ],
+   "canal_anterior": 52
   },
   "TL02LU": {
    "denominacion": "Lugo",
@@ -12403,7 +12482,7 @@
   },
   "TL03LU": {
    "denominacion": "Monforte Lemos",
-   "canal": 49,
+   "canal": 30,
    "ambito": [
     "Monforte de Lemos",
     "Saviñao (O)",
@@ -12411,7 +12490,8 @@
     "Sober",
     "Pobra do Brollón (A)",
     "Bóveda"
-   ]
+   ],
+   "canal_anterior": 49
   },
   "TL04LU": {
    "denominacion": "Vilalba",
@@ -12442,7 +12522,7 @@
   },
   "TL01OU": {
    "denominacion": "Barco Valdeorras",
-   "canal": 56,
+   "canal": 45,
    "ambito": [
     "Barco de Valdeorras (O)",
     "Rúa (A)",
@@ -12452,11 +12532,12 @@
     "Veiga (A)",
     "Bolo (O)",
     "Petín"
-   ]
+   ],
+   "canal_anterior": 56
   },
   "TL02OU": {
    "denominacion": "Carballiño",
-   "canal": 42,
+   "canal": 27,
    "ambito": [
     "Carballiño (O)",
     "Boborás",
@@ -12466,22 +12547,24 @@
     "Piñor",
     "Beariz",
     "San Amaro"
-   ]
+   ],
+   "canal_anterior": 25
   },
   "TL03OU": {
    "denominacion": "Ourense",
-   "canal": 51,
+   "canal": 23,
    "ambito": [
     "Ourense",
     "Barbadás",
     "Pereiro de Aguiar (O)",
     "San Cibrao das Viñas",
     "Coles"
-   ]
+   ],
+   "canal_anterior": 51
   },
   "TL04OU": {
    "denominacion": "Verín",
-   "canal": 49,
+   "canal": 34,
    "ambito": [
     "Verín",
     "Monterrei",
@@ -12491,15 +12574,17 @@
     "Oímbra",
     "Laza",
     "Castrelo do Val"
-   ]
+   ],
+   "canal_anterior": 49
   },
   "TL01PO": {
    "denominacion": "Lalín",
-   "canal": 55,
+   "canal": 30,
    "ambito": [
     "Lalín",
     "Silleda"
-   ]
+   ],
+   "canal_anterior": 55
   },
   "TL02PO": {
    "denominacion": "Ponteareas",
@@ -12557,7 +12642,7 @@
   },
   "TL01LO": {
    "denominacion": "Calahorra",
-   "canal": 35,
+   "canal": 22,
    "ambito": [
     "Calahorra",
     "Arnedo",
@@ -12567,11 +12652,12 @@
     "Rincón de Soto",
     "Aldeanueva de Ebro",
     "Quel"
-   ]
+   ],
+   "canal_anterior": 35
   },
   "TL02LO": {
    "denominacion": "Haro",
-   "canal": 53,
+   "canal": 26,
    "ambito": [
     "Haro",
     "Nájera",
@@ -12579,7 +12665,8 @@
     "Ezcaray",
     "San Asensio",
     "San Vicente de la Sonsierra"
-   ]
+   ],
+   "canal_anterior": 53
   },
   "TL03LO": {
    "denominacion": "Logroño",
@@ -12611,7 +12698,7 @@
   },
   "TL02M": {
    "denominacion": "Alcobendas",
-   "canal": 51,
+   "canal": 27,
    "ambito": [
     "Alcobendas",
     "San Sebastián de los Reyes",
@@ -12625,7 +12712,8 @@
     "Molar (El)",
     "Cobeña",
     "Ajalvir"
-   ]
+   ],
+   "canal_anterior": 51
   },
   "TL03M": {
    "denominacion": "Aranjuez",
@@ -12685,10 +12773,11 @@
   },
   "TL07M": {
    "denominacion": "Madrid",
-   "canal": 50,
+   "canal": 48,
    "ambito": [
     "Madrid"
-   ]
+   ],
+   "canal_anterior": 50
   },
   "TL08M": {
    "denominacion": "Móstoles",
@@ -12720,7 +12809,7 @@
   },
   "TL10M": {
    "denominacion": "S. Martín Valdeiglesias",
-   "canal": 51,
+   "canal": 43,
    "ambito": [
     "San Martín de Valdeiglesias",
     "Villa del Prado",
@@ -12731,7 +12820,8 @@
     "Aldea del Fresno",
     "Chapinería",
     "Rozas de Puerto Real"
-   ]
+   ],
+   "canal_anterior": 51
   },
   "TL11M": {
    "denominacion": "Soto Real",
@@ -12764,12 +12854,13 @@
   },
   "TL02MU": {
    "denominacion": "Cartagena",
-   "canal": 56,
+   "canal": 47,
    "ambito": [
     "Cartagena",
     "Unión (La)",
     "Fuente Álamo de Murcia"
-   ]
+   ],
+   "canal_anterior": 56
   },
   "TL03MU": {
    "denominacion": "Cieza",
@@ -12784,7 +12875,7 @@
   },
   "TL04MU": {
    "denominacion": "Lorca",
-   "canal": 39,
+   "canal": 37,
    "ambito": [
     "Lorca",
     "Águilas",
@@ -12793,11 +12884,12 @@
     "Alhama de Murcia",
     "Puerto Lumbreras",
     "Aledo"
-   ]
+   ],
+   "canal_anterior": 39
   },
   "TL05MU": {
    "denominacion": "Molina Segura",
-   "canal": 56,
+   "canal": 48,
    "ambito": [
     "Molina de Segura",
     "Torres de Cotillas (Las)",
@@ -12811,7 +12903,8 @@
     "Albudeite",
     "Ulea",
     "Ojós"
-   ]
+   ],
+   "canal_anterior": 56
   },
   "TL06MU": {
    "denominacion": "Murcia",
@@ -12828,13 +12921,14 @@
   },
   "TL07MU": {
    "denominacion": "Torre-Pacheco",
-   "canal": 51,
+   "canal": 40,
    "ambito": [
     "Torre-Pacheco",
     "San Javier",
     "San Pedro del Pinatar",
     "Alcázares (Los)"
-   ]
+   ],
+   "canal_anterior": 51
   },
   "TL08MU": {
    "denominacion": "Yecla",
@@ -12860,7 +12954,7 @@
   },
   "TL02NA": {
    "denominacion": "Pamplona",
-   "canal": 38,
+   "canal": 39,
    "ambito": [
     "Pamplona/Iruña",
     "Barañain",
@@ -12874,7 +12968,8 @@
     "Egüés",
     "Huarte/Uharte",
     "Beriáin"
-   ]
+   ],
+   "canal_anterior": 38
   },
   "TL03NA": {
    "denominacion": "Sangüesa",
@@ -12931,10 +13026,11 @@
   },
   "TL02VI": {
    "denominacion": "Vitoria",
-   "canal": 56,
+   "canal": 42,
    "ambito": [
     "Vitoria-Gasteiz"
-   ]
+   ],
+   "canal_anterior": 56
   },
   "TL01SS": {
    "denominacion": "Beasain",
@@ -12961,14 +13057,15 @@
   },
   "TL03SS": {
    "denominacion": "Mondragón",
-   "canal": 52,
+   "canal": 25,
    "ambito": [
     "Arrasate/Mondragón",
     "Bergara",
     "Oñati",
     "Aretxabaleta",
     "Eskoriatza"
-   ]
+   ],
+   "canal_anterior": 52
   },
   "TL04SS": {
    "denominacion": "San Sebastián",
@@ -13061,14 +13158,15 @@
   },
   "TL05BI": {
    "denominacion": "Mungia",
-   "canal": 50,
+   "canal": 34,
    "ambito": [
     "Mungia",
     "Sopelana",
     "Berango",
     "Derio",
     "Zamudio"
-   ]
+   ],
+   "canal_anterior": 50
   },
   "TL06BI": {
    "denominacion": "Getxo",
@@ -13086,7 +13184,7 @@
   },
   "TL01A": {
    "denominacion": "Alcoy",
-   "canal": 56,
+   "canal": 48,
    "ambito": [
     "Alcoy/Alcoi",
     "Ibi",
@@ -13094,7 +13192,8 @@
     "Castalla",
     "Muro de Alcoy",
     "Onil"
-   ]
+   ],
+   "canal_anterior": 56
   },
   "TL02A": {
    "denominacion": "Alicante",
@@ -13138,12 +13237,13 @@
   },
   "TL05A": {
    "denominacion": "Elche",
-   "canal": 45,
+   "canal": 43,
    "ambito": [
     "Elche/Elx",
     "Crevillent",
     "Santa Pola"
-   ]
+   ],
+   "canal_anterior": 45
   },
   "TL06A": {
    "denominacion": "Elda",
@@ -13162,7 +13262,7 @@
   },
   "TL07A": {
    "denominacion": "Orihuela-Torrevieja",
-   "canal": 54,
+   "canal": 46,
    "ambito": [
     "Torrevieja",
     "Orihuela",
@@ -13171,11 +13271,12 @@
     "Almoradí",
     "Guardamar del Segura",
     "Albatera"
-   ]
+   ],
+   "canal_anterior": 54
   },
   "TL07V": {
    "denominacion": "Torrent",
-   "canal": 35,
+   "canal": 27,
    "ambito": [
     "Torrent",
     "Paterna",
@@ -13197,11 +13298,12 @@
     "Buñol",
     "Sedaví",
     "Cheste"
-   ]
+   ],
+   "canal_anterior": 35
   },
   "TL01CS": {
    "denominacion": "Castellón",
-   "canal": 50,
+   "canal": 42,
    "ambito": [
     "Castellón de la Plana/Castelló de la Plana",
     "Villarreal/Vila-real",
@@ -13216,7 +13318,8 @@
     "Oropesa del Mar/Orpesa",
     "Borriol",
     "Cabanes"
-   ]
+   ],
+   "canal_anterior": 50
   },
   "TL02CS": {
    "denominacion": "Morella",
@@ -13229,24 +13332,26 @@
   },
   "TL03CS": {
    "denominacion": "Vall Uixó-Segorbe",
-   "canal": null,
+   "canal": 47,
    "ambito": [
     "Vall d'Uixó (La)",
     "Segorbe",
     "Almenara",
     "Altura",
     "Jérica"
-   ]
+   ],
+   "canal_anterior": 48
   },
   "TL04CS": {
    "denominacion": "Vinaròs",
-   "canal": 46,
+   "canal": 44,
    "ambito": [
     "Vinaròs",
     "Benicarló",
     "Alcalà de Xivert",
     "Peñíscola"
-   ]
+   ],
+   "canal_anterior": 53
   },
   "TL01V": {
    "denominacion": "Alzira",
@@ -13314,10 +13419,11 @@
   },
   "TL06V": {
    "denominacion": "Valencia",
-   "canal": 23,
+   "canal": 37,
    "ambito": [
     "Valencia"
-   ]
+   ],
+   "canal_anterior": 23
   },
   "TL01CE": {
    "denominacion": "Ceuta",
@@ -13332,6 +13438,30 @@
    "ambito": [
     "Melilla"
    ]
+  },
+  "TL09IB": {
+   "denominacion": "Menorca",
+   "ambito": [],
+   "canal_anterior": 53,
+   "canal": 39
+  },
+  "TL06GC": {
+   "denominacion": "Gran Canaria",
+   "ambito": [],
+   "canal_anterior": 52,
+   "canal": 33
+  },
+  "TL07GC": {
+   "denominacion": "Lanzarote",
+   "ambito": [],
+   "canal_anterior": 28,
+   "canal": 26
+  },
+  "TL09TF": {
+   "denominacion": "Gomera",
+   "ambito": [],
+   "canal_anterior": 49,
+   "canal": 30
   }
  }
 }

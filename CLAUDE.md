@@ -46,6 +46,10 @@ completo: cálculos, planos DXF, memoria, pliego y presupuesto.
   prueba comprueba que coinciden.
 - `ict_ajp/plan_radio.py` + `ict_ajp/datos/plan_radio.json` — bloques DAB por provincia, emisoras FM
   por localidad y demarcaciones de TDT local (generado con `herramientas/generar_plan_radio.py`).
+- `ict_ajp/catalogo.py` + `ict_ajp/catalogos/televes.json` — catálogo de RTV del fabricante:
+  antenas, amplificadores T12, fuente, derivadores y repartidores/PAU serie F, tomas y cable
+  SK2003plus, cada uno con la URL de su ficha. Se genera con `herramientas/generar_catalogo_televes.py`
+  desde las fichas PDF descargadas (los PDF no se suben: son del fabricante).
 - `herramientas/boe_a_markdown.py` — pasa un XML del BOE a Markdown para `docs/normativa`.
 - `ict_ajp/__main__.py` — `python -m ict_ajp calcular proyecto.ict.json -o resultado.xlsx` y
   `python -m ict_ajp leer-dxf plano.dxf -o lectura.txt` y

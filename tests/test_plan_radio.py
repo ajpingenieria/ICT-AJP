@@ -33,7 +33,8 @@ def test_fm_lorca():                       # RD 964/2006, anexo II
 
 def test_tdt_local_lorca():                # RD 439/2004
     d = R.demarcacion_tdt_local("Águilas")
-    assert (d.referencia, d.denominacion, d.canal) == ("TL04MU", "Lorca", 39)
+    assert (d.referencia, d.denominacion, d.canal, d.canal_anterior) == ("TL04MU", "Lorca", 37, 39)  # RD 391/2019
+    assert R.demarcacion_tdt_local("Alcantarilla").canal_anterior is None   # TL06MU Murcia: sin cambio
     assert "Puerto Lumbreras" in d.ambito
     assert R.demarcacion_tdt_local("Baena").canal is None                   # «Canal múltiple: Pendiente*»
     assert R.demarcacion_tdt_local("Municipio inexistente") is None

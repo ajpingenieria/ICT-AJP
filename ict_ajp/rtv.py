@@ -88,14 +88,18 @@ def _tdt_local(s: "Seccion", R: "Resultado", municipio: str, canales_area: dict[
         R.aviso("info", f"{municipio} no pertenece a ninguna demarcación de TDT local.", PR.REF_TDT_LOCAL)
         return
     canal = str(dem.canal) if dem.canal else "pendiente en el plan"
-    s.add("TDT local", f"Demarcación {dem.referencia} {dem.denominacion}: canal {canal}", "", PR.REF_TDT_LOCAL,
-          "Ámbito: " + ", ".join(dem.ambito) + ".")
+    ref = PR.REF_TDT_LOCAL + (f"; {PR.REF_CAMBIO_LOCAL}" if dem.canal_anterior else "")
+    nota = "Ámbito: " + ", ".join(dem.ambito) + "."
+    if dem.canal_anterior:
+        nota += f" Canal cambiado del {dem.canal_anterior} al {dem.canal} por el segundo dividendo digital."
+    s.add("TDT local", f"Demarcación {dem.referencia} {dem.denominacion}: canal {canal}", "", ref, nota)
     choque = [m for m, c in canales_area.items() if c == dem.canal]
-    R.aviso("revisar", f"TDT local {dem.referencia} ({dem.denominacion}): el plan consolidado indica el canal {canal}, "
-            "pero el anexo III del Plan Técnico de la TDT de 2019 (RD 391/2019) reasignó canales locales"
-            + (f", y el {dem.canal} coincide con el del múltiple {', '.join(choque)} del área" if choque else "")
-            + ". Confirmar el canal vigente y si hay prestador con título habilitante: solo entonces es obligatorio "
-            "distribuirlo.", f"{PR.REF_TDT_LOCAL}; {N.ref('I', '4.1.6 y 4.1.7')}")
+    if choque:
+        R.aviso("revisar", f"TDT local {dem.referencia}: el canal {dem.canal} coincide con el del múltiple "
+                f"{', '.join(choque)} del área geográfica.", ref)
+    R.aviso("revisar", f"TDT local {dem.referencia} ({dem.denominacion}, canal {canal}): solo es obligatorio "
+            "distribuirla si hay un prestador con título habilitante en la demarcación. Confirmarlo; mientras tanto "
+            "se prevé su amplificador en cabecera.", f"{ref}; {N.ref('I', '4.1.6 y 4.1.7')}")
 
 
 def _radio(s: "Seccion", R: "Resultado", provincia: str, municipio: str) -> None:

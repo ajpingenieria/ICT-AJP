@@ -106,6 +106,7 @@ def leer_fm(fuente: Path = FM) -> dict:
 
 
 TDT_LOCAL = RAIZ / "docs" / "normativa" / "RD_439_2004_PTN_TDT_local_consolidado.md"
+CAMBIOS_TDT_LOCAL = RAIZ / "docs" / "normativa" / "RD_391_2019_PTN_TDT_2019_consolidado.md"
 
 
 def leer_tdt_local(fuente: Path = TDT_LOCAL) -> dict:
@@ -127,13 +128,27 @@ def leer_tdt_local(fuente: Path = TDT_LOCAL) -> dict:
         elif m := re.match(r"^Ámbito: (.+?)\.?$", l):
             partes = re.split(r", | y (?=[A-ZÁÉÍÓÚÑ])", m.group(1))
             actual["ambito"] = [p.strip() for p in partes if p.strip()]
+    # RD 391/2019, disposición final tercera y anexo III: canales locales reasignados (segundo dividendo)
+    lineas = CAMBIOS_TDT_LOCAL.read_text(encoding="utf-8").splitlines()
+    i = next(k for k, l in enumerate(lineas) if "Modificación de canales radioeléctricos del Plan Nacional de la "
+             "Televisión Digital Local" in l)
+    for l in lineas[i:]:
+        if l.startswith("## ANEXO IV"):
+            break
+        c = _celdas(l) if l.startswith("|") else []
+        if len(c) == 4 and re.fullmatch(r"T[LI]\d+[A-Z]+", c[0]):
+            if c[0] not in res:      # p. ej. TL09IB Menorca: no figura en el texto consolidado del RD 439/2004
+                res[c[0]] = {"denominacion": c[1].title(), "ambito": []}
+            res[c[0]]["canal_anterior"] = int(c[2])
+            res[c[0]]["canal"] = int(c[3])
     return res
 
 
 def leer() -> dict:
     return {"fuente_dab": "RD 1287/1999, Plan técnico nacional de la radiodifusión sonora digital terrestre",
             "fuente_fm": "RD 964/2006, Plan técnico nacional de radiodifusión sonora en FM, anexo II",
-            "fuente_tdt_local": "RD 439/2004, Plan técnico nacional de la televisión digital local",
+            "fuente_tdt_local": "RD 439/2004, Plan técnico nacional de la televisión digital local, con los canales "
+                                "modificados por el RD 391/2019 (disposición final tercera y anexo III)",
             "dab": leer_dab(), "fm": leer_fm(), "tdt_local": leer_tdt_local()}
 
 

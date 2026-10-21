@@ -19,6 +19,7 @@ from typing import Optional
 REF_DAB = "RD 1287/1999, Plan técnico nacional de la radiodifusión sonora digital terrestre"
 REF_FM = "RD 964/2006, Plan técnico nacional de radiodifusión sonora en FM, anexo II"
 REF_TDT_LOCAL = "RD 439/2004, Plan técnico nacional de la televisión digital local"
+REF_CAMBIO_LOCAL = "RD 391/2019, disposición final tercera y anexo III"
 ISLAS_CANARIAS = {"FUERTEVENTURA", "GOMERA", "GRAN CANARIA", "HIERRO", "LA PALMA", "LANZAROTE", "TENERIFE"}
 
 
@@ -80,11 +81,13 @@ class DemarcacionLocal:
     denominacion: str
     canal: Optional[int]
     ambito: tuple[str, ...]
+    canal_anterior: Optional[int] = None     # si el RD 391/2019 le cambió el canal
 
 
 def demarcacion_tdt_local(municipio: str) -> Optional[DemarcacionLocal]:
     k = _clave(municipio)
     for ref, v in _datos()["tdt_local"].items():
         if any(_clave(m) == k for m in v.get("ambito", [])):
-            return DemarcacionLocal(ref, v.get("denominacion", ""), v.get("canal"), tuple(v.get("ambito", [])))
+            return DemarcacionLocal(ref, v.get("denominacion", ""), v.get("canal"), tuple(v.get("ambito", [])),
+                                    v.get("canal_anterior"))
     return None

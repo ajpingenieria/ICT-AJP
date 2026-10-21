@@ -36,7 +36,11 @@ completo: cálculos, planos DXF, memoria, pliego y presupuesto.
 - `ict_ajp/dimensionado.py` — motor: devuelve secciones de partidas y tablas, más avisos
   (`revisar`, `decision`, `info`) para el proyectista.
 - `ict_ajp/exportar_excel.py` — exportación a Excel con referencias normativas.
-- `ict_ajp/__main__.py` — `python -m ict_ajp calcular proyecto.ict.json -o resultado.xlsx`.
+- `ict_ajp/leer_dxf.py` — lectura de la base DXF del arquitecto: plantas, viviendas (contornos de
+  superficie construida) y estancias (nombre + superficie rotulados), más RIT y ascensores dibujados.
+- `ict_ajp/__main__.py` — `python -m ict_ajp calcular proyecto.ict.json -o resultado.xlsx` y
+  `python -m ict_ajp leer-dxf plano.dxf -o lectura.txt` y
+  `python -m ict_ajp borrador plano.dxf -o proyecto.ict.json` (plantas y viviendas del DXF).
 - `docs/normativa/` — **textos consolidados oficiales del BOE** (RD 346/2011 actualizado hasta el
   RD 250/2025; Orden ITC/1644/2011). Son la única fuente para programar reglas.
 - `ejemplos/edificio_prueba.ict.json` — edificio de prueba (18 viviendas, 2 locales).
@@ -76,3 +80,9 @@ completo: cálculos, planos DXF, memoria, pliego y presupuesto.
 - Ascensor: 1 salida prevista por tecnología en el registro principal.
 - Segunda estancia principal: se equipan los dos registros de pares trenzados (3 tomas).
 - Tamaño del registro secundario: cuentan todas las plantas con PAU, incluida la planta baja.
+- Sin consulta a operadores (se hace en el replanteo, art. 8.4) se proyectan las tres redes.
+- El ático cuenta como altura para elegir RITU / RITU-A (`atico_cuenta_como_altura`).
+- Con RITU, los 3 tubos de Ø32 mm desde la centralización de contadores van al RITU.
+- Estancias que cuentan para tomas: salón, comedor, cocina, dormitorios y estudio. No cuentan
+  vestíbulos, pasos, lavaderos, vestidores ni espacios exteriores. La otra estancia con BAT doble
+  es el dormitorio mayor.

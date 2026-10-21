@@ -15,7 +15,36 @@ def main(argv=None) -> int:
     c = sub.add_parser("calcular", help="Dimensiona el proyecto y exporta los resultados a Excel")
     c.add_argument("proyecto", type=Path)
     c.add_argument("-o", "--salida", type=Path)
+    d = sub.add_parser("leer-dxf", help="Lee plantas, viviendas y estancias de la base DXF del arquitecto")
+    d.add_argument("plano", type=Path)
+    d.add_argument("-o", "--salida", type=Path, help="Guardar el informe en un archivo de texto")
+    b = sub.add_parser("borrador", help="Crea un proyecto .ict.json con las plantas y viviendas del DXF")
+    b.add_argument("plano", type=Path)
+    b.add_argument("-o", "--salida", type=Path, required=True)
+    b.add_argument("--nombres", choices=["planta_letra", "letras_seguidas"], default="planta_letra",
+                   help="1ºA, 1ºB... Ático A (por defecto) o A, B, C... de abajo arriba")
     a = ap.parse_args(argv)
+
+    if a.orden == "borrador":
+        from .leer_dxf import leer_plano, proyecto_desde_lectura
+        if a.salida.exists():
+            print(f"{a.salida} ya existe: no se sobrescribe para no perder datos ya completados.")
+            return 1
+        p = proyecto_desde_lectura(leer_plano(a.plano), a.nombres)
+        p.guardar(a.salida)
+        print(f"Borrador guardado en {a.salida}:")
+        for pl in p.edificio.plantas:
+            print(f"  {pl.nombre}: {', '.join(u.id for u in pl.usuarios) or 'sin viviendas'}")
+        return 0
+
+    if a.orden == "leer-dxf":
+        from .leer_dxf import informe, leer_plano
+        texto = informe(leer_plano(a.plano))
+        if a.salida:
+            a.salida.write_text(texto + "\n", encoding="utf-8")
+            print(f"Informe guardado en {a.salida}")
+        print(texto)
+        return 0
 
     p = Proyecto.cargar(a.proyecto)
     res = dimensionar(p)

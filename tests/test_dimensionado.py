@@ -41,6 +41,45 @@ def test_estudio_minimo_dos_tomas_rtv():
     assert interior_usuario(u, True).reg_rtv == 2
 
 
+def test_sin_consulta_a_operadores_se_proyectan_las_tres_redes():
+    p = Proyecto.cargar(EJEMPLO)
+    p.operadores.coaxial = False
+    p.operadores.consulta_realizada = False
+    r = dimensionar(p)
+    assert not partida(r, "redes", "Acometidas coaxiales de dispersión").nota
+    assert any("art. 8" in a.referencia and a.nivel == "info" for a in r.avisos)
+    p.operadores.consulta_realizada = True      # consulta hecha y sin operador de cable
+    r = dimensionar(p)
+    assert "hilo guía" in partida(r, "redes", "Acometidas coaxiales de dispersión").nota
+
+
+def _edificio_ritu(n_plantas: int, atico: bool, cuenta: bool):
+    p = Proyecto.cargar(EJEMPLO)
+    plantas = [pl for pl in p.edificio.plantas if 0 < pl.nivel <= n_plantas]
+    plantas[-1].es_atico = atico
+    p.edificio.plantas = plantas
+    p.edificio.recintos = "RITU"
+    p.opciones.atico_cuenta_como_altura = cuenta
+    return dimensionar(p)
+
+
+def test_atico_y_recinto_unico():
+    conceptos = lambda r: [x.concepto for x in r.seccion("infra").partidas]   # noqa: E731
+    # 4 alturas con ático que cuenta -> RITU-A; si no cuenta -> 3 alturas -> RITU
+    r = _edificio_ritu(4, atico=True, cuenta=True)
+    assert any(c.startswith("RITU-A") for c in conceptos(r))
+    assert any(a.nivel == "decision" and "ático se cuenta" in a.texto for a in r.avisos)
+    r = _edificio_ritu(4, atico=True, cuenta=False)
+    assert any(c.startswith("RITU (") for c in conceptos(r))
+    # Con recinto único, los textos hablan del RITU y los 3 tubos de contadores van a él
+    assert "desde el RITU" in partida(r, "redes", "Red de fibra óptica").valor
+    assert partida(r, "recintos", "Canalizaciones desde centralización").valor == "3 tubos Ø32 mm al RITU"
+    # Sin ático no hay aviso de criterio
+    r = _edificio_ritu(3, atico=False, cuenta=True)
+    assert any(c.startswith("RITU (") for c in conceptos(r))
+    assert not any("ático" in a.texto for a in r.avisos)
+
+
 def test_distancia_mayor_100_usa_pares():
     p = Proyecto.cargar(EJEMPLO)
     p.edificio.distancia_max_pi_pau_m = 120

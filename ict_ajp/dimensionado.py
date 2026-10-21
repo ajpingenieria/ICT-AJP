@@ -179,6 +179,8 @@ def dimensionar(p: Proyecto) -> Resultado:
     plantas = sorted(ed.plantas, key=lambda x: x.nivel)
     usuarios = ed.usuarios()
     n_pau = len(usuarios)
+    # Recinto donde está el registro principal: RITU cuando se admite recinto único (Anexo III 4.5.3)
+    rit_inf = "RITU" if ed.recintos == "RITU" and n_pau <= N.RITU_A_MAX_PAU else "RITI"
     if n_pau == 0:
         raise ValueError("El edificio no tiene viviendas, locales ni estancias comunes.")
     plantas_con_pau = [pl for pl in plantas if pl.usuarios]
@@ -199,8 +201,14 @@ def dimensionar(p: Proyecto) -> Resultado:
     nombre_cobre = "pares trenzados (cat. 6)" if cobre == "pares_trenzados" else "pares (multipar)"
 
     if not ops.consulta_realizada:
-        R.aviso("revisar", "Falta la consulta a operadores. Condiciona la ubicación de la arqueta, la asignación "
-                "de tubos de la canalización externa y qué redes se cablean.", f"{N.RD}, art. 8")
+        # Art. 8.4: la consulta se hace justo antes del inicio de obra, en el replanteo, y su resultado
+        # solo decide qué redes se cablean al principio (art. 8.1). Mientras tanto se proyectan todas.
+        ops = ops.model_copy(update={"pares_trenzados": True, "coaxial": True, "fibra": True})
+        R.aviso("info", "Consulta a operadores pendiente: se hace en el replanteo, justo antes de empezar la obra, "
+                "y se refleja en el acta de replanteo. El proyecto incluye las tres redes (pares trenzados, coaxial "
+                "y fibra). Las que ningún operador vaya a usar se dejarán solo canalizadas con hilo guía (Anexo II, "
+                "3.1.x.b), y la consulta confirma la ubicación de la arqueta de entrada.",
+                f"{N.RD}, art. 8.1 y 8.4")
 
     # --- 1. Datos del edificio ----------------------------------------------
     s = Seccion("edificio", "Datos del edificio")
@@ -279,7 +287,7 @@ def dimensionar(p: Proyecto) -> Resultado:
                 and not u.distribucion_definida]
     if sin_dist:
         R.aviso("info", f"Locales/oficinas sin distribución definida ({', '.join(sin_dist)}): sus acometidas se dejan "
-                "disponibles en el registro secundario de la planta (fibra en el RITI si hay menos de 15 PAU).",
+                f"disponibles en el registro secundario de la planta (fibra en el {rit_inf} si hay menos de 15 PAU).",
                 N.ref("II", "3.1.3.a.ii.2 / 3.1.4.a.ii.2"))
     R.secciones.append(s)
 
@@ -304,7 +312,7 @@ def dimensionar(p: Proyecto) -> Resultado:
             rep = _repartir(reserva, dem_pl)
             filas = [[pl.nombre, d, r, d + r] for pl, d, r in zip(plantas_v, dem_pl, rep)]
             if comunes:
-                filas.append(["Instalaciones comunes (desde RITI)", comunes, 0, comunes])
+                filas.append([f"Instalaciones comunes (desde {rit_inf})", comunes, 0, comunes])
             s.tablas.append(Tabla(f"Cables de pares trenzados por planta{sufijo}",
                                   ["Planta", "Demanda", "Reserva", "Cables cat. 6"], filas, N.ref("II", "3.3.1"),
                                   ["TOTAL", d_cobre, reserva, total_cables]))
@@ -331,7 +339,7 @@ def dimensionar(p: Proyecto) -> Resultado:
         d_cx = sum(dem[u.id]["coaxial"] for _, u in us_v) + comunes
         estrella = pau_v <= N.COAXIAL_ESTRELLA_MAX_PAU
         if estrella:
-            s.add(f"Red coaxial{sufijo}", f"Estrella: {d_cx} cables coaxiales desde el RITI", "cables",
+            s.add(f"Red coaxial{sufijo}", f"Estrella: {d_cx} cables coaxiales desde el {rit_inf}", "cables",
                   N.ref("II", "3.3.3.a.i"), "Con 20 PAU o menos.")
             reg_cx_salida += d_cx
         else:
@@ -349,7 +357,7 @@ def dimensionar(p: Proyecto) -> Resultado:
         if pau_v <= N.FIBRA_ACOMETIDAS_DIRECTAS_MAX_PAU:
             n_acom = math.ceil(d_fo * N.FACTOR_RESERVA)
             fibras = n_acom * N.FIBRAS_POR_ACOMETIDA
-            s.add(f"Red de fibra óptica{sufijo}", f"{n_acom} cables de acometida de 2 fibras desde el RITI", "cables",
+            s.add(f"Red de fibra óptica{sufijo}", f"{n_acom} cables de acometida de 2 fibras desde el {rit_inf}", "cables",
                   N.ref("II", "3.3.4.a"), f"{d_fo} acometidas x 1,2 (20 PAU o menos: acometidas directas).")
             datos_fo = {"tipo": "acometidas", "cables": n_acom, "fibras": fibras}
         else:
@@ -446,6 +454,13 @@ def dimensionar(p: Proyecto) -> Resultado:
           "", N.ref("III", "5.4.2"), f"Registros de enlace, si hacen falta: {N.REGISTRO_ENLACE_SUPERIOR}.")
 
     n_alturas = len([pl for pl in plantas if pl.nivel > 0])
+    aticos = [pl for pl in plantas if pl.nivel > 0 and pl.es_atico]
+    if aticos and ed.recintos == "RITU":
+        if not op.atico_cuenta_como_altura:
+            n_alturas -= len(aticos)
+        R.aviso("decision", f"El ático {'se cuenta' if op.atico_cuenta_como_altura else 'no se cuenta'} como altura "
+                f"para elegir el recinto único: planta baja + {n_alturas} alturas. La norma no define «altura».",
+                N.ref("III", "4.5.3"))
     if ed.recintos == "RITU":
         if n_pau <= N.RITU_MAX_PAU and n_alturas <= N.RITU_MAX_ALTURAS:
             r = N.ritu(n_pau, ed.zonas_comunes)
@@ -541,14 +556,22 @@ def dimensionar(p: Proyecto) -> Resultado:
           f"Opción {op.opcion_rtr}: {desc}, {dims}. Entre 200 y 2.300 mm del suelo, con 2 bases de enchufe.")
     if ed.ascensores:
         s.add("Canalización a cuarto de máquinas de ascensor",
-              f"{ed.ascensores} x tubo Ø{N.ASCENSOR_TUBO_DIAM_MM} mm con hilo guía desde el RITI, "
+              f"{ed.ascensores} x tubo Ø{N.ASCENSOR_TUBO_DIAM_MM} mm con hilo guía desde el {rit_inf}, "
               "terminado en registro de toma con tapa ciega", "", N.ref("II", "3.1.5"))
     R.secciones.append(s)
 
     # --- 6. Instalaciones de los recintos -----------------------------------
     s = Seccion("recintos", "Instalaciones de los recintos")
-    s.add("Canalizaciones desde centralización de contadores", "2 tubos Ø32 mm al RITI y 1 tubo Ø32 mm al RITS",
-          "", N.ref("III", "5.5.5"), "Espacio para 2 contadores de operadores en la centralización.")
+    if rit_inf == "RITU":
+        # Anexo III 5.5.5: «dos canalizaciones hasta el RITI, o hasta el RITU en los casos en que proceda,
+        # y una hasta el RITS». Sin RITS no dice qué pasa con la tercera: se lleva también al RITU.
+        s.add("Canalizaciones desde centralización de contadores", "3 tubos Ø32 mm al RITU",
+              "", N.ref("III", "5.5.5"), "Espacio para 2 contadores de operadores en la centralización.")
+        R.aviso("decision", "Con recinto único se llevan 3 tubos Ø32 mm desde la centralización de contadores al "
+                "RITU: los 2 que pide la norma y el que iría al RITS.", N.ref("III", "5.5.5"))
+    else:
+        s.add("Canalizaciones desde centralización de contadores", "2 tubos Ø32 mm al RITI y 1 tubo Ø32 mm al RITS",
+              "", N.ref("III", "5.5.5"), "Espacio para 2 contadores de operadores en la centralización.")
     s.add("Línea desde el Cuadro de Servicios Generales a cada recinto", "Cu 450/750 V, 2x6+T mm² en tubo Ø32 mm",
           "", N.ref("III", "5.5.5"))
     s.add("Cuadro de protección de cada recinto",

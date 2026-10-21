@@ -75,6 +75,7 @@ class Planta(BaseModel):
     nombre: str
     nivel: int = Field(description="0 = planta baja, negativos bajo rasante.")
     altura_m: Optional[float] = None
+    es_atico: bool = Field(False, description="Planta ático (ver OpcionesDiseno.atico_cuenta_como_altura).")
     usuarios: list[Usuario] = []
 
 
@@ -141,6 +142,8 @@ class OpcionesDiseno(BaseModel):
     regleta_pares: Literal[5, 10] = 10
     prevision_ascensor_por_tecnologia: int = Field(
         1, description="Salidas previstas en el registro principal para cada ascensor (Anexo II, 3.1.5).")
+    atico_cuenta_como_altura: bool = Field(
+        True, description="La norma no define «altura» (Anexo III, 4.5.3): contar el ático es lo conservador.")
 
 
 class Proyecto(BaseModel):

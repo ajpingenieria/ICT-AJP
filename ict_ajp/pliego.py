@@ -181,6 +181,15 @@ def generar_pliego(p: Proyecto, res: Resultado, ruta: str | Path, plantilla: Opt
               f"o desagües y se garantizará su protección frente a la humedad ({N.ref('III', '5.5.3')}). La "
               "canalización de telecomunicación se separará de las de otros servicios 100 mm en trazados paralelos "
               f"y 30 mm en cruces ({N.ref('III', '8')}).")
+    if p.edificio.ascensores and p.opciones.exigir_distancia_maquinaria_ascensor:
+        d.parrafo("Condición particular: el motor y el armario de maniobra del ascensor se situarán a 2 m como mínimo "
+                  f"de los recintos de instalaciones de telecomunicación ({N.ref('III', '5.5.3')}).")
+    d.parrafo("La arqueta de entrada y la canalización externa son exclusivas de la ICT: no se compartirán con otros "
+              f"servicios (baja tensión, alumbrado, agua...) ({N.ref('III', '8')}). Arqueta de entrada de "
+              f"{R.valor('infra', 'Arqueta de entrada')} ({N.ref('III', '5.1')}); canalización externa de "
+              f"{R.valor('infra', 'Canalización externa')}, lo más rectilínea posible, con arquetas de paso de "
+              f"400 × 400 × 400 mm cada 50 m y en los cambios de dirección ({N.ref('III', '5.2')}). Su ubicación "
+              "definitiva se confirmará con la consulta a los operadores en el replanteo.")
     d.parrafo("b) Características de las arquetas.", bold=True)
     d.parrafo(f"Arqueta de entrada de {R.valor('infra', 'Arqueta de entrada')}. Soportará las sobrecargas "
               "normalizadas y el empuje del terreno; tapa conforme a UNE-EN 124 clase B 125 (rotura superior a 125 kN), "
@@ -288,10 +297,26 @@ def generar_pliego(p: Proyecto, res: Resultado, ruta: str | Path, plantilla: Opt
               "En los pasos de canalizaciones a través de elementos de compartimentación se mantendrá su resistencia "
               f"al fuego, según el apartado SI 1-3 del documento básico DB SI ({N.ref('II', '7.3')}), en coordinación "
               f"con el proyecto de edificación. Normativa: {_cita(normas, 'rd_314_2006')} (Código Técnico de la "
-              f"Edificación, DB SI) y {_cita(normas, 'orden_ece_983_2019')}. [A VERIFICAR: clase de reacción al fuego "
-              "exigida a cada cable por la Orden ECE/983/2019; el cable coaxial prescrito es Dca]")
+              f"Edificación, DB SI) y {_cita(normas, 'orden_ece_983_2019')}.")
+    d.parrafo(f"Todos los cables de la ICT (coaxiales de radiodifusión y televisión y de banda ancha, de pares, de "
+              f"pares trenzados y de fibra óptica) tendrán como mínimo la clase de reacción al fuego "
+              f"{N.CLASE_FUEGO_CABLES_ICT}, con marcado conforme a la norma UNE-EN 50575 ({N.REF_ECE_983}). Si "
+              "comparten canalización o conducto con cables de otro tipo (por ejemplo, eléctricos), todo el conjunto "
+              "cumplirá los requisitos de la legislación más estricta (nota de la tabla 1). " + _clase_cable(cat))
     d.firma(fecha_texto(fecha))
     return d.guardar(ruta), d.titulos
+
+
+def _clase_cable(cat: dict) -> str:
+    """Comprueba la euroclase del cable coaxial prescrito (dato de su ficha) frente al mínimo de la Orden."""
+    cab = cat["cables"][0] if cat.get("cables") else None
+    if not cab:
+        return ""
+    clase = cab.get("euroclase", "")
+    if N.cumple_clase_fuego(clase):
+        return f"El cable coaxial prescrito ({cab['ref']}) es de euroclase {clase} según su ficha: cumple."
+    return (f"[A VERIFICAR: que la euroclase del cable {cab['ref']} ({clase or 'sin dato'}) es igual o superior a "
+            f"{N.CLASE_FUEGO_CABLES_ICT}]")
 
 
 def _niveles_cabecera(R: _Res) -> str:

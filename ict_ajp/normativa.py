@@ -13,6 +13,7 @@ from __future__ import annotations
 
 import math
 from dataclasses import dataclass
+from typing import Optional
 
 RD = "RD 346/2011"
 
@@ -363,3 +364,21 @@ def admite_banda_ancha(tomas: int) -> Regla:
 # Anexo I, 4.1.6, tabla «Radiodifusión sonora terrestre»: campo por encima del cual hay que distribuir
 CAMPO_MINIMO_FM_ESTEREO = {"rural": 54, "urbano": 66, "gran_ciudad": 74}   # dBµV/m, 87,5-108,0 MHz
 CAMPO_MINIMO_DAB = 58                                                       # dBµV/m, 195,0-223,0 MHz
+
+# ---------------------------------------------------------------------------
+# Orden ECE/983/2019: reacción al fuego de los cables de telecomunicaciones
+# ---------------------------------------------------------------------------
+
+REF_ECE_983 = "Orden ECE/983/2019, anexo, tabla 1"
+# Nivel mínimo obligatorio para todos los cables de la ICT (coaxial RTV, pares, coaxial TBA, fibra, pares
+# trenzados), con marcado según UNE-EN 50575. Sustituye a los requisitos de fuego de los anexos del Reglamento.
+CLASE_FUEGO_CABLES_ICT = "Dca-s2,d2,a2"
+
+def cumple_clase_fuego(clase: str, minima: str = CLASE_FUEGO_CABLES_ICT) -> Optional[bool]:
+    """True si la euroclase es la mínima de la Orden ECE/983/2019; None si es otra.
+
+    La escala de clases (cuál es «mejor») está en el Reglamento Delegado (UE) 2016/364, que no está en
+    docs/normativa: no se programa de memoria, y cualquier clase distinta se deja para que la verifique
+    el proyectista.
+    """
+    return True if clase.replace(" ", "") == minima else None

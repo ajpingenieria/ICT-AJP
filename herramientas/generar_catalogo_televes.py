@@ -120,8 +120,15 @@ def generar(carpeta: Path, fecha: str) -> dict:
                 m = re.match(r"Atenuación (\d+)MHz dB/m ([\d,]+)", fila)
                 if m:
                     aten[int(m.group(1))] = _num(m.group(2))
+            def _ultimo(prefijo):
+                fila = next((x for x in e if x.startswith(prefijo)), "")
+                return fila.split()[-1] if fila else ""
+            euroclase = _ultimo("Euroclase Dca") or _ultimo("Euroclase ")
+            sub = [_ultimo(p) for p in ("Euroclase: Emisión de humos", "Euroclase: Caída de partículas",
+                                        "Euroclase: Acidez")]
             cat["cables"].append({"ref": ref, "nombre": NOMBRES_TEC[ref], "atenuacion_db_m": aten,
-                                  "fuente": fuente(ref)})
+                                  "euroclase": "-".join([euroclase, ",".join(x for x in sub if x)]) if all(sub)
+                                  else euroclase, "fuente": fuente(ref)})
             continue
         bandas = next(x for x in e if x.startswith("Bandas"))[7:].split()
         toma = {"ref": ref, "nombre": NOMBRES_TEC[ref], "bandas": bandas,

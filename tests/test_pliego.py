@@ -31,6 +31,17 @@ def test_estructura_y_contenido(tmp_path):
     assert "Ley 11/2022, de 28 de junio, General de Telecomunicaciones" in texto
 
 
+def test_reaccion_al_fuego_de_los_cables(tmp_path):
+    from ict_ajp import normativa as N
+    assert N.CLASE_FUEGO_CABLES_ICT == "Dca-s2,d2,a2"                    # Orden ECE/983/2019, anexo, tabla 1
+    assert N.cumple_clase_fuego("Dca-s2,d2,a2") is True
+    assert N.cumple_clase_fuego("Eca") is None                           # otra clase: la verifica el proyectista
+    p = Proyecto.cargar(EJEMPLO)
+    ruta, _ = generar_pliego(p, dimensionar(p), tmp_path / "p.docx", Plantilla.cargar(tmp_path))
+    texto = "\n".join(x.text for x in docx.Document(str(ruta)).paragraphs)
+    assert "clase de reacción al fuego Dca-s2,d2,a2" in texto and "414002) es de euroclase Dca-s2,d2,a2" in texto
+
+
 def test_normas_generales_comprobadas_en_el_boe():
     normas = json.loads(NORMAS_GENERALES.read_text(encoding="utf-8"))["normas"]
     assert normas["rd_1580_2006"]["vigente"] is False                    # derogado: no se cita como vigente

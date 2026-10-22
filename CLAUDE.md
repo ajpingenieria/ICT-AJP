@@ -74,7 +74,8 @@ completo: cálculos, planos DXF, memoria, pliego y presupuesto.
 - `docs/normativa/` — **textos consolidados oficiales del BOE** (RD 346/2011 actualizado hasta el
   RD 250/2025; Orden ITC/1644/2011; RD 250/2025 Plan Técnico Nacional de la TDT y su corrección de
   errores; Resolución de 23/07/2026 de la fase 1 de DVB-T2; planes técnicos de TDT local RD 439/2004,
-  DAB RD 1287/1999 y FM RD 964/2006). Son la única fuente para programar reglas.
+  DAB RD 1287/1999 y FM RD 964/2006; Orden ECE/983/2019 de reacción al fuego de los cables). Son la única
+  fuente para programar reglas.
 - `ejemplos/edificio_prueba.ict.json` — edificio de prueba (18 viviendas, 2 locales).
 - `tests/` — `pytest -q`. Las pruebas corren en Windows y Linux con GitHub Actions en cada subida.
 

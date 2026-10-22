@@ -219,9 +219,15 @@ def generar_memoria(p: Proyecto, res: Resultado, ruta: str | Path, plantilla: Op
               "y los cruces se harán preferentemente pasando la canalización de telecomunicación por encima, con una "
               "separación mínima de 100 mm en trazados paralelos y de 30 mm en cruces; en la canalización interior "
               "de usuario basta con 30 mm en todos los casos (" + N.ref("III", "8") + ").")
-    d.parrafo("Los recintos se separarán al menos 2 m de la maquinaria de ascensores, o se dotarán de protección "
-              "frente a campos electromagnéticos (" + N.ref("III", "5.5.3") + "). [A VERIFICAR: tipo de ascensor y "
-              "posición de su maquinaria respecto al RITS]")
+    if ed.ascensores and p.opciones.exigir_distancia_maquinaria_ascensor:
+        d.parrafo("Los recintos de instalaciones de telecomunicación se distanciarán un mínimo de 2 m de la "
+                  "maquinaria de ascensores (" + N.ref("III", "5.5.3") + "). En consecuencia, se prescribe que el "
+                  "motor y el armario de maniobra del ascensor se sitúen a 2 m como mínimo de los recintos; si el "
+                  "ascensor elegido no lo permite, deberá comunicarse al proyectista de la ICT antes de su instalación.")
+    elif ed.ascensores:
+        d.parrafo("Los recintos se separarán al menos 2 m de la maquinaria de ascensores, o se dotarán de protección "
+                  "frente a campos electromagnéticos (" + N.ref("III", "5.5.3") + "). [A VERIFICAR: tipo de ascensor y "
+                  "posición de su maquinaria respecto a los recintos]")
 
     d.firma(fecha_texto(fecha))
     return d.guardar(ruta), d.titulos

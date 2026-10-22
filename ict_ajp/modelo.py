@@ -174,6 +174,9 @@ class OpcionesDiseno(BaseModel):
         None, description="Altura libre donde va el RITI (o RITU). Si se indica, se estrecha el recinto (5.5.1).")
     altura_libre_rits_mm: Optional[int] = Field(
         None, description="Altura libre donde va el RITS. Si se indica, se estrecha el recinto (5.5.1).")
+    exigir_distancia_maquinaria_ascensor: bool = Field(
+        True, description="Prescribir que la maquinaria y el armario de maniobra del ascensor queden a 2 m como "
+        "mínimo de los recintos (Anexo III, 5.5.3), en lugar de confiar en una protección electromagnética.")
     atico_cuenta_como_altura: bool = Field(
         True, description="La norma no define «altura» (Anexo III, 4.5.3): contar el ático es lo conservador.")
 

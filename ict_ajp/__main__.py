@@ -39,7 +39,18 @@ def main(argv=None) -> int:
         m.add_argument("proyecto", type=Path)
         m.add_argument("-o", "--salida", type=Path, help="Archivo .docx (por defecto, junto al proyecto)")
         m.add_argument("--plantilla", type=Path, help="Carpeta con empresa.json y logos de AJP")
+    pl = sub.add_parser("planos", help="Dibuja las plantas de la ICT sobre la base DXF del arquitecto (DXF, PNG y PDF)")
+    pl.add_argument("proyecto", type=Path)
+    pl.add_argument("--base", type=Path, help="DXF del arquitecto (por defecto, el de planos.base_dxf del proyecto)")
+    pl.add_argument("-o", "--salida", type=Path, help="DXF de salida (por defecto, junto a la base)")
+    pl.add_argument("--plantilla", type=Path, help="Carpeta con empresa.json de AJP (autor del cajetín)")
+    pl.add_argument("--sin-imagenes", action="store_true", help="Sin vistas previas PNG ni PDF (más rápido)")
+    pl.add_argument("--actualizar-longitudes", action="store_true",
+                    help="Guardar en el proyecto las longitudes medidas para el cálculo de RTV")
     a = ap.parse_args(argv)
+
+    if a.orden == "planos":
+        return _planos(a)
 
     if a.orden in ("memoria", "pliego"):
         from .documento import Plantilla
@@ -96,6 +107,46 @@ def main(argv=None) -> int:
     print(f"Dimensionado exportado a {salida}")
     for av in res.avisos:
         print(f"  [{av.nivel}] {av.texto}")
+    return 0
+
+
+def _planos(a) -> int:
+    from .documento import Plantilla
+    from .leer_dxf import leer_plano
+    from .planos_ict import datos_cajetin, generar_planos, resumen_longitudes
+
+    p = Proyecto.cargar(a.proyecto)
+    base = a.base or (Path(p.planos.base_dxf) if p.planos.base_dxf else None)
+    if base and not base.is_absolute():
+        base = (a.proyecto.parent / base).resolve()
+    if not base or not base.exists():
+        print("Falta la base DXF del arquitecto: indíquela con --base o en «planos.base_dxf» del proyecto.")
+        return 1
+    nombre = (p.datos_generales.numero + " - " if p.datos_generales.numero else "") + "Planos ICT.dxf"
+    salida = a.salida or base.parent / nombre
+    res = generar_planos(base, leer_plano(base), p, salida, datos_cajetin(p, Plantilla.cargar(a.plantilla)),
+                         mastil=p.planos.mastil_xy, holgura_vertical_m=p.planos.holgura_vertical_m,
+                         imagenes=not a.sin_imagenes, pdf=not a.sin_imagenes, acceso_cubierta=p.planos.acceso_cubierta)
+    print(f"Planos de la ICT: {res.ruta} (escala 1:{res.escala})")
+    for nombre_hoja, img in zip(res.presentaciones, res.imagenes):
+        print(f"  {nombre_hoja}: {img.name}")
+    if res.pdf:
+        print(f"PDF: {res.pdf}")
+    print("Longitudes medidas en planta (con la holgura vertical):")
+    for m in res.mediciones:
+        print(f"  {m.vivienda}: secundaria {m.secundaria_m:.1f} m; interior hasta cada toma de RTV "
+              + ", ".join(f"{x:.1f}" for x in m.interior_m) + " m")
+    for av in res.avisos:
+        print(f"  [revisar] {av}")
+    lon = resumen_longitudes(res.mediciones)
+    if a.actualizar_longitudes and res.mediciones:
+        r = p.rtv
+        r.long_acometida_min_m, r.long_acometida_max_m = lon["acometida_min"], lon["acometida_max"]
+        r.long_interior_min_m, r.long_interior_max_m = lon["interior_min"], lon["interior_max"]
+        r.longitudes_medidas = True
+        p.guardar(a.proyecto)
+        print(f"Longitudes de RTV guardadas en {a.proyecto}: acometida {lon['acometida_min']:.1f}-"
+              f"{lon['acometida_max']:.1f} m, interior {lon['interior_min']:.1f}-{lon['interior_max']:.1f} m")
     return 0
 
 

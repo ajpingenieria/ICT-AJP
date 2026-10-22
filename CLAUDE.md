@@ -38,7 +38,15 @@ completo: cálculos, planos DXF, memoria, pliego y presupuesto.
 - `ict_ajp/exportar_excel.py` — exportación a Excel con referencias normativas.
 - `ict_ajp/leer_dxf.py` — lectura de la base DXF del arquitecto: plantas, viviendas (contornos de
   superficie construida) y estancias (nombre + superficie rotulados), más RIT y ascensores dibujados.
-- `ict_ajp/vista_previa.py` — imagen PNG de un DXF o de una zona (para revisar y para las entregas).
+- `ict_ajp/vista_previa.py` — imagen PNG de un DXF, de una zona o de una presentación, y PDF vectorial de
+  las presentaciones a tamaño real; con `resaltar` la base del arquitecto sale en gris y la ICT en color.
+- `ict_ajp/planos_ict.py` — plantas de la ICT sobre la base DXF del arquitecto: copia su vista de
+  distribución (sin su marco ni título) y dibuja en capas `ICT_` el registro secundario y la canalización
+  principal, el RTR con la toma configurable, los registros de toma junto a la pared de cada estancia
+  (polilíneas de superficie útil), los tubos, los recintos, la arqueta de entrada y el mástil con el enlace
+  superior. Hojas A3 con el cajetín de AJP y leyenda, todas a la misma escala, PNG de cada una y un PDF.
+  Mide las longitudes RS-RTR y RTR-toma de RTV para el cálculo de niveles. Los datos del edificio (base DXF,
+  mástil, acceso a cubierta) van en `planos` del `.ict.json`.
 - `ict_ajp/rtv.py` — radio y televisión: canales de TDT del emplazamiento, campo de diseño, tipo de
   cabecera y previsión de satélite.
 - `ict_ajp/plan_tdt.py` + `ict_ajp/datos/plan_tdt.json` — áreas y canales del Plan Técnico Nacional
@@ -70,7 +78,9 @@ completo: cálculos, planos DXF, memoria, pliego y presupuesto.
 - `herramientas/boe_a_markdown.py` — pasa un XML del BOE a Markdown para `docs/normativa`.
 - `ict_ajp/__main__.py` — `python -m ict_ajp calcular proyecto.ict.json -o resultado.xlsx` y
   `python -m ict_ajp leer-dxf plano.dxf -o lectura.txt` y
-  `python -m ict_ajp borrador plano.dxf -o proyecto.ict.json` (plantas y viviendas del DXF).
+  `python -m ict_ajp borrador plano.dxf -o proyecto.ict.json` (plantas y viviendas del DXF) y
+  `python -m ict_ajp planos proyecto.ict.json [--actualizar-longitudes]` (plantas de la ICT en DXF, PNG y PDF;
+  con la opción, guarda en el proyecto las longitudes medidas para RTV).
 - `docs/normativa/` — **textos consolidados oficiales del BOE** (RD 346/2011 actualizado hasta el
   RD 250/2025; Orden ITC/1644/2011; RD 250/2025 Plan Técnico Nacional de la TDT y su corrección de
   errores; Resolución de 23/07/2026 de la fase 1 de DVB-T2; planes técnicos de TDT local RD 439/2004,
@@ -102,7 +112,7 @@ completo: cálculos, planos DXF, memoria, pliego y presupuesto.
 | 0.2 | RTV (Anexo I, ap. 4): niveles, atenuaciones toma a toma, C/N, cabecera | Hecho salvo lo apuntado en `docs/pendiente.md` |
 | 0.3 | Esquemas de principio en DXF | Pendiente |
 | 0.4 | Memoria, pliego y presupuesto en Word (estructura del Anexo I de la Orden ITC/1644/2011) | En curso: memoria y pliego hechos; presupuesto pendiente (falta la base de precios) |
-| 0.5 | Plantas sobre la base DXF del arquitecto | Pendiente |
+| 0.5 | Plantas sobre la base DXF del arquitecto | En curso: plantas, cubierta, hojas A3 y PDF hechos; lo que falta, en `docs/pendiente.md` |
 | 1.0 | Interfaz de escritorio (PySide6) y .exe de Windows compilado con GitHub Actions | Pendiente |
 
 ## Criterios adoptados en v0.1 (revisables por el proyectista)
@@ -126,3 +136,9 @@ completo: cálculos, planos DXF, memoria, pliego y presupuesto.
 - Estancias que cuentan para tomas: salón, comedor, cocina, dormitorios y estudio. No cuentan
   vestíbulos, pasos, lavaderos, vestidores ni espacios exteriores. La otra estancia con BAT doble
   es el dormitorio mayor.
+- Planos: registros de toma en la pared de la estancia más cercana a su rótulo; RTR en la pared del
+  vestíbulo (o, sin vestíbulo, de la estancia por la que se entra) más cercana al registro secundario, y la
+  toma configurable a su lado (Anexo II 3.5 c). Tubos dibujados en «L» y medidos así más 1 m de subida o
+  bajada en cada extremo (`planos.holgura_vertical_m`). La canalización principal, en la misma vertical en
+  todas las plantas, y en planta baja unida al RITI. Arqueta de entrada 1,2 m fuera de la fachada en la
+  dirección del RITI, a confirmar con la consulta a operadores.

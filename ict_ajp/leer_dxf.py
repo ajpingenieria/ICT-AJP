@@ -61,6 +61,7 @@ class ViviendaLeida:
     orden: int                     # 1, 2... de izquierda a derecha en la planta
     superficie_construida_m2: float
     estancias: list[EstanciaLeida] = field(default_factory=list)
+    contorno: list[tuple[float, float]] = field(default_factory=list)   # polilínea de superficie construida
 
     @property
     def superficie_util_m2(self) -> float:
@@ -76,6 +77,8 @@ class PlantaLeida:
     viviendas: list[ViviendaLeida] = field(default_factory=list)
     otras_estancias: list[EstanciaLeida] = field(default_factory=list)
     letras_puertas: list[str] = field(default_factory=list)
+    zona: tuple = ()                    # (x0, x1, y0, y1) de la vista leída en el dibujo
+    titulo_xy: tuple = ()               # posición del título de esa vista
 
 
 @dataclass
@@ -92,6 +95,7 @@ class LecturaPlano:
     telecomunicaciones: list[ElementoLeido]
     ascensores: list[ElementoLeido]
     titulos_descartados: list[str]
+    vistas: list[tuple[str, float, float]] = field(default_factory=list)   # todos los títulos (texto, x, y)
 
 
 # ---------------------------------------------------------------------------
@@ -301,16 +305,17 @@ def leer_plano(ruta: str | Path, opciones: OpcionesLectura | None = None) -> Lec
         for pts, sup in sorted(polis, key=lambda r: min(v.x for v in r[0])):
             suyas = [e for e in libres if is_point_in_polygon_2d(Vec2(e.x, e.y), pts) >= 0]
             if any(e.tipo in (TipoEstancia.salon, TipoEstancia.dormitorio) for e in suyas):
-                viviendas.append(ViviendaLeida(len(viviendas) + 1, round(sup, 2), suyas))
+                viviendas.append(ViviendaLeida(len(viviendas) + 1, round(sup, 2), suyas,
+                                               [(v.x, v.y) for v in pts]))
                 libres = [e for e in libres if e not in suyas]
         letras = sorted({x.texto for x in textos if _RE_LETRA.match(x.texto)
                          and z[0] <= x.x < z[1] and z[2] <= x.y < z[3]}) if viviendas else []
         base = PlantaLeida(t.texto, nombre, nivel if nivel is not None else 0, None,
-                           viviendas, libres, letras)
+                           viviendas, libres, letras, z, (t.x, t.y))
         if repeticion:
             for k in repeticion:
                 plantas.append(PlantaLeida(t.texto, f"PLANTA {_NOMBRE_ORDINAL.get(k, str(k))}", k,
-                                           t.texto, viviendas, libres, letras))
+                                           t.texto, viviendas, libres, letras, z, (t.x, t.y)))
         elif nivel is None:
             plantas.append(base)       # se coloca después
             base.nivel = 10_000 if "CUBIERTA" in nombre and "BAJO" not in nombre else 9_999
@@ -345,7 +350,8 @@ def leer_plano(ruta: str | Path, opciones: OpcionesLectura | None = None) -> Lec
                 res.append(ElementoLeido(x.texto, pl, sup))
         return res
 
-    return LecturaPlano(str(ruta), plantas, elementos(_RE_TELECO), elementos(_RE_ASCENSOR), descartados)
+    return LecturaPlano(str(ruta), plantas, elementos(_RE_TELECO), elementos(_RE_ASCENSOR), descartados,
+                        [(t.texto, t.x, t.y) for t in titulos])
 
 
 # ---------------------------------------------------------------------------

@@ -148,6 +148,17 @@ class DatosRTV(BaseModel):
     longitudes_medidas: bool = Field(False, description="True cuando las longitudes salen de los planos.")
 
 
+class DatosPlanos(BaseModel):
+    """Datos para dibujar las plantas de la ICT sobre la base DXF del arquitecto."""
+
+    base_dxf: str = Field("", description="DXF del arquitecto (ruta absoluta o relativa al .ict.json).")
+    mastil_xy: Optional[tuple[float, float]] = Field(
+        None, description="Posición del mástil de antenas en la vista de la cubierta del DXF del arquitecto.")
+    acceso_cubierta: str = Field("", description="Cómo se accede a la cubierta (texto para el plano).")
+    holgura_vertical_m: float = Field(
+        1.0, description="Subida o bajada del tubo en cada extremo de un recorrido (m), sumada a la medición.")
+
+
 class OpcionesDiseno(BaseModel):
     """Decisiones que la norma deja al proyectista. Valores por defecto conservadores."""
 
@@ -188,6 +199,7 @@ class Proyecto(BaseModel):
     operadores: Operadores = Operadores()
     opciones: OpcionesDiseno = OpcionesDiseno()
     rtv: DatosRTV = DatosRTV()
+    planos: DatosPlanos = DatosPlanos()
 
     @classmethod
     def cargar(cls, ruta: str | Path) -> "Proyecto":

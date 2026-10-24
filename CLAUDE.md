@@ -44,7 +44,10 @@ completo: cálculos, planos DXF, memoria, pliego y presupuesto.
   distribución (sin su marco ni título) y dibuja en capas `ICT_` el registro secundario y la canalización
   principal, el RTR con la toma configurable, los registros de toma junto a la pared de cada estancia
   (polilíneas de superficie útil), los tubos, los recintos, la arqueta de entrada y el mástil con el enlace
-  superior. Hojas A3 con el cajetín de AJP y leyenda, todas a la misma escala, PNG de cada una y un PDF.
+  superior. Hojas A3 con el cajetín de AJP (plantilla DXF en la carpeta de Drive, `cajetin_planos` de
+  `empresa.json`, con sus colores corporativos) y leyenda, todas a la misma escala, PNG de cada una y un PDF.
+  Símbolos elegidos por el proyectista: pegados a la pared con su texto dentro, en mm de papel (mismo tamaño a
+  cualquier escala), y el número y diámetro de tubos (del dimensionado) rotulado en cada tramo sin pisar textos.
   Mide las longitudes RS-RTR y RTR-toma de RTV para el cálculo de niveles. Los datos del edificio (base DXF,
   mástil, acceso a cubierta) van en `planos` del `.ict.json`.
 - `ict_ajp/rtv.py` — radio y televisión: canales de TDT del emplazamiento, campo de diseño, tipo de

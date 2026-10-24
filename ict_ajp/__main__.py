@@ -113,7 +113,7 @@ def main(argv=None) -> int:
 def _planos(a) -> int:
     from .documento import Plantilla
     from .leer_dxf import leer_plano
-    from .planos_ict import datos_cajetin, generar_planos, resumen_longitudes
+    from .planos_ict import colores_empresa, datos_cajetin, generar_planos, resumen_longitudes, ruta_cajetin
 
     p = Proyecto.cargar(a.proyecto)
     base = a.base or (Path(p.planos.base_dxf) if p.planos.base_dxf else None)
@@ -124,9 +124,11 @@ def _planos(a) -> int:
         return 1
     nombre = (p.datos_generales.numero + " - " if p.datos_generales.numero else "") + "Planos ICT.dxf"
     salida = a.salida or base.parent / nombre
-    res = generar_planos(base, leer_plano(base), p, salida, datos_cajetin(p, Plantilla.cargar(a.plantilla)),
+    plantilla = Plantilla.cargar(a.plantilla)
+    res = generar_planos(base, leer_plano(base), p, salida, datos_cajetin(p, plantilla),
                          mastil=p.planos.mastil_xy, holgura_vertical_m=p.planos.holgura_vertical_m,
-                         imagenes=not a.sin_imagenes, pdf=not a.sin_imagenes, acceso_cubierta=p.planos.acceso_cubierta)
+                         imagenes=not a.sin_imagenes, pdf=not a.sin_imagenes, acceso_cubierta=p.planos.acceso_cubierta,
+                         cajetin=ruta_cajetin(plantilla), colores=colores_empresa(plantilla))
     print(f"Planos de la ICT: {res.ruta} (escala 1:{res.escala})")
     for nombre_hoja, img in zip(res.presentaciones, res.imagenes):
         print(f"  {nombre_hoja}: {img.name}")

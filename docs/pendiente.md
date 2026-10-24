@@ -18,7 +18,8 @@ llevar a la app más adelante. Sin datos del cliente: solo qué falta y por qué
 | 2026-10-21 | Memoria 1.2.A.d: cálculo del mástil (momento flector con la carga al viento de las fichas) | Falta la ficha del mástil y la altura final de las antenas |
 | 2026-10-21 | Memoria 1.2.E.l: cuadro resumen de materiales (tubos, registros) | Necesita las plantas de la ICT |
 | 2026-10-22 | Planos: trazar los tubos por pasillos y puertas en lugar de en «L» directa | Hace falta leer muros y huecos de puerta; la medición en «L» es de proyecto |
-| 2026-10-22 | Planos: rotular en cada tramo el número y diámetro de tubos (canalización principal, secundaria e interior) | Ahora solo lo dice la leyenda y la memoria |
+| 2026-10-24 | Planos: flecha del norte del cajetín con la orientación de las plantas | El norte del arquitecto está en el emplazamiento, girado respecto a las plantas; hay que medir el giro o que lo indique el proyectista |
+| 2026-10-24 | Planos: elegir a 1:100 girando las plantas 90° cuando no caben con la franja del cajetín de AJP | El edificio real necesita 238 mm de alto y hay 229: sale a 1:125 |
 | 2026-10-22 | Planos: proponer la posición del mástil (zona de cubierta con 5 m libres) en vez de darla con coordenadas | En el proyecto real se eligió mirando la cubierta y se guardó en `planos.mastil_xy` |
 | 2026-10-22 | Planos: dibujar en cubierta el espacio reservado para las antenas de satélite | La memoria lo deja como «[PENDIENTE]» |
 | 2026-10-22 | Memoria: tomar de los planos la ubicación del mástil y de los recintos y quitar sus marcas «[PENDIENTE]» | Los planos ya los tienen, pero la memoria aún no los lee |

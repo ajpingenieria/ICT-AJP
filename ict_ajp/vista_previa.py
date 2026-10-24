@@ -85,12 +85,27 @@ def _dibujar(doc, espacio, ventana, ancho_in: float, alto_in: float, filtro, res
     config = Configuration(background_policy=BackgroundPolicy.WHITE,
                            color_policy=ColorPolicy.COLOR if resaltar else ColorPolicy.BLACK,
                            min_lineweight=0.1, lineweight_scaling=escala_lineas)
-    frontal = Frontend(RenderContext(doc), MatplotlibBackend(ax), config=config)
+    fondo = _Fondo(ax)
+    frontal = Frontend(RenderContext(doc), fondo, config=config)
+    # Mientras se dibuja un texto, sus letras se rellenan con el sentido de trazo de la propia fuente
+    dibujar_texto = frontal.pipeline.draw_text
+
+    def texto_con_su_relleno(*args, **kwargs):
+        fondo.en_texto = True
+        try:
+            dibujar_texto(*args, **kwargs)
+        finally:
+            fondo.en_texto = False
+    frontal.pipeline.draw_text = texto_con_su_relleno
     if resaltar:
         colores = {k.upper(): v for k, v in resaltar.items()}
 
         def color_por_capa(entidad, propiedades) -> None:
-            propiedades.color = colores.get(propiedades.layer.upper(), GRIS_BASE)
+            capa = propiedades.layer.upper()
+            if capa not in colores:
+                propiedades.color = GRIS_BASE        # la base del arquitecto
+            elif not _color_propio(entidad):
+                propiedades.color = colores[capa]    # lo que tiene color propio (el logo de la empresa) lo conserva
         frontal.push_property_override_function(color_por_capa)
     frontal.draw_layout(espacio, finalize=True, filter_func=filtro)
     ax.set_aspect("equal", adjustable="box")
@@ -98,6 +113,34 @@ def _dibujar(doc, espacio, ventana, ancho_in: float, alto_in: float, filtro, res
     ax.set_ylim(y0, y1)
     fig.set_size_inches(ancho_in, alto_in)   # el dibujante de ezdxf cambia el tamaño
     return fig
+
+
+class _Fondo(MatplotlibBackend):
+    """Dibujante de matplotlib que rellena las letras sin «detectar huecos»: ezdxf busca los huecos de cada
+    relleno por su posición, y en las letras con trazos que se cruzan («Ø», «ø») se equivoca y deja media
+    letra en negro; el sentido de trazo de la fuente ya marca bien los huecos."""
+
+    en_texto = False
+
+    def draw_filled_paths(self, paths, properties):
+        if not self.en_texto:
+            return super().draw_filled_paths(paths, properties)
+        from matplotlib.patches import PathPatch
+        from ezdxf.npshapes import to_matplotlib_path
+        try:
+            patch = PathPatch(to_matplotlib_path(paths, detect_holes=False), color=properties.color, linewidth=0,
+                              fill=True, zorder=self._get_z())
+        except ValueError:
+            return
+        self.ax.add_patch(patch)
+
+
+def _color_propio(entidad) -> bool:
+    """La entidad lleva un color suyo (no el de su capa ni el de su bloque)."""
+    try:
+        return entidad.dxf.hasattr("true_color") or entidad.dxf.get("color", 256) not in (0, 256)
+    except Exception:
+        return False
 
 
 def sustituir_fuentes_ausentes(doc, sustituta: str = "arial.ttf") -> list[str]:

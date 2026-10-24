@@ -157,6 +157,7 @@ class DatosPlanos(BaseModel):
     acceso_cubierta: str = Field("", description="Cómo se accede a la cubierta (texto para el plano).")
     holgura_vertical_m: float = Field(
         1.0, description="Subida o bajada del tubo en cada extremo de un recorrido (m), sumada a la medición.")
+    revision: str = Field("R0", description="Revisión de los planos para el cajetín (R0, R1...).")
 
 
 class OpcionesDiseno(BaseModel):

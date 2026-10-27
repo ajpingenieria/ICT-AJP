@@ -80,6 +80,7 @@ class ResultadoPlanos:
     imagenes: list[Path] = field(default_factory=list)
     pdf: Optional[Path] = None
     avisos: list[str] = field(default_factory=list)
+    materiales: dict[str, float] = field(default_factory=dict)   # «Tubo Ø20 mm ... [m]»: cantidad
 
 
 # --------------------------------------------------------------------------------------- vistas
@@ -258,6 +259,19 @@ H_NOTA = 1.4
 H_RECINTO = 1.8
 H_VIVIENDA = 2.5
 SIGLAS = {"PT": "RJ45", "TV": "TV", "TB": "TBA", "FO": "FO", "C": "C"}
+NOMBRE_TOMA = {"PT": "RJ45 (pares trenzados)", "TV": "de RTV", "TB": "coaxial TBA", "FO": "de fibra óptica"}
+
+
+def _sumar(materiales: Optional[dict], clave: str, cantidad: float) -> None:
+    """Suma a la medición de los planos. La clave lleva la unidad entre corchetes: «Tubo Ø20 mm ... [m]»."""
+    if materiales is not None:
+        materiales[clave] = materiales.get(clave, 0.0) + float(cantidad)
+
+
+def _n_d(rotulo: str) -> tuple[int, int]:
+    """«3Ø25 mm» -> (3, 25)."""
+    m = re.match(r"(\d+)Ø(\d+)", rotulo)
+    return (int(m.group(1)), int(m.group(2))) if m else (1, 0)
 C = TextEntityAlignment.MIDDLE_CENTER
 
 
@@ -397,14 +411,19 @@ class _Lienzo:
         self.cajas: list[tuple] = []          # símbolos, textos y rótulos del arquitecto
         self.tramos: list[tuple] = []         # segmentos de tubo ya dibujados
         self.muros: list[tuple] = []          # segmentos de las paredes del arquitecto
+        self.limites: Optional[tuple] = None  # zona que se ve en la hoja: los textos no se salen de ella
 
     def ocupar(self, caja) -> None:
         self.cajas.append(caja)
 
     def coste(self, caja) -> float:
         """Cuánto pisa una caja de texto: área sobre otras cajas más una penalización por cada tubo y, menor,
-        por cada pared que la cruzan."""
-        return (sum(_solape(caja, c) for c in self.cajas) / (self.k * self.k)
+        por cada pared que la cruzan; y mucho más si se sale de la zona que se ve en la hoja."""
+        fuera = 0.0
+        if self.limites:
+            x0, y0, x1, y1 = self.limites
+            fuera = 1000.0 if caja[0] < x0 or caja[1] < y0 or caja[2] > x1 or caja[3] > y1 else 0.0
+        return (fuera + sum(_solape(caja, c) for c in self.cajas) / (self.k * self.k)
                 + 50 * _cuantos_cortan(self.tramos, caja) + 8 * _cuantos_cortan(self.muros, caja))
 
     def cruces(self, puntos) -> int:
@@ -650,14 +669,18 @@ def tubos_del_proyecto(proyecto) -> dict:
 
 
 def _dibujar_vista(msp, v: Vista, proyecto, polis: list, holgura: float, hacia_cp=None, k: float = 0.1,
-                   tubos: Optional[dict] = None, muros: Optional[list] = None, huecos: Optional[list] = None):
+                   tubos: Optional[dict] = None, muros: Optional[list] = None, huecos: Optional[list] = None,
+                   materiales: Optional[dict] = None):
     """Dibuja la ICT de una planta. `hacia_cp`: dónde está la canalización principal en las plantas ya
     dibujadas (para que sea la misma vertical); `k`: metros del dibujo por mm de papel; `muros`: segmentos de
-    las paredes del arquitecto, para que los rótulos no las pisen. Devuelve mediciones, avisos, centro del RITS
-    (en la vista leída) y posición de la canalización principal."""
+    las paredes del arquitecto, para que los rótulos no las pisen; `materiales`: donde se va sumando la medición
+    (tubos y registros). Devuelve mediciones, avisos, centro del RITS (en la vista leída) y posición de la
+    canalización principal."""
     tubos = tubos or tubos_del_proyecto(proyecto)
+    veces = len(v.niveles)                      # una planta tipo vale por todas las que representa
     lz = _Lienzo(msp, k)
     lz.muros = list(muros or [])
+    lz.limites = v.ventana
     med, avisos = [], []
     p = v.planta
     mover = lambda x, y: (x + v.dx, y + v.dy)  # noqa: E731
@@ -702,6 +725,7 @@ def _dibujar_vista(msp, v: Vista, proyecto, polis: list, holgura: float, hacia_c
             u = (-u[0], -u[1])                    # la canalización principal, del lado de la de abajo
         q_rs = (cx + u[0] * d_rs, cy + u[1] * d_rs)
         lz.en_pared("ICT_RS", q_rs, n_rs, {"COD": "RS"}, RS_MM[0], RS_MM[1], "ICT_REGISTROS")
+        _sumar(materiales, "Registro secundario de planta [ud]", veces)
         rs = (q_rs[0] + n_rs[0] * RS_MM[1] * k, q_rs[1] + n_rs[1] * RS_MM[1] * k)      # salida de los tubos
         dentro = (CP_RADIO + 0.4) * k
         cp = (cx - u[0] * d_cp + n_rs[0] * dentro, cy - u[1] * d_cp + n_rs[1] * dentro)
@@ -742,6 +766,8 @@ def _dibujar_vista(msp, v: Vista, proyecto, polis: list, holgura: float, hacia_c
         q_c = (cx + u[0] * d_c, cy + u[1] * d_c)
         lz.en_pared("ICT_RTR", q_rtr, n, {"L1": "PAU", "L2": "RTR"}, RTR_MM[0], RTR_MM[1], "ICT_REGISTROS")
         lz.en_pared("ICT_TOMA", q_c, n, {"COD": "C"}, TOMA[0], TOMA[1] + TOMA[2], "ICT_TOMAS")
+        _sumar(materiales, "Registro de terminación de red (RTR) [ud]", veces)
+        _sumar(materiales, "Registro de toma configurable [ud]", veces)
         estancias = []
         principales = {e.nombre for e in (usuario.estancias if usuario else []) if e.principal}
         for e, ep in zip(viv.estancias, usuario.estancias if usuario else []):
@@ -750,6 +776,8 @@ def _dibujar_vista(msp, v: Vista, proyecto, polis: list, holgura: float, hacia_c
             regs = _registros_estancia(ep.principal and ep.nombre in principales, ep.tipo.value == "salon")
             le = mover(e.x, e.y)
             tomas, u_g, n_g = _grupo_tomas(lz, _poligono_de(le, polis), le, regs)
+            for cod in regs:
+                _sumar(materiales, f"Registro de toma {NOMBRE_TOMA[cod]} [ud]", veces)
             estancias.append((regs, tomas, n_g))
         viviendas.append((ids, contorno, q_rtr, u, n, q_c, estancias))
 
@@ -774,6 +802,8 @@ def _dibujar_vista(msp, v: Vista, proyecto, polis: list, holgura: float, hacia_c
             lz.linea(pts)
             rotulos.append((pts, tubos["acceso"]))
             sec = _longitud(pts) + 2 * holgura
+            n_t, d_t = _n_d(tubos["acceso"])
+            _sumar(materiales, f"Tubo Ø{d_t} mm, acceso a las viviendas [m]", n_t * sec * veces)
             if _longitud(pts) > 15:
                 avisos.append(f"{' / '.join(ids)}: el tramo registro secundario-RTR mide {_longitud(pts):.1f} m "
                               "en planta (más de 15 m): hacen falta registros de paso (Anexo III, 5.9).")
@@ -784,6 +814,8 @@ def _dibujar_vista(msp, v: Vista, proyecto, polis: list, holgura: float, hacia_c
         c_entrada = (q_c[0] - u[0] * TOMA[0] / 2 * k + n[0] * (TOMA[2] + TOMA[1] / 2) * k,
                      q_c[1] - u[1] * TOMA[0] / 2 * k + n[1] * (TOMA[2] + TOMA[1] / 2) * k)
         lz.linea([lado, c_entrada])
+        _sumar(materiales, f"Tubo Ø{tubos['interior_mm']} mm, canalización interior de usuario [m]",
+               (math.dist(lado, c_entrada) + 2 * holgura) * veces)
         interiores = [0.0] * len(estancias)
         for idx, (s, j) in enumerate(zip(salidas, orden)):
             regs, tomas, n_g = estancias[j]
@@ -795,6 +827,9 @@ def _dibujar_vista(msp, v: Vista, proyecto, polis: list, holgura: float, hacia_c
             rotulos.append((pts, f"{len(regs)}Ø{tubos['interior_mm']} mm"))
             tv = next(t for t in tomas if t[0] == "TV")
             interiores[j] = _longitud(pts) + math.dist(tv[1], destino[1]) + 2 * holgura
+            # un tubo por registro: hasta el más cercano y, a lo largo de la pared, hasta cada uno de los demás
+            tramo = sum(_longitud(pts) + math.dist(t[1], destino[1]) + 2 * holgura for t in tomas)
+            _sumar(materiales, f"Tubo Ø{tubos['interior_mm']} mm, canalización interior de usuario [m]", tramo * veces)
         m.interior_m = [round(float(x), 1) for x in interiores]
         med.append(m)
     for pts, texto in rotulos:
@@ -812,11 +847,18 @@ def _dibujar_vista(msp, v: Vista, proyecto, polis: list, holgura: float, hacia_c
             lz.ocupar((hacia_cp[0] - r, hacia_cp[1] - r, hacia_cp[0] + r, hacia_cp[1] + r))
             if tubos["principal"]:
                 lz.rotular_tubo(pts, tubos["principal"])
+                n_t, d_t = _n_d(tubos["principal"])
+                _sumar(materiales, f"Tubo Ø{d_t} mm, canalización principal [m]", n_t * _longitud(pts))
             cp = hacia_cp
         caja_planta = _caja_contenido(p, 0.0)
         centro = mover((caja_planta[0] + caja_planta[2]) / 2, (caja_planta[1] + caja_planta[3]) / 2) if (
             caja_planta) else ((v.ventana[0] + v.ventana[2]) / 2, (v.ventana[1] + v.ventana[3]) / 2)
-        _acometida(lz, riti, centro, polis, tubos)
+        largo = _acometida(lz, riti, centro, polis, tubos)
+        _sumar(materiales, "Arqueta de entrada 400x400x600 mm [ud]", 1)
+        if tubos.get("externa"):
+            n_t, d_t = _n_d(tubos["externa"])
+            _sumar(materiales, f"Tubo Ø{d_t} mm, canalización externa y de enlace inferior [m]",
+                   n_t * (largo + 2 * holgura))
     if cp:
         lz.rotulo_libre([f"C.P. {tubos['principal']}".strip()], cp, CP_RADIO * k)
 
@@ -865,9 +907,10 @@ def _recinto(lz: _Lienzo, q, poli, nombre: str) -> tuple[float, float, float, fl
     return caja
 
 
-def _acometida(lz: _Lienzo, riti, centro, polis, tubos: dict) -> None:
+def _acometida(lz: _Lienzo, riti, centro, polis, tubos: dict) -> float:
     """Arqueta de entrada fuera del edificio: desde el centro de la planta, en la dirección del RITI, 1,2 m
-    más allá de la última estancia que se cruza (pasado el muro de fachada)."""
+    más allá de la última estancia que se cruza (pasado el muro de fachada). Devuelve la longitud en planta
+    de la arqueta al RITI."""
     vx, vy = riti[0] - centro[0], riti[1] - centro[1]
     n = math.hypot(vx, vy) or 1
     ux, uy = vx / n, vy / n
@@ -888,18 +931,22 @@ def _acometida(lz: _Lienzo, riti, centro, polis, tubos: dict) -> None:
         lz.rotular_tubo([inicio, riti], tubos["externa"], capa="ICT_ACOMETIDA")
     lz.rotulo_libre(["Arqueta de entrada 400x400x600 mm", "(ubicación según consulta a operadores)"], arq, a,
                     capa="ICT_ACOMETIDA")
+    return math.dist(inicio, riti)
 
 
 def _cubierta(msp, v: Vista, mastil: Optional[tuple[float, float]], rits_cubierta: Optional[tuple],
               acceso: str, huecos=(), k: float = 0.1, tubos: Optional[dict] = None,
-              lineas: Optional[list] = None) -> None:
-    """Mástil, su radio libre y el enlace superior hasta el RITS sin cruzar los `huecos` (patios). `lineas`:
-    segmentos del dibujo de la cubierta, para que los rótulos no los pisen."""
+              lineas: Optional[list] = None, materiales: Optional[dict] = None, holgura: float = 1.0) -> None:
+    """Mástil, su radio libre, la reserva para antenas de satélite y el enlace superior hasta el RITS sin cruzar
+    los `huecos` (patios). `lineas`: segmentos del dibujo de la cubierta, para que los rótulos no los pisen."""
     lz = _Lienzo(msp, k)
     lz.muros = list(lineas or [])
+    lz.limites = v.ventana
     x0, y0 = v.ventana[0], v.ventana[1]
-    lz.texto(f"Acceso a cubierta: {acceso or '[PENDIENTE: definir]'}", (x0 + 0.5, y0 + 0.6), H_NOTA, "ICT_RTV",
-             TextEntityAlignment.LEFT)
+    lz.texto(f"Acceso a cubierta: {acceso or '[PENDIENTE: definir]'}", (x0 + 0.5, y0 + 0.6 + 1.6 * H_NOTA * k),
+             H_NOTA, "ICT_RTV", TextEntityAlignment.LEFT)
+    lz.texto("Puntos de anclaje permanentes para los equipos de protección individual junto al acceso y al mástil",
+             (x0 + 0.5, y0 + 0.6), H_NOTA, "ICT_RTV", TextEntityAlignment.LEFT)
     if not mastil:
         lz.texto("[PENDIENTE: posición del mástil]", (x0 + 0.5, y0 + 0.6 + 3 * H_NOTA * k), H_NOTA, "ICT_RTV",
                  TextEntityAlignment.LEFT)
@@ -908,15 +955,41 @@ def _cubierta(msp, v: Vista, mastil: Optional[tuple[float, float]], rits_cubiert
     msp.add_circle(mastil, r, dxfattribs={"layer": "ICT_RTV"})
     lz.ocupar((mastil[0] - r, mastil[1] - r, mastil[0] + r, mastil[1] + r))
     msp.add_circle(mastil, 5.0, dxfattribs={"layer": "ICT_RTV", "linetype": "ICT_TRAZOS"})
+    _reserva_satelite(lz, mastil, v.ventana, huecos)
     if rits_cubierta:
         pts = _ruta(lz, mastil, None, rits_cubierta, None, evitar=huecos)
         lz.linea(pts, capa="ICT_RTV")
+        n_t, d_t = _n_d((tubos or {}).get("enlace_superior") or "2Ø40 mm")
+        _sumar(materiales, f"Tubo Ø{d_t} mm, canalización de enlace superior [m]",
+               n_t * (_longitud(pts) + 2 * holgura))
         msp.add_circle(rits_cubierta, 0.8 * k, dxfattribs={"layer": "ICT_RTV"})
         lz.ocupar((rits_cubierta[0] - k, rits_cubierta[1] - k, rits_cubierta[0] + k, rits_cubierta[1] + k))
         lz.rotular_tubo(pts, (tubos or {}).get("enlace_superior") or "2Ø40 mm", capa="ICT_RTV")
         lz.rotulo_libre(["Paso al RITS"], rits_cubierta, 0.8 * k, capa="ICT_RTV")
     lz.rotulo_libre(["Mástil de antenas (UHF, FM y DAB)", "Radio libre de 5 m (Anexo I, 4.2.1)"], mastil, r,
                     capa="ICT_RTV")
+
+
+RESERVA_SATELITE = 1.5          # lado del espacio reservado en cubierta para antenas de satélite (m)
+
+
+def _reserva_satelite(lz: _Lienzo, mastil, ventana, huecos=()) -> None:
+    """Espacio libre de obstáculos reservado en la cubierta para las antenas de satélite, que no forman parte de
+    la instalación inicial (Anexo I, 3.6): un cuadrado junto al mástil, hacia el interior de la cubierta, dentro
+    de su radio libre y fuera de los patios."""
+    cx, cy = (ventana[0] + ventana[2]) / 2, (ventana[1] + ventana[3]) / 2
+    vx, vy = cx - mastil[0], cy - mastil[1]
+    n = math.hypot(vx, vy) or 1
+    lado = RESERVA_SATELITE
+    for d in (1.0, 1.5, 2.0, 2.5):
+        c = (mastil[0] + vx / n * (d + lado / 2), mastil[1] + vy / n * (d + lado / 2))
+        cuadro = [(c[0] - lado / 2, c[1] - lado / 2), (c[0] + lado / 2, c[1] - lado / 2),
+                  (c[0] + lado / 2, c[1] + lado / 2), (c[0] - lado / 2, c[1] + lado / 2)]
+        if not any(_dentro(q, pl) for q in cuadro for pl in huecos):
+            break
+    lz.msp.add_lwpolyline(cuadro, close=True, dxfattribs={"layer": "ICT_RTV", "linetype": "ICT_TRAZOS"})
+    lz.ocupar((c[0] - lado / 2, c[1] - lado / 2, c[0] + lado / 2, c[1] + lado / 2))
+    lz.rotulo_libre(["Reserva para antenas de satélite", "(Anexo I, 3.6)"], c, lado / 2, capa="ICT_RTV")
 
 
 # --------------------------------------------------------------------------------------- hojas
@@ -1270,6 +1343,7 @@ def generar_planos(base_dxf: str | Path, lectura: LecturaPlano, proyecto, salida
     escala_prevista = max(_escala(v.ventana, formato) for v in vistas) if vistas else 100
     k_mm = escala_prevista / 1000                 # metros del dibujo por milímetro de papel
     tubos = tubos_del_proyecto(proyecto)
+    materiales: dict[str, float] = {}
     rits = None
     cp_titulo = None        # canalización principal respecto al título de su vista: la misma en todas
     # Primero las plantas con viviendas, de abajo arriba; después la baja, que se une a esa vertical
@@ -1282,7 +1356,7 @@ def generar_planos(base_dxf: str | Path, lectura: LecturaPlano, proyecto, salida
             antes = len(msp)
             m, a, centro_rits, cp = _dibujar_vista(msp, v, proyecto, poligonos[k], holgura_vertical_m, hacia,
                                                    k=k_mm, tubos=tubos, muros=segmentos_de(entidades_vista[k]),
-                                                   huecos=_huecos(cajas, v.ventana))
+                                                   huecos=_huecos(cajas, v.ventana), materiales=materiales)
             mediciones += m
             avisos += a
             v.ventana = _incluir(v.ventana, list(msp)[antes:])
@@ -1299,7 +1373,13 @@ def generar_planos(base_dxf: str | Path, lectura: LecturaPlano, proyecto, salida
                 rits_cub = (x + v.planta.titulo_xy[0] - w.planta.titulo_xy[0],
                             y + v.planta.titulo_xy[1] - w.planta.titulo_xy[1])
             _cubierta(msp, v, mastil, rits_cub, acceso_cubierta, huecos=_huecos(cajas, v.ventana), k=k_mm,
-                      tubos=tubos, lineas=segmentos_de(entidades_vista[k], r"."))
+                      tubos=tubos, lineas=segmentos_de(entidades_vista[k], r"."), materiales=materiales,
+                      holgura=holgura_vertical_m)
+    # Tramo vertical de la canalización principal, de la planta baja (RITI) a la última (RITS)
+    if tubos["principal"] and proyecto.edificio.plantas:
+        n_t, d_t = _n_d(tubos["principal"])
+        alto = proyecto.rtv.altura_entre_plantas_m * max(pl.nivel for pl in proyecto.edificio.plantas)
+        _sumar(materiales, f"Tubo Ø{d_t} mm, canalización principal [m]", n_t * (alto + 2 * holgura_vertical_m))
     escala = max(_escala(v.ventana, formato) for v in vistas) if vistas else 100   # la misma en todas las hojas
     if escala != escala_prevista:
         avisos.append(f"Los símbolos se han dibujado para 1:{escala_prevista} y las hojas salen a 1:{escala}: "
@@ -1328,7 +1408,8 @@ def generar_planos(base_dxf: str | Path, lectura: LecturaPlano, proyecto, salida
         doc.layouts.delete(nombre)
     salida = Path(salida)
     doc.saveas(salida)
-    res = ResultadoPlanos(salida, presentaciones, mediciones, escala, avisos=avisos)
+    res = ResultadoPlanos(salida, presentaciones, mediciones, escala, avisos=avisos,
+                          materiales={c: round(x, 1) for c, x in sorted(materiales.items())})
     if imagenes:
         from .vista_previa import renderizar
         for k, nombre in enumerate(presentaciones, start=1):

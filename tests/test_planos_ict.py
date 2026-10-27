@@ -178,6 +178,14 @@ def test_mediciones_para_el_calculo_de_rtv(planos):
     assert len(m.interior_m) == 3 and all(x > 2.0 for x in m.interior_m)
     r = resumen_longitudes(res.mediciones)
     assert r["interior_min"] == min(m.interior_m) and r["acometida_max"] == m.secundaria_m
+    # Medición para el cuadro resumen de materiales
+    mat = res.materiales
+    assert mat["Registro de toma de RTV [ud]"] == 3 and mat["Registro de toma configurable [ud]"] == 1
+    assert mat["Registro de terminación de red (RTR) [ud]"] == 1 and mat["Registro secundario de planta [ud]"] == 1
+    assert mat["Arqueta de entrada 400x400x600 mm [ud]"] == 1
+    assert mat["Tubo Ø25 mm, acceso a las viviendas [m]"] == pytest.approx(3 * m.secundaria_m, abs=0.2)
+    assert mat["Tubo Ø20 mm, canalización interior de usuario [m]"] > sum(m.interior_m)   # un tubo por registro
+    assert any(c.startswith("Tubo Ø63 mm") for c in mat) and any("canalización principal" in c for c in mat)
 
 
 @pytest.mark.parametrize("n", [(0, 1), (0, -1), (1, 0), (-1, 0)])

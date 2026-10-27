@@ -78,8 +78,9 @@ def generar_pliego(p: Proyecto, res: Resultado, ruta: str | Path, plantilla: Opt
     d.parrafo("La accesibilidad a los elementos de captación estará garantizada en cualquier situación "
               f"({N.ref('I', '3.1')}), así como al espacio reservado en cubierta para las antenas de satélite "
               f"({N.ref('I', '3.6')}). Los mástiles se fijarán a elementos de fábrica resistentes y accesibles, "
-              f"alejados de chimeneas u otros obstáculos ({N.ref('I', '4.2.1')}). [PENDIENTE: acceso a la cubierta "
-              "(escotilla o similar) en los planos del arquitecto]")
+              f"alejados de chimeneas u otros obstáculos ({N.ref('I', '4.2.1')}). "
+              + (f"Acceso a la cubierta: {p.planos.acceso_cubierta}." if p.planos.acceso_cubierta
+                 else "[PENDIENTE: acceso a la cubierta (escotilla o similar) en los planos del arquitecto]"))
     d.parrafo("b) Características de los sistemas de captación.", bold=True)
     d.tabla(["Referencia", "Elemento", "Banda (MHz)", "Ganancia (dBi)", "Ficha"],
             [[a["ref"], a["nombre"], a.get("margen_mhz") or "", _m(a["ganancia_dbi"]),
@@ -280,8 +281,11 @@ def generar_pliego(p: Proyecto, res: Resultado, ruta: str | Path, plantilla: Opt
         ["Mantenimiento", "Revisión de cabecera, registros y recintos", "Contacto eléctrico, golpes"]])
     d.parrafo("Las medidas de protección para los trabajos en la cubierta (acceso y puntos de anclaje para los equipos "
               "de protección individual) deben mantenerse de forma permanente para el mantenimiento posterior "
-              "(Orden ITC/1644/2011, anexo I, 3.2.B). [PENDIENTE: definir con el arquitecto el acceso a la cubierta y "
-              "los puntos de anclaje]")
+              "(Orden ITC/1644/2011, anexo I, 3.2.B). "
+              + (f"Acceso a la cubierta: {p.planos.acceso_cubierta}. Se dispondrán puntos de anclaje permanentes para "
+                 "los equipos de protección individual junto al acceso y junto al mástil, como se indica en el plano de "
+                 "la planta cubierta." if p.planos.acceso_cubierta
+                 else "[PENDIENTE: definir con el arquitecto el acceso a la cubierta y los puntos de anclaje]"))
     d.titulo("3.2.C Normativa sobre protección contra campos electromagnéticos", 3)
     d.vinetas([_cita(normas, "rd_1066_2001"), _cita(normas, "rd_186_2016") + ". Sustituye al Real Decreto 1580/2006 que "
                "citan las Normas anexas al Reglamento, hoy derogado."])

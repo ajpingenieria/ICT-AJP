@@ -154,7 +154,11 @@ class DatosPlanos(BaseModel):
     base_dxf: str = Field("", description="DXF del arquitecto (ruta absoluta o relativa al .ict.json).")
     mastil_xy: Optional[tuple[float, float]] = Field(
         None, description="Posición del mástil de antenas en la vista de la cubierta del DXF del arquitecto.")
-    acceso_cubierta: str = Field("", description="Cómo se accede a la cubierta (texto para el plano).")
+    ubicacion_mastil: str = Field("", description="Dónde va el mástil, en palabras (para la memoria).")
+    acceso_cubierta: str = Field("", description="Cómo se accede a la cubierta (texto para el plano, la memoria y el pliego).")
+    materiales: dict[str, float] = Field(
+        default_factory=dict, description="Medición de los planos (m de tubo por diámetro, unidades de registros), "
+        "guardada por «planos --actualizar-longitudes»; sale en el cuadro resumen de materiales de la memoria.")
     holgura_vertical_m: float = Field(
         1.0, description="Subida o bajada del tubo en cada extremo de un recorrido (m), sumada a la medición.")
     revision: str = Field("R0", description="Revisión de los planos para el cajetín (R0, R1...).")

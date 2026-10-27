@@ -47,3 +47,12 @@ def test_normas_generales_comprobadas_en_el_boe():
     assert normas["rd_1580_2006"]["vigente"] is False                    # derogado: no se cita como vigente
     citadas = {"ley_31_1995", "rd_1627_1997", "rd_105_2008", "ley_11_2022", "rd_186_2016", "rd_314_2006"}
     assert all(normas[k]["vigente"] and normas[k]["identificador"].startswith("BOE-A-") for k in citadas)
+
+
+def test_acceso_a_cubierta_y_anclajes(tmp_path):
+    p = Proyecto.cargar(EJEMPLO)
+    p.planos.acceso_cubierta = "trampilla con escalera escamoteable"
+    ruta, _ = generar_pliego(p, dimensionar(p), tmp_path / "p.docx", Plantilla.cargar(tmp_path))
+    texto = "\n".join(x.text for x in docx.Document(str(ruta)).paragraphs)
+    assert texto.count("Acceso a la cubierta: trampilla con escalera escamoteable.") == 2
+    assert "puntos de anclaje permanentes" in texto and "[PENDIENTE: definir con el arquitecto" not in texto

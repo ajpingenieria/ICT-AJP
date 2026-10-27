@@ -264,8 +264,7 @@ def _rtv(d: DocumentoAJP, p: Proyecto, R: _Res) -> None:
     d.parrafo(f"{R.valor('rtv', 'Captación')}. Las antenas se instalarán en la cubierta sobre un mástil de altura no "
               "superior a 6 m, fijado a elementos de fábrica resistentes y accesibles, a una distancia mínima de 5 m "
               "de otros mástiles u obstáculos y de 1,5 veces su longitud a líneas eléctricas, conectado a la toma de "
-              "tierra del edificio con cable de 25 mm² como mínimo (" + N.ref("I", "4.2.1") + "). [PENDIENTE: "
-              "ubicación del mástil y acceso a la cubierta, que no figura en los planos]")
+              "tierra del edificio con cable de 25 mm² como mínimo (" + N.ref("I", "4.2.1") + "). " + _cubierta_txt(p))
     d.parrafo("d) Cálculo de los soportes para la instalación de las antenas receptoras.", bold=True)
     d.parrafo("Las antenas y sus soportes deben resistir vientos de 130 km/h al estar situados a menos de 20 m del "
               "suelo (" + N.ref("I", "4.2.1") + "). [A VERIFICAR: altura final de las antenas sobre el suelo] [PENDIENTE: cálculo del momento flector del mástil con la carga "
@@ -304,8 +303,7 @@ def _satelite(d: DocumentoAJP, p: Proyecto, R: _Res) -> None:
     d.titulo("1.2.B Distribución de radiodifusión sonora y televisión por satélite", 3)
     d.parrafo("La captación de satélite no forma parte de la instalación inicial. Se reserva en la parte superior "
               "de la edificación espacio físico suficiente libre de obstáculos, con accesibilidad garantizada, para "
-              "las antenas y su sujeción (" + N.ref("I", "3.6") + "). [PENDIENTE: ubicación del espacio reservado y "
-              "acceso a la cubierta]")
+              "las antenas y su sujeción (" + N.ref("I", "3.6") + "). " + _reserva_satelite_txt(p))
     d.parrafo("c) Previsión para incorporar las señales de satélite y d) mezcla con las terrestres: las señales se "
               "incorporarán a los dos cables de la red mediante el elemento de mezcla de la cabecera "
               "(" + N.ref("I", "3.2 y 4.1.3") + ").")
@@ -358,8 +356,8 @@ def _infraestructura(d: DocumentoAJP, p: Proyecto, R: _Res) -> None:
         "recinto único (RITU)"
     d.parrafo(f"a) Consideraciones sobre el esquema general del edificio: la ICT se organiza con {rec}, unidos por la "
               "canalización principal, que discurre junto a la escalera y da servicio a un registro secundario en "
-              "cada planta con viviendas. [PENDIENTE: ubicación definitiva de los recintos en los planos corregidos "
-              "del arquitecto]")
+              "cada planta con viviendas. " + ("Su ubicación figura en los planos de planta." if p.planos.base_dxf
+                                               else "[PENDIENTE: ubicación de los recintos en los planos]"))
     _tabla_partidas(d, [R.partida("infra", c) for c in (
         "Arqueta de entrada", "Canalización externa", "Registros de enlace inferior", "Canalización de enlace inferior",
         "Canalización de enlace superior")])
@@ -380,5 +378,46 @@ def _infraestructura(d: DocumentoAJP, p: Proyecto, R: _Res) -> None:
                         R.partida("interior", "Tubos de canalización interior"),
                         R.partida("infra", "Canalización a cuarto de máquinas")])
     _tabla_resultado(d, R.tabla("infra", "Registros secundarios y canalización secundaria"))
-    d.parrafo("l) Cuadro resumen de materiales necesarios: [PENDIENTE: longitudes de tubos y cantidades de "
-              "registros de paso a partir de los planos de planta]")
+    d.parrafo("l) Cuadro resumen de materiales necesarios.", bold=True)
+    _materiales(d, p)
+
+
+def _cubierta_txt(p: Proyecto) -> str:
+    """Dónde va el mástil y cómo se accede a la cubierta (datos de los planos del proyecto)."""
+    pl = p.planos
+    if pl.mastil_xy:
+        txt = (f"El mástil se sitúa en {pl.ubicacion_mastil or 'el punto indicado en el plano de la planta cubierta'}, "
+               "con un radio de 5 m libre de obstáculos, como figura en el plano de la planta cubierta.")
+    else:
+        txt = "[PENDIENTE: ubicación del mástil]"
+    return txt + (f" Acceso a la cubierta: {pl.acceso_cubierta}." if pl.acceso_cubierta
+                  else " [PENDIENTE: acceso a la cubierta]")
+
+
+def _reserva_satelite_txt(p: Proyecto) -> str:
+    pl = p.planos
+    if not pl.mastil_xy:
+        return "[PENDIENTE: ubicación del espacio reservado y acceso a la cubierta]"
+    return ("El espacio reservado, de 1,5 x 1,5 m, está junto al mástil de las antenas terrestres, hacia el interior "
+            "de la cubierta, y figura en el plano de la planta cubierta."
+            + (f" Acceso: {pl.acceso_cubierta}." if pl.acceso_cubierta else " [PENDIENTE: acceso a la cubierta]"))
+
+
+def _materiales(d: DocumentoAJP, p: Proyecto) -> None:
+    """Cuadro resumen con la medición de los planos de planta (orden «planos --actualizar-longitudes»)."""
+    import re
+    med = p.planos.materiales
+    if not med:
+        d.parrafo("[PENDIENTE: medición de tubos y registros a partir de los planos de planta]")
+        return
+    filas = []
+    for clave, cantidad in sorted(med.items(), key=lambda c: (not c[0].startswith("Tubo"), c[0])):
+        m = re.match(r"(.*?)\s*\[(m|ud)\]$", clave)
+        nombre, unidad = (m.group(1), m.group(2)) if m else (clave, "")
+        valor = f"{cantidad:.0f}" if unidad == "ud" else f"{cantidad:.1f}".replace(".", ",")
+        filas.append([nombre, valor, unidad])
+    d.tabla(["Material", "Cantidad", "Unidad"], filas)
+    d.nota("Medición de proyecto sobre los planos de planta: recorridos en «L» más la subida o bajada en cada "
+           "extremo; un tubo de la canalización interior por registro de toma; la canalización principal, con la "
+           "altura entre plantas. Los registros principales, de enlace y de paso y los recintos, según las tablas "
+           "anteriores.")

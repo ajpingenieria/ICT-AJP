@@ -46,7 +46,8 @@ def main(argv=None) -> int:
     pl.add_argument("--plantilla", type=Path, help="Carpeta con empresa.json de AJP (autor del cajetín)")
     pl.add_argument("--sin-imagenes", action="store_true", help="Sin vistas previas PNG ni PDF (más rápido)")
     pl.add_argument("--actualizar-longitudes", action="store_true",
-                    help="Guardar en el proyecto las longitudes medidas para el cálculo de RTV")
+                    help="Guardar en el proyecto las longitudes medidas para el cálculo de RTV y la medición de "
+                         "materiales para la memoria")
     a = ap.parse_args(argv)
 
     if a.orden == "planos":
@@ -140,14 +141,19 @@ def _planos(a) -> int:
               + ", ".join(f"{x:.1f}" for x in m.interior_m) + " m")
     for av in res.avisos:
         print(f"  [revisar] {av}")
+    if res.materiales:
+        print("Medición de los planos (para el cuadro resumen de materiales):")
+        for clave, cantidad in res.materiales.items():
+            print(f"  {clave}: {cantidad:g}")
     lon = resumen_longitudes(res.mediciones)
     if a.actualizar_longitudes and res.mediciones:
         r = p.rtv
         r.long_acometida_min_m, r.long_acometida_max_m = lon["acometida_min"], lon["acometida_max"]
         r.long_interior_min_m, r.long_interior_max_m = lon["interior_min"], lon["interior_max"]
         r.longitudes_medidas = True
+        p.planos.materiales = res.materiales
         p.guardar(a.proyecto)
-        print(f"Longitudes de RTV guardadas en {a.proyecto}: acometida {lon['acometida_min']:.1f}-"
+        print(f"Longitudes de RTV y medición guardadas en {a.proyecto}: acometida {lon['acometida_min']:.1f}-"
               f"{lon['acometida_max']:.1f} m, interior {lon['interior_min']:.1f}-{lon['interior_max']:.1f} m")
     return 0
 

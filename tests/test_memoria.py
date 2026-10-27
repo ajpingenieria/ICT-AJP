@@ -62,3 +62,23 @@ def test_resumen_de_dependencias():
         {"nombre": "DORM. 2", "tipo": "dormitorio"}, {"nombre": "BAÑO", "tipo": "bano"},
         {"nombre": "BAÑO", "tipo": "bano"}, {"nombre": "VESTIBULO", "tipo": "otra", "computa": False}]})
     assert _dependencias(u) == "salón-comedor, 2 dormitorios, 2 baños, vestíbulo"
+
+
+def test_datos_de_los_planos_en_la_memoria(tmp_path, plantilla):
+    p = Proyecto.cargar(EJEMPLO)
+    _, sin = _texto(generar_memoria(p, dimensionar(p), tmp_path / "a.docx", plantilla)[0])
+    assert "[PENDIENTE: ubicación del mástil]" in sin and "[PENDIENTE: medición de tubos" in sin
+    p.planos.base_dxf = "base.dxf"
+    p.planos.mastil_xy = (1.0, 2.0)
+    p.planos.ubicacion_mastil = "la esquina trasera de la cubierta"
+    p.planos.acceso_cubierta = "trampilla con escalera escamoteable"
+    p.planos.materiales = {"Tubo Ø20 mm, canalización interior de usuario [m]": 312.46,
+                           "Registro de toma RJ45 (pares trenzados) [ud]": 36.0}
+    _, con = _texto(generar_memoria(p, dimensionar(p), tmp_path / "b.docx", plantilla)[0])
+    assert "El mástil se sitúa en la esquina trasera de la cubierta" in con
+    assert "Acceso a la cubierta: trampilla con escalera escamoteable." in con
+    assert "El espacio reservado, de 1,5 x 1,5 m, está junto al mástil" in con
+    assert "Su ubicación figura en los planos de planta." in con
+    assert "Tubo Ø20 mm, canalización interior de usuario\n312,5\nm" in con           # cuadro de materiales
+    assert "Registro de toma RJ45 (pares trenzados)\n36\nud" in con
+    assert "[PENDIENTE: ubicación" not in con and "[PENDIENTE: medición de tubos" not in con

@@ -48,8 +48,9 @@ completo: cálculos, planos DXF, memoria, pliego y presupuesto.
   `empresa.json`, con sus colores corporativos) y leyenda, todas a la misma escala, PNG de cada una y un PDF.
   Símbolos elegidos por el proyectista: pegados a la pared con su texto dentro, en mm de papel (mismo tamaño a
   cualquier escala), y el número y diámetro de tubos (del dimensionado) rotulado en cada tramo sin pisar textos.
-  Mide las longitudes RS-RTR y RTR-toma de RTV para el cálculo de niveles. Los datos del edificio (base DXF,
-  mástil, acceso a cubierta) van en `planos` del `.ict.json`.
+  Mide las longitudes RS-RTR y RTR-toma de RTV para el cálculo de niveles y la medición de tubos y registros
+  (cuadro resumen de materiales de la memoria). En cubierta marca la reserva para antenas de satélite (Anexo I
+  3.6). Los datos del edificio (base DXF, mástil, acceso a cubierta, medición) van en `planos` del `.ict.json`.
 - `ict_ajp/rtv.py` — radio y televisión: canales de TDT del emplazamiento, campo de diseño, tipo de
   cabecera y previsión de satélite.
 - `ict_ajp/plan_tdt.py` + `ict_ajp/datos/plan_tdt.json` — áreas y canales del Plan Técnico Nacional
@@ -83,7 +84,7 @@ completo: cálculos, planos DXF, memoria, pliego y presupuesto.
   `python -m ict_ajp leer-dxf plano.dxf -o lectura.txt` y
   `python -m ict_ajp borrador plano.dxf -o proyecto.ict.json` (plantas y viviendas del DXF) y
   `python -m ict_ajp planos proyecto.ict.json [--actualizar-longitudes]` (plantas de la ICT en DXF, PNG y PDF;
-  con la opción, guarda en el proyecto las longitudes medidas para RTV).
+  con la opción, guarda en el proyecto las longitudes medidas para RTV y la medición de materiales).
 - `docs/normativa/` — **textos consolidados oficiales del BOE** (RD 346/2011 actualizado hasta el
   RD 250/2025; Orden ITC/1644/2011; RD 250/2025 Plan Técnico Nacional de la TDT y su corrección de
   errores; Resolución de 23/07/2026 de la fase 1 de DVB-T2; planes técnicos de TDT local RD 439/2004,

@@ -21,4 +21,4 @@ llevar a la app más adelante. Sin datos del cliente: solo qué falta y por qué
 | 2026-10-24 | Planos: elegir a 1:100 girando las plantas 90° cuando no caben con la franja del cajetín de AJP | El edificio real necesita 238 mm de alto y hay 229: sale a 1:125 |
 | 2026-10-22 | Planos: proponer la posición del mástil (zona de cubierta con 5 m libres) en vez de darla con coordenadas | En el proyecto real se eligió mirando la cubierta y se guardó en `planos.mastil_xy` |
 | 2026-10-22 | Planos: la canalización principal se alinea entre plantas por la posición de los títulos de las vistas | Si el arquitecto desplaza una vista respecto a su título, revisar la vertical |
-| 2026-10-22 | Planos: esquemas de principio (v0.3) | Pendiente después de las plantas |
+| 2026-10-31 | Esquema de RTV: dibujar cualquier número de cables de distribución y la cabecera programable | Está hecho para la red del proyecto real: 2 cables con un derivador por cable y planta, y cabecera monocanal |

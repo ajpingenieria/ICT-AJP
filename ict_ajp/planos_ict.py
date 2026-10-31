@@ -322,6 +322,28 @@ def _preparar(doc) -> None:
         a = ARQUETA_MM / 2
         caja(b, -a, -a, a, a)
         b.add_text("ICT", height=1.0, dxfattribs={"style": "ICT_NEGRITA"}).set_placement((0, 0), align=C)
+    # Símbolos de los esquemas de principio (mm de papel)
+    if "ICT_AMP" not in doc.blocks:        # amplificador: triángulo con la entrada arriba y la salida abajo
+        b = doc.blocks.new("ICT_AMP")
+        b.add_lwpolyline([(-2.0, 1.6), (2.0, 1.6), (0, -1.8)], close=True)
+    if "ICT_DER" not in doc.blocks:        # derivador, con su referencia dentro
+        b = doc.blocks.new("ICT_DER")
+        caja(b, -3.2, -1.7, 3.2, 1.7)
+        etiqueta(b, "REF", 0, 1.1)
+    if "ICT_ANT" not in doc.blocks:        # antena: mástil y elementos
+        b = doc.blocks.new("ICT_ANT")
+        b.add_line((0, -3.0), (0, 3.0))
+        for y, w in ((2.6, 2.4), (1.6, 1.9), (0.6, 1.4)):
+            b.add_line((-w, y), (w, y))
+    if "ICT_CARGA" not in doc.blocks:      # carga de 75 Ω al final de la red
+        b = doc.blocks.new("ICT_CARGA")
+        b.add_line((0, 0), (0, -0.8))
+        caja(b, -0.7, -0.8, 0.7, -3.0)
+        b.add_line((-1.2, -3.0), (1.2, -3.0))
+    if "ICT_MEZ" not in doc.blocks:        # mezclador / repartidor de cabecera
+        b = doc.blocks.new("ICT_MEZ")
+        b.add_circle((0, 0), 1.6)
+        b.add_text("M", height=1.2, dxfattribs={"style": "ICT_NEGRITA"}).set_placement((0, 0), align=C)
 
 
 # ----------------------------------------------------------------- textos y cajas ocupadas
@@ -1184,26 +1206,34 @@ def _hoja(doc, nombre: str, v: Vista, numero: int, datos: dict, escala: int, for
     """Presentación A3 con la ventana a la planta, el cajetín y la leyenda. `plantilla`: (importador, entidades
     de la presentación de la plantilla de AJP). Devuelve avisos (casillas del cajetín que no se han encontrado)."""
     x0, y0, x1, y1 = v.ventana
-    lay = doc.layouts.new(nombre)
-    lay.page_setup(size=HOJA, margins=(0, 0, 0, 0), units="mm")
+    lay, avisos = hoja_a3(doc, nombre, f"ICT · {v.titulo}", numero, f"1:{escala}", datos, formato, plantilla)
     d = formato.dibujo
     lay.add_viewport(center=((d[0] + d[2]) / 2, (d[1] + d[3]) / 2),
                      size=((x1 - x0) * 1000 / escala, (y1 - y0) * 1000 / escala),
                      view_center_point=((x0 + x1) / 2, (y0 + y1) / 2), view_height=y1 - y0,
                      dxfattribs={"layer": formato.capa_ventana})
-    valores = {**datos, "PLANO": f"ICT · {v.titulo}", "Nº PLANO": f"{numero:02d}", "ESCALA": f"1:{escala}"}
+    return avisos
+
+
+def hoja_a3(doc, nombre: str, plano: str, numero: int, escala: str, datos: dict, formato: Formato = FORMATO_BASICO,
+            plantilla=None, filas_leyenda: Optional[list] = None):
+    """Presentación A3 con el cajetín (de la plantilla de AJP o el sencillo) relleno y la leyenda; lo demás (la
+    ventana a la planta o un esquema) lo pone quien la pide. Devuelve la presentación y los avisos."""
+    lay = doc.layouts.new(nombre)
+    lay.page_setup(size=HOJA, margins=(0, 0, 0, 0), units="mm")
+    valores = {**datos, "PLANO": plano, "Nº PLANO": f"{numero:02d}", "ESCALA": escala}
     avisos = []
     if plantilla:
         importador, entidades = plantilla
         importador.import_entities(entidades, lay)
         faltan, rellenas = _rellenar_cajetin(lay, {k: valores.get(k, "") for k in CASILLAS_CAJETIN})
         avisos += [f"Cajetín de la plantilla: no se encuentra la casilla «{c}»." for c in faltan]
-        _leyenda(lay, formato)
+        _leyenda(lay, formato, filas_leyenda)
         _colores_corporativos(lay, formato, rellenas.get("Nº PLANO"))
     else:
         _cajetin_basico(lay, valores)
-        _leyenda(lay, formato)
-    return avisos
+        _leyenda(lay, formato, filas_leyenda)
+    return lay, avisos
 
 
 CASILLAS_CAJETIN = ("PROYECTO", "EMPLAZAMIENTO", "TITULAR", "PLANO", "Nº PLANO", "ESCALA", "FECHA", "REV.",
@@ -1219,15 +1249,20 @@ def _filas_leyenda() -> list[tuple[str, str]]:
             ("LINEA", "Tubos, con su número y diámetro"), ("DISCONTINUA", "Canalización externa")]
 
 
-def _leyenda(lay, formato: Formato) -> None:
+CAPA_BLOQUE = {"ICT_CP": "ICT_CANALIZACION", "ICT_ARQ": "ICT_ACOMETIDA", "ICT_AMP": "ICT_RTV", "ICT_DER": "ICT_RTV",
+               "ICT_ANT": "ICT_RTV", "ICT_CARGA": "ICT_RTV", "ICT_MEZ": "ICT_RTV"}
+
+
+def _leyenda(lay, formato: Formato, filas: Optional[list] = None) -> None:
     """Leyenda sin recuadro, como en los planos de AJP: título en negrita y, debajo, símbolo y descripción, en
     las columnas que hagan falta para caber en su zona. Los símbolos son los mismos bloques del plano, a su
-    tamaño en papel."""
+    tamaño en papel. `filas`: (símbolo, descripción); símbolo «TOMA:RJ45», el nombre de un bloque «ICT_...»,
+    «RECINTO», «LINEA», «DISCONTINUA» o «CABLE:capa:rótulo»."""
     x0, y0, x1, y1 = formato.leyenda
     a = {"layer": formato.capa_leyenda}
     lay.add_text("LEYENDA ICT", height=2.1, dxfattribs={**a, "style": formato.estilo_negrita}).set_placement(
         (x0 + 1, y1 - 2.1), align=TextEntityAlignment.LEFT)
-    filas = _filas_leyenda()
+    filas = filas or _filas_leyenda()
     alto = 5.4
     arriba = y1 - 6.0
     por_columna = max(1, int((arriba - y0) // alto))
@@ -1248,9 +1283,17 @@ def _leyenda(lay, formato: Formato) -> None:
             yp = cy + fondo / 2                   # cara de la pared
             lay.add_line((cx - ancho / 2 - 0.8, yp), (cx + ancho / 2 + 0.8, yp), dxfattribs={**a, "color": 8})
             _atributos(lay.add_blockref(bloque, (cx, yp), dxfattribs={"layer": capa}), valores, capa)
-        elif simbolo in ("ICT_CP", "ICT_ARQ"):
-            lay.add_blockref(simbolo, (cx, cy), dxfattribs={
-                "layer": "ICT_CANALIZACION" if simbolo == "ICT_CP" else "ICT_ACOMETIDA"})
+        elif simbolo in CAPA_BLOQUE:
+            ins = lay.add_blockref(simbolo, (cx, cy), dxfattribs={"layer": CAPA_BLOQUE[simbolo]})
+            etiquetas = [a.dxf.tag for a in ins.block().query("ATTDEF")]
+            if etiquetas:
+                _atributos(ins, {t: "" for t in etiquetas}, CAPA_BLOQUE[simbolo])
+        elif simbolo.startswith("CABLE:"):
+            _, capa, rotulo = simbolo.split(":", 2)
+            lay.add_line((cx - 5, cy - 0.7), (cx + 5, cy - 0.7), dxfattribs={"layer": capa})
+            if rotulo:
+                lay.add_text(rotulo, height=1.0, dxfattribs={"layer": capa, "style": "ICT_ARIAL"}).set_placement(
+                    (cx, cy + 0.4), align=C)
         elif simbolo == "RECINTO":
             lay.add_lwpolyline([(cx - 4.5, cy - 1.8), (cx + 4.5, cy - 1.8), (cx + 4.5, cy + 1.8), (cx - 4.5, cy + 1.8)],
                                close=True, dxfattribs={"layer": "ICT_RECINTOS"})
@@ -1298,9 +1341,9 @@ def generar_planos(base_dxf: str | Path, lectura: LecturaPlano, proyecto, salida
                    datos_cajetin: dict, mastil: Optional[tuple[float, float]] = None,
                    holgura_vertical_m: float = 1.0, imagenes: bool = True, pdf: bool = True,
                    acceso_cubierta: str = "", cajetin: Optional[str | Path] = None,
-                   colores: Optional[dict] = None) -> ResultadoPlanos:
-    """Plantas de la ICT. `cajetin`: DXF con la plantilla de hoja de AJP (si no, un cajetín sencillo);
-    `colores`: los de la empresa para el cajetín (ver `colores_empresa`)."""
+                   colores: Optional[dict] = None, esquemas: bool = True) -> ResultadoPlanos:
+    """Plantas de la ICT y, detrás, los esquemas de principio. `cajetin`: DXF con la plantilla de hoja de AJP (si
+    no, un cajetín sencillo); `colores`: los de la empresa para el cajetín (ver `colores_empresa`)."""
     formato = formato_de_plantilla(cajetin, colores) if cajetin else FORMATO_BASICO
     origen = ezdxf.readfile(str(base_dxf))
     vistas = vistas_ict(lectura)
@@ -1402,6 +1445,12 @@ def generar_planos(base_dxf: str | Path, lectura: LecturaPlano, proyecto, salida
         nombre = f"ICT-{k} {v.titulo}"[:31]
         avisos += _hoja(doc, nombre, v, k, datos_cajetin, escala, formato, plantilla)
         presentaciones.append(nombre)
+    if esquemas:
+        from .esquemas import anadir_esquemas
+        nombres, av = anadir_esquemas(doc, proyecto, mediciones, tubos, datos_cajetin, formato, plantilla,
+                                      primer_numero=len(vistas) + 1)
+        presentaciones += nombres
+        avisos += av
     if plantilla:
         plantilla[0].finalize()
     for nombre in [l.name for l in doc.layouts if l.name not in presentaciones and l.name != "Model"]:

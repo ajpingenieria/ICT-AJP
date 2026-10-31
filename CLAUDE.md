@@ -51,6 +51,10 @@ completo: cálculos, planos DXF, memoria, pliego y presupuesto.
   Mide las longitudes RS-RTR y RTR-toma de RTV para el cálculo de niveles y la medición de tubos y registros
   (cuadro resumen de materiales de la memoria). En cubierta marca la reserva para antenas de satélite (Anexo I
   3.6). Los datos del edificio (base DXF, mástil, acceso a cubierta, medición) van en `planos` del `.ict.json`.
+- `ict_ajp/esquemas.py` — esquemas de principio (Orden ITC/1644/2011, anexo I 2.3.A a C) en hojas A3 a
+  continuación de las plantas, sin escala y por bandas de planta: esquema general, RTV (cabecera, derivadores y
+  PAU con referencias del catálogo) y redes de pares trenzados, coaxial y fibra (cables numerados, reserva por
+  planta y longitudes medidas en las plantas). Cada vivienda en su fila, con su línea propia desde el registro.
 - `ict_ajp/rtv.py` — radio y televisión: canales de TDT del emplazamiento, campo de diseño, tipo de
   cabecera y previsión de satélite.
 - `ict_ajp/plan_tdt.py` + `ict_ajp/datos/plan_tdt.json` — áreas y canales del Plan Técnico Nacional
@@ -114,7 +118,7 @@ completo: cálculos, planos DXF, memoria, pliego y presupuesto.
 |---|---|---|
 | 0.1 | Demanda, redes TBA (pares trenzados/pares, coaxial, fibra), red interior, infraestructura, recintos, Excel | Hecho |
 | 0.2 | RTV (Anexo I, ap. 4): niveles, atenuaciones toma a toma, C/N, cabecera | Hecho salvo lo apuntado en `docs/pendiente.md` |
-| 0.3 | Esquemas de principio en DXF | Pendiente |
+| 0.3 | Esquemas de principio en DXF | Hecho: hojas A3 tras las plantas (general, RTV, pares trenzados, coaxial y fibra); lo que falta, en `docs/pendiente.md` |
 | 0.4 | Memoria, pliego y presupuesto en Word (estructura del Anexo I de la Orden ITC/1644/2011) | En curso: memoria y pliego hechos; presupuesto pendiente (falta la base de precios) |
 | 0.5 | Plantas sobre la base DXF del arquitecto | En curso: plantas, cubierta, hojas A3 y PDF hechos; lo que falta, en `docs/pendiente.md` |
 | 1.0 | Interfaz de escritorio (PySide6) y .exe de Windows compilado con GitHub Actions | Pendiente |

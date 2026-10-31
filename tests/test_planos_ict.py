@@ -84,12 +84,15 @@ def _registros(doc, cod=None):
 def test_vistas_y_hojas(base, planos):
     res, doc, _ = planos
     assert [v.titulo for v in vistas_ict(leer_plano(base))] == ["Planta baja", "Planta primera"]
-    assert res.presentaciones == ["ICT-1 Planta baja", "ICT-2 Planta primera"]
+    assert res.presentaciones == ["ICT-1 Planta baja", "ICT-2 Planta primera", "ICT-3 Esquema general",
+                                  "ICT-4 Esquema RTV", "ICT-5 Esquema pares trenzados", "ICT-6 Esquema coaxial",
+                                  "ICT-7 Esquema fibra óptica"]
     assert res.escala in ESCALAS
-    for nombre in res.presentaciones:
+    for k, nombre in enumerate(res.presentaciones):
         hoja = doc.layout(nombre)
         assert (hoja.dxf.paper_width, hoja.dxf.paper_height) == (420, 297)
-        assert any(t.dxf.text == f"1:{res.escala}" for t in hoja.query("TEXT"))
+        escala = f"1:{res.escala}" if k < 2 else "S/E"            # los esquemas van sin escala
+        assert any(t.dxf.text == escala for t in hoja.query("TEXT"))
     assert all(capa in doc.layers for capa in CAPAS)
 
 
@@ -302,5 +305,5 @@ def test_pdf_de_las_hojas(base, tmp_path):
     proyecto = proyecto_desde_lectura(lectura)
     res = generar_planos(base, lectura, proyecto, tmp_path / "p.dxf", datos_cajetin(proyecto), imagenes=False)
     paginas = PdfReader(res.pdf).pages
-    assert len(paginas) == 2
+    assert len(paginas) == 7                                    # 2 plantas y 5 esquemas de principio
     assert float(paginas[0].mediabox.width) == pytest.approx(420 / 25.4 * 72, abs=1)     # A3 apaisado
